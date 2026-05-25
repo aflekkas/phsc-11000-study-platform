@@ -456,16 +456,23 @@ button, input, textarea { font: inherit; }
 }
 
 .choice {
+  align-items: center;
   animation: choice-in 220ms ease both;
   background: var(--color-base-100);
-  border-color: var(--color-base-300);
+  border: 1px solid var(--color-base-300);
   border-radius: 0.5rem;
+  color: var(--color-base-content);
+  cursor: pointer;
+  display: flex;
   font-weight: 650;
   gap: 10px;
   line-height: 1.25;
+  min-height: 3.5rem;
   padding: 13px 14px;
   position: relative;
+  text-align: left;
   text-wrap: pretty;
+  transition: background-color 140ms ease, border-color 140ms ease;
   white-space: normal;
   width: 100%;
 }
@@ -475,8 +482,13 @@ button, input, textarea { font: inherit; }
   border-color: color-mix(in oklch, var(--color-primary) 42%, var(--color-base-300));
 }
 
+.choice:focus-visible {
+  outline: 2px solid color-mix(in oklch, var(--color-primary) 34%, transparent);
+  outline-offset: 2px;
+}
+
 .choice.selected {
-  background: color-mix(in oklch, var(--color-primary) 12%, var(--color-base-100));
+  background: color-mix(in oklch, var(--color-primary) 10%, var(--color-base-100));
   border-color: var(--color-primary);
 }
 

@@ -91,8 +91,10 @@ export function Exam({
               {question.choices.map((choice) => (
                 <button
                   key={choice.id}
+                  type="button"
                   className={choiceClass(choice.id, question.correctChoiceId, answer.selectedChoiceId, Boolean(feedback))}
                   aria-disabled={Boolean(feedback)}
+                  aria-pressed={answer.selectedChoiceId === choice.id}
                   onClick={() =>
                     !feedback &&
                     (isFreestyle ? onFreestyleAnswer(question as MultipleChoiceQuestion, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id }))
@@ -183,7 +185,7 @@ function SessionStatsPanel({ stats }: { stats: SessionRunStats }) {
 }
 
 function choiceClass(choiceId: string, correctChoiceId: string, selectedChoiceId: string | undefined, showFeedback: boolean) {
-  const classes = ["choice", "btn", "justify-start", "h-auto", "min-h-14", "text-left"];
+  const classes = ["choice"];
   if (selectedChoiceId === choiceId) classes.push("selected");
   if (showFeedback && choiceId === correctChoiceId) classes.push("correct-answer");
   if (showFeedback && selectedChoiceId === choiceId && choiceId !== correctChoiceId) classes.push("wrong-answer");
