@@ -15,14 +15,17 @@ async function main() {
   });
 
   await page.goto(baseUrl, { waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
   await page.screenshot({ path: fileURLToPath(new URL("dashboard.png", outputDir)), fullPage: true });
 
-  await page.getByRole("button", { name: "Freestyle Practice" }).click();
+  await page.getByRole("button", { name: "Freestyle" }).click();
   await page.waitForSelector(".question-panel");
+  await page.waitForTimeout(450);
   await page.screenshot({ path: fileURLToPath(new URL("freestyle.png", outputDir)), fullPage: true });
 
   await page.setViewportSize({ width: 390, height: 900 });
   await page.goto(baseUrl, { waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
   await page.screenshot({ path: fileURLToPath(new URL("mobile.png", outputDir)), fullPage: true });
 
   await browser.close();

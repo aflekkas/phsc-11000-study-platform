@@ -42,13 +42,6 @@ export interface SessionState {
   submitted?: SessionResult;
 }
 
-export interface TapBurst {
-  id: string;
-  x: number;
-  y: number;
-  tone: "primary" | "choice" | "music" | "flag" | "default";
-}
-
 export type CaptureSource = Omit<PhraseSource, "id" | "capturedAt">;
 
 export interface PhraseSelection {

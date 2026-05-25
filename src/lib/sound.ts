@@ -615,6 +615,30 @@ function scheduleSelectCue(ctx: AudioContext, destination: AudioNode, startsAt: 
   });
 }
 
+function scheduleChoiceCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
+  scheduleCueOscillator(ctx, {
+    type: "triangle",
+    frequency: 392,
+    endFrequency: 587.33,
+    start: startsAt,
+    duration: 0.13,
+    gain: 0.32,
+    attack: 0.005,
+    decay: 0.12,
+    destination
+  });
+  scheduleCueNoise(ctx, {
+    start: startsAt + 0.012,
+    duration: 0.055,
+    gain: 0.1,
+    attack: 0.004,
+    decay: 0.05,
+    filterFrequency: 2200,
+    filterType: "bandpass",
+    destination
+  });
+}
+
 function scheduleNavCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
   [329.63, 440].forEach((frequency, index) => {
     scheduleCueOscillator(ctx, {
@@ -732,40 +756,166 @@ function scheduleHoverCue(ctx: AudioContext, destination: AudioNode, startsAt: n
   });
 }
 
-function scheduleRewardSuccessCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
-  [523.25, 659.25, 783.99].forEach((frequency, index) => {
+function scheduleCaptureCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
+  [659.25, 783.99, 987.77].forEach((frequency, index) => {
     scheduleCueOscillator(ctx, {
       type: index === 0 ? "triangle" : "sine",
       frequency,
-      start: startsAt + index * 0.075,
-      duration: 0.22,
-      gain: index === 2 ? 0.28 : 0.22,
-      attack: 0.01,
-      decay: 0.2,
-      destination
-    });
-  });
-}
-
-function scheduleRewardBurstCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
-  [392, 523.25, 659.25, 783.99, 1046.5].forEach((frequency, index) => {
-    scheduleCueOscillator(ctx, {
-      type: index % 2 === 0 ? "triangle" : "sine",
-      frequency,
-      start: startsAt + index * 0.065,
-      duration: 0.28,
-      gain: index >= 3 ? 0.2 : 0.25,
-      attack: 0.01,
-      decay: 0.24,
+      start: startsAt + index * 0.055,
+      duration: 0.2,
+      gain: index === 2 ? 0.22 : 0.2,
+      attack: 0.008,
+      decay: 0.18,
       destination
     });
   });
   scheduleCueNoise(ctx, {
     start: startsAt + 0.08,
-    duration: 0.2,
-    gain: 0.1,
+    duration: 0.18,
+    gain: 0.08,
     attack: 0.008,
-    decay: 0.18,
+    decay: 0.16,
+    filterFrequency: 5200,
+    filterType: "highpass",
+    destination
+  });
+}
+
+function scheduleDeleteCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
+  const filter = ctx.createBiquadFilter();
+  filter.type = "lowpass";
+  filter.frequency.setValueAtTime(780, startsAt);
+  filter.frequency.exponentialRampToValueAtTime(260, startsAt + 0.34);
+  filter.Q.setValueAtTime(1.2, startsAt);
+  filter.connect(destination);
+
+  scheduleCueOscillator(ctx, {
+    type: "triangle",
+    frequency: 392,
+    endFrequency: 185,
+    start: startsAt,
+    duration: 0.28,
+    gain: 0.34,
+    attack: 0.008,
+    decay: 0.26,
+    destination: filter
+  });
+  scheduleCueNoise(ctx, {
+    start: startsAt + 0.025,
+    duration: 0.16,
+    gain: 0.15,
+    attack: 0.004,
+    decay: 0.14,
+    filterFrequency: 780,
+    filterType: "bandpass",
+    destination
+  });
+}
+
+function scheduleSubmitCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
+  scheduleCueOscillator(ctx, {
+    type: "triangle",
+    frequency: 146.83,
+    endFrequency: 92.5,
+    start: startsAt,
+    duration: 0.18,
+    gain: 0.42,
+    attack: 0.006,
+    decay: 0.16,
+    destination
+  });
+  scheduleCueNoise(ctx, {
+    start: startsAt,
+    duration: 0.08,
+    gain: 0.16,
+    attack: 0.004,
+    decay: 0.07,
+    filterFrequency: 900,
+    filterType: "bandpass",
+    destination
+  });
+  [440, 659.25, 880].forEach((frequency, index) => {
+    scheduleCueOscillator(ctx, {
+      type: "sine",
+      frequency,
+      start: startsAt + 0.14 + index * 0.06,
+      duration: 0.24,
+      gain: 0.18,
+      attack: 0.01,
+      decay: 0.21,
+      destination
+    });
+  });
+}
+
+function scheduleToggleCue(ctx: AudioContext, destination: AudioNode, startsAt: number, enabled: boolean) {
+  const notes = enabled ? [523.25, 659.25] : [523.25, 349.23];
+  notes.forEach((frequency, index) => {
+    scheduleCueOscillator(ctx, {
+      type: "sine",
+      frequency,
+      start: startsAt + index * 0.07,
+      duration: 0.14,
+      gain: enabled ? 0.2 : 0.18,
+      attack: 0.008,
+      decay: 0.12,
+      destination
+    });
+  });
+}
+
+function scheduleRewardSuccessCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
+  [392, 523.25, 659.25, 783.99].forEach((frequency, index) => {
+    scheduleCueOscillator(ctx, {
+      type: index === 0 ? "triangle" : "sine",
+      frequency,
+      endFrequency: index === 0 ? 440 : undefined,
+      start: startsAt + index * 0.06,
+      duration: 0.24,
+      gain: index >= 2 ? 0.24 : 0.2,
+      attack: 0.01,
+      decay: 0.22,
+      destination
+    });
+  });
+  scheduleCueNoise(ctx, {
+    start: startsAt + 0.1,
+    duration: 0.14,
+    gain: 0.07,
+    attack: 0.006,
+    decay: 0.12,
+    filterFrequency: 4800,
+    filterType: "highpass",
+    destination
+  });
+}
+
+function scheduleRewardBurstCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
+  const filter = ctx.createBiquadFilter();
+  filter.type = "lowpass";
+  filter.frequency.setValueAtTime(1600, startsAt);
+  filter.frequency.exponentialRampToValueAtTime(3600, startsAt + 0.74);
+  filter.Q.setValueAtTime(0.72, startsAt);
+  filter.connect(destination);
+
+  [261.63, 392, 523.25, 659.25, 783.99, 1046.5].forEach((frequency, index) => {
+    scheduleCueOscillator(ctx, {
+      type: index % 2 === 0 ? "triangle" : "sine",
+      frequency,
+      start: startsAt + index * 0.058,
+      duration: 0.34,
+      gain: index >= 4 ? 0.18 : 0.24,
+      attack: 0.01,
+      decay: 0.3,
+      destination: filter
+    });
+  });
+  scheduleCueNoise(ctx, {
+    start: startsAt + 0.1,
+    duration: 0.28,
+    gain: 0.12,
+    attack: 0.008,
+    decay: 0.24,
     filterFrequency: 4200,
     filterType: "highpass",
     destination
@@ -774,31 +924,54 @@ function scheduleRewardBurstCue(ctx: AudioContext, destination: AudioNode, start
 
 function scheduleRewardMissCue(ctx: AudioContext, destination: AudioNode, startsAt: number) {
   const filter = ctx.createBiquadFilter();
-  filter.type = "lowpass";
-  filter.frequency.setValueAtTime(860, startsAt);
-  filter.frequency.exponentialRampToValueAtTime(430, startsAt + 0.4);
-  filter.Q.setValueAtTime(0.9, startsAt);
+  filter.type = "bandpass";
+  filter.frequency.setValueAtTime(940, startsAt);
+  filter.frequency.exponentialRampToValueAtTime(360, startsAt + 0.5);
+  filter.Q.setValueAtTime(5.5, startsAt);
   filter.connect(destination);
 
   scheduleCueOscillator(ctx, {
-    type: "triangle",
-    frequency: 246.94,
-    endFrequency: 146.83,
+    type: "sawtooth",
+    frequency: 233.08,
+    endFrequency: 87.31,
     start: startsAt,
-    duration: 0.34,
-    gain: 0.32,
-    attack: 0.012,
-    decay: 0.32,
+    duration: 0.46,
+    gain: 0.34,
+    attack: 0.018,
+    decay: 0.44,
     destination: filter
+  });
+  [311.13, 277.18, 246.94].forEach((frequency, index) => {
+    scheduleCueOscillator(ctx, {
+      type: "triangle",
+      frequency,
+      endFrequency: frequency * 0.74,
+      start: startsAt + 0.11 + index * 0.07,
+      duration: 0.16,
+      gain: 0.16,
+      attack: 0.006,
+      decay: 0.14,
+      destination: filter
+    });
   });
   scheduleCueNoise(ctx, {
     start: startsAt + 0.025,
-    duration: 0.16,
-    gain: 0.14,
+    duration: 0.24,
+    gain: 0.2,
     attack: 0.008,
-    decay: 0.15,
-    filterFrequency: 620,
-    filterType: "lowpass",
+    decay: 0.22,
+    filterFrequency: 520,
+    filterType: "bandpass",
+    destination
+  });
+  scheduleCueNoise(ctx, {
+    start: startsAt + 0.39,
+    duration: 0.09,
+    gain: 0.16,
+    attack: 0.004,
+    decay: 0.08,
+    filterFrequency: 1600,
+    filterType: "bandpass",
     destination
   });
 }

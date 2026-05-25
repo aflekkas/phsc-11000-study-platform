@@ -5,4 +5,3 @@ tsconfig.tsbuildinfo
 .DS_Store
 *.pdf
 tmp
-public/images

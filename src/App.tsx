@@ -1,63 +1,19 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { CSSProperties, FormEvent, MouseEvent, ReactNode } from "react";
 import {
-  ArrowLeft,
-  ArrowRight,
-  BarChart3,
-  BookmarkPlus,
-  CheckCircle2,
-  Clock3,
-  Flame,
-  FileQuestion,
-  Flag,
-  Home,
-  Minimize2,
-  Music,
-  Pause,
-  Play,
-  Plus,
-  RotateCcw,
-  Search,
-  Send,
-  SkipBack,
-  SkipForward,
-  Shuffle,
-  Sparkles,
-  Star,
-  StickyNote,
-  Target,
-  Timer,
-  Trash2,
-  Volume2,
-  VolumeX,
-  Zap,
-  XCircle
-} from "lucide-react";
-import {
-  answersXp,
   buildFreestyleReward,
   buildSessionRewardSummary,
   buildStudyGameStats,
   currentStreak,
   type RewardEvent,
-  type SessionRewardSummary,
-  type StudyGameStats
+  type SessionRewardSummary
 } from "./lib/gamification";
 import {
-  buildAdaptiveFreestyleStats,
   masteryForQuestion,
   reinforcementLine,
   selectNextFreestyleQuestion
 } from "./lib/freestyleEngine";
-import { multipleChoiceQuestions, questionBank, validateQuestionBank, type MultipleChoiceQuestion, type Question } from "./lib/questionBank";
-import {
-  getSoundEffectsState,
-  playRewardSound,
-  playUiSound,
-  subscribeSoundEffects,
-  toggleSoundEffects,
-  type SoundEffectsState
-} from "./lib/sound";
+import { multipleChoiceQuestions, questionBank, validateQuestionBank, type MultipleChoiceQuestion } from "./lib/questionBank";
+import { playRewardSound, playUiSound } from "./lib/sound";
 import {
   getStudyMusicState,
   seekStudyMusic,
@@ -71,157 +27,30 @@ import {
   saveProgress,
   weakTags,
   type AnswerRecord,
-  type PhraseBankItem,
   type PhraseSource,
   type ProgressState,
   type SessionResult
 } from "./lib/storage";
-
-type View = "dashboard" | "exam" | "review";
-type Preset = "Quick Drill" | "Mock Exam" | "Weak Retake" | "Freestyle";
-type TimedPreset = Exclude<Preset, "Freestyle">;
-
-interface FreestyleFeedback {
-  questionId: string;
-  correct: boolean;
-  correctText: string;
-  xp: number;
-  streak: number;
-  masteryLabel: string;
-  reinforcementLine: string;
-}
-
-interface SessionRunStats {
-  answered: number;
-  correct: number;
-  missed: number;
-  accuracy: number;
-  streak: number;
-  xp: number;
-  leftInCycle: number;
-  mastered: number;
-  recovering: number;
-  fresh: number;
-}
-
-interface SessionState {
-  id: string;
-  preset: Preset;
-  startedAt: string;
-  questions: Question[];
-  answers: Record<string, AnswerRecord>;
-  index: number;
-  timeLeft: number;
-  feedback?: FreestyleFeedback;
-  freestyleLog?: AnswerRecord[];
-  freestyleBaseProgress?: ProgressState;
-  submitted?: SessionResult;
-}
-
-interface TapBurst {
-  id: string;
-  x: number;
-  y: number;
-  tone: "primary" | "choice" | "music" | "flag" | "default";
-}
-
-type CaptureSource = Omit<PhraseSource, "id" | "capturedAt">;
-
-interface PhraseSelection {
-  text: string;
-  x: number;
-  y: number;
-  source: CaptureSource;
-}
-
-const presetConfig: Record<TimedPreset, { count: number; minutes: number; longAnswers: number }> = {
-  "Quick Drill": { count: 15, minutes: 15, longAnswers: 0 },
-  "Mock Exam": { count: 40, minutes: 60, longAnswers: 3 },
-  "Weak Retake": { count: 20, minutes: 25, longAnswers: 0 }
-};
-
-const MAX_PHRASE_LENGTH = 80;
-
-function shuffle<T>(items: T[]) {
-  return [...items].sort(() => Math.random() - 0.5);
-}
-
-function shuffledMultipleChoice(pool: MultipleChoiceQuestion[] = multipleChoiceQuestions) {
-  return shuffle(pool).map((question) => ({
-    ...question,
-    choices: shuffle(question.choices)
-  }));
-}
-
-function withShuffledChoices(question: MultipleChoiceQuestion) {
-  return {
-    ...question,
-    choices: shuffle(question.choices)
-  };
-}
-
-function formatSignedXp(value: number) {
-  if (value > 0) return `+${value}`;
-  return `${value}`;
-}
-
-function cleanPhraseText(value: string) {
-  return value.replace(/\s+/g, " ").trim();
-}
-
-function normalizedPhraseKey(value: string) {
-  return cleanPhraseText(value).toLowerCase();
-}
-
-function canSavePhrase(value: string) {
-  const cleaned = cleanPhraseText(value);
-  return cleaned.length > 0 && cleaned.length <= MAX_PHRASE_LENGTH;
-}
-
-function sourceSignature(source: Pick<PhraseSource, "type" | "label" | "questionId" | "sourcePath">) {
-  return [source.type, source.questionId, source.sourcePath, source.label].filter(Boolean).join("|");
-}
-
-function captureSourceFromElement(element: HTMLElement): CaptureSource {
-  const type = element.dataset.captureType === "review" ? "review" : "question";
-  return {
-    type,
-    label: element.dataset.captureLabel || (type === "review" ? "Review" : "Practice"),
-    view: element.dataset.captureView,
-    questionId: element.dataset.questionId,
-    questionPrompt: element.dataset.questionPrompt,
-    lecture: element.dataset.lecture,
-    lectureTitle: element.dataset.lectureTitle,
-    cluster: element.dataset.cluster,
-    sourcePath: element.dataset.sourcePath
-  };
-}
-
-function learningProgressFor(session: SessionState, progress: ProgressState): ProgressState {
-  if (!session.freestyleBaseProgress) return progress;
-  return { ...session.freestyleBaseProgress, flagged: progress.flagged };
-}
-
-function buildSessionRunStats(session: SessionState, progress: ProgressState): SessionRunStats {
-  const answers = (session.freestyleLog ?? Object.values(session.answers)).filter((answer) => answer.correct !== undefined);
-  const answered = answers.length;
-  const correct = answers.filter((answer) => answer.correct === true).length;
-  const missed = answers.filter((answer) => answer.correct === false).length;
-  const byId = new Map(questionBank.map((question) => [question.id, question]));
-  const adaptive = buildAdaptiveFreestyleStats(learningProgressFor(session, progress), multipleChoiceQuestions, answers);
-  return {
-    answered,
-    correct,
-    missed,
-    streak: currentStreak(answers),
-    xp: answersXp(answers, byId),
-    accuracy: answered ? Math.round((correct / answered) * 100) : 0,
-    leftInCycle: Math.max(session.questions.length - session.index - 1, 0),
-    mastered: adaptive.mastered,
-    recovering: adaptive.recovering,
-    fresh: adaptive.fresh
-  };
-}
+import {
+  canSavePhrase,
+  captureSourceFromElement,
+  cleanPhraseText,
+  formatSignedXp,
+  learningProgressFor,
+  normalizedPhraseKey,
+  presetConfig,
+  shuffle,
+  shuffledMultipleChoice,
+  sourceSignature,
+  withShuffledChoices
+} from "./lib/studySession";
+import { Dashboard } from "./features/dashboard/Dashboard";
+import { StudyMusicPlayer } from "./features/music/StudyMusicPlayer";
+import { Exam } from "./features/practice/Exam";
+import { PhraseCapturePopover } from "./features/phrases/PhraseCapturePopover";
+import { Review } from "./features/review/Review";
+import { RewardLayer } from "./features/rewards/RewardLayer";
+import type { CaptureSource, PhraseSelection, Preset, SessionState, View } from "./types/study";
 
 function App() {
   const [progress, setProgress] = useState<ProgressState>(() => loadProgress());
@@ -230,7 +59,6 @@ function App() {
   const [rewardEvent, setRewardEvent] = useState<RewardEvent | null>(null);
   const [reviewReward, setReviewReward] = useState<SessionRewardSummary | null>(null);
   const [musicState, setMusicState] = useState<StudyMusicState>(() => getStudyMusicState());
-  const [soundEffectsState, setSoundEffectsState] = useState<SoundEffectsState>(() => getSoundEffectsState());
   const [musicMinimized, setMusicMinimized] = useState(false);
   const [phraseSelection, setPhraseSelection] = useState<PhraseSelection | null>(null);
   const lastQuestionSoundId = useRef<string | null>(null);
@@ -262,7 +90,7 @@ function App() {
             return {
               ...item,
               updatedAt: now,
-              captureCount: item.captureCount + 1,
+              captureCount: hasSource ? item.captureCount : item.captureCount + 1,
               sources: hasSource ? item.sources : [...item.sources, phraseSource]
             };
           })
@@ -348,12 +176,6 @@ function App() {
     setMusicState(seekStudyMusic(ratio));
   };
 
-  const toggleSoundEffectsPlayback = () => {
-    const nextState = toggleSoundEffects();
-    setSoundEffectsState(nextState);
-    if (nextState.enabled) playUiSound("select");
-  };
-
   const startSession = (preset: Preset) => {
     playUiSound("start");
     setReviewReward(null);
@@ -430,22 +252,16 @@ function App() {
     saveProgress(nextProgress);
     setSession({ ...session, submitted: result });
     setReviewReward(rewardSummary);
-    setRewardEvent({
+    const reward: RewardEvent = {
       id: `${result.id}-review`,
       title: rewardSummary.leveledUp ? `Level ${rewardSummary.nextLevel}` : "Run complete",
       detail: `${formatSignedXp(rewardSummary.sessionXp)} XP`,
       xp: rewardSummary.sessionXp,
       tone: rewardSummary.sessionXp < 0 ? "red" : rewardSummary.leveledUp ? "amber" : "green",
       confetti: rewardSummary.confetti
-    });
-    playRewardSound({
-      id: `${result.id}-review-sound`,
-      title: rewardSummary.leveledUp ? `Level ${rewardSummary.nextLevel}` : "Run complete",
-      detail: `${formatSignedXp(rewardSummary.sessionXp)} XP`,
-      xp: rewardSummary.sessionXp,
-      tone: rewardSummary.sessionXp < 0 ? "red" : rewardSummary.leveledUp ? "amber" : "green",
-      confetti: rewardSummary.confetti
-    });
+    };
+    setRewardEvent(reward);
+    playRewardSound(reward);
     setView("review");
   };
 
@@ -472,46 +288,6 @@ function App() {
       }),
     []
   );
-
-  useEffect(() => subscribeSoundEffects(setSoundEffectsState), []);
-
-  useEffect(() => {
-    let lastInteractive: Element | null = null;
-    let lastPlayedAt = 0;
-
-    const canPlayHover = (interactive: Element) => {
-      if (interactive instanceof HTMLButtonElement && interactive.disabled) return false;
-      if (interactive.getAttribute("aria-disabled") === "true") return false;
-      return true;
-    };
-
-    const handlePointerOver = (event: PointerEvent) => {
-      if (event.pointerType !== "mouse" || !getSoundEffectsState().enabled) return;
-      const target = event.target instanceof Element ? event.target : null;
-      const interactive = target?.closest("button, a[href], [role='button']");
-      if (!interactive || interactive === lastInteractive || !canPlayHover(interactive)) return;
-
-      const now = performance.now();
-      if (now - lastPlayedAt < 80) return;
-      lastInteractive = interactive;
-      lastPlayedAt = now;
-      playUiSound("hover");
-    };
-
-    const handlePointerOut = (event: PointerEvent) => {
-      const target = event.target instanceof Element ? event.target : null;
-      if (target?.closest("button, a[href], [role='button']") === lastInteractive) {
-        lastInteractive = null;
-      }
-    };
-
-    window.addEventListener("pointerover", handlePointerOver, { passive: true });
-    window.addEventListener("pointerout", handlePointerOut, { passive: true });
-    return () => {
-      window.removeEventListener("pointerover", handlePointerOver);
-      window.removeEventListener("pointerout", handlePointerOut);
-    };
-  }, []);
 
   useEffect(() => {
     let frame = 0;
@@ -552,11 +328,10 @@ function App() {
         }
 
         const pointer = lastSelectionPointer.current;
-        const anchorY = Math.min(pointer?.y ?? rect.top, rect.top);
         setPhraseSelection({
           text,
           x: Math.min(Math.max(pointer?.x ?? rect.left + rect.width / 2, 92), window.innerWidth - 92),
-          y: Math.max(anchorY - 14, 18),
+          y: Math.max((pointer?.y ?? rect.top) - 12, 18),
           source: captureSourceFromElement(captureRoot)
         });
       });
@@ -718,6 +493,7 @@ function App() {
           game={game}
           weak={weak}
           bankErrors={bankErrors}
+          phrases={progress.phraseBank}
           onAddPhrase={addManualPhrase}
           onDeletePhrase={deletePhrase}
           onStart={startSession}
@@ -729,6 +505,7 @@ function App() {
         <Exam
           session={session}
           progress={progress}
+          phrases={progress.phraseBank}
           onAnswer={updateAnswer}
           onAddPhrase={(text) => addManualPhrase(text, `Manual during ${session.preset}`, "exam")}
           onFreestyleAnswer={answerFreestyle}
@@ -748,6 +525,7 @@ function App() {
         <Review
           session={session}
           reward={reviewReward}
+          phrases={progress.phraseBank}
           onAddPhrase={(text) => addManualPhrase(text, "Manual during review", "review")}
           onBack={() => {
             playUiSound("back");
@@ -765,929 +543,15 @@ function App() {
       />
       <StudyMusicPlayer
         minimized={musicMinimized && !musicState.playing}
-        soundEffectsEnabled={soundEffectsState.enabled}
         state={musicState}
         onNext={() => changeStudyTrack(1)}
         onMinimize={() => setMusicMinimized(true)}
         onPrevious={() => changeStudyTrack(-1)}
         onRestore={() => setMusicMinimized(false)}
         onSeek={seekStudyMusicPlayback}
-        onToggleSoundEffects={toggleSoundEffectsPlayback}
         onToggle={toggleStudyMusicPlayback}
       />
-      <TapBurstLayer />
     </main>
-  );
-}
-
-function tapToneFor(element: Element): TapBurst["tone"] {
-  if (element.classList.contains("primary") || element.classList.contains("music-play")) return "primary";
-  if (element.classList.contains("choice")) return "choice";
-  if (
-    element.classList.contains("music-control") ||
-    element.classList.contains("music-progress") ||
-    element.classList.contains("music-restore")
-  ) return "music";
-  if (element.classList.contains("flagged")) return "flag";
-  return "default";
-}
-
-function TapBurstLayer() {
-  const [bursts, setBursts] = useState<TapBurst[]>([]);
-
-  useEffect(() => {
-    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let fallbackId = 0;
-    const timeouts = new Set<number>();
-
-    const addBurst = (event: PointerEvent) => {
-      if (motionQuery.matches || event.button !== 0) return;
-      const target = event.target instanceof Element ? event.target : null;
-      const interactive = target?.closest("button, a[href], [role='button']");
-      if (!interactive) return;
-      if (interactive instanceof HTMLButtonElement && interactive.disabled) return;
-      if (interactive.getAttribute("aria-disabled") === "true") return;
-
-      const id = typeof crypto.randomUUID === "function" ? crypto.randomUUID() : `tap-${Date.now()}-${fallbackId++}`;
-      const nextBurst: TapBurst = {
-        id,
-        x: event.clientX,
-        y: event.clientY,
-        tone: tapToneFor(interactive)
-      };
-      setBursts((current) => [...current.slice(-7), nextBurst]);
-      const timeout = window.setTimeout(() => {
-        setBursts((current) => current.filter((burst) => burst.id !== id));
-        timeouts.delete(timeout);
-      }, 680);
-      timeouts.add(timeout);
-    };
-
-    window.addEventListener("pointerdown", addBurst, { passive: true });
-    return () => {
-      window.removeEventListener("pointerdown", addBurst);
-      timeouts.forEach((timeout) => window.clearTimeout(timeout));
-    };
-  }, []);
-
-  if (bursts.length === 0) return null;
-
-  return (
-    <div className="tap-burst-layer" aria-hidden="true">
-      {bursts.map((burst) => (
-        <span
-          className={`tap-burst ${burst.tone}`}
-          key={burst.id}
-          style={{ "--x": `${burst.x}px`, "--y": `${burst.y}px` } as CSSProperties}
-        >
-          {Array.from({ length: 7 }).map((_, index) => (
-            <i key={index} style={{ "--angle": `${index * 51.4}deg` } as CSSProperties} />
-          ))}
-        </span>
-      ))}
-    </div>
-  );
-}
-
-function PhraseCapturePopover({
-  selection,
-  onAdd
-}: {
-  selection: PhraseSelection | null;
-  onAdd: () => void;
-}) {
-  if (!selection) return null;
-
-  return (
-    <div
-      className="phrase-capture-popover"
-      style={{ "--x": `${selection.x}px`, "--y": `${selection.y}px` } as CSSProperties}
-      onPointerDown={(event) => event.stopPropagation()}
-      role="dialog"
-      aria-label="Save highlighted phrase"
-    >
-      <span>{selection.text}</span>
-      <button className="primary" onClick={onAdd}>
-        <BookmarkPlus size={16} /> Save
-      </button>
-    </div>
-  );
-}
-
-function StudyMusicPlayer({
-  minimized,
-  soundEffectsEnabled,
-  state,
-  onNext,
-  onMinimize,
-  onPrevious,
-  onRestore,
-  onSeek,
-  onToggleSoundEffects,
-  onToggle
-}: {
-  minimized: boolean;
-  soundEffectsEnabled: boolean;
-  state: StudyMusicState;
-  onNext: () => void;
-  onMinimize: () => void;
-  onPrevious: () => void;
-  onRestore: () => void;
-  onSeek: (ratio: number) => void;
-  onToggleSoundEffects: () => void;
-  onToggle: () => void;
-}) {
-  const playerClassName = [
-    "music-player",
-    state.playing ? "is-playing" : "",
-    minimized ? "is-minimized" : "",
-    soundEffectsEnabled ? "sfx-on" : "sfx-muted"
-  ]
-    .filter(Boolean)
-    .join(" ");
-  const progress = state.duration > 0 ? Math.min(100, (state.currentTime / state.duration) * 100) : 0;
-  const handleSeek = (event: MouseEvent<HTMLButtonElement>) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    onSeek((event.clientX - rect.left) / rect.width);
-  };
-  const soundEffectsLabel = soundEffectsEnabled ? "Mute study sound effects" : "Enable study sound effects";
-
-  if (minimized) {
-    return (
-      <aside className={playerClassName} aria-label="Lofi focus music player">
-        <button
-          className="music-restore"
-          onClick={onRestore}
-          aria-label="Expand lofi focus music player"
-          title="Expand lofi focus music player"
-        >
-          <Music size={15} />
-          <span>focus audio</span>
-        </button>
-        <button
-          className="music-control sfx-toggle"
-          onClick={onToggleSoundEffects}
-          aria-pressed={soundEffectsEnabled}
-          aria-label={soundEffectsLabel}
-          title={soundEffectsLabel}
-        >
-          {soundEffectsEnabled ? <Volume2 size={16} /> : <VolumeX size={16} />}
-        </button>
-        <button
-          className="music-control music-play"
-          onClick={onToggle}
-          aria-pressed={false}
-          aria-label="Play lofi focus music"
-          title="Play lofi focus music"
-        >
-          <Play size={17} />
-        </button>
-      </aside>
-    );
-  }
-
-  return (
-    <aside className={playerClassName} aria-label="Lofi focus music player">
-      <span className="music-art" aria-hidden="true">
-        <Music size={18} />
-      </span>
-      <div className="music-copy">
-        <span className="music-kicker">
-          <Music size={14} /> focus audio
-        </span>
-        <strong>{state.title}</strong>
-        <span>
-          {state.artist} · {state.mood} · {state.trackIndex + 1}/{state.trackCount}
-        </span>
-      </div>
-      <div className="music-controls">
-        <button className="music-control" onClick={onPrevious} aria-label="Previous lofi track" title="Previous lofi track">
-          <SkipBack size={16} />
-        </button>
-        <button
-          className="music-control music-play"
-          onClick={onToggle}
-          aria-pressed={state.playing}
-          aria-label={state.playing ? "Pause lofi focus music" : "Play lofi focus music"}
-          title={state.playing ? "Pause lofi focus music" : "Play lofi focus music"}
-        >
-          {state.playing ? <Pause size={17} /> : <Play size={17} />}
-        </button>
-        <button className="music-control" onClick={onNext} aria-label="Next lofi track" title="Next lofi track">
-          <SkipForward size={16} />
-        </button>
-        {!state.playing && (
-          <button
-            className="music-control music-minimize"
-            onClick={onMinimize}
-            aria-label="Minimize lofi focus music player"
-            title="Minimize lofi focus music player"
-          >
-            <Minimize2 size={15} />
-          </button>
-        )}
-        <button
-          className="music-control sfx-toggle"
-          onClick={onToggleSoundEffects}
-          aria-pressed={soundEffectsEnabled}
-          aria-label={soundEffectsLabel}
-          title={soundEffectsLabel}
-        >
-          {soundEffectsEnabled ? <Volume2 size={16} /> : <VolumeX size={16} />}
-        </button>
-      </div>
-      <button className="music-progress" onClick={handleSeek} aria-label="Seek lofi track" title="Seek lofi track">
-        <span style={{ width: `${progress}%` }} />
-      </button>
-      <a className="music-source" href={state.sourceUrl} target="_blank" rel="noreferrer" title={`${state.license} source`}>
-        {state.loading ? "loading" : state.error ?? "credits"}
-      </a>
-      <span className="music-bars" aria-hidden="true">
-        <i />
-        <i />
-        <i />
-      </span>
-    </aside>
-  );
-}
-
-function Dashboard({
-  progress,
-  game,
-  weak,
-  bankErrors,
-  onAddPhrase,
-  onDeletePhrase,
-  onTogglePhraseStar,
-  onUpdatePhraseNote,
-  onStart
-}: {
-  progress: ProgressState;
-  game: StudyGameStats;
-  weak: ReturnType<typeof weakTags>;
-  bankErrors: string[];
-  onAddPhrase: (text: string) => void;
-  onDeletePhrase: (phraseId: string) => void;
-  onStart: (preset: Preset) => void;
-  onTogglePhraseStar: (phraseId: string) => void;
-  onUpdatePhraseNote: (phraseId: string, note: string) => void;
-}) {
-  return (
-    <>
-      <section className="topbar">
-        <div>
-          <p className="eyebrow">PHSC 11000</p>
-          <h1>Final Exam Practice</h1>
-        </div>
-      </section>
-
-      <DashboardHero game={game} />
-
-      {bankErrors.length > 0 && <p className="error">Question bank issue: {bankErrors[0]}</p>}
-
-      <StudySnapshot game={game} />
-
-      <PhraseQuickAdd onAddPhrase={onAddPhrase} />
-
-      <section className="actions command-row">
-        <button className="primary" onClick={() => onStart("Mock Exam")}>
-          <Timer size={18} /> Start Mock Exam
-        </button>
-        <button onClick={() => onStart("Freestyle")}>
-          <Shuffle size={18} /> Freestyle Practice
-        </button>
-        <button onClick={() => onStart("Quick Drill")}>
-          <CheckCircle2 size={18} /> Start Quick Drill
-        </button>
-        <button onClick={() => onStart("Weak Retake")}>
-          <RotateCcw size={18} /> Retake Weak Topics
-        </button>
-      </section>
-
-      <section className="dashboard-grid">
-        <div className="panel">
-          <h2>Weak Topics</h2>
-          {weak.length === 0 ? (
-            <p className="muted">No weak-topic data yet. Run a drill or mock exam first.</p>
-          ) : (
-            <div className="tag-list">
-              {weak.map((item) => (
-                <span key={item.tag}>{item.tag}</span>
-              ))}
-            </div>
-          )}
-        </div>
-        <div className="panel">
-          <h2>Recent Sessions</h2>
-          {progress.sessions.length === 0 ? (
-            <p className="muted">No sessions yet.</p>
-          ) : (
-            <ul className="session-list">
-              {progress.sessions.slice(0, 6).map((session) => (
-                <li key={session.id}>
-                  <span>{session.preset}</span>
-                  <strong className="score-chip">
-                    {session.score}/{session.totalMc}
-                  </strong>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-        <PhraseBankPanel
-          phrases={progress.phraseBank}
-          onDeletePhrase={onDeletePhrase}
-          onTogglePhraseStar={onTogglePhraseStar}
-          onUpdatePhraseNote={onUpdatePhraseNote}
-        />
-      </section>
-    </>
-  );
-}
-
-function PhraseQuickAdd({
-  onAddPhrase,
-  variant = "inline"
-}: {
-  onAddPhrase: (text: string) => void;
-  variant?: "inline" | "dock";
-}) {
-  const [value, setValue] = useState("");
-
-  const submitPhrase = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (!canSavePhrase(value)) return;
-    onAddPhrase(value);
-    setValue("");
-  };
-
-  const className = variant === "dock" ? "phrase-quick-add is-dock" : "phrase-quick-add";
-
-  return (
-    <form className={className} onSubmit={submitPhrase}>
-      <span className="phrase-quick-icon">
-        <BookmarkPlus size={18} />
-      </span>
-      <input
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
-        maxLength={MAX_PHRASE_LENGTH}
-        placeholder="Type a species, process, or term"
-        aria-label="Add phrase to bank"
-      />
-      <button className="primary" disabled={!canSavePhrase(value)} aria-label="Save phrase">
-        <Plus size={17} /> Save
-      </button>
-    </form>
-  );
-}
-
-function PhraseBankPanel({
-  phrases,
-  onDeletePhrase,
-  onTogglePhraseStar,
-  onUpdatePhraseNote
-}: {
-  phrases: PhraseBankItem[];
-  onDeletePhrase: (phraseId: string) => void;
-  onTogglePhraseStar: (phraseId: string) => void;
-  onUpdatePhraseNote: (phraseId: string, note: string) => void;
-}) {
-  const [query, setQuery] = useState("");
-  const sortedPhrases = useMemo(
-    () =>
-      [...phrases].sort(
-        (a, b) => Number(b.starred) - Number(a.starred) || b.updatedAt.localeCompare(a.updatedAt)
-      ),
-    [phrases]
-  );
-  const visiblePhrases = useMemo(() => {
-    const normalizedQuery = query.toLowerCase().trim();
-    if (!normalizedQuery) return sortedPhrases;
-    return sortedPhrases.filter((phrase) => {
-      const haystack = [
-        phrase.text,
-        phrase.note ?? "",
-        ...phrase.sources.flatMap((source) => [source.label, source.lectureTitle ?? "", source.cluster ?? ""])
-      ]
-        .join(" ")
-        .toLowerCase();
-      return haystack.includes(normalizedQuery);
-    });
-  }, [query, sortedPhrases]);
-
-  return (
-    <div className="panel phrase-bank-panel">
-      <div className="phrase-bank-head">
-        <div>
-          <p className="eyebrow">Phrase Bank</p>
-          <h2>
-            <BookmarkPlus size={18} /> Terms to remember
-          </h2>
-        </div>
-        <span className="phrase-count">{phrases.length}</span>
-      </div>
-
-      <label className="phrase-search">
-        <Search size={16} />
-        <input
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search bank"
-          aria-label="Search phrase bank"
-        />
-      </label>
-
-      {visiblePhrases.length === 0 ? (
-        <p className="muted">{phrases.length === 0 ? "No phrases saved yet." : "No matching phrases."}</p>
-      ) : (
-        <ul className="phrase-list">
-          {visiblePhrases.slice(0, 12).map((phrase) => {
-            const latestSource = phrase.sources[phrase.sources.length - 1];
-            const sourceLabel = latestSource?.lectureTitle ?? latestSource?.label ?? "Manual add";
-            return (
-              <li key={phrase.id}>
-                <div className="phrase-row">
-                  <button
-                    className={phrase.starred ? "phrase-icon-button is-starred" : "phrase-icon-button"}
-                    onClick={() => onTogglePhraseStar(phrase.id)}
-                    aria-label={phrase.starred ? `Unstar ${phrase.text}` : `Star ${phrase.text}`}
-                    title={phrase.starred ? "Unstar phrase" : "Star phrase"}
-                  >
-                    <Star size={16} fill={phrase.starred ? "currentColor" : "none"} />
-                  </button>
-                  <div className="phrase-main">
-                    <strong>{phrase.text}</strong>
-                    <span>
-                      {sourceLabel}
-                      {phrase.captureCount > 1 ? ` x${phrase.captureCount}` : ""}
-                    </span>
-                  </div>
-                  <button
-                    className="phrase-icon-button danger"
-                    onClick={() => onDeletePhrase(phrase.id)}
-                    aria-label={`Delete ${phrase.text}`}
-                    title="Delete phrase"
-                  >
-                    <Trash2 size={16} />
-                  </button>
-                </div>
-                <label className="phrase-note-row">
-                  <StickyNote size={15} />
-                  <input
-                    className="phrase-note"
-                    value={phrase.note ?? ""}
-                    onChange={(event) => onUpdatePhraseNote(phrase.id, event.target.value)}
-                    placeholder="Note"
-                    aria-label={`Note for ${phrase.text}`}
-                  />
-                </label>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-    </div>
-  );
-}
-
-function DashboardHero({ game }: { game: StudyGameStats }) {
-  return (
-    <section className="dashboard-hero">
-      <div className="hero-copy">
-        <p className="eyebrow">Current level</p>
-        <h2>
-          Level {game.level}: {game.levelTitle}
-        </h2>
-        <p>{game.focusLine}</p>
-        <div className="xp-track" aria-label={`${game.levelProgress}% to next level`}>
-          <span style={{ width: `${game.levelProgress}%` }} />
-        </div>
-        <div className="hero-meta">
-          <span>
-            <Zap size={16} /> <CountUp value={game.xp} /> XP total
-          </span>
-          <span>{game.xpForNextLevel} XP to next level</span>
-        </div>
-      </div>
-      <div className="hero-buddy">
-        <div className={`rock-mascot ${game.mood}`} aria-label={`Mascot mood: ${game.moodLabel}`}>
-          <span className="rock-line line-one" />
-          <span className="rock-line line-two" />
-          <span className="rock-eye left-eye" />
-          <span className="rock-eye right-eye" />
-          <span className="rock-mouth" />
-        </div>
-        <div>
-          <p className="eyebrow">Core Buddy</p>
-          <h2>{game.moodLabel}</h2>
-          <p>{game.moodLine}</p>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function StudySnapshot({ game }: { game: StudyGameStats }) {
-  const items = [
-    { label: "Prepared", value: <><CountUp value={game.prepScore} />%</> },
-    { label: "Accuracy", value: <><CountUp value={game.accuracy} />%</> },
-    { label: "Coverage", value: <><CountUp value={game.coverage} />%</> },
-    { label: "Missed", value: <CountUp value={game.missed} /> }
-  ];
-
-  return (
-    <section className="snapshot-panel">
-      <div className="snapshot-header">
-        <div>
-          <p className="eyebrow">Progress snapshot</p>
-          <h2>{game.correct} correct across {multipleChoiceQuestions.length} questions</h2>
-        </div>
-      </div>
-      <div className="snapshot-list">
-        {items.map((item) => (
-          <div className="snapshot-item" key={item.label}>
-            <span>{item.label}</span>
-            <strong>{item.value}</strong>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-function GameStat({ icon, label, value, tone }: { icon: ReactNode; label: string; value: ReactNode; tone: string }) {
-  return (
-    <div className="game-stat">
-      <span className={`stat-icon ${tone}`}>{icon}</span>
-      <div>
-        <span>{label}</span>
-        <strong>{value}</strong>
-      </div>
-    </div>
-  );
-}
-
-function AchievementRow({ milestones }: { milestones: StudyGameStats["milestones"] }) {
-  return (
-    <div className="achievement-row" aria-label="Study milestones">
-      {milestones.map((milestone) => (
-        <span className={`achievement-chip ${milestone.tone}`} key={milestone.id}>
-          <Sparkles size={15} />
-          <span>{milestone.label}</span>
-          <strong>{milestone.value}</strong>
-        </span>
-      ))}
-    </div>
-  );
-}
-
-function CountUp({ value }: { value: number }) {
-  const [display, setDisplay] = useState(value);
-  const previous = useRef(value);
-
-  useEffect(() => {
-    const from = previous.current;
-    previous.current = value;
-
-    if (from === value || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setDisplay(value);
-      return;
-    }
-
-    const startedAt = performance.now();
-    const duration = 520;
-    let frame = 0;
-    const tick = (now: number) => {
-      const progress = Math.min((now - startedAt) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setDisplay(Math.round(from + (value - from) * eased));
-      if (progress < 1) frame = window.requestAnimationFrame(tick);
-    };
-
-    frame = window.requestAnimationFrame(tick);
-    return () => window.cancelAnimationFrame(frame);
-  }, [value]);
-
-  return <>{display}</>;
-}
-
-function SignedXp({ value }: { value: number }) {
-  if (value === 0) return <>0</>;
-  return (
-    <>
-      {value > 0 ? "+" : "-"}
-      <CountUp value={Math.abs(value)} />
-    </>
-  );
-}
-
-function Exam({
-  session,
-  progress,
-  onAnswer,
-  onAddPhrase,
-  onFreestyleAnswer,
-  onMove,
-  onSkip,
-  onBack,
-  onSubmit
-}: {
-  session: SessionState;
-  progress: ProgressState;
-  onAnswer: (questionId: string, patch: Partial<AnswerRecord>) => void;
-  onAddPhrase: (text: string) => void;
-  onFreestyleAnswer: (question: MultipleChoiceQuestion, choiceId: string) => void;
-  onMove: (index: number) => void;
-  onSkip: () => void;
-  onBack: () => void;
-  onSubmit: () => void;
-}) {
-  const question = session.questions[session.index];
-  const answer = session.answers[question.id] ?? { questionId: question.id, flagged: Boolean(progress.flagged[question.id]) };
-  const isFreestyle = session.preset === "Freestyle";
-  const feedback = session.feedback?.questionId === question.id ? session.feedback : undefined;
-  const sessionStats = isFreestyle ? buildSessionRunStats(session, progress) : undefined;
-  const minutes = Math.floor(session.timeLeft / 60);
-  const seconds = String(session.timeLeft % 60).padStart(2, "0");
-
-  return (
-    <>
-      <section className="exam-header">
-        <button className="ghost" onClick={isFreestyle ? onBack : onSubmit}>
-          {isFreestyle ? <Home size={18} /> : <Send size={18} />}
-          {isFreestyle ? "Back to Dashboard" : "Submit Exam"}
-        </button>
-        <div className="progress-text">
-          {session.preset} | {isFreestyle ? `${sessionStats?.answered ?? 0} adaptive reps` : `${session.index + 1}/${session.questions.length}`}
-        </div>
-        <div className={isFreestyle ? "combo-pill" : "timer"}>
-          {isFreestyle && sessionStats ? (
-            <>
-              <Flame size={16} /> {sessionStats.streak} streak
-            </>
-          ) : (
-            `${minutes}:${seconds}`
-          )}
-        </div>
-      </section>
-
-      <PhraseQuickAdd onAddPhrase={onAddPhrase} variant="dock" />
-
-      <section
-        key={question.id}
-        className={`question-panel ${feedback ? (feedback.correct ? "panel-correct" : "panel-wrong") : ""}`}
-        data-phrase-capture="true"
-        data-capture-type="question"
-        data-capture-label={question.lectureTitle ?? "Synthesis"}
-        data-capture-view={session.preset}
-        data-question-id={question.id}
-        data-question-prompt={question.prompt}
-        data-lecture={question.lecture}
-        data-lecture-title={question.lectureTitle}
-        data-cluster={question.cluster}
-        data-source-path={question.sourcePath}
-      >
-        <div className="question-meta">
-          <span>{question.lectureTitle ?? "Synthesis"}</span>
-          <span>{question.cluster}</span>
-          <span>{question.difficulty}</span>
-        </div>
-        <h2>{question.prompt}</h2>
-
-        {question.kind === "multiple-choice" ? (
-          <div className="choices">
-            {question.choices.map((choice) => (
-              <button
-                key={choice.id}
-                className={choiceClass(choice.id, question.correctChoiceId, answer.selectedChoiceId, Boolean(feedback))}
-                disabled={Boolean(feedback)}
-                onClick={() =>
-                  isFreestyle ? onFreestyleAnswer(question, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id })
-                }
-              >
-                {choice.text}
-              </button>
-            ))}
-          </div>
-        ) : (
-          <textarea
-            value={answer.textAnswer ?? ""}
-            onChange={(event) => onAnswer(question.id, { textAnswer: event.target.value })}
-            placeholder="Draft your answer. You will self-check it against the rubric after submitting."
-          />
-        )}
-
-        {isFreestyle && feedback && (
-          <div className={feedback.correct ? "feedback correct-feedback" : "feedback wrong-feedback"}>
-            <div className="feedback-head">
-              <strong>{feedback.correct ? "Correct" : "Wrong"}</strong>
-              <span className="feedback-badges">
-                <span className="mastery-chip">{feedback.masteryLabel}</span>
-                <span className="xp-badge">{formatSignedXp(feedback.xp)} XP</span>
-              </span>
-            </div>
-            {feedback.correct && feedback.streak >= 3 && <span className="streak-line">{feedback.streak} in a row</span>}
-            {!feedback.correct && <span>Correct answer: {feedback.correctText}</span>}
-            <p>{question.explanation}</p>
-            <p className="reinforcement-line">{feedback.reinforcementLine}</p>
-            <button className="primary feedback-next" onClick={onSkip}>
-              Next Question <ArrowRight size={18} />
-            </button>
-          </div>
-        )}
-
-        <div className="question-tools">
-          <button
-            className={answer.flagged ? "flagged" : ""}
-            onClick={() => onAnswer(question.id, { flagged: !answer.flagged })}
-          >
-            <Flag size={17} /> {answer.flagged ? "Flagged" : "Flag Question"}
-          </button>
-          {isFreestyle && !feedback && (
-            <button onClick={onSkip}>
-              <SkipForward size={18} /> Skip Question
-            </button>
-          )}
-        </div>
-      </section>
-
-      {sessionStats && <SessionStatsPanel stats={sessionStats} />}
-
-      {!isFreestyle && (
-        <section className="nav-row">
-          <button disabled={session.index === 0} onClick={() => onMove(session.index - 1)}>
-            <ArrowLeft size={18} /> Previous Question
-          </button>
-          <button disabled={session.index === session.questions.length - 1} onClick={() => onMove(session.index + 1)}>
-            Next Question <ArrowRight size={18} />
-          </button>
-        </section>
-      )}
-    </>
-  );
-}
-
-function SessionStatsPanel({ stats }: { stats: SessionRunStats }) {
-  return (
-    <section className="session-stat-grid">
-      <GameStat icon={<Clock3 />} label="This Run" value={<CountUp value={stats.answered} />} tone="teal" />
-      <GameStat icon={<Zap />} label="Run XP" value={<SignedXp value={stats.xp} />} tone="purple" />
-      <GameStat icon={<Flame />} label="Streak" value={<CountUp value={stats.streak} />} tone="amber" />
-      <GameStat icon={<BarChart3 />} label="Accuracy" value={<><CountUp value={stats.accuracy} />%</>} tone="blue" />
-      <GameStat icon={<Target />} label="Mastered" value={<CountUp value={stats.mastered} />} tone="green" />
-      <GameStat icon={<RotateCcw />} label="Recovering" value={<CountUp value={stats.recovering} />} tone="amber" />
-      <GameStat icon={<CheckCircle2 />} label="Correct" value={<CountUp value={stats.correct} />} tone="green" />
-      <GameStat icon={<XCircle />} label="Missed" value={<CountUp value={stats.missed} />} tone="red" />
-    </section>
-  );
-}
-
-function choiceClass(choiceId: string, correctChoiceId: string, selectedChoiceId: string | undefined, showFeedback: boolean) {
-  const classes = ["choice"];
-  if (selectedChoiceId === choiceId) classes.push("selected");
-  if (showFeedback && choiceId === correctChoiceId) classes.push("correct-answer");
-  if (showFeedback && selectedChoiceId === choiceId && choiceId !== correctChoiceId) classes.push("wrong-answer");
-  return classes.join(" ");
-}
-
-function Review({
-  session,
-  reward,
-  onAddPhrase,
-  onBack,
-  onRetryWeak
-}: {
-  session: SessionState;
-  reward: SessionRewardSummary | null;
-  onAddPhrase: (text: string) => void;
-  onBack: () => void;
-  onRetryWeak: () => void;
-}) {
-  const result = session.submitted!;
-  const answerById = new Map(result.answers.map((answer) => [answer.questionId, answer]));
-  return (
-    <>
-      <section className="topbar">
-        <div>
-          <p className="eyebrow">Review</p>
-          <h1>
-            {result.score}/{result.totalMc} correct
-          </h1>
-        </div>
-        <div className="actions-inline">
-          <button onClick={onRetryWeak}><RotateCcw size={18} /> Retake Weak Topics</button>
-          <button className="primary" onClick={onBack}><Home size={18} /> Back to Dashboard</button>
-        </div>
-      </section>
-
-      <PhraseQuickAdd onAddPhrase={onAddPhrase} variant="dock" />
-
-      {reward && (
-        <section className={reward.leveledUp ? "review-summary level-up" : "review-summary"}>
-          <div className="reward-copy">
-            <p className="eyebrow">{reward.leveledUp ? "Level up" : "Run rewards"}</p>
-            <h2><SignedXp value={reward.sessionXp} /> XP</h2>
-            <p>
-              {reward.leveledUp
-                ? `${reward.previousTitle} to ${reward.nextTitle}`
-                : reward.sessionXp < 0
-                  ? `${reward.accuracy}% accuracy, XP adjusted down`
-                  : `${reward.accuracy}% accuracy logged into your progress`}
-            </p>
-          </div>
-          <div className="score-ring" style={{ "--score": reward.accuracy } as CSSProperties}>
-            <span>{reward.accuracy}%</span>
-          </div>
-          {reward.milestones.length > 0 && <AchievementRow milestones={reward.milestones} />}
-        </section>
-      )}
-
-      <section className="review-list">
-        {session.questions.map((question, index) => {
-          const answer = answerById.get(question.id);
-          const correct = answer?.correct;
-          return (
-            <article
-              key={question.id}
-              className="review-item"
-              data-phrase-capture="true"
-              data-capture-type="review"
-              data-capture-label={question.lectureTitle ?? "Synthesis review"}
-              data-capture-view="review"
-              data-question-id={question.id}
-              data-question-prompt={question.prompt}
-              data-lecture={question.lecture}
-              data-lecture-title={question.lectureTitle}
-              data-cluster={question.cluster}
-              data-source-path={question.sourcePath}
-            >
-              <div className="review-heading">
-                {correct === true && <CheckCircle2 className="ok" />}
-                {correct === false && <XCircle className="bad" />}
-                {correct === undefined && <FileQuestion />}
-                <strong>{index + 1}. {question.prompt}</strong>
-              </div>
-              {question.kind === "multiple-choice" ? (
-                <div className="review-choices">
-                  {question.choices.map((choice) => (
-                    <p key={choice.id} className={choice.id === question.correctChoiceId ? "correct-choice" : choice.id === answer?.selectedChoiceId ? "wrong-choice" : ""}>
-                      {choice.text}
-                    </p>
-                  ))}
-                </div>
-              ) : (
-                <div>
-                  <p className="muted">{answer?.textAnswer || "No answer written."}</p>
-                  <ul>{question.rubric.map((item) => <li key={item}>{item}</li>)}</ul>
-                </div>
-              )}
-              <p className="explanation">{question.explanation}</p>
-              <p className="source">{question.sourcePath}</p>
-            </article>
-          );
-        })}
-      </section>
-    </>
-  );
-}
-
-function RewardLayer({ event, onDone }: { event: RewardEvent | null; onDone: () => void }) {
-  useEffect(() => {
-    if (!event) return;
-    const timeout = window.setTimeout(onDone, 1700);
-    return () => window.clearTimeout(timeout);
-  }, [event, onDone]);
-
-  if (!event) return null;
-
-  const pieces = event.confetti === "none" ? [] : Array.from({ length: event.confetti === "burst" ? 34 : 16 });
-
-  return (
-    <div className="reward-layer" aria-live="polite" aria-atomic="true">
-      {pieces.map((_, index) => (
-        <span
-          className="confetti-piece"
-          key={index}
-          style={
-            {
-              "--x": `${8 + ((index * 13) % 84)}vw`,
-              "--delay": `${(index % 8) * 42}ms`,
-              "--hue": `${120 + ((index * 37) % 170)}`
-            } as CSSProperties
-          }
-        />
-      ))}
-      <div className={`reward-toast ${event.tone}`}>
-        <span className="reward-icon">
-          {event.confetti === "none" ? <Target size={18} /> : <Sparkles size={18} />}
-        </span>
-        <div>
-          <strong>{event.title}</strong>
-          <p>{event.detail}</p>
-        </div>
-      </div>
-    </div>
   );
 }
 

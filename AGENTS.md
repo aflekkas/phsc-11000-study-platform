@@ -41,7 +41,9 @@ Question-bank authoring guidance lives in `docs/question-bank.md`. Add lecture M
 
 ## GitHub Publishing
 
-Default to keeping this project published on GitHub. For future non-read-only agent changes, run the narrow relevant validation, commit the completed change, and push to `origin main` unless Alex explicitly says not to push, asks for a plan-only pass, or the worktree contains unrelated changes that need confirmation.
+Default to keeping this project published on GitHub. Auto-push is the standing rule for agent-owned work in this project: after making any source, content, documentation, asset, or workflow change, run the narrow relevant validation, commit the completed change, and push it to `origin main`.
+
+Do not stop at a local-only commit unless Alex explicitly says not to push, asks for a read-only or plan-only pass, or the worktree contains unrelated changes that need confirmation. If the change is small and validation is already covered by `pnpm build`, commit and push in the same turn.
 
 Before pushing, check `git status -sb` and avoid staging raw course PDFs, local build output, `node_modules`, or unrelated files. The GitHub Actions workflow validates and publishes the Vite app to GitHub Pages on every push to `main`.
 
