@@ -1,5 +1,5 @@
 import { CornersIn, MusicNoteSimple, Pause, Play, SkipBack, SkipForward } from "@phosphor-icons/react";
-import type { MouseEvent } from "react";
+import type { ChangeEvent } from "react";
 import { Button, IconButton } from "../../components/ui/Button";
 import { cx } from "../../lib/classes";
 import type { StudyMusicState } from "../../lib/studyMusic";
@@ -25,7 +25,7 @@ export function StudyMusicPlayer({
 }) {
   const playerClassName = cx("music-player", state.playing && "is-playing", minimized && "is-minimized");
   const progress = state.duration > 0 ? Math.min(100, (state.currentTime / state.duration) * 100) : 0;
-  const handleSeek = (event: MouseEvent<HTMLInputElement>) => {
+  const handleSeek = (event: ChangeEvent<HTMLInputElement>) => {
     onSeek(Number(event.currentTarget.value) / 100);
   };
 

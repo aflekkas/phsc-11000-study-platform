@@ -21,7 +21,7 @@ const toneClass: Record<BadgeTone, string> = {
 
 export function Badge({ children, className, tone = "neutral", ...props }: BadgeProps) {
   return (
-    <span className={cx("badge gap-1.5 font-bold", toneClass[tone], className)} {...props}>
+    <span className={cx("badge badge-soft gap-1.5 font-semibold", toneClass[tone], className)} {...props}>
       {children}
     </span>
   );
