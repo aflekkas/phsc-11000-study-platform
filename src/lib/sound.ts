@@ -97,11 +97,11 @@ const studyMusic: StudyMusicLoop = {
 };
 
 function readSoundEffectsPreference() {
-  if (typeof window === "undefined") return true;
+  if (typeof window === "undefined") return false;
   try {
-    return window.localStorage.getItem(SOUND_EFFECTS_KEY) !== "off";
+    return window.localStorage.getItem(SOUND_EFFECTS_KEY) === "on";
   } catch {
-    return true;
+    return false;
   }
 }
 
