@@ -183,7 +183,7 @@ function SessionStatsPanel({ stats }: { stats: SessionRunStats }) {
 }
 
 function choiceClass(choiceId: string, correctChoiceId: string, selectedChoiceId: string | undefined, showFeedback: boolean) {
-  const classes = ["choice", "btn", "btn-soft", "justify-start", "h-auto", "min-h-14", "text-left"];
+  const classes = ["choice", "btn", "justify-start", "h-auto", "min-h-14", "text-left"];
   if (selectedChoiceId === choiceId) classes.push("selected");
   if (showFeedback && choiceId === correctChoiceId) classes.push("correct-answer");
   if (showFeedback && selectedChoiceId === choiceId && choiceId !== correctChoiceId) classes.push("wrong-answer");
