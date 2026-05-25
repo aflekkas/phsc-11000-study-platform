@@ -15,7 +15,7 @@ const toneClass: Record<ButtonTone, string> = {
   secondary: "btn-secondary",
   accent: "btn-accent",
   ghost: "btn-ghost",
-  soft: "btn-outline border-base-300 bg-base-100/75",
+  soft: "btn-outline",
   danger: "btn-error btn-outline"
 };
 

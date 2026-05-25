@@ -12,8 +12,8 @@ export function StudyCard({ as: Component = "section", children, className, comp
   return (
     <Component
       className={cx(
-        "card study-card border border-base-300/80 bg-base-100/90 text-base-content shadow-sm",
-        interactive && "transition hover:-translate-y-0.5 hover:shadow-md",
+        "card study-card border border-base-300 bg-base-100 text-base-content",
+        interactive && "transition hover:border-primary",
         className
       )}
       {...props}

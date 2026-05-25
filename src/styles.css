@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Inter:wght@500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
 @plugin "daisyui" {
@@ -10,32 +10,32 @@
   default: true;
   prefersdark: false;
   color-scheme: light;
-  --color-base-100: oklch(98% 0.016 154);
-  --color-base-200: oklch(94% 0.028 153);
-  --color-base-300: oklch(86% 0.035 137);
-  --color-base-content: oklch(24% 0.032 151);
-  --color-primary: oklch(41% 0.09 170);
-  --color-primary-content: oklch(98% 0.016 154);
-  --color-secondary: oklch(72% 0.135 72);
-  --color-secondary-content: oklch(25% 0.04 70);
-  --color-accent: oklch(57% 0.11 304);
-  --color-accent-content: oklch(98% 0.012 300);
-  --color-neutral: oklch(30% 0.034 152);
-  --color-neutral-content: oklch(96% 0.016 154);
-  --color-info: oklch(60% 0.105 229);
-  --color-info-content: oklch(98% 0.016 229);
-  --color-success: oklch(56% 0.11 147);
-  --color-success-content: oklch(98% 0.016 147);
-  --color-warning: oklch(74% 0.15 79);
-  --color-warning-content: oklch(24% 0.04 79);
-  --color-error: oklch(56% 0.15 28);
-  --color-error-content: oklch(98% 0.014 28);
+  --color-base-100: oklch(98% 0 0);
+  --color-base-200: oklch(97% 0 0);
+  --color-base-300: oklch(92% 0 0);
+  --color-base-content: oklch(20% 0 0);
+  --color-primary: oklch(69% 0.17 162.48);
+  --color-primary-content: oklch(97% 0.021 166.113);
+  --color-secondary: oklch(0% 0 0);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(70% 0.14 182.503);
+  --color-accent-content: oklch(98% 0.014 180.72);
+  --color-neutral: oklch(20% 0 0);
+  --color-neutral-content: oklch(98% 0 0);
+  --color-info: oklch(54% 0.245 262.881);
+  --color-info-content: oklch(97% 0.014 254.604);
+  --color-success: oklch(59% 0.145 163.225);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(68% 0.162 75.834);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(57% 0.245 27.325);
+  --color-error-content: oklch(97% 0.013 17.38);
   --radius-selector: 0.5rem;
   --radius-field: 0.5rem;
   --radius-box: 0.5rem;
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
-  --border: 1px;
+  --border: 2px;
   --depth: 1;
   --noise: 1;
 }
@@ -43,7 +43,7 @@
 :root {
   color: var(--color-base-content);
   background: var(--color-base-200);
-  font-family: "Nunito", ui-rounded, "Avenir Next", "SF Pro Rounded", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -74,7 +74,7 @@ body::before {
 }
 
 h1, h2, p { margin-top: 0; }
-h1 { font-size: clamp(2rem, 5vw, 3.55rem); font-weight: 900; letter-spacing: 0; line-height: 0.95; }
+h1 { font-size: clamp(2rem, 5vw, 3.55rem); font-weight: 850; letter-spacing: 0; line-height: 0.95; }
 h2 { font-size: 1.15rem; font-weight: 850; line-height: 1.25; }
 button, input, textarea { font: inherit; }
 
@@ -159,7 +159,9 @@ button, input, textarea { font: inherit; }
 }
 
 .hero-copy h2 {
+  font-family: "Fraunces", Georgia, serif;
   font-size: clamp(1.55rem, 3vw, 2.45rem);
+  font-weight: 800;
   line-height: 1;
   margin-bottom: 10px;
 }
@@ -566,21 +568,21 @@ button, input, textarea { font: inherit; }
 }
 
 .correct-feedback {
-  background: color-mix(in oklch, var(--color-success) 14%, var(--color-base-100));
-  border: 1px solid color-mix(in oklch, var(--color-success) 76%, var(--color-base-300));
+  background: color-mix(in oklch, var(--color-success) 10%, var(--color-base-100));
+  border: 1px solid color-mix(in oklch, var(--color-success) 54%, var(--color-base-300));
 }
 
 .wrong-feedback {
-  background: color-mix(in oklch, var(--color-error) 11%, var(--color-base-100));
-  border: 1px solid color-mix(in oklch, var(--color-error) 68%, var(--color-base-300));
+  background: color-mix(in oklch, var(--color-error) 8%, var(--color-base-100));
+  border: 1px solid color-mix(in oklch, var(--color-error) 48%, var(--color-base-300));
 }
 
 .panel-correct {
-  box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-success) 16%, transparent), 0 12px 30px rgba(32, 114, 79, 0.12);
+  box-shadow: 0 0 0 2px color-mix(in oklch, var(--color-success) 16%, transparent), 0 4px 14px rgba(32, 114, 79, 0.08);
 }
 
 .panel-wrong {
-  box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-error) 15%, transparent), 0 12px 30px rgba(177, 59, 46, 0.1);
+  box-shadow: 0 0 0 2px color-mix(in oklch, var(--color-error) 15%, transparent), 0 4px 14px rgba(177, 59, 46, 0.08);
 }
 
 .reinforcement-line {
@@ -595,11 +597,11 @@ button, input, textarea { font: inherit; }
 .review-summary {
   align-items: center;
   background:
-    linear-gradient(135deg, color-mix(in oklch, var(--color-base-100) 92%, transparent), color-mix(in oklch, var(--color-secondary) 10%, var(--color-base-100))),
-    repeating-linear-gradient(90deg, rgba(30, 91, 79, 0.035) 0 1px, transparent 1px 12px);
+    linear-gradient(180deg, rgba(255, 255, 252, 0.98), rgba(248, 252, 246, 0.98)),
+    repeating-linear-gradient(95deg, rgba(42, 89, 76, 0.022) 0 1px, transparent 1px 12px);
   border: 1px solid color-mix(in oklch, var(--color-base-300) 80%, white);
   border-radius: 0.5rem;
-  box-shadow: 0 14px 34px rgba(38, 52, 47, 0.08);
+  box-shadow: 0 4px 16px rgba(38, 52, 47, 0.055);
   display: grid;
   gap: 18px;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -609,7 +611,7 @@ button, input, textarea { font: inherit; }
 
 .review-summary.level-up {
   border-color: var(--color-secondary);
-  box-shadow: 0 0 0 3px color-mix(in oklch, var(--color-secondary) 18%, transparent), 0 18px 38px rgba(81, 63, 23, 0.12);
+  box-shadow: 0 0 0 2px color-mix(in oklch, var(--color-secondary) 18%, transparent), 0 4px 16px rgba(81, 63, 23, 0.08);
 }
 
 .reward-copy h2 {
@@ -763,12 +765,12 @@ button, input, textarea { font: inherit; }
 .music-player {
   align-items: center;
   background:
-    linear-gradient(135deg, rgba(255, 251, 239, 0.97), rgba(239, 248, 244, 0.97)),
-    repeating-linear-gradient(90deg, rgba(30, 91, 79, 0.04) 0 1px, transparent 1px 12px);
+    linear-gradient(180deg, rgba(255, 255, 252, 0.98), rgba(248, 252, 246, 0.98)),
+    repeating-linear-gradient(95deg, rgba(30, 91, 79, 0.02) 0 1px, transparent 1px 12px);
   border: 1px solid color-mix(in oklch, var(--color-primary) 22%, var(--color-base-300));
   border-radius: 0.5rem;
   bottom: 18px;
-  box-shadow: 0 14px 34px rgba(38, 52, 47, 0.13), 0 2px 0 rgba(255, 255, 255, 0.78) inset;
+  box-shadow: 0 4px 16px rgba(38, 52, 47, 0.12);
   color: var(--color-primary);
   display: grid;
   gap: 8px 10px;
