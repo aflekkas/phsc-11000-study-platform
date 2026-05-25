@@ -71,7 +71,7 @@ export function Dashboard({
         <Button tone="accent" onClick={() => onStart("Freestyle")} icon={<Shuffle size={19} weight="duotone" />}>
           Freestyle
         </Button>
-        <Button tone="secondary" onClick={() => onStart("Quick Drill")} icon={<CheckCircle size={19} weight="duotone" />}>
+        <Button onClick={() => onStart("Quick Drill")} icon={<CheckCircle size={19} weight="duotone" />}>
           Quick Drill
         </Button>
         <Button onClick={() => onStart("Weak Retake")} icon={<ArrowCounterClockwise size={19} weight="duotone" />}>

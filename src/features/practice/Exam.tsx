@@ -62,92 +62,94 @@ export function Exam({
         </Badge>
       </section>
 
-      <StudyCard
-        key={question.id}
-        className={cx("question-panel", feedback && (feedback.correct ? "panel-correct" : "panel-wrong"))}
-        data-phrase-capture="true"
-        data-capture-type="question"
-        data-capture-label={question.lectureTitle ?? "Synthesis"}
-        data-capture-view={session.preset}
-        data-question-id={question.id}
-        data-question-prompt={question.prompt}
-        data-lecture={question.lecture}
-        data-lecture-title={question.lectureTitle}
-        data-cluster={question.cluster}
-        data-source-path={question.sourcePath}
-      >
-        <div className="question-meta">
-          <Badge tone="primary">{question.lectureTitle ?? "Synthesis"}</Badge>
-          <Badge tone="info">{question.cluster}</Badge>
-          <Badge tone={question.difficulty === "Hard" ? "error" : question.difficulty === "Medium" ? "warning" : "success"}>
-            {question.difficulty}
-          </Badge>
-        </div>
-        <h2>{question.prompt}</h2>
-
-        {question.kind === "multiple-choice" ? (
-          <div className="choices">
-            {question.choices.map((choice) => (
-              <button
-                key={choice.id}
-                className={choiceClass(choice.id, question.correctChoiceId, answer.selectedChoiceId, Boolean(feedback))}
-                aria-disabled={Boolean(feedback)}
-                onClick={() =>
-                  !feedback &&
-                  (isFreestyle ? onFreestyleAnswer(question as MultipleChoiceQuestion, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id }))
-                }
-              >
-                <span className="radio radio-primary radio-sm" aria-hidden="true" />
-                {choice.text}
-              </button>
-            ))}
+      <main className="practice-stack">
+        <StudyCard
+          key={question.id}
+          className={cx("question-panel", feedback && (feedback.correct ? "panel-correct" : "panel-wrong"))}
+          data-phrase-capture="true"
+          data-capture-type="question"
+          data-capture-label={question.lectureTitle ?? "Synthesis"}
+          data-capture-view={session.preset}
+          data-question-id={question.id}
+          data-question-prompt={question.prompt}
+          data-lecture={question.lecture}
+          data-lecture-title={question.lectureTitle}
+          data-cluster={question.cluster}
+          data-source-path={question.sourcePath}
+        >
+          <div className="question-meta">
+            <Badge tone="primary">{question.lectureTitle ?? "Synthesis"}</Badge>
+            <Badge tone="accent">{question.cluster}</Badge>
+            <Badge tone={question.difficulty === "Hard" ? "error" : question.difficulty === "Medium" ? "warning" : "success"}>
+              {question.difficulty}
+            </Badge>
           </div>
-        ) : (
-          <textarea
-            className="textarea textarea-bordered min-h-56 w-full"
-            value={answer.textAnswer ?? ""}
-            onChange={(event) => onAnswer(question.id, { textAnswer: event.target.value })}
-            placeholder="Draft your answer. You will self-check it against the rubric after submitting."
-          />
-        )}
+          <h2>{question.prompt}</h2>
 
-        {isFreestyle && feedback && (
-          <div className={feedback.correct ? "feedback alert alert-success alert-soft" : "feedback alert alert-error alert-soft"}>
-            <div className="feedback-head">
-              <strong>{feedback.correct ? "Correct" : "Wrong"}</strong>
-              <span className="feedback-badges">
-                <Badge tone="accent">{feedback.masteryLabel}</Badge>
-                <Badge tone={feedback.xp >= 0 ? "success" : "error"}>{feedback.xp > 0 ? "+" : ""}{feedback.xp} XP</Badge>
-              </span>
+          {question.kind === "multiple-choice" ? (
+            <div className="choices">
+              {question.choices.map((choice) => (
+                <button
+                  key={choice.id}
+                  className={choiceClass(choice.id, question.correctChoiceId, answer.selectedChoiceId, Boolean(feedback))}
+                  aria-disabled={Boolean(feedback)}
+                  onClick={() =>
+                    !feedback &&
+                    (isFreestyle ? onFreestyleAnswer(question as MultipleChoiceQuestion, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id }))
+                  }
+                >
+                  <span className="radio radio-primary radio-sm" aria-hidden="true" />
+                  <span>{choice.text}</span>
+                </button>
+              ))}
             </div>
-            {feedback.correct && feedback.streak >= 3 && <Badge tone="warning">{feedback.streak} in a row</Badge>}
-            {!feedback.correct && <span>Correct answer: {feedback.correctText}</span>}
-            <p>{question.explanation}</p>
-            <p className="reinforcement-line">{feedback.reinforcementLine}</p>
-            <Button className="justify-self-end" tone="primary" onClick={onSkip} icon={<ArrowRight size={18} weight="bold" />}>
-              Next Question
-            </Button>
-          </div>
-        )}
-
-        <div className="question-tools">
-          <Button
-            className={cx(answer.flagged && "flagged")}
-            tone={answer.flagged ? "secondary" : "soft"}
-            onClick={() => onAnswer(question.id, { flagged: !answer.flagged })}
-            icon={<Flag size={17} weight="duotone" />}
-          >
-            {answer.flagged ? "Flagged" : "Flag Question"}
-          </Button>
-          {isFreestyle && !feedback && (
-            <Button onClick={onSkip} icon={<SkipForward size={18} weight="duotone" />}>
-              Skip Question
-            </Button>
+          ) : (
+            <textarea
+              className="textarea textarea-bordered min-h-56 w-full"
+              value={answer.textAnswer ?? ""}
+              onChange={(event) => onAnswer(question.id, { textAnswer: event.target.value })}
+              placeholder="Draft your answer. You will self-check it against the rubric after submitting."
+            />
           )}
-        </div>
-      </StudyCard>
 
-      <PhraseQuickAdd onAddPhrase={onAddPhrase} phrases={phrases} variant="dock" />
+          {isFreestyle && feedback && (
+            <div className={feedback.correct ? "feedback alert alert-success alert-soft" : "feedback alert alert-error alert-soft"}>
+              <div className="feedback-head">
+                <strong>{feedback.correct ? "Correct" : "Wrong"}</strong>
+                <span className="feedback-badges">
+                  <Badge tone="accent">{feedback.masteryLabel}</Badge>
+                  <Badge tone={feedback.xp >= 0 ? "success" : "error"}>{feedback.xp > 0 ? "+" : ""}{feedback.xp} XP</Badge>
+                </span>
+              </div>
+              {feedback.correct && feedback.streak >= 3 && <Badge tone="warning">{feedback.streak} in a row</Badge>}
+              {!feedback.correct && <span>Correct answer: {feedback.correctText}</span>}
+              <p>{question.explanation}</p>
+              <p className="reinforcement-line">{feedback.reinforcementLine}</p>
+              <Button className="justify-self-end" tone="primary" onClick={onSkip} icon={<ArrowRight size={18} weight="bold" />}>
+                Next Question
+              </Button>
+            </div>
+          )}
+
+          <div className="question-tools">
+            <Button
+              className={cx(answer.flagged && "flagged")}
+              tone={answer.flagged ? "secondary" : "soft"}
+              onClick={() => onAnswer(question.id, { flagged: !answer.flagged })}
+              icon={<Flag size={17} weight="duotone" />}
+            >
+              {answer.flagged ? "Flagged" : "Flag Question"}
+            </Button>
+            {isFreestyle && !feedback && (
+              <Button onClick={onSkip} icon={<SkipForward size={18} weight="duotone" />}>
+                Skip Question
+              </Button>
+            )}
+          </div>
+        </StudyCard>
+
+        <PhraseQuickAdd onAddPhrase={onAddPhrase} phrases={phrases} variant="dock" />
+      </main>
 
       {sessionStats && <SessionStatsPanel stats={sessionStats} />}
 
@@ -181,7 +183,7 @@ function SessionStatsPanel({ stats }: { stats: SessionRunStats }) {
 }
 
 function choiceClass(choiceId: string, correctChoiceId: string, selectedChoiceId: string | undefined, showFeedback: boolean) {
-  const classes = ["choice", "btn", "btn-outline", "justify-start", "h-auto", "min-h-14", "text-left"];
+  const classes = ["choice", "btn", "btn-soft", "justify-start", "h-auto", "min-h-14", "text-left"];
   if (selectedChoiceId === choiceId) classes.push("selected");
   if (showFeedback && choiceId === correctChoiceId) classes.push("correct-answer");
   if (showFeedback && selectedChoiceId === choiceId && choiceId !== correctChoiceId) classes.push("wrong-answer");
