@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l08-superposition",
+    "prompt": "A stack of sedimentary beds has not been overturned, but one bed near the top contains many fossils and one lower bed has none. Which bed is expected to be oldest, and why?",
+    "choices": [
+      "The bottom bed, because superposition orders undeformed strata by deposition from older below to younger above.",
+      "The top bed, because fossil abundance usually increases with age in sedimentary sequences.",
+      "The fossil-rich bed, because fossils override stratigraphic position when identifying the oldest layer.",
+      "The bed directly below any unconformity, because missing time always makes that bed older than all lower beds."
+    ],
+    "explanation": "Superposition states that in an undeformed sedimentary sequence, lower layers were deposited before the layers above them. Fossil abundance or position near an unconformity does not override that basic order by itself.",
+    "tags": [
+      "superposition",
+      "relative dating"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-cross-cutting",
+    "prompt": "Tilted sedimentary layers are cut by a fault. An erosional surface truncates both, and a flat sandstone bed lies on top without being faulted. Which sequence is best supported?",
+    "choices": [
+      "Lower layers were deposited, the layers tilted, the fault formed, erosion truncated both, and the flat sandstone was deposited last.",
+      "Lower layers were deposited, the fault formed, the layers tilted, erosion truncated both, and the flat sandstone was deposited last.",
+      "Lower layers were deposited, the layers tilted, erosion formed the surface, the flat sandstone was deposited, and the fault formed last.",
+      "Lower layers were deposited, erosion formed the surface, the layers tilted, the fault formed, and the flat sandstone was deposited last."
+    ],
+    "explanation": "The lower layers had to be deposited before they were tilted. The fault is younger than the tilted layers it cuts, the erosional surface is younger than both features it truncates, and the unfaulted sandstone on top was deposited last.",
+    "tags": [
+      "cross-cutting",
+      "relative dating"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l08-uniformitarianism",
+    "prompt": "What does uniformitarianism allow geologists to do?",
+    "choices": [
+      "Use processes operating today as guides for interpreting ancient rocks, while allowing rates and intensities to vary.",
+      "Assume every ancient process occurred at exactly the same speed and scale as today.",
+      "Ignore modern environments because ancient rocks record unrelated processes.",
+      "Assign absolute numerical ages to all sedimentary rocks without additional evidence."
+    ],
+    "explanation": "Uniformitarianism uses present processes as keys to interpreting past deposits and structures. It does not require all past rates or intensities to match modern observations exactly.",
+    "tags": [
+      "uniformitarianism",
+      "geologic reasoning"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-original-horizontality",
+    "prompt": "A sequence of sedimentary beds is now steeply tilted. What does original horizontality imply?",
+    "choices": [
+      "The beds were deposited roughly horizontally and were tilted after deposition.",
+      "The beds must have formed from magma rising vertically through the crust.",
+      "The beds are youngest at the bottom because tilted beds reverse superposition automatically.",
+      "The tilting happened before any sediment was deposited."
+    ],
+    "explanation": "Original horizontality states that sedimentary layers are generally deposited horizontally under gravity. Tilting or folding usually occurred later.",
+    "tags": [
+      "original horizontality",
+      "relative dating"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-lateral-continuity",
+    "prompt": "Two matching sandstone beds appear on opposite sides of a valley. What does lateral continuity most directly suggest?",
+    "choices": [
+      "The beds were once continuous, and the valley or erosion separating them formed later.",
+      "The valley is older than both sandstone beds because valleys always form first.",
+      "The beds must be igneous intrusions because they appear on both sides.",
+      "The beds cannot be correlated because erosion always destroys stratigraphic evidence."
+    ],
+    "explanation": "Lateral continuity states that similar strata separated by an erosional gap were originally continuous. The erosional feature must be younger than the deposited beds.",
+    "tags": [
+      "lateral continuity",
+      "correlation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-inclusions",
+    "prompt": "A conglomerate contains rounded limestone clasts, and the surrounding matrix is cut by later calcite veins. What does the principle of inclusions imply about the clasts?",
+    "choices": [
+      "The limestone clasts are older than the conglomerate that contains them.",
+      "The limestone clasts are younger than the matrix because later veins also contain calcite.",
+      "The clasts and matrix must be the same age because both are now part of one rock.",
+      "The clasts are younger than any erosion surface because rounded grains require late-stage transport."
+    ],
+    "explanation": "The principle of inclusions states that fragments enclosed within a rock must be older than the rock containing them.",
+    "tags": [
+      "inclusions",
+      "relative dating"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-faunal-succession",
+    "prompt": "How can fossil species help correlate rock units across wide areas?",
+    "choices": [
+      "Fossil taxa succeed each other through time in a reliable order, so shared species can indicate similar age.",
+      "All fossil-bearing rocks were deposited in the same environment at the same time.",
+      "Fossils can correlate rocks only where the layers remain physically connected.",
+      "Fossil order is too random for age correlation, so only rock color can be used."
+    ],
+    "explanation": "Faunal succession uses the ordered appearance and disappearance of fossil taxa. Rocks containing the same fossil species can often be correlated as roughly the same age.",
+    "tags": [
+      "faunal succession",
+      "biostratigraphy"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-unconformity-meaning",
+    "prompt": "What does an unconformity represent in a stratigraphic sequence?",
+    "choices": [
+      "Missing time caused by erosion or nondeposition.",
+      "A layer that was deposited twice at the same time.",
+      "A rock unit that cannot contain fossils.",
+      "A boundary where absolute ages become unnecessary."
+    ],
+    "explanation": "An unconformity is a surface representing a gap in the local sedimentary record, commonly because older rocks were eroded or no sediment was deposited for some interval.",
+    "tags": [
+      "unconformity",
+      "missing time"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l08-siccar-point-sequence",
+    "prompt": "At a site, nearly vertical lower strata are overlain by gently dipping upper strata across a sharp erosional surface. Which interpretation best follows from stratigraphic principles?",
+    "choices": [
+      "The lower strata were deposited, tilted, eroded, and then the upper strata were deposited across the erosion surface.",
+      "The upper strata were deposited first, then the lower strata tilted underneath them without erosion.",
+      "The erosional surface formed before either set of strata existed.",
+      "Both sets of strata were deposited simultaneously at different angles."
+    ],
+    "explanation": "The lower strata had to be deposited before they were tilted and eroded. The upper strata were deposited after that erosional gap, producing an unconformity.",
+    "tags": [
+      "unconformity",
+      "stratigraphic sequence"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l08-relative-dating-purpose",
+    "prompt": "What is the main result of applying stratigraphic principles to a rock sequence?",
+    "choices": [
+      "An ordered sequence of events from older to younger.",
+      "A direct measurement of the number of years since every bed formed.",
+      "A chemical formula for each mineral in every rock layer.",
+      "A guarantee that all local exceptions to deposition are impossible."
+    ],
+    "explanation": "Stratigraphic principles provide relative ages by ordering events, layers, faults, intrusions, and erosional surfaces. They do not by themselves provide numerical ages in years.",
+    "tags": [
+      "relative dating",
+      "stratigraphy"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-stratigraphy-definition",
+    "prompt": "What is stratigraphy mainly concerned with?",
+    "choices": [
+      "The order, relationships, and interpretation of layered rocks.",
+      "The chemical formula of every mineral in igneous rocks.",
+      "The exact orbital position of Earth when each bed formed.",
+      "The process of turning lava into a metamorphic protolith."
+    ],
+    "explanation": "Stratigraphy uses relationships among layers and geologic features to reconstruct sequences of events and interpret Earth history.",
+    "tags": [
+      "stratigraphy",
+      "definition"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l08-nondeposition-definition",
+    "prompt": "What does nondeposition mean in the context of an unconformity?",
+    "choices": [
+      "A time interval when sediment was not accumulating at that location.",
+      "A time interval when all deposited sediment became igneous rock.",
+      "A layer that cuts across older rocks as a fault.",
+      "A fossil assemblage that gives an absolute radiometric age."
+    ],
+    "explanation": "Unconformities can form through erosion, nondeposition, or both. Nondeposition means time passed without new sediment being preserved at that site.",
+    "tags": [
+      "unconformities",
+      "nondeposition"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l08-angular-unconformity-definition",
+    "prompt": "Which feature best identifies an angular unconformity?",
+    "choices": [
+      "Tilted or folded older layers are truncated and overlain by younger layers at a different angle.",
+      "Parallel sedimentary layers are separated by a surface representing missing time.",
+      "Sedimentary rocks lie directly on eroded igneous or metamorphic basement.",
+      "A younger fault cuts all layers without any erosion surface."
+    ],
+    "explanation": "An angular unconformity records deposition, deformation, erosion, and later deposition. The older and younger layers meet at different orientations.",
+    "tags": [
+      "angular unconformity",
+      "unconformities"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-disconformity-definition",
+    "prompt": "Which situation best describes a disconformity?",
+    "choices": [
+      "A missing-time surface between sedimentary layers that remain broadly parallel.",
+      "A contact where sedimentary rocks overlie eroded crystalline basement.",
+      "A fault that offsets every visible rock unit in the outcrop.",
+      "A lava flow that radiometrically dates every bed beneath it."
+    ],
+    "explanation": "A disconformity is an unconformity between generally parallel sedimentary strata. It can be difficult to recognize without fossils, erosion surfaces, or other time indicators.",
+    "tags": [
+      "disconformity",
+      "unconformities"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-cross-cutting-fault-intrusion",
+    "prompt": "A fault cuts sandstone and shale, but an overlying limestone is not faulted. Which order is best supported?",
+    "choices": [
+      "Sandstone and shale formed, the fault cut them, and the limestone was deposited afterward.",
+      "The limestone formed first, then the fault cut only the air above it.",
+      "The fault is oldest because faults always predate sedimentary deposition.",
+      "All three rock layers and the fault formed at exactly the same time."
+    ],
+    "explanation": "Cross-cutting relationships show that a feature is younger than what it cuts. If the limestone is not cut, it was deposited after faulting or after fault motion stopped.",
+    "tags": [
+      "cross-cutting relationships",
+      "relative dating"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-original-horizontality-deformation",
+    "prompt": "Flat-lying sedimentary beds are later folded into an arch. Which event must have happened after deposition?",
+    "choices": [
+      "Deformation that folded the originally near-horizontal layers.",
+      "Formation of the oldest bed below the folded sequence.",
+      "Deposition of each bed in the sequence.",
+      "Accumulation of sediment before lithification."
+    ],
+    "explanation": "Original horizontality says sedimentary layers are usually deposited close to horizontal. Strong tilting or folding therefore records deformation after deposition.",
+    "tags": [
+      "original horizontality",
+      "deformation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-lateral-continuity-correlation",
+    "prompt": "How does lateral continuity help correlate rock units across a gap?",
+    "choices": [
+      "Matching layers on both sides of an eroded valley may have once been continuous before erosion removed the middle.",
+      "Layers on opposite sides of a gap must be unrelated because erosion erases all evidence.",
+      "The principle gives a numerical age in years for each matching layer.",
+      "It proves that all layers were deposited vertically against the valley wall."
+    ],
+    "explanation": "Sedimentary layers commonly extend laterally until they thin, pinch out, or are cut off. Matching units across a gap can record a once-continuous layer.",
+    "tags": [
+      "lateral continuity",
+      "correlation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l08-uniformitarianism-rates-trap",
+    "prompt": "Which statement best avoids a common misunderstanding of uniformitarianism?",
+    "choices": [
+      "Modern processes can guide interpretation of the past even when rates or intensities were different.",
+      "All ancient processes had exactly the same rates and intensities as modern examples.",
+      "Present processes are useless because ancient environments cannot be observed directly.",
+      "Uniformitarianism replaces evidence with assumptions about what should have happened."
+    ],
+    "explanation": "Uniformitarianism uses process understanding from the present as a guide, but it does not require identical rates, intensities, or boundary conditions through time.",
+    "tags": [
+      "uniformitarianism",
+      "common confusions"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l08-missing-time-evidence",
+    "prompt": "A 180 Ma sandstone overlies eroded and tilted 240 Ma limestone, and no 239-181 Ma rocks are preserved at the site. Which inference best follows?",
+    "choices": [
+      "The contact is an unconformity recording missing local time, with deposition, deformation, erosion or nondeposition, and later sandstone deposition.",
+      "The contact shows continuous deposition because the sandstone directly touches the limestone in the outcrop.",
+      "The sandstone must be older than the limestone because it lies across an erosional surface.",
+      "The missing interval can be ignored because erosion surfaces do not preserve rock thickness."
+    ],
+    "explanation": "An unconformity can represent a large local gap even though it is a surface. The ages and angular relationship imply older deposition and tilting, removal or nondeposition, then younger deposition.",
+    "tags": [
+      "unconformities",
+      "missing time"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l08-composite-diagram-sequence",
+    "prompt": "A dike cuts folded sedimentary layers, and an erosion surface truncates both the dike and the folds before flat beds are deposited on top. Which event is youngest?",
+    "choices": [
+      "Deposition of the flat beds above the erosion surface.",
+      "Folding of the lower sedimentary layers.",
+      "Intrusion of the dike through the folded layers.",
+      "Deposition of the lower sedimentary layers before folding."
+    ],
+    "explanation": "The flat beds overlie the erosion surface that cuts the dike and folded layers, so they are youngest among the listed events. This uses superposition and cross-cutting logic together.",
+    "tags": [
+      "relative dating",
+      "stratigraphic diagrams"
+    ],
+    "difficulty": "Hard"
+  }
+]

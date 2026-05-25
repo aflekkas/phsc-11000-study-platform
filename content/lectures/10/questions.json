@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l10-mud-cracks",
+    "prompt": "A bed of laminated mudstone contains polygonal cracks filled by the overlying sand, and the cracks cut downward across the laminae. Which interpretation best uses the evidence?",
+    "choices": [
+      "Mud was deposited in water, exposed to air long enough to dry and shrink, and then buried by later sand",
+      "A one-directional current migrated asymmetric ripples across a continuously submerged mud surface",
+      "Compaction squeezed pore water upward through the mud, producing polygons without an exposure interval",
+      "A waning density flow deposited sand first and clay later in a single uninterrupted subaqueous event"
+    ],
+    "explanation": "Mud cracks cut across earlier laminae when wet sediment dries and contracts during subaerial exposure. Sand-filled cracks record a sequence: muddy deposition, exposure and cracking, then later burial.",
+    "tags": [
+      "sedimentology",
+      "mud cracks",
+      "exposure"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-cross-bedding",
+    "prompt": "A sandstone bed contains sets of inclined laminae truncated by younger laminae. Which process best explains that structure?",
+    "choices": [
+      "Migration of ripples or dunes under flowing water or wind",
+      "Vertical settling of sand from suspension in still water, producing flat laminae that later tilted together",
+      "Oscillatory wave motion reworking a stationary sand bed without net bedform migration",
+      "Uniform sheet flow depositing a single massive sand layer with no lee-side avalanching"
+    ],
+    "explanation": "Cross-bedding preserves inclined foresets formed as ripples or dunes migrate and sediment avalanches or settles on their lee sides. The key evidence is transport by a moving bedform, not merely sand transport, wave stirring, or massive sheet deposition.",
+    "tags": [
+      "sedimentology",
+      "cross-bedding",
+      "transport"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-hjulstrom",
+    "prompt": "One water-laid bed is well-sorted sand with cross-bedding, while another is thinly laminated mud. Using Hjulstrom-curve logic, which inference best distinguishes their flow conditions?",
+    "choices": [
+      "The sand bed records velocities that moved sand as bedload and winnowed finer particles, while mud laminae reflect clay and silt settling from suspension after flow slowed.",
+      "The mud bed must record the strongest flow because cohesive clay is hard to erode, so clay also requires the highest velocity to be deposited.",
+      "The well-sorted sand records mostly suspended load, while the mud reflects bedload transport after velocity increased.",
+      "The cross-bedded sand and laminated mud could form under the same velocity if sediment supply changed from sand-rich to mud-rich."
+    ],
+    "explanation": "Hjulstrom logic separates erosion, transport, and deposition thresholds. Cohesive clay can require high velocity to erode yet remain suspended until very low velocities, while sand commonly travels as bedload, forms bedforms, and becomes well sorted as finer grains are winnowed.",
+    "tags": [
+      "Hjulstrom curve",
+      "grain size",
+      "flow energy"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l10-oolitic-agitation",
+    "prompt": "A limestone is made mostly of rounded carbonate grains with concentric coatings around nuclei. Which setting best explains how those grains formed?",
+    "choices": [
+      "Warm, shallow, agitated water where calcium carbonate was supersaturated and grains were repeatedly rolled",
+      "Warm, shallow water with little sediment motion, where carbonate coatings grew only on the buried side of each grain",
+      "Clear tropical water where shell fragments accumulated as a biochemical limestone rather than coated grains",
+      "A restricted arid basin where carbonate precipitated from evaporation without repeated rolling of grains"
+    ],
+    "explanation": "Ooids form by inorganic carbonate precipitation around a nucleus. Warm water favors carbonate supersaturation, while agitation coats the grain on all sides.",
+    "tags": [
+      "sedimentology",
+      "oolites",
+      "carbonate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-evaporite-restricted-basin",
+    "prompt": "A bed of halite and gypsum occurs within a sedimentary sequence. Which environmental interpretation is most directly supported?",
+    "choices": [
+      "Water became supersaturated with salts because evaporation exceeded water renewal in an arid or restricted basin",
+      "Normal marine circulation kept dissolved ions flushed while carbonate shells accumulated on a clear shelf",
+      "Wave agitation in shallow water coated carbonate grains before they could dissolve or be buried",
+      "Low-energy offshore water allowed clay and silt to settle below wave base without concentrating dissolved salts"
+    ],
+    "explanation": "Evaporites form when dissolved ions become concentrated enough to precipitate, usually where evaporation is strong and water exchange is limited.",
+    "tags": [
+      "evaporites",
+      "chemical sediment",
+      "depositional environment"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l10-shelly-carbonate-clear-water",
+    "prompt": "A fossil-rich limestone contains abundant carbonate shells but little clastic mud or sand. Which condition best fits the formation of that rock?",
+    "choices": [
+      "Clear, warm, shallow marine water where skeletal carbonate production was high and clastic dilution was low",
+      "Warm, shallow, agitated water where inorganic ooids formed around nuclei with little shell input",
+      "A restricted arid basin where evaporation concentrated halite and gypsum more than skeletal carbonate",
+      "Turbid nearshore water where abundant clastic sediment diluted and inhibited carbonate accumulation"
+    ],
+    "explanation": "Shelly carbonates commonly form where organisms produce abundant calcium carbonate skeletons and clastic input does not dilute or inhibit carbonate deposition.",
+    "tags": [
+      "limestone",
+      "fossils",
+      "carbonate environments"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-coal-peat-preservation",
+    "prompt": "A carbon-rich bed formed from compressed plant material. Which environmental condition would most favor its original accumulation as peat?",
+    "choices": [
+      "Stagnant, low-oxygen, acidic water that slowed decay of plant material",
+      "Well-oxygenated floodplain soil where roots and microbes rapidly oxidized organic matter",
+      "A high-energy delta channel where woody fragments were repeatedly reworked and exposed to oxygen",
+      "A seasonally dry swamp margin where plant debris was exposed long enough for decay to keep pace with production"
+    ],
+    "explanation": "Peat accumulates where plant production is high but decay is inhibited. Low oxygen, stagnant water, and acidity help preserve organic material that can later become coal.",
+    "tags": [
+      "coal",
+      "peat",
+      "organic preservation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l10-ripple-flow-direction",
+    "prompt": "A bedding surface preserves asymmetric ripple marks. What information can those ripples most directly provide?",
+    "choices": [
+      "The direction of current flow during bedform migration",
+      "The exact current velocity without needing grain-size or bedform-spacing evidence",
+      "The absolute water depth from ripple asymmetry alone",
+      "Whether the sediment was deposited below wave base without using other structures"
+    ],
+    "explanation": "Asymmetric ripples form under moving fluid and preserve a directional signal because their steep and gentle sides relate to current-driven bedform migration.",
+    "tags": [
+      "ripple marks",
+      "sedimentary structures",
+      "flow direction"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l10-fossil-transport-caution",
+    "prompt": "A sandstone bed interpreted as shallow marine contains several land-plant fragments. Which conclusion is most careful?",
+    "choices": [
+      "The plant material could have been transported before burial, so fossil ecology must be checked against sedimentary and compositional evidence",
+      "The bed must have formed on land because plant fossils are always buried where the plants grew",
+      "The marine interpretation is impossible unless all fossils in the bed are aquatic organisms",
+      "The plant fragments prove deep-water deposition because terrestrial debris is preserved only below wave base"
+    ],
+    "explanation": "Fossils can be environmental indicators, but remains may be transported before burial. A depositional interpretation should test fossil evidence against rock composition and sedimentary structures.",
+    "tags": [
+      "fossils",
+      "environmental indicators",
+      "transport"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-vertical-facies-change",
+    "prompt": "A vertical section changes upward from offshore mudstone to ripple-marked sandstone and then to mud-cracked siltstone. Which interpretation best uses the whole pattern?",
+    "choices": [
+      "The environment became progressively shallower or more exposed through time, rather than each bed recording an unrelated setting",
+      "The entire section formed in constant deep water because mudstone occurs at the base",
+      "The mud cracks show only a change in sediment supply, not exposure conditions",
+      "The sandstone requires wind deposition because ripple marks cannot form under water"
+    ],
+    "explanation": "Vertical changes in sedimentary rock type and structures can record temporal environmental change. Offshore mud, shallow current structures, and exposure features together suggest a shift toward shallower or intermittently subaerial conditions.",
+    "tags": [
+      "facies",
+      "sedimentary structures",
+      "environmental change"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l10-symmetric-ripples-wave-action",
+    "prompt": "A sandstone bedding surface preserves ripples with nearly equal slopes on both sides of each crest. Which process is most directly indicated?",
+    "choices": [
+      "Oscillatory wave motion moved water back and forth over the bed",
+      "A one-directional current migrated dunes steadily downstream",
+      "Mud dried and shrank after exposure to air",
+      "A turbidity current deposited sediment from a rapidly waning flow"
+    ],
+    "explanation": "Symmetric ripples commonly form where wave orbital motion moves sediment back and forth. They differ from asymmetric current ripples, which preserve a clearer one-directional flow signal.",
+    "tags": [
+      "ripple marks",
+      "wave action",
+      "sedimentary structures"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l10-uniformitarianism-process-analogy",
+    "prompt": "A modern tidal flat shows mud cracks, current ripples, and microbial mats. How should uniformitarian reasoning be applied to a similar ancient package?",
+    "choices": [
+      "Use modern process links as testable analogs while checking whether ancient context and preservation support the same interpretation",
+      "Assume the ancient site had identical tides, climate, organisms, and sea level because the structures match",
+      "Use the modern setting alone and ignore fossils, vertical facies changes, and rock composition in the ancient section",
+      "Treat the structures as age markers because similar depositional processes occur during only one geologic interval"
+    ],
+    "explanation": "Uniformitarian reasoning uses modern processes as analogs, but the analogy must still be tested against the full ancient facies association and preservation history. Similar structures do not guarantee identical settings or ages.",
+    "tags": [
+      "uniformitarianism",
+      "process interpretation",
+      "definitions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-graded-bedding-waning-flow",
+    "prompt": "A bed grades upward from coarse sand at its base to fine silt and clay at its top. Which depositional process best explains that pattern?",
+    "choices": [
+      "A flow lost energy through time, depositing larger grains first and finer grains later",
+      "A shoreline was exposed long enough for wet mud to contract into cracks",
+      "Wave motion repeatedly rolled carbonate grains into ooids",
+      "Burrowing organisms mixed the entire bed until all original layering disappeared"
+    ],
+    "explanation": "Normal graded bedding records a decline in transport energy, so coarse particles settle first and progressively finer material settles as the flow wanes.",
+    "tags": [
+      "graded bedding",
+      "flow energy",
+      "sedimentary structures"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-bioturbation-burrowed-substrate",
+    "prompt": "A mudstone contains irregular burrows that cut across and disrupt thin original laminae. What is the most direct interpretation?",
+    "choices": [
+      "Organisms lived in or moved through the sediment after deposition, mixing the substrate",
+      "The mudstone formed only by chemical precipitation from evaporating water",
+      "A unidirectional current produced lee-side avalanches in migrating dunes",
+      "The sediment was exposed subaerially and shrank into polygonal cracks"
+    ],
+    "explanation": "Bioturbation is disruption of sediment by organism activity. It can reveal benthic life and substrate conditions that composition alone would not show.",
+    "tags": [
+      "bioturbation",
+      "trace fossils",
+      "substrate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-sorting-energy-interpretation",
+    "prompt": "A sand body is very well sorted, with most grains in a narrow size range and little mud. Which interpretation is most consistent with that texture?",
+    "choices": [
+      "Transport repeatedly winnowed finer and coarser material under relatively consistent energy conditions",
+      "Sediment was dumped rapidly from ice with no hydraulic reworking",
+      "Organic decay removed all clay but left sand grains untouched",
+      "Carbonate shells dissolved selectively until only one grain size remained"
+    ],
+    "explanation": "Good sorting generally reflects hydraulic reworking that separates grains by size. It is strongest where transport energy is persistent enough to remove poorly matched grains.",
+    "tags": [
+      "sorting",
+      "grain size",
+      "transport energy"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-fossil-orientation-current",
+    "prompt": "Elongate shell fragments in a sandstone bed are aligned in the same direction. What can that fabric most directly suggest?",
+    "choices": [
+      "Transport or reworking by a current that oriented particles before burial",
+      "Growth position of every organism exactly where it lived",
+      "A purely chemical sediment with no physical transport",
+      "Deep burial metamorphism that rotated fossils into a magnetic direction"
+    ],
+    "explanation": "Preferred fossil orientation can record physical reworking and flow. It is useful environmental evidence, but it must be interpreted with the rock type and other structures.",
+    "tags": [
+      "fossil orientation",
+      "current flow",
+      "environmental indicators"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-rounding-transport-distance",
+    "prompt": "A conglomerate contains mostly well-rounded pebbles rather than angular clasts. Which inference is most reasonable?",
+    "choices": [
+      "The clasts experienced abrasion during transport before burial",
+      "The clasts crystallized in place from seawater without movement",
+      "The bed must have formed in quiet offshore mud below wave base",
+      "The pebbles were produced only by biological carbonate secretion"
+    ],
+    "explanation": "Rounding reflects abrasion as particles collide during transport. It can suggest transport history, although it should not be used alone to identify a complete environment.",
+    "tags": [
+      "rounding",
+      "clasts",
+      "transport history"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l10-facies-association-multiple-clues",
+    "prompt": "A section contains repeated upward packages of cross-bedded sandstone, ripple-laminated siltstone, mud cracks, and root traces. Which depositional interpretation best uses the facies association?",
+    "choices": [
+      "A shallow setting that repeatedly shifted from sand transport to quieter water, exposure, and plant colonization.",
+      "A permanently deep offshore setting, because cross-bedding can form only below storm wave base.",
+      "A purely wind-blown dune field, because mud cracks and root traces exclude any water-laid sediment.",
+      "A single storm bed, because repeated vertical packages are less informative than the coarsest sandstone."
+    ],
+    "explanation": "The repeated association matters because each feature records a different condition. Together they suggest changing energy, water depth or moisture, exposure, and colonization rather than one isolated process.",
+    "tags": [
+      "facies",
+      "multiple working evidence",
+      "environmental interpretation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l10-storm-bed-offshore-trap",
+    "prompt": "A mostly quiet-water mudstone contains a thin, sharp-based sandstone bed with normal grading and wave-formed ripples at the top. Which interpretation best fits the mixed evidence?",
+    "choices": [
+      "A short-lived high-energy event carried sand into a lower-energy setting and then waned",
+      "The entire mudstone sequence formed in constant high-energy surf without interruption",
+      "The sandstone must be an evaporite layer because it is thin and laterally persistent",
+      "The wave ripples prove permanent subaerial exposure of the seafloor"
+    ],
+    "explanation": "Event beds can place higher-energy sand within otherwise lower-energy deposits. Grading and ripples record process changes during and after the event rather than a constant environment.",
+    "tags": [
+      "event beds",
+      "graded bedding",
+      "facies interpretation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l10-mixed-fossil-assemblage-transport",
+    "prompt": "A mudstone deposited below fair-weather wave base contains broken shallow-water shells, rare articulated offshore fossils, and graded storm layers. Which interpretation best separates life habitat from burial setting?",
+    "choices": [
+      "Some shells were likely transported from shallower settings during storms, while articulated offshore fossils better record the local burial environment.",
+      "All shells and offshore fossils must represent one local living community because fossil mixing cannot occur below fair-weather wave base.",
+      "The broken shallow-water shells prove the whole unit was deposited on a beach, and the offshore mud is just later chemical alteration.",
+      "The offshore fossils should be ignored because only transported fossils can preserve environmental information."
+    ],
+    "explanation": "Mixed fossil assemblages require taphonomic reasoning. Graded storm beds and broken shallow-water shells suggest transport, whereas articulated local fossils and mudstone context help identify the burial setting.",
+    "tags": [
+      "fossil assemblages",
+      "transport",
+      "taphonomy"
+    ],
+    "difficulty": "Hard"
+  }
+]

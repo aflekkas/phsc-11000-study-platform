@@ -1,0 +1,8 @@
+node_modules
+dist
+tsconfig.tsbuildinfo
+.vite
+.DS_Store
+*.pdf
+tmp
+public/images

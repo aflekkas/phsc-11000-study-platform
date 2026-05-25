@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l12-paleomagnetism",
+    "prompt": "What kind of information can paleomagnetism most directly add to a paleogeographic reconstruction?",
+    "choices": [
+      "Inclination can constrain paleolatitude, declination can record vertical-axis rotation, and the result is strongest when remagnetization and age control are tested.",
+      "Inclination gives a unique ancient longitude, so paleomagnetic data alone can place a continent anywhere east-west on the globe.",
+      "Declination gives paleolatitude more directly than inclination, so rotation is usually the secondary correction.",
+      "Any magnetic direction gives the depositional age, even if the rock was remagnetized long after it formed."
+    ],
+    "explanation": "Magnetic inclination is most useful for paleolatitude, while declination can indicate rotation relative to a reference frame. Paleomagnetism generally does not fix longitude, and interpretations require tests for remagnetization plus independent age control.",
+    "tags": [
+      "paleogeography",
+      "paleomagnetism",
+      "plate motion"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-geographic-context",
+    "prompt": "A low-altitude sedimentary unit now exposed at 10 degrees north contains tillites, dropstones, and striated clasts. Paleomagnetic inclination from associated volcanic rocks indicates formation near 60 degrees south. Which interpretation is best supported?",
+    "choices": [
+      "The glacial evidence likely formed at high paleolatitude, and later plate motion carried the rocks to their modern low latitude.",
+      "The deposit records tropical glaciation unless the paleomagnetic direction was reset after burial or tied to the wrong age.",
+      "The deposit most likely formed at high altitude near the equator, because low modern latitude outweighs the paleomagnetic latitude.",
+      "The paleomagnetic latitude should be ignored unless the glacial facies also include cap carbonates or marine fossils."
+    ],
+    "explanation": "Tillites, dropstones, and striated clasts are consistent with glacial processes, and paleomagnetic inclination can place the rocks at high paleolatitude when they formed. Modern latitude alone can mislead because plate motion moves continents through climate zones.",
+    "tags": [
+      "paleogeography",
+      "climate",
+      "continental position"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l12-seafloor-spreading-limit",
+    "prompt": "Why can seafloor spreading rates and directions reconstruct recent plate motion better than very ancient plate motion?",
+    "choices": [
+      "Oceanic crust is destroyed by subduction, so the surviving seafloor record only extends back to about Jurassic age",
+      "Mid-ocean ridges stop recording magnetic and age patterns once continents begin to drift apart",
+      "Oceanic crust older than a few million years loses all radiometric age information during burial",
+      "Seafloor spreading records only latitude, so it cannot track motion before paleomagnetism was available"
+    ],
+    "explanation": "The age pattern of oceanic crust can reveal spreading rates and directions, but old oceanic crust is recycled at subduction zones. That limits how far back this method can reach.",
+    "tags": [
+      "seafloor spreading",
+      "plate motion",
+      "subduction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-fit-continents-rifting",
+    "prompt": "Continental margins fit, matching rift-related rock belts occur on both sides, and oceanic crust gets older away from a ridge between them. Which reconstruction best integrates the evidence?",
+    "choices": [
+      "The continents were joined, rifted apart, and the ocean widened by seafloor spreading",
+      "The ridge marks a collision suture where the two margins recently closed an ocean",
+      "The margins match only because erosion makes unrelated coastlines converge toward similar shapes",
+      "The continents stayed fixed while the magnetic age pattern formed by vertical uplift of the ocean floor"
+    ],
+    "explanation": "The strongest reconstruction uses several independent clues: margin fit, matching rift belts, and symmetric seafloor ages around a spreading ridge. Together they support breakup followed by seafloor spreading.",
+    "tags": [
+      "continental fit",
+      "rifting",
+      "paleogeography"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-apw-curve-comparison",
+    "prompt": "Apparent polar wandering curves from two continents match for an older interval but diverge after a younger interval. What does that pattern suggest?",
+    "choices": [
+      "The continents likely moved together while joined, then separated and followed different plate paths",
+      "The continents likely stayed joined after the curves diverged, but one developed a different climate belt",
+      "The older matching interval is more likely a depositional-environment signal than a plate-motion signal",
+      "The younger divergence proves both continents crossed the same latitude at the same time"
+    ],
+    "explanation": "An apparent polar wandering curve records motion of a continent relative to the magnetic pole. Matching curves can indicate shared motion while continents were joined; divergence can indicate later separation.",
+    "tags": [
+      "paleomagnetism",
+      "apparent polar wandering",
+      "plate reconstruction"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l12-lithology-climate-indicator",
+    "prompt": "A rock unit contains abundant reef limestone with fossils of warm-water corals. How can that lithologic and fossil evidence help a paleogeographic reconstruction?",
+    "choices": [
+      "It can constrain the depositional site to a warm, likely low-latitude marine setting when the rock formed",
+      "It can determine ancient longitude because reef belts occupy narrow east-west zones in ocean basins",
+      "It can replace independent age control because warm-water limestone forms only during short global intervals",
+      "It can prove the continent has stayed at its modern latitude because reefs always track current climate zones"
+    ],
+    "explanation": "Some lithologies and fossils are climate sensitive. Warm-water reef carbonates can help constrain paleolatitude when combined with age and other reconstruction evidence.",
+    "tags": [
+      "lithology",
+      "fossils",
+      "paleoclimate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-fossil-distribution-terrestrial",
+    "prompt": "The same terrestrial fossil species occurs in same-age rocks on two continents now separated by a wide ocean. Why is that useful paleogeographic evidence?",
+    "choices": [
+      "Terrestrial organisms are unlikely to disperse across broad oceans, so the continents may have been connected or much closer when the organisms lived",
+      "Matching fossils are best explained by identical climate belts, even if the continents were widely separated",
+      "A shared fossil species proves both continents had the same longitude but says nothing about their connection",
+      "The distribution mainly shows that both continents had similar sedimentary environments during burial"
+    ],
+    "explanation": "Paleontological distributions can support reconstructions when organisms had limited dispersal ability. Shared terrestrial fossils on separated continents can indicate former proximity or connection.",
+    "tags": [
+      "paleontology",
+      "biogeography",
+      "continental position"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-mountain-belt-match",
+    "prompt": "Similar-aged folded mountain belts occur on opposite sides of the Atlantic. Which interpretation best fits structural reconstruction logic?",
+    "choices": [
+      "They may be pieces of a once-continuous collision zone later split apart by rifting and seafloor spreading",
+      "They must have formed at separate subduction zones because mountain belts cannot be reconstructed across oceans",
+      "They show that the Atlantic Ocean closed during the same interval in which it is now widening",
+      "They are useful only for estimating elevation, not for reconstructing former continental connections"
+    ],
+    "explanation": "Matching orogenic belts can indicate that continents were once adjacent along the same convergent margin. Later breakup can separate parts of the original mountain system.",
+    "tags": [
+      "structural data",
+      "mountain belts",
+      "continental collision"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-paleogeography-climate-circulation",
+    "prompt": "Why can moving a continent from an equatorial position to a polar position change the environments recorded on that continent?",
+    "choices": [
+      "Latitude affects climate, ice formation, circulation, and habitat distribution, so the same continent can pass through different environmental zones",
+      "Continents carry their original climate with them, so rock types should stay constant as latitude changes",
+      "Only ocean basins respond to plate motion; continental climates are controlled entirely by rock composition",
+      "Paleogeographic position affects fossils but not sedimentary environments or sea level patterns"
+    ],
+    "explanation": "Continental position influences temperature, precipitation, glaciation, seaways, circulation, and biological connectivity. Environmental interpretation therefore needs ancient geography, not just modern location.",
+    "tags": [
+      "paleogeography",
+      "climate",
+      "habitats"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l12-future-plate-motion",
+    "prompt": "Why are future plate reconstructions broad scenarios rather than exact maps?",
+    "choices": [
+      "Present plate motions can be extrapolated, but rates, boundary reorganizations, and collisions can change over geologic time",
+      "Past paleogeographic maps exactly determine future continent positions once the current coastline is known",
+      "Plate motions are random, so present GPS and seafloor data cannot guide any future reconstruction",
+      "Only continents move in forward models; ocean basins and subduction zones are held fixed"
+    ],
+    "explanation": "Present motions provide a starting point, but plate boundaries reorganize and rates change. Future maps are therefore scenario-based extrapolations, not precise predictions.",
+    "tags": [
+      "plate tectonics",
+      "future Earth",
+      "reconstruction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-paleogeography-definition",
+    "prompt": "What is paleogeography?",
+    "choices": [
+      "The reconstruction of ancient continental positions, seaways, climate zones, and environments from geologic evidence",
+      "Mapping only modern coastline shapes and projecting them backward without plate-motion evidence",
+      "Classifying ancient rocks by depositional environment while leaving continent positions fixed at modern latitude",
+      "Dating sedimentary rocks by fossil succession without interpreting ancient geographic context"
+    ],
+    "explanation": "Paleogeography reconstructs ancient geography and environmental context. It combines plate position, oceans, climate belts, seaways, and habitats.",
+    "tags": [
+      "paleogeography",
+      "definitions",
+      "reconstruction"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l12-paleolatitude-definition",
+    "prompt": "What does paleolatitude describe in a reconstruction?",
+    "choices": [
+      "A site's ancient north-south position relative to the equator, often inferred from paleomagnetic inclination",
+      "A site's ancient east-west position, which paleomagnetism usually fixes more securely than latitude",
+      "The modern latitude where a rock is exposed after later plate motion",
+      "The water depth of deposition inferred from fossils and sedimentary structures"
+    ],
+    "explanation": "Paleolatitude places a rock or continent in ancient north-south position. It is especially important for interpreting climate indicators because modern latitude can be misleading after plate motion.",
+    "tags": [
+      "paleolatitude",
+      "definitions",
+      "climate context"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l12-paleomagnetic-inclination-latitude",
+    "prompt": "How can paleomagnetic inclination help place a continent in an ancient climate zone?",
+    "choices": [
+      "The steepness of preserved magnetic directions can estimate the latitude where magnetic minerals formed or cooled",
+      "Inclination directly gives the ancient longitude of the continent relative to present-day Greenwich",
+      "Inclination records only local water depth and cannot be used in plate reconstructions",
+      "Inclination measures the temperature of seawater during carbonate precipitation"
+    ],
+    "explanation": "Magnetic field lines are steeper near the poles and flatter near the equator. Preserved inclination can therefore estimate paleolatitude, which helps connect rocks to ancient climate belts.",
+    "tags": [
+      "paleomagnetism",
+      "inclination",
+      "paleolatitude"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-epicontinental-seaway-habitat",
+    "prompt": "A reconstruction shows a shallow sea flooding a broad continental interior. What environmental effect would that most directly create?",
+    "choices": [
+      "Expanded shallow-marine habitat and new circulation or isolation patterns across the continent",
+      "Permanent elimination of sediment deposition because continents cannot accumulate marine rocks",
+      "Direct conversion of all terrestrial fossils into deep-ocean fossils",
+      "A guarantee that the continent was located at the pole"
+    ],
+    "explanation": "Epicontinental seas can spread shallow marine environments across continents. They affect habitat area, sedimentary facies, circulation, and biological connectivity.",
+    "tags": [
+      "epicontinental seas",
+      "habitat area",
+      "paleogeography"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-rock-belt-correlation",
+    "prompt": "Two continents now separated by an ocean contain matching rock belts of similar age and structure along their margins. Why is that useful evidence?",
+    "choices": [
+      "The belts may have formed together before rifting separated the continents",
+      "Matching belts prove the continents have never moved relative to each other",
+      "Rock belts can match only when both margins formed in the same modern climate",
+      "Structural matches are irrelevant because only fossils can support paleogeographic reconstructions"
+    ],
+    "explanation": "Rock belts and mountain belts can be restored across later ocean basins. Matching age, structure, and rock types can indicate former connection before rifting.",
+    "tags": [
+      "rock belts",
+      "continental fit",
+      "reconstruction evidence"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-paleogeographic-map-uncertainty",
+    "prompt": "Why should paleogeographic maps be treated as interpretations rather than photographs of the past?",
+    "choices": [
+      "They combine multiple incomplete evidence types and require assumptions about plate motion, age control, and environment",
+      "They are based only on modern political boundaries rather than rocks",
+      "They ignore fossils and sedimentary rocks by definition",
+      "They can show ancient climate but cannot show continent position"
+    ],
+    "explanation": "Paleogeographic maps synthesize evidence such as paleomagnetism, fossils, rock belts, and sedimentary indicators. They are powerful but depend on incomplete data and reconstruction choices.",
+    "tags": [
+      "paleogeographic maps",
+      "uncertainty",
+      "evidence synthesis"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-biogeographic-isolation-connectivity",
+    "prompt": "How can continental positions affect fossil distributions even when climate stays broadly similar?",
+    "choices": [
+      "Changing seaways, land bridges, and ocean barriers can isolate or connect populations",
+      "Fossils follow modern latitude even when the continents move through time",
+      "Plate motion affects rocks but not organism dispersal or habitat connectivity",
+      "The same species must occur worldwide whenever sea level is high"
+    ],
+    "explanation": "Paleogeography controls barriers and pathways. Continents, seaways, and island arcs can change dispersal, isolation, and habitat connectivity independently of climate alone.",
+    "tags": [
+      "biogeography",
+      "connectivity",
+      "fossil distributions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l12-paleolongitude-limit",
+    "prompt": "A continent has reliable paleomagnetic inclination, matching fossil assemblages with another continent, and possible structural belt matches across an ocean. What is the strongest reconstruction strategy?",
+    "choices": [
+      "Use paleomagnetism to constrain latitude and rotation, then combine fossils, belts, and plate-circuit evidence to narrow relative longitude.",
+      "Use paleomagnetic inclination alone because it fixes both latitude and absolute longitude for every continent.",
+      "Use fossils alone because matching species prove exact east-west separation even without structural or magnetic evidence.",
+      "Reject the reconstruction because longitude cannot be constrained at all if modern coastlines no longer fit perfectly."
+    ],
+    "explanation": "Paleomagnetism is powerful for paleolatitude and rotation but weak for absolute longitude. Strong reconstructions combine magnetic data with fossils, rock belts, structural matches, and plate-circuit constraints.",
+    "tags": [
+      "paleomagnetism",
+      "paleolongitude",
+      "reconstruction limits"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l12-glacial-climate-context-trap",
+    "prompt": "A tillite is now at low latitude. Paleomagnetic data from nearby volcanics indicate high paleolatitude, but the volcanics may be slightly older than the tillite. Which interpretation is most defensible?",
+    "choices": [
+      "High-latitude glaciation is plausible, but the age link and possible remagnetization or correlation issues must be checked before rejecting low-latitude glaciation.",
+      "The modern low latitude proves tropical glaciation because continents cannot move enough to alter climate interpretation.",
+      "The paleomagnetic result proves polar deposition regardless of whether the dated volcanics are time-equivalent to the tillite.",
+      "The tillite cannot be glacial unless cap carbonates are present directly above it in the same outcrop."
+    ],
+    "explanation": "Modern latitude is not enough because plates move, but paleogeographic evidence must be tied to the correct age and preservation state. Good interpretation checks both paleolatitude and correlation uncertainty.",
+    "tags": [
+      "glacial deposits",
+      "paleolatitude",
+      "climate indicators"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l12-supercontinent-assembly-consequences",
+    "prompt": "A reconstruction shows continents assembling into one landmass, closing a tropical seaway and building a mountain belt. Which paired consequence is most likely?",
+    "choices": [
+      "Ocean circulation and heat transport may reorganize, while uplift can alter weathering, sediment supply, and habitat connectivity.",
+      "Climate should become uniform because one large landmass removes continental interiors and coastal gradients.",
+      "Evolutionary consequences should be minor because closed seaways change ocean water but not dispersal or isolation.",
+      "Weathering should stop because mountain belts isolate fresh rock from atmosphere and water."
+    ],
+    "explanation": "Supercontinent assembly affects multiple controls at once. Seaway closure changes circulation and biogeography, while mountain building affects weathering, erosion, sedimentation, and habitats.",
+    "tags": [
+      "supercontinents",
+      "climate",
+      "evolution"
+    ],
+    "difficulty": "Hard"
+  }
+]

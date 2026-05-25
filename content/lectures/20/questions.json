@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l20-ordovician-radiation",
+    "prompt": "Which combination best explains the Ordovician Radiation in marine ecosystems?",
+    "choices": [
+      "High sea level expanded epicontinental shelf habitats, while shifting paleogeography, oxygen and nutrient conditions, and ecological interactions opened marine niches.",
+      "Moderate sea-level rise expanded shelf habitat, but paleogeography and ecological interactions mattered little compared with habitat area alone.",
+      "Rising oxygen and nutrient supply created new ecological space, while sea level and paleogeography mainly changed preservation patterns.",
+      "Changing continental positions increased provinciality, so diversification mainly reflects geographic isolation rather than broader ecological expansion."
+    ],
+    "explanation": "The radiation is best treated as a combination of Ordovician marine conditions: broad shallow shelves and epicontinental seas, changing continental positions and connections, and biological feedbacks involving nutrients, oxygen, predation, tiering, and ecological specialization.",
+    "tags": [
+      "Ordovician Radiation",
+      "Paleozoic",
+      "epicontinental seas"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-late-devonian",
+    "prompt": "A widespread organic-rich black shale appears during a Late Devonian extinction interval, but the same section also shows evidence for high runoff and productivity. What inference is best supported?",
+    "choices": [
+      "Runoff and productivity may have helped create oxygen demand, but the black shale most directly supports low-oxygen shelf waters that stressed marine communities.",
+      "Productivity alone is the extinction mechanism, because organic-rich shale shows bottom waters stayed oxygenated while plankton bloomed.",
+      "The black shale is weak evidence for marine stress if runoff is present, because terrestrial nutrients cannot affect shelf oxygen levels.",
+      "The best inference is habitat expansion during transgression, because organic burial indicates healthy oxygenated shelves."
+    ],
+    "explanation": "Organic-rich black shale is a redox signal as well as a productivity signal. Runoff and productivity can supply organic matter, but decay of that material consumes oxygen, making anoxia the extinction-relevant inference.",
+    "tags": [
+      "black shales",
+      "anoxia",
+      "extinctions"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l20-ordovician-extinction-glaciation",
+    "prompt": "Which mechanism best connects Late Ordovician glaciation to marine extinction?",
+    "choices": [
+      "Cooling and sea-level fall reduced warm shelf habitats, and later ocean overturn could move anoxic or toxic deep waters onto shelves.",
+      "Warming expanded equatorial reef habitat, but competition from land plants directly eliminated most marine invertebrates.",
+      "Volcanic CO2 drove ocean acidification while sea level stayed high and shelf habitat area remained unchanged.",
+      "A long-term rise in sea level buried shallow-water communities too deeply for sediment to preserve them."
+    ],
+    "explanation": "The Late Ordovician extinction is tied to glaciation, a major fall in sea level, loss of warm shelf habitat, and possible disruption of ocean stratification as sea level changed. These stresses affected marine communities directly.",
+    "tags": [
+      "Ordovician extinction",
+      "glaciation",
+      "sea level"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l20-silurian-land-colonization",
+    "prompt": "Which pattern best describes Silurian evolutionary change on land and its Earth-system significance?",
+    "choices": [
+      "Vascular plants diversified, arthropods colonized land, and soils and terrestrial photosynthesis began strengthening links between life, weathering, and CO2.",
+      "Nonvascular mats remained the only land plants, so terrestrial ecosystems had little effect on weathering or atmospheric carbon.",
+      "Tetrapods became the main terrestrial predators before arthropods expanded, making plants secondary to vertebrate food webs.",
+      "Flowering forests spread across dry interiors, causing mammal diversification and a major decline in marine shelf habitats."
+    ],
+    "explanation": "Silurian terrestrialization was still early, but vascular plants and arthropods made land ecosystems more important to weathering, soils, and carbon cycling. The key point is a feedback between biological colonization and physical Earth systems.",
+    "tags": [
+      "Silurian",
+      "vascular plants",
+      "terrestrialization"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-devonian-fish-tetrapods",
+    "prompt": "Why is the Devonian often called the Age of Fish?",
+    "choices": [
+      "Ray-finned and lobe-finned fishes diversified, and lobe-finned fishes gave rise to amphibious tetrapods.",
+      "Jawed fishes diversified, but tetrapod limbs evolved from ray-finned fishes after lobe-finned fishes disappeared.",
+      "Lobe-finned fishes remained rare, while jawless fishes alone produced the earliest amphibious tetrapods.",
+      "Marine reptiles replaced most fishes as the dominant Devonian vertebrates before reef ecosystems declined."
+    ],
+    "explanation": "Devonian seas saw major fish diversification, including ray-finned and lobe-finned fishes. Late Devonian lobe-finned fishes are central to the origin of amphibious tetrapods.",
+    "tags": [
+      "Devonian",
+      "fish radiation",
+      "tetrapods"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l20-carboniferous-recovery",
+    "prompt": "Which combination best fits Carboniferous recovery and ecosystem change after the Late Devonian extinction?",
+    "choices": [
+      "Marine diversity recovered with crinoid-rich communities, while land plants, coal forests, arthropods, amphibians, and early reptiles diversified.",
+      "Marine recovery was dominated by trilobites and rugose corals, while terrestrial ecosystems remained mostly barren.",
+      "Low oxygen suppressed arthropods and vertebrates on land, but coral reefs alone restored marine diversity.",
+      "Dry continental interiors immediately replaced all wetland habitats, preventing coal forests from developing."
+    ],
+    "explanation": "Carboniferous history includes marine recovery, crinoid garden communities, coal swamp forests, high O2, diverse terrestrial arthropods, amphibians, and the earliest reptiles. It was not simply a marine-only recovery.",
+    "tags": [
+      "Carboniferous",
+      "recovery",
+      "crinoid gardens"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-permian-pangaea-aridity",
+    "prompt": "How did Pangaea help shift many Permian environments away from Carboniferous-style coal swamps?",
+    "choices": [
+      "A huge continental interior and subtropical high-pressure belts promoted aridification as sea level fell and epicontinental seas withdrew.",
+      "Rapid breakup of continents created many humid coastlines and expanded tropical peat mires across all latitudes.",
+      "A global rise in sea level flooded interiors, replacing dry basins with shallow limestone seas.",
+      "Permanent polar ice covered the equator, eliminating tropical rainfall but preserving peat under glaciers."
+    ],
+    "explanation": "Permian assembly of Pangaea created broad interiors that were prone to aridity, while falling sea level removed many epicontinental seas. These conditions favored dry environments over wet coal-swamp ecosystems.",
+    "tags": [
+      "Permian",
+      "Pangaea",
+      "aridification"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-amniotic-egg-advantage",
+    "prompt": "Why did reptiles have an advantage over amphibians in many drier Permian environments?",
+    "choices": [
+      "Internal fertilization and a shelled amniotic egg allowed reproduction away from standing water.",
+      "A jelly-coated egg tied to ponds let reptiles exploit seasonal wetlands more efficiently than amphibians.",
+      "A larval aquatic stage allowed reptiles to avoid dry-season water stress better than seed plants.",
+      "Reptile eggs required saturated soil, but waterproof skin made adults independent of water sources."
+    ],
+    "explanation": "Amphibians depend on moist eggs and aquatic reproduction. Reptiles use internal fertilization and amniotic eggs, making them less tied to wet environments as Permian climates became drier.",
+    "tags": [
+      "reptiles",
+      "amniotic egg",
+      "Permian"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l20-land-plants-earth-system",
+    "prompt": "Which chain best shows Paleozoic land plants altering physical Earth-system conditions rather than simply responding to them?",
+    "choices": [
+      "Rooted plants built soils, enhanced weathering and organic-carbon burial, changed nutrient runoff, and influenced CO2, climate, and shelf-water oxygen.",
+      "Land plants drew down CO2 only by photosynthesis, while roots, soils, weathering, and nutrient runoff had little Earth-system effect.",
+      "Glaciation created land plants by exposing shelves, so terrestrial ecosystems mainly record physical forcing without biological feedbacks.",
+      "Shelf anoxia raised atmospheric oxygen directly, making plant expansion unnecessary for changes in Paleozoic carbon cycling."
+    ],
+    "explanation": "Land plants affected more than atmospheric carbon through photosynthesis. Roots and soils changed weathering and nutrient delivery, organic burial affected CO2 and O2, and those biological changes fed back on climate and oceans.",
+    "tags": [
+      "Earth systems",
+      "land plants",
+      "carbon cycle"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l20-extinction-mechanism-comparison",
+    "prompt": "Which comparison correctly distinguishes two Paleozoic extinction patterns?",
+    "choices": [
+      "The Late Ordovician crisis is strongly tied to glaciation and shelf habitat loss, while Late Devonian events are closely associated with shelf anoxia and black shale deposition.",
+      "The Late Ordovician crisis is best marked by black shales from warm anoxic shelves, while Late Devonian losses mainly reflect a single short glaciation pulse.",
+      "Both crises were driven mainly by asteroid impacts and are identified by global shocked quartz layers.",
+      "Both crises mostly affected terrestrial mammals because marine shelf habitats were still limited."
+    ],
+    "explanation": "Different Paleozoic extinctions involved different dominant stresses. Late Ordovician extinction is linked to glaciation, sea-level fall, and shelf habitat loss; Late Devonian extinction intervals are associated with widespread organic-rich black shales and anoxia.",
+    "tags": [
+      "mass extinctions",
+      "Ordovician",
+      "Devonian"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l20-epicontinental-sea-definition",
+    "prompt": "What is an epicontinental sea?",
+    "choices": [
+      "A shallow sea that floods broad areas of continental crust.",
+      "A deep-water ocean basin beyond the continental shelf.",
+      "A restricted inland lake with no marine connection.",
+      "A coastal wetland that accumulates peat but is not flooded by seawater."
+    ],
+    "explanation": "Epicontinental seas are shallow marine waters spread across continents. In the Ordovician, these seas expanded shelf habitat for marine communities.",
+    "tags": [
+      "epicontinental seas",
+      "Ordovician",
+      "sea level"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l20-anoxia-definition",
+    "prompt": "What does marine anoxia mean?",
+    "choices": [
+      "Seawater contains little to no dissolved oxygen, stressing animals that depend on oxygenated water.",
+      "Seawater is stratified but bottom waters stay oxygenated enough for most benthic animals.",
+      "Seawater has lower carbonate saturation, making shell building difficult even when oxygen is abundant.",
+      "Seawater becomes nutrient-poor, limiting plankton growth without directly affecting oxygen demand."
+    ],
+    "explanation": "Anoxia is oxygen depletion. It is important in Paleozoic extinction intervals because many marine animals cannot tolerate low-oxygen bottom waters.",
+    "tags": [
+      "anoxia",
+      "marine extinction",
+      "black shales"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l20-pangaea-definition",
+    "prompt": "What was Pangaea?",
+    "choices": [
+      "A late Paleozoic supercontinent whose large interior helped create widespread arid environments.",
+      "A low-latitude ocean gateway whose closure strengthened tropical humidity.",
+      "A chain of volcanic arcs whose eruptions caused the Late Devonian extinction.",
+      "A broad epicontinental sea whose flooding expanded Ordovician shelf habitats."
+    ],
+    "explanation": "Pangaea was the assembled supercontinent of the late Paleozoic. Its broad interior affected climate by making many regions more distant from ocean moisture.",
+    "tags": [
+      "Pangaea",
+      "Permian",
+      "paleogeography"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l20-shelf-habitat-radiation",
+    "prompt": "Why did high sea level help support Ordovician marine diversification?",
+    "choices": [
+      "It expanded shallow shelf habitat where light, nutrients, and seafloor space could support many benthic communities.",
+      "It expanded deep basins at the expense of shelf area, favoring pelagic animals over benthic communities.",
+      "It made all shelf waters anoxic, reducing competition and allowing only low-oxygen specialists to diversify.",
+      "It stabilized continental positions, so provinciality and ecological interaction became less important."
+    ],
+    "explanation": "High sea level flooded continental interiors and widened shallow marine habitats. More shelf area created ecological space for diverse marine animals.",
+    "tags": [
+      "Ordovician Radiation",
+      "shelf habitat",
+      "sea level"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-land-plant-weathering",
+    "prompt": "How could expanding Paleozoic land plants affect climate and oceans at the same time?",
+    "choices": [
+      "Roots and soils enhanced weathering and nutrient runoff, which could lower CO2 over long timescales and contribute to marine productivity or anoxia.",
+      "Roots stopped all chemical weathering, so CO2 rose while oceans became nutrient-free.",
+      "Plants blocked river flow to the sea, preventing sediment and nutrients from reaching shelves.",
+      "Plant photosynthesis changed isotope half-lives, making marine fossils appear older."
+    ],
+    "explanation": "Land plants altered Earth systems by building soils, enhancing weathering, affecting CO2, and changing nutrient delivery to oceans. Those links help explain biological feedbacks during the Paleozoic.",
+    "tags": [
+      "land plants",
+      "weathering",
+      "nutrients"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-late-devonian-reef-stress",
+    "prompt": "Why would repeated low-oxygen events be especially damaging to Devonian reef communities?",
+    "choices": [
+      "Reef builders and associated animals lived in shelf settings where oxygen loss could disrupt calcification, metabolism, and community structure.",
+      "Reef communities depended on dry land soils, so oxygen loss in seawater would have little effect.",
+      "Low oxygen improves carbonate saturation, allowing all reef builders to recover immediately.",
+      "Anoxia affects only terrestrial plants, not marine animals with skeletons."
+    ],
+    "explanation": "Devonian reef ecosystems were marine shelf communities. Repeated anoxia would stress animals directly and could contribute to reef decline and broader extinction patterns.",
+    "tags": [
+      "Late Devonian",
+      "reefs",
+      "anoxia"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-permian-gymnosperm-advantage",
+    "prompt": "Why were many seed plants favored as Permian environments became drier?",
+    "choices": [
+      "Seeds and pollen made reproduction less dependent on standing water than many spore-producing wetland plants.",
+      "Seeds required permanent swamp water, so they replaced reptiles only in flooded coal forests.",
+      "Pollen formed only in open marine water, allowing seed plants to live as reef builders.",
+      "Seeds lowered atmospheric oxygen directly, making deserts wetter."
+    ],
+    "explanation": "Dryer Permian landscapes favored plants with reproductive strategies less tied to wet surfaces. Seeds and pollen helped gymnosperm-like plants succeed outside coal-swamp conditions.",
+    "tags": [
+      "Permian",
+      "seed plants",
+      "aridification"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-crinoid-garden-recovery",
+    "prompt": "What does a Carboniferous crinoid-rich marine community indicate about recovery after Late Devonian losses?",
+    "choices": [
+      "Marine ecosystems rebuilt diverse suspension-feeding communities even as different groups and environments shaped the recovery.",
+      "Marine life did not recover until after the Permian because crinoids were terrestrial plants.",
+      "Crinoids show that all Devonian reef builders returned unchanged and extinction had no lasting effect.",
+      "Crinoid-rich beds prove that seafloor oxygen was absent throughout the Carboniferous."
+    ],
+    "explanation": "Crinoid-rich communities are part of the Carboniferous recovery picture. They show that marine ecosystems rebounded, while terrestrial coal forests and vertebrates were also changing.",
+    "tags": [
+      "Carboniferous",
+      "crinoids",
+      "recovery"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l20-ordovician-two-stressors",
+    "prompt": "Which sequence best captures why Late Ordovician extinction was not just a simple cooling event?",
+    "choices": [
+      "Glaciation cooled climate and lowered sea level, then changing ocean circulation and habitat shifts added further stress during the crisis.",
+      "Cooling deepened all shelf seas, creating more warm habitat and preventing marine losses.",
+      "Glaciation affected only land plants, while marine animals were isolated from sea-level change.",
+      "The event began with dry continental interiors, followed by the first appearance of mammals."
+    ],
+    "explanation": "Late Ordovician extinction involved linked stresses. Cooling and ice growth reduced shallow marine habitat, and changing circulation or oxygen conditions could intensify extinction pressure.",
+    "tags": [
+      "Late Ordovician",
+      "glaciation",
+      "extinction mechanisms"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l20-devonian-runoff-anoxia-chain",
+    "prompt": "A Late Devonian section shows increased terrestrial spores, more clay-rich runoff deposits, high organic productivity, and black shale on the shelf. Which mechanism is best supported?",
+    "choices": [
+      "Land-plant expansion increased weathering and nutrient delivery, stimulating productivity whose decay contributed to low-oxygen shelf waters.",
+      "Land plants reduced runoff and productivity, so the black shale more likely records unusually oxygenated bottom water.",
+      "The spores prove plant material directly killed reef animals, while the black shale is unrelated to oxygen stress.",
+      "The runoff deposits rule out marine anoxia because terrestrial sediment cannot affect shelf-water chemistry."
+    ],
+    "explanation": "The evidence supports a runoff-productivity-anoxia chain. Land plants can intensify weathering and nutrient supply, and decay of extra organic matter can consume oxygen in restricted shelf waters.",
+    "tags": [
+      "Late Devonian",
+      "land plants",
+      "anoxia"
+    ],
+    "difficulty": "Hard"
+  }
+]

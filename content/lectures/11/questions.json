@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l11-oxygen-isotopes",
+    "prompt": "Marine carbonates shift toward heavier oxygen isotope values during an interval with independent evidence for growing ice sheets. Which interpretation is most consistent with proxy logic?",
+    "choices": [
+      "Growth of ice sheets can store lighter oxygen on land, leaving seawater and carbonate shells relatively enriched in heavier oxygen, but temperature, salinity, and alteration must be evaluated with independent evidence.",
+      "A heavier oxygen value should first be read as colder seawater, with ice volume and salinity treated as secondary corrections.",
+      "A heavier oxygen value is strong ice-volume evidence even if diagenesis has altered the carbonate after deposition.",
+      "A heavier oxygen value is best interpreted as salinity change unless an independent temperature proxy is available."
+    ],
+    "explanation": "Oxygen isotope ratios are indirect proxies. Ice volume can shift seawater composition, temperature affects fractionation during carbonate formation, salinity can matter locally, and diagenesis can overprint the signal, so the interpretation is strongest when independent evidence supports it.",
+    "tags": [
+      "oxygen isotopes",
+      "proxies",
+      "fractionation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-carbon-isotopes",
+    "prompt": "Marine carbonates show a positive carbon isotope excursion during an interval with expanded organic-rich sediments. Which carbon-cycle mechanism best explains that pattern?",
+    "choices": [
+      "Increased burial of organic carbon preferentially removed light carbon, leaving the ocean-carbonate reservoir relatively enriched in heavy carbon",
+      "Rapid oxidation of buried organic matter added light carbon to the ocean-atmosphere system, producing a heavier carbonate reservoir",
+      "Large methane release added isotopically light carbon to the ocean-atmosphere system while driving carbonate values positive",
+      "Reduced carbonate burial removed heavy carbon from seawater while leaving the remaining ocean-carbonate reservoir heavier"
+    ],
+    "explanation": "Organic matter is relatively enriched in light carbon. When more organic carbon is buried, light carbon is removed from the exchangeable reservoir, so marine carbonates can record relatively heavier carbon isotope values.",
+    "tags": [
+      "carbon isotopes",
+      "carbon cycle",
+      "chemostratigraphy"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l11-stable-isotope-definition",
+    "prompt": "What makes two atoms stable isotopes of the same element?",
+    "choices": [
+      "They have the same number of protons but different numbers of neutrons, and their nuclei do not decay with time",
+      "They have different numbers of protons but the same atomic mass, and their nuclei decay at a constant rate",
+      "They have the same number of neutrons but different proton numbers, and their ratios are fixed in all environments",
+      "They have the same proton and neutron numbers, but fractionation changes their electron shells during reactions"
+    ],
+    "explanation": "Isotopes of an element share the same proton number, so they are the same element, but differ in neutron number and mass. Stable isotopes do not undergo radioactive decay.",
+    "tags": [
+      "stable isotopes",
+      "geochemistry",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l11-fractionation-evaporation",
+    "prompt": "During evaporation from seawater, which oxygen isotope pattern is expected in the water vapor relative to the liquid water?",
+    "choices": [
+      "Water vapor is enriched in lighter oxygen because molecules containing 16O evaporate more readily",
+      "Water vapor is enriched in heavier oxygen because molecules containing 18O evaporate more readily",
+      "Water vapor keeps exactly the same oxygen isotope ratio because evaporation is only a phase change",
+      "Water vapor becomes heavier only when condensation removes 16O from clouds first"
+    ],
+    "explanation": "Evaporation preferentially moves lighter water molecules into vapor, while the remaining liquid can become relatively enriched in heavier oxygen if the reservoir is affected enough.",
+    "tags": [
+      "fractionation",
+      "oxygen isotopes",
+      "evaporation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-delta-value-meaning",
+    "prompt": "A carbonate has a delta13C value of +2 per mil relative to a standard, while another has -2 per mil. What does the positive value mean in isotope-ratio terms?",
+    "choices": [
+      "Its 13C/12C ratio is higher than the standard; it is not a direct measure of total carbon abundance or age",
+      "It contains more total carbon atoms than the standard, regardless of the 13C/12C ratio",
+      "It must be younger because burial drives carbonate delta values toward positive numbers through time",
+      "Its 13C/12C ratio is lower than the standard, but the value is plotted on a positive scale"
+    ],
+    "explanation": "Delta notation reports the isotope ratio of a sample relative to a standard. A positive delta13C value means the heavy-to-light ratio is higher than the standard, not that the sample has more carbon or a specific age.",
+    "tags": [
+      "delta values",
+      "isotope ratios",
+      "geochemistry"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-carbonate-temperature-fractionation",
+    "prompt": "Two unaltered carbonate cements precipitated from seawater with similar starting oxygen isotope composition. One has lighter oxygen isotope values. Which interpretation best follows oxygen-isotope thermometry?",
+    "choices": [
+      "It likely precipitated from warmer water because 16O is proportionally more involved in carbonate formation at higher temperature",
+      "It likely precipitated from colder water because low temperature always makes carbonate minerals isotopically lighter",
+      "It must record higher primary productivity because photosynthesis controls oxygen isotope fractionation in carbonate",
+      "It must record stronger evaporation because evaporation drives all carbonate oxygen values toward lighter compositions"
+    ],
+    "explanation": "Carbonate oxygen isotope fractionation is temperature dependent. If seawater composition and alteration are controlled, warmer-water carbonates tend to be isotopically lighter than colder-water carbonates.",
+    "tags": [
+      "oxygen isotopes",
+      "paleotemperature",
+      "carbonate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-foram-depth-temperature",
+    "prompt": "Near-surface foraminifera and benthic foraminifera from the same region record different oxygen isotope temperatures. What environmental pattern can that comparison help reconstruct?",
+    "choices": [
+      "Vertical temperature structure in the water column",
+      "A lateral sea-surface temperature gradient between two ocean basins",
+      "A carbon isotope gradient caused by different primary productivity levels",
+      "An ice-volume shift that affected only shallow-dwelling organisms"
+    ],
+    "explanation": "Foraminifera living at different depths can record different water temperatures. Comparing surface and benthic forms helps infer ocean stratification rather than sediment source or plate motion.",
+    "tags": [
+      "foraminifera",
+      "oxygen isotopes",
+      "ocean stratification"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-primary-productivity-carbon",
+    "prompt": "Surface waters in a marine setting have high primary productivity. Which carbon isotope pattern is expected in carbonate forming from the surrounding dissolved inorganic carbon?",
+    "choices": [
+      "More positive carbonate carbon values because photosynthesis preferentially removes 12C into organic matter",
+      "More negative carbonate carbon values because photosynthesis preferentially removes 13C into organic matter",
+      "No carbon isotope shift because biological fractionation affects only oxygen isotopes",
+      "A temperature signal because carbon isotope fractionation is mainly controlled by seawater temperature"
+    ],
+    "explanation": "Photosynthesis favors 12C, leaving local dissolved inorganic carbon relatively depleted in 12C and therefore more positive in carbon isotope value. Carbonates forming from that pool can record the shift.",
+    "tags": [
+      "carbon isotopes",
+      "primary productivity",
+      "fractionation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-chemostratigraphy-excursion",
+    "prompt": "A distinctive carbon isotope excursion appears in widely separated marine sections of similar age. How can that pattern be used?",
+    "choices": [
+      "As a chemical marker for correlating sections and identifying a shared carbon-cycle event",
+      "As proof that both sections were deposited in exactly the same water depth",
+      "As a direct radiometric date that gives the absolute age of each bed",
+      "As evidence that the same local productivity conditions existed in both basins for the entire interval"
+    ],
+    "explanation": "Chemostratigraphy uses isotope excursions as recognizable events in the rock record. They can help correlate sections, but they do not by themselves provide absolute ages or full depositional interpretations.",
+    "tags": [
+      "chemostratigraphy",
+      "isotope excursions",
+      "correlation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l11-proxy-uncertainty",
+    "prompt": "A carbonate oxygen isotope record is proposed as evidence for seawater cooling. Which additional concern most directly affects the reliability of that interpretation?",
+    "choices": [
+      "Whether the carbonate preserved its original signal and whether seawater composition also changed",
+      "Whether carbon isotope values from the same beds are more positive than the oxygen values",
+      "Whether the rock contains any clastic grains, because isotope proxies work only in pure chemical rocks",
+      "Whether the sample has a high enough total oxygen concentration to be measured without a reference standard"
+    ],
+    "explanation": "Oxygen isotope records are proxy evidence. Temperature is one control, but seawater composition and post-depositional alteration can also affect the measured value.",
+    "tags": [
+      "proxies",
+      "oxygen isotopes",
+      "uncertainty"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l11-proxy-definition",
+    "prompt": "Which statement best defines a proxy when reconstructing ancient environments from rocks?",
+    "choices": [
+      "A measurable preserved signal used to infer an environmental variable through a calibrated process link",
+      "A direct measurement of ancient temperature or CO2 with no assumptions about preservation",
+      "A fossil or isotope pattern that provides an absolute numerical age without other dating evidence",
+      "Any repeated rock pattern that is useful only for correlation and not for process interpretation"
+    ],
+    "explanation": "A proxy is indirect evidence. The measured signal becomes useful only when its process link, calibration, and preservation are evaluated.",
+    "tags": [
+      "proxies",
+      "definitions",
+      "environmental reconstruction"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l11-fractionation-definition",
+    "prompt": "Which statement best defines isotope fractionation?",
+    "choices": [
+      "A process separates isotopes of the same element because their different masses make them behave slightly differently",
+      "Radioactive decay changes one stable isotope into another at a fixed rate",
+      "Chemical reactions change proton number so one element becomes a different element",
+      "All isotope ratios become identical when material is buried and lithified"
+    ],
+    "explanation": "Fractionation occurs because light and heavy isotopes participate slightly differently in physical, chemical, or biological processes. That mass-dependent behavior is what makes many isotope proxies useful.",
+    "tags": [
+      "fractionation",
+      "stable isotopes",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l11-ice-volume-d18o-effect",
+    "prompt": "During growth of large ice sheets, how does the oxygen isotope composition of the ocean tend to change?",
+    "choices": [
+      "Seawater becomes relatively enriched in 18O because ice stores more 16O on land",
+      "Seawater becomes relatively enriched in 16O because ice sheets preferentially store 18O",
+      "Seawater oxygen isotope ratios stop changing because ice contains no oxygen",
+      "Seawater becomes isotopically lighter only because carbonate shells dissolve during glaciation"
+    ],
+    "explanation": "Water molecules with 16O are preferentially moved through evaporation and precipitation into ice. When large ice sheets grow, the ocean left behind can become relatively heavier in 18O.",
+    "tags": [
+      "oxygen isotopes",
+      "ice volume",
+      "paleoclimate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-organic-burial-d13c-sink",
+    "prompt": "Why can increased burial of organic matter make marine carbonate carbon isotope values more positive?",
+    "choices": [
+      "Organic matter preferentially contains 12C, so burying it leaves the ocean-atmosphere carbon reservoir relatively enriched in 13C",
+      "Organic matter preferentially contains 13C, so burying it leaves seawater enriched in 12C",
+      "Carbonate minerals stop forming whenever organic carbon burial increases",
+      "Burial of organic matter changes oxygen isotope ratios but cannot affect carbon isotope values"
+    ],
+    "explanation": "Biological carbon fixation favors 12C. Enhanced organic burial removes that light carbon from the active reservoir, allowing carbonates to record heavier carbon isotope values.",
+    "tags": [
+      "carbon isotopes",
+      "organic carbon burial",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-diagenesis-proxy-screening",
+    "prompt": "A carbonate rock has been recrystallized during burial. Why does that matter for isotope interpretation?",
+    "choices": [
+      "Recrystallization can reset or overprint the original isotope signal with later fluids and temperatures",
+      "Recrystallization guarantees that the original seawater isotope value is perfectly preserved",
+      "Only clastic rocks can experience isotope alteration after deposition",
+      "Burial alteration affects fossil shape but never stable isotope ratios"
+    ],
+    "explanation": "Stable isotope proxies depend on preservation of the original signal. Diagenesis can modify isotope ratios, so altered samples need screening before environmental interpretation.",
+    "tags": [
+      "diagenesis",
+      "proxy uncertainty",
+      "carbonate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-chemostratigraphy-limits",
+    "prompt": "A carbon isotope excursion is matched between two distant marine sections. What is the most careful use of that match?",
+    "choices": [
+      "It can support correlation of a shared chemical event, but depositional environment still needs independent evidence",
+      "It proves both sections were deposited in the same water depth and salinity",
+      "It replaces all age control because isotope excursions always have unique absolute ages",
+      "It shows that both sections contain the same fossil community"
+    ],
+    "explanation": "Chemostratigraphic excursions are useful correlation tools, especially when widespread. They do not by themselves identify facies, water depth, or absolute age without other constraints.",
+    "tags": [
+      "chemostratigraphy",
+      "correlation",
+      "proxy limits"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-biological-carbon-fractionation",
+    "prompt": "Which carbon isotope pattern is most characteristic of organic matter produced by photosynthesis?",
+    "choices": [
+      "Organic matter is relatively enriched in 12C and therefore has more negative carbon isotope values than many carbonates",
+      "Organic matter is relatively enriched in 13C and therefore has more positive carbon isotope values than all carbonates",
+      "Photosynthesis affects oxygen isotopes only, so organic matter has no carbon isotope signal",
+      "Organic matter and carbonate must have identical carbon isotope values if they formed in the same seawater"
+    ],
+    "explanation": "Photosynthetic carbon fixation preferentially uses 12C. That makes organic carbon isotopically light relative to many inorganic carbon reservoirs.",
+    "tags": [
+      "carbon fractionation",
+      "photosynthesis",
+      "organic matter"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l11-delta18o-temperature-trap",
+    "prompt": "A marine carbonate record shifts to higher oxygen isotope values. Why is it risky to interpret that shift as cooling without additional evidence?",
+    "choices": [
+      "Higher values can reflect colder carbonate formation, heavier seawater from ice growth, salinity changes, or alteration",
+      "Higher values always mean the carbonate formed from freshwater rather than seawater",
+      "Oxygen isotope values are controlled only by biological productivity",
+      "Cooling would make carbonates isotopically lighter, so a higher value cannot involve temperature"
+    ],
+    "explanation": "Oxygen isotope records have multiple controls. Temperature is important, but ice volume, seawater composition, salinity, and diagenesis can produce similar-looking shifts.",
+    "tags": [
+      "oxygen isotopes",
+      "temperature",
+      "proxy uncertainty"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l11-negative-carbon-excursion-light-carbon",
+    "prompt": "A widespread negative carbon isotope excursion occurs with evidence for rapid oxidation of organic-rich sediments. Which mechanism best fits that pattern?",
+    "choices": [
+      "Addition of isotopically light carbon to the ocean-atmosphere reservoir drove carbonate values lower",
+      "Permanent burial of 12C-rich organic matter removed light carbon and drove carbonate values lower",
+      "Cooling alone changed carbon isotope ratios because carbon isotopes are mainly thermometers",
+      "Evaporation enriched seawater in 18O, which directly made carbon isotope values negative"
+    ],
+    "explanation": "Oxidizing organic matter releases 12C-rich carbon back to the active reservoir. Adding light carbon can produce a negative carbon isotope excursion.",
+    "tags": [
+      "carbon isotope excursions",
+      "organic carbon oxidation",
+      "carbon cycle"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l11-multiple-proxy-test",
+    "prompt": "In one interval, carbonate oxygen isotopes shift heavier, Mg/Ca temperatures suggest cooling, but carbon isotopes shift negative. Which interpretation best handles the proxy combination?",
+    "choices": [
+      "Cooling or ice growth may explain the oxygen signal, while the carbon signal points to a separate carbon-cycle perturbation that must be interpreted with reservoir and preservation checks.",
+      "The oxygen and Mg/Ca signals prove the carbon isotope record is unusable because all valid proxies must shift in the same direction.",
+      "The negative carbon isotope shift proves warming, so the Mg/Ca and oxygen records should be averaged away.",
+      "All three proxies measure the same variable, so the best answer is simply the largest numerical shift."
+    ],
+    "explanation": "Different proxies can record different parts of the Earth system. Oxygen and Mg/Ca can constrain temperature or ice effects, while carbon isotopes track carbon-cycle changes; preservation and reservoir context still need testing.",
+    "tags": [
+      "multiple proxies",
+      "uncertainty",
+      "environmental reconstruction"
+    ],
+    "difficulty": "Hard"
+  }
+]

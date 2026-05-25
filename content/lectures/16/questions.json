@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l16-snowball-evidence",
+    "prompt": "Why are glacial deposits reconstructed at low paleolatitudes especially important for the Snowball Earth hypothesis?",
+    "choices": [
+      "Glacial facies paired with reliable paleomagnetic evidence place ice near the tropics, beyond ordinary high-latitude glaciation.",
+      "Glacial facies plus cap carbonates show a severe freeze-thaw event, but without paleolatitude they do not by themselves prove tropical ice.",
+      "Cap carbonates above the deposits mark rapid post-glacial carbonate precipitation, so they support deglaciation more directly than latitude.",
+      "Large paleomagnetic uncertainty would make the low-latitude claim weaker by leaving high-latitude glaciation harder to exclude."
+    ],
+    "explanation": "Glacial facies become strong Snowball evidence when paleomagnetism places them at low paleolatitudes. Without that latitude control, the same facies could reflect ordinary high-latitude or mountain glaciation, while cap carbonates are supporting aftermath evidence rather than latitude evidence.",
+    "tags": [
+      "Snowball Earth",
+      "glacial deposits",
+      "paleolatitude"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-escape-mechanism",
+    "prompt": "In the classic Snowball Earth model, which sequence best explains escape from a globally icy state?",
+    "choices": [
+      "Ice cover suppressed silicate weathering while volcanism kept adding CO2, so greenhouse warming eventually crossed the albedo threshold for deglaciation.",
+      "Volcanic CO2 built up, but silicate weathering also remained strong enough under the ice to keep greenhouse warming moderate.",
+      "Rapid cap-carbonate deposition began during deglaciation and drew down CO2, so it was mainly the trigger rather than a consequence of warming.",
+      "Lower albedo from dust and open-water patches helped deglaciation, so CO2 buildup was only a minor addition to the escape mechanism."
+    ],
+    "explanation": "The escape mechanism depends on a causal imbalance: volcanic CO2 input continues while ice-covered continents suppress silicate weathering. CO2 can then accumulate until greenhouse warming overcomes the high-albedo ice state; cap carbonates are a rapid post-melt consequence, not the initial trigger.",
+    "tags": [
+      "Snowball Earth",
+      "CO2",
+      "ice-albedo feedback"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l16-diamictite-dropstone-striation",
+    "prompt": "A marine unit contains poorly sorted diamictite, isolated dropstones, and striated surfaces. Which interpretation do these features most directly support?",
+    "choices": [
+      "Glacial influence, including ice transport and abrasion, affected the depositional setting",
+      "Warm, restricted evaporation produced salt crystals and carbonate crusts",
+      "Deep-water carbonate precipitation produced ooids and cross-bedded sand",
+      "Animal burrowing mixed the sediment and destroyed primary bedding"
+    ],
+    "explanation": "Diamictites, dropstones, and striated surfaces are classic lines of evidence for glacial processes. Their significance increases when they occur at sea level and low paleolatitude.",
+    "tags": [
+      "glacial deposits",
+      "diamictite",
+      "Snowball Earth"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l16-sturtian-marinoan-gaskiers",
+    "prompt": "Which statement best distinguishes the major late Precambrian glaciations discussed for extreme icehouse conditions?",
+    "choices": [
+      "Sturtian and Marinoan glaciations were Cryogenian global events, while the younger Gaskiers glaciation is generally treated as severe but possibly non-global",
+      "Sturtian and Gaskiers glaciations were local mountain events, while Marinoan was the only glaciation linked to low-latitude deposits",
+      "Gaskiers was the oldest Cryogenian event, followed by Marinoan and then Sturtian in the Ediacaran",
+      "All three glaciations are identified mainly by cap carbonates, so glacial facies are secondary evidence"
+    ],
+    "explanation": "The Sturtian and Marinoan events are the main Cryogenian global glaciations. The later Gaskiers event was severe but is more often treated as possibly non-global.",
+    "tags": [
+      "Cryogenian",
+      "Ediacaran",
+      "glaciations"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-rodinia-carbon-burial",
+    "prompt": "In the proposed entry mechanism for extreme global glaciation, how did breakup of a supercontinent help drive cooling?",
+    "choices": [
+      "New continental margins increased shallow-marine sedimentation and organic carbon burial, reducing atmospheric CO2 return",
+      "Rifting shut off all volcanism, so no carbon dioxide entered the atmosphere for millions of years",
+      "New margins increased silicate weathering only after ice cover had already blocked the weathering sink",
+      "Breakup moved more land into low latitudes, but carbon burial and greenhouse forcing stayed unchanged"
+    ],
+    "explanation": "The hypothesis links Rodinia breakup to increased shallow-marine sedimentation and organic carbon burial. More buried organic carbon means less CO2 returned by respiration and decay, weakening greenhouse warming.",
+    "tags": [
+      "Rodinia",
+      "carbon burial",
+      "climate forcing"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l16-bif-suboxic-ocean",
+    "prompt": "Why is banded iron formation within some glacial deposits significant in the Snowball Earth model?",
+    "choices": [
+      "Ice cover could limit ocean-atmosphere gas exchange, allowing suboxic seawater and dissolved iron to persist until oxidation and precipitation occurred",
+      "Banded iron formation proves the ocean was fully oxygenated throughout the glaciation",
+      "Iron bands show that volcanic CO2 had already been removed before ice began to melt",
+      "Iron supply alone explains the deposits, so their occurrence says little about oxygen exchange or redox state"
+    ],
+    "explanation": "If sea ice restricted gas exchange, oxygen in seawater might not be maintained. That could allow reduced iron to accumulate and later precipitate as iron oxides, explaining the unusual return of BIFs.",
+    "tags": [
+      "banded iron formations",
+      "redox",
+      "Snowball Earth"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l16-cap-carbonate-formation",
+    "prompt": "Why are cap carbonates immediately above glacial deposits important to the deglaciation story?",
+    "choices": [
+      "They can record rapid carbonate precipitation after melting, when CO2-rich atmosphere-ocean exchange drove carbonate supersaturation",
+      "They are the main deposits produced while glaciers were advancing across dry land",
+      "They show that silicate weathering stayed high under ice and prevented CO2 buildup",
+      "They indicate slow background carbonate sedimentation after climate and ocean chemistry had fully returned to preglacial conditions"
+    ],
+    "explanation": "In the classic model, volcanic CO2 builds up during ice cover. After rapid melting, gas exchange and weathering changes can make surface waters supersaturated with carbonate, producing cap carbonates.",
+    "tags": [
+      "cap carbonates",
+      "deglaciation",
+      "carbonate chemistry"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-carbon-isotope-snowball",
+    "prompt": "Which isotope pattern would fit the proposed carbon-cycle disruption around an extreme glaciation?",
+    "choices": [
+      "Large negative carbon isotope values near glacial deposits and cap-carbonate values consistent with volcanic CO2 influence",
+      "Uniformly positive carbon isotope values throughout the glaciation because primary productivity increased under global ice",
+      "Oxygen isotope values showing no temperature change, because ice-albedo feedback affects only carbon",
+      "Carbon isotope shifts that can be read as local salinity changes without considering productivity or carbon sources"
+    ],
+    "explanation": "The Snowball model predicts major carbon-cycle disturbance, including negative carbon isotope excursions and cap-carbonate values compatible with volcanic CO2 inputs and post-melt recovery.",
+    "tags": [
+      "carbon isotopes",
+      "cap carbonates",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-life-refugia",
+    "prompt": "Which survival scenario addresses a major biological challenge for a hard Snowball Earth?",
+    "choices": [
+      "Life persisted in refugia such as meltwater pools, hydrothermal systems, or light-penetrated shallow ice",
+      "Photosynthetic organisms survived by switching permanently to aerobic respiration without light",
+      "Only deep hydrothermal vents could support life, so photosynthetic ecosystems must have gone extinct globally",
+      "Open polar oceans provided the main refugia because ice cover was expected to be thinnest at the poles"
+    ],
+    "explanation": "A completely ice-covered planet raises the problem of how ecosystems survived, especially photosynthetic ones. Proposed refugia include meltwater settings, hot spots, hydrothermal systems, or shallow ice with enough light.",
+    "tags": [
+      "refugia",
+      "life survival",
+      "Snowball Earth"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-slushball-controversy",
+    "prompt": "What is the main point of the Slushball Earth alternative?",
+    "choices": [
+      "Some equatorial open-water or thin-ice areas may have persisted, reducing the need for a completely frozen ocean",
+      "Glaciation was restricted to polar mountains, so low-latitude deposits are reinterpreted as evaporites",
+      "Volcanic CO2 could not accumulate under any ice-covered ocean, so greenhouse escape is unnecessary",
+      "Cap carbonates are treated as ordinary preglacial deposits rather than part of postglacial recovery"
+    ],
+    "explanation": "The Slushball alternative argues that a narrow belt of open water or thin ice could have remained, which affects climate modeling, biological survival, and how complete the ice cover was.",
+    "tags": [
+      "Slushball Earth",
+      "controversy",
+      "climate models"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l16-albedo-definition",
+    "prompt": "A model changes surface cover from open ocean to snow-covered ice. What does an albedo increase mean for climate feedbacks?",
+    "choices": [
+      "A larger fraction of incoming sunlight is reflected, so absorbed energy falls and cooling can be amplified",
+      "A larger fraction of sunlight is absorbed, so ice expansion directly warms the surface",
+      "Volcanic CO2 input rises because albedo is the carbon degassing rate",
+      "Carbonate burial accelerates because albedo measures ocean alkalinity"
+    ],
+    "explanation": "Albedo measures reflectivity. Snow and ice reflect more sunlight than open ocean, so expanding ice can reduce absorbed energy and amplify cooling.",
+    "tags": [
+      "albedo",
+      "climate feedbacks",
+      "definitions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-cap-carbonate-definition",
+    "prompt": "What is a cap carbonate in Snowball Earth interpretations?",
+    "choices": [
+      "A carbonate layer deposited directly above glacial deposits during rapid postglacial ocean-chemistry change",
+      "A carbonate reef that grew during maximum ice cover in normal tropical seawater",
+      "A limestone unit below glacial deposits that records ordinary preglacial shelf sedimentation",
+      "A carbonate-rich diamictite whose clasts were dropped directly from floating ice"
+    ],
+    "explanation": "Cap carbonates overlie some Neoproterozoic glacial deposits. They are interpreted as part of rapid postglacial chemical and climatic recovery, not as ordinary reef growth during maximum ice cover.",
+    "tags": [
+      "cap carbonates",
+      "Snowball Earth",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l16-cryogenian-definition",
+    "prompt": "In Earth history, what does the Cryogenian refer to?",
+    "choices": [
+      "A Neoproterozoic interval that includes the Sturtian and Marinoan glaciations",
+      "An Ediacaran interval after the Gaskiers glaciation and before Cambrian animal diversification",
+      "A Paleozoic interval of coal swamps after vascular land plants spread",
+      "A Cenozoic interval marked by Antarctic ice-sheet expansion"
+    ],
+    "explanation": "The Cryogenian is the Neoproterozoic interval central to the Sturtian and Marinoan glaciations and the Snowball Earth debate.",
+    "tags": [
+      "Cryogenian",
+      "geologic time",
+      "Snowball Earth"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l16-weathering-shutoff-co2",
+    "prompt": "Why would global ice cover allow volcanic CO2 to accumulate in the classic Snowball Earth model?",
+    "choices": [
+      "Ice cover suppresses silicate weathering, so volcanic CO2 continues entering the atmosphere while a major sink is weakened",
+      "Ice cover causes volcanoes to stop releasing CO2 until the ocean is warm",
+      "Silicate weathering increases under global ice and removes CO2 faster than volcanism can supply it",
+      "CO2 cannot affect climate if the ocean surface is frozen"
+    ],
+    "explanation": "Volcanic degassing may continue during global glaciation, while weathering reactions are strongly reduced under ice. That imbalance can build greenhouse CO2 over time.",
+    "tags": [
+      "volcanic CO2",
+      "silicate weathering",
+      "deglaciation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-runaway-ice-albedo-feedback",
+    "prompt": "How can ice-albedo feedback become runaway during extreme cooling?",
+    "choices": [
+      "More ice reflects more sunlight, which cools the planet further and allows still more ice to expand",
+      "More ice lowers planetary reflectivity, causing immediate warming and ice retreat",
+      "Albedo affects only ocean salinity and cannot alter temperature",
+      "Ice expansion removes volcanic CO2 from the atmosphere by photosynthesis"
+    ],
+    "explanation": "Ice-albedo feedback is positive during cooling. Once ice expands far enough, the added reflectivity can amplify cooling and promote further ice growth.",
+    "tags": [
+      "ice-albedo feedback",
+      "positive feedback",
+      "runaway cooling"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-low-latitude-paleomagnetic-test",
+    "prompt": "Why is paleomagnetic evidence important when evaluating ancient glacial deposits in the Snowball Earth debate?",
+    "choices": [
+      "It can test whether glacial deposits formed near the equator rather than merely being located there today",
+      "It directly measures the thickness of ancient ice sheets",
+      "It proves whether glacial deposits contain fossils of photosynthetic life",
+      "It replaces sedimentary evidence because diamictites cannot be interpreted geologically"
+    ],
+    "explanation": "Low-latitude glaciation is central to Snowball Earth. Paleomagnetism helps distinguish ancient equatorial ice from glacial rocks that moved to low latitudes later.",
+    "tags": [
+      "paleomagnetism",
+      "low-latitude glaciation",
+      "evidence"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-postglacial-carbonate-chemistry",
+    "prompt": "Why might rapid deglaciation be followed by unusual carbonate deposition?",
+    "choices": [
+      "High CO2, intense weathering, and ocean chemistry changes after ice retreat could favor carbonate precipitation",
+      "Carbonates form only while the planet is fully frozen and stop once ice retreats",
+      "Carbonate deposition requires land plants, so it cannot occur before forests",
+      "Deglaciation removes all dissolved ions from seawater, preventing mineral formation"
+    ],
+    "explanation": "In Snowball Earth models, greenhouse escape and postglacial weathering can strongly perturb ocean chemistry. Cap carbonates are interpreted in that recovery context.",
+    "tags": [
+      "cap carbonates",
+      "ocean chemistry",
+      "deglaciation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l16-entry-exit-asymmetry",
+    "prompt": "Why are entry into and escape from a Snowball state controlled by different parts of the Earth system?",
+    "choices": [
+      "Entry can be amplified by ice-albedo cooling, while escape may require greenhouse buildup after weathering sinks are suppressed",
+      "Entry and escape both happen instantly once one glacier reaches sea level",
+      "Entry depends only on animal evolution, while escape depends only on fossil preservation",
+      "Escape occurs because ice has low albedo and absorbs more sunlight than open ocean"
+    ],
+    "explanation": "The classic model combines a cooling amplifier with a later greenhouse escape. The mechanisms are linked but not identical.",
+    "tags": [
+      "Snowball Earth mechanisms",
+      "feedbacks",
+      "carbon cycle"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l16-carbon-cycle-isotope-perturbation",
+    "prompt": "A carbonate sequence around a Neoproterozoic glacial interval shows a strong negative carbon-isotope excursion followed by cap carbonate deposition. Which mechanism is most consistent with that pattern?",
+    "choices": [
+      "A major carbon-cycle imbalance during ice cover and deglaciation altered the balance among organic burial, weathering, ocean alkalinity, and carbonate precipitation.",
+      "The isotope excursion mainly records magnetic pole movement, because carbon isotopes shift when continents cross latitudes.",
+      "Cap carbonates prove carbon cycling stayed stable, with glacial deposits adding only physical sediment and no reservoir change.",
+      "The negative excursion must mean all organic productivity increased smoothly through the frozen interval without changes in weathering or ocean exchange."
+    ],
+    "explanation": "Snowball intervals are tied to carbon-cycle disruption. Ice cover, suppressed weathering, CO2 buildup, deglaciation, alkalinity changes, productivity, and carbonate precipitation can all affect carbon-isotope records.",
+    "tags": [
+      "carbon isotopes",
+      "carbon cycle",
+      "Snowball Earth"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l16-hard-vs-slushball-test",
+    "prompt": "A glacial interval has low-latitude ice evidence, sediment requiring some open-water transport, and microfossils suggesting survival of photosynthetic organisms. Which interpretation best fits the hard Snowball versus Slushball debate?",
+    "choices": [
+      "The evidence still supports severe low-latitude glaciation, but open-water transport and biological refugia would favor a Slushball or incomplete-ice version over a fully sealed ocean.",
+      "Any low-latitude ice evidence proves a hard Snowball, so sediment transport and survival evidence are irrelevant.",
+      "Microfossil survival rules out major glaciation entirely because photosynthesis cannot persist under any ice-influenced conditions.",
+      "The debate can be settled only by modern satellite ice thickness, not by sedimentological or fossil evidence."
+    ],
+    "explanation": "The key issue is ice completeness, not simply whether glaciers reached low latitude. Evidence for open water, sediment transport, gas exchange, and photosynthetic refugia bears directly on the model choice.",
+    "tags": [
+      "Slushball Earth",
+      "controversy",
+      "refugia"
+    ],
+    "difficulty": "Hard"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l02-insolation-definition",
+    "prompt": "A sensor measures sunlight at the top of the atmosphere before reflection, absorption, or scattering by air and clouds. Which energy-budget term is it closest to measuring?",
+    "choices": [
+      "Insolation, the incoming solar radiation available to Earth before later partitioning.",
+      "Outgoing longwave radiation, the infrared energy emitted after the surface has warmed.",
+      "Planetary albedo, the fraction of incoming radiation reflected by Earth as a whole.",
+      "Latent heat transport, the energy moved by evaporation, condensation, and circulation."
+    ],
+    "explanation": "Insolation is incoming solar radiation. It is the external energy input that varies with factors such as sun angle, day length, latitude, season, and orbital geometry.",
+    "tags": [
+      "insolation",
+      "definition"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-seasons-control",
+    "prompt": "At the June solstice, polar regions at similar latitudes experience opposite lighting conditions: one pole has continuous daylight and the other continuous darkness. Which control produces that hemispheric contrast?",
+    "choices": [
+      "Earth's tilted rotation axis changes each hemisphere's daylight duration and solar angle during the orbit.",
+      "Earth reaches the part of its orbit nearest the Sun, increasing sunlight for the north while reducing it for the south.",
+      "Seasonal sea-ice and cloud albedo changes initiate opposite seasons before sunlight geometry changes.",
+      "Ocean heat storage shifts warmth between hemispheres and sets the solstice pattern without changing sunlight geometry."
+    ],
+    "explanation": "Axial tilt makes one hemisphere lean toward the Sun while the other leans away. Distance from the Sun, albedo, and ocean heat storage can modify climate, but they do not create the opposite solstice lighting pattern.",
+    "tags": [
+      "seasons",
+      "axial tilt"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-solar-constant",
+    "prompt": "What does the solar constant measure?",
+    "choices": [
+      "The average insolation reaching the top of Earth's atmosphere.",
+      "The amount of longwave radiation emitted by Earth's surface at night.",
+      "The fraction of sunlight reflected by clouds and bright surfaces.",
+      "The average solar energy absorbed by the surface after albedo losses."
+    ],
+    "explanation": "The solar constant is the average amount of incoming solar radiation reaching the top of the atmosphere, before reflection, scattering, and absorption modify the energy that reaches the surface.",
+    "tags": [
+      "solar constant",
+      "insolation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l02-radiation-wavelengths",
+    "prompt": "Why does sunlight differ from the radiation emitted by Earth's surface?",
+    "choices": [
+      "The hotter Sun emits mostly shorter-wavelength radiation, while cooler Earth emits mostly longwave infrared radiation.",
+      "The Sun emits only longwave infrared radiation, while Earth emits mostly ultraviolet radiation.",
+      "Earth emits shorter wavelengths because its atmosphere reflects visible light.",
+      "The wavelength difference is caused mainly by scattering rather than the temperature of the emitting body."
+    ],
+    "explanation": "Hotter objects emit shorter-wavelength radiation. The Sun is much hotter than Earth's surface, so sunlight is dominated by shorter wavelengths compared with Earth's longwave infrared emission.",
+    "tags": [
+      "radiation",
+      "wavelength"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-atmospheric-transmission",
+    "prompt": "A shortwave energy diagram shows incoming sunlight split among reflection to space, atmospheric absorption, cloud scattering, and surface absorption. Which interpretation best explains why surface insolation is less than the top-of-atmosphere input?",
+    "choices": [
+      "The atmosphere and clouds partition shortwave radiation before the remaining fraction reaches and is absorbed by the surface.",
+      "The surface receives less energy only because Earth emits longwave infrared radiation after sunset.",
+      "Clouds matter only after sunlight reaches the ground, so top-of-atmosphere and surface shortwave inputs should match.",
+      "Surface insolation is lower mainly because greenhouse gases absorb shortwave radiation more strongly than they absorb infrared radiation."
+    ],
+    "explanation": "Incoming solar radiation is divided among reflection, scattering, atmospheric and cloud absorption, and surface absorption. The surface energy input is therefore the portion that remains after shortwave interactions above the ground.",
+    "tags": [
+      "energy budget",
+      "atmosphere"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l02-albedo-surface-reflection",
+    "prompt": "Four surfaces receive the same noon sunlight. Which one should reflect the largest fraction, and why is that different from absorbing the most heat?",
+    "choices": [
+      "Fresh snow or ice, because a bright surface sends more shortwave radiation back upward.",
+      "A dark tropical forest, because its high biological productivity requires high reflectivity.",
+      "A black asphalt road, because surfaces that warm quickly must reflect the most sunlight.",
+      "A wet grassland, because water on leaves converts reflected sunlight into longwave radiation before absorption."
+    ],
+    "explanation": "Light, smooth surfaces such as snow and ice tend to reflect a larger fraction of incoming radiation. Darker and rougher surfaces usually absorb more solar energy.",
+    "tags": [
+      "albedo",
+      "reflection"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-rayleigh-scattering",
+    "prompt": "Why does the lower atmosphere commonly appear blue under clear daytime conditions?",
+    "choices": [
+      "Small gas molecules scatter shorter blue wavelengths more strongly than red wavelengths.",
+      "Ozone converts all visible light into blue infrared radiation.",
+      "Cloud droplets absorb blue light and re-emit it toward the surface.",
+      "The ocean reflects blue light upward into the entire atmosphere."
+    ],
+    "explanation": "Rayleigh scattering by small gas molecules affects shorter wavelengths more strongly, so blue light is scattered more than red light.",
+    "tags": [
+      "scattering",
+      "radiation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-uneven-insolation-gradient",
+    "prompt": "Why does low-angle sunlight heat the surface less effectively than sunlight arriving nearly overhead?",
+    "choices": [
+      "The same incoming energy is spread over a larger surface area.",
+      "The Sun emits less radiation toward places farther from the subsolar point.",
+      "The solar constant becomes much smaller near the poles than near the equator.",
+      "Low-angle sunlight is weaker mainly because it is converted to longwave radiation before reaching the surface."
+    ],
+    "explanation": "Earth's curvature makes sunlight arrive at lower angles away from the subsolar region. The same energy is distributed over a larger area, reducing effective heating.",
+    "tags": [
+      "latitude",
+      "insolation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-diurnal-rotation",
+    "prompt": "Which process causes the day-night pattern in insolation at a given location?",
+    "choices": [
+      "Earth's rotation on its axis.",
+      "Precession of Earth's rotational axis over thousands of years.",
+      "Changes in the eccentricity of Earth's orbit.",
+      "Seasonal cloud-albedo feedbacks."
+    ],
+    "explanation": "Earth rotates once every 24 hours, so any location alternates between receiving sunlight during the day and losing direct insolation at night.",
+    "tags": [
+      "diurnal variation",
+      "rotation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l02-orbital-variation-controls",
+    "prompt": "Which set lists orbital-scale controls on insolation patterns?",
+    "choices": [
+      "Eccentricity, obliquity, and precession.",
+      "Reflection, scattering, and absorption.",
+      "Conduction, convection, and radiation.",
+      "Humidity, pressure, and cloud height."
+    ],
+    "explanation": "On kiloyear timescales, insolation patterns vary with Earth's orbital eccentricity, axial obliquity, and precession.",
+    "tags": [
+      "orbital variation",
+      "insolation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-angle-of-incidence-definition",
+    "prompt": "A high-latitude site has lower Sun angles than a subtropical site, but during local summer it also has much longer daylight. Which interpretation best compares their daily energy budgets?",
+    "choices": [
+      "Low angle reduces energy per unit area, but long daylight can partly offset that by extending the time over which shortwave energy is received.",
+      "Low angle increases energy per unit area because the same beam is compressed into a smaller footprint, while long daylight is secondary.",
+      "Long daylight changes incoming sunlight into longwave radiation before it reaches the ground, offsetting low-angle losses.",
+      "The two sites must receive the same daily energy because the solar constant is fixed outside the atmosphere."
+    ],
+    "explanation": "Daily insolation depends on geometry and duration. Low-angle sunlight is spread over a larger surface area, but long daylight increases the number of hours over which energy is received.",
+    "tags": [
+      "insolation",
+      "angle of incidence"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l02-day-length-definition",
+    "prompt": "A high-latitude site has low Sun angles but very long daylight during local summer. Why can day length still matter for its energy budget?",
+    "choices": [
+      "Longer daylight increases the number of hours receiving shortwave energy, even though low angle reduces energy per unit area.",
+      "Longer daylight raises the solar constant only at high latitudes, offsetting any low-angle spreading.",
+      "Longer daylight changes sunlight into outgoing infrared radiation before it reaches the surface.",
+      "Longer daylight removes the effect of albedo because reflection occurs only during short winter days."
+    ],
+    "explanation": "Total received energy depends on both duration and angle. Long daylight can increase exposure time, while low solar angle still spreads the incoming energy over a larger area.",
+    "tags": [
+      "day length",
+      "insolation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-distance-sun-control",
+    "prompt": "How does Earth-Sun distance affect insolation?",
+    "choices": [
+      "A shorter distance slightly increases incoming solar energy, while a greater distance slightly decreases it.",
+      "A shorter distance eliminates seasonal differences between hemispheres.",
+      "A greater distance increases insolation because sunlight arrives at a higher angle.",
+      "Distance matters only at night, when the surface emits longwave radiation."
+    ],
+    "explanation": "Incoming solar energy changes with distance from the Sun. In Earth's climate, distance is one control among others, including angle of incidence and day length.",
+    "tags": [
+      "Earth-Sun distance",
+      "insolation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-latitude-season-interaction",
+    "prompt": "Why can a high-latitude location receive little effective heating even during months with long daylight?",
+    "choices": [
+      "The Sun can remain low in the sky, spreading energy over a large surface area.",
+      "Long daylight converts all incoming radiation into reflected ultraviolet light.",
+      "High latitudes receive no solar radiation unless Earth is closest to the Sun.",
+      "The solar constant changes only at high latitudes during local summer."
+    ],
+    "explanation": "Long daylight increases exposure time, but low solar angle reduces energy concentration. Seasonal climate depends on both day length and angle of incidence.",
+    "tags": [
+      "latitude",
+      "seasons"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-shortwave-longwave-contrast",
+    "prompt": "Which comparison correctly distinguishes incoming solar radiation from energy emitted by Earth's surface?",
+    "choices": [
+      "Sunlight is mostly shorter-wave radiation, while Earth's cooler surface emits longer-wave infrared radiation.",
+      "Sunlight and Earth emission are identical because both come from warm objects.",
+      "Earth emits shorter wavelengths than the Sun because Earth is closer to the lower atmosphere.",
+      "Solar radiation is mainly longwave infrared before it reaches the top of the atmosphere."
+    ],
+    "explanation": "Hotter objects emit shorter-wavelength radiation. The Sun emits mostly shortwave radiation, while Earth's cooler surface emits longwave infrared radiation.",
+    "tags": [
+      "radiation",
+      "energy budget"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-orbital-timescale-trap",
+    "prompt": "Which change occurs on an orbital-scale timescale rather than a daily or seasonal timescale?",
+    "choices": [
+      "A gradual shift in axial precession that alters the seasonal distribution of sunlight over thousands of years.",
+      "The alternation between daylight and darkness caused by Earth's rotation.",
+      "The yearly contrast between summer and winter in one hemisphere.",
+      "The local noon-to-evening change in solar angle on a single day."
+    ],
+    "explanation": "Precession is one of the orbital controls on insolation and changes over thousands of years. Rotation is daily, while axial tilt produces the annual seasonal cycle.",
+    "tags": [
+      "orbital variation",
+      "timescales"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-ice-albedo-feedback-link",
+    "prompt": "Why can a decrease in insolation promote expansion of ice beyond the direct cooling effect?",
+    "choices": [
+      "More ice raises albedo, reflecting more sunlight and reinforcing cooling.",
+      "More ice lowers albedo, causing all incoming sunlight to be absorbed by the surface.",
+      "Ice expansion stops Earth's rotation, lengthening nights everywhere.",
+      "Ice expansion increases the solar constant at the top of the atmosphere."
+    ],
+    "explanation": "Ice and snow are reflective. If reduced insolation allows ice to expand, the higher albedo can reflect more incoming radiation and amplify cooling.",
+    "tags": [
+      "albedo",
+      "climate feedbacks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l02-subsolar-point-logic",
+    "prompt": "A diagram places the subsolar point near 23.5 degrees north while the Southern Hemisphere has shorter days. Which interpretation best connects the diagram to seasonal insolation?",
+    "choices": [
+      "Northern subtropical latitudes receive the most direct noon sunlight, while Northern Hemisphere day length and solar angle increase relative to the south.",
+      "Southern subtropical latitudes receive the most direct noon sunlight because the subsolar point marks where winter daylight is longest.",
+      "Both hemispheres receive the same daily insolation because the subsolar point changes solar angle but not day length.",
+      "The diagram mainly shows eccentricity, so hemisphere seasons depend on Earth-Sun distance rather than axial tilt."
+    ],
+    "explanation": "A northern subsolar point means the most direct noon sunlight is in the Northern Hemisphere. Axial tilt also changes day length, so seasonal insolation reflects both angle and duration.",
+    "tags": [
+      "seasons",
+      "solar angle"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l02-effective-energy-diagram",
+    "prompt": "In an angle-of-incidence diagram, two equal-width beams of sunlight strike the surface, but one beam covers a larger ground area. Which inference is correct?",
+    "choices": [
+      "The beam spread over the larger area delivers less energy per unit area.",
+      "The beam spread over the larger area must have a higher solar constant.",
+      "Both beams heat equally per unit area because the Sun's total output is unchanged.",
+      "The beam covering less area must be lower-angle sunlight."
+    ],
+    "explanation": "Low-angle sunlight spreads the same incoming energy over more surface area, reducing energy per unit area. This is the geometric basis for latitudinal heating differences.",
+    "tags": [
+      "angle of incidence",
+      "diagrams"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l02-milankovitch-confusion",
+    "prompt": "Which statement best avoids a common confusion about orbital controls on climate?",
+    "choices": [
+      "Orbital changes mainly redistribute where and when sunlight is received, even if total solar output is nearly constant.",
+      "Orbital changes are the same as random changes in the Sun's energy output.",
+      "Orbital changes control climate only by shutting off sunlight at the equator.",
+      "Orbital changes affect only nighttime temperature and not seasonal heating patterns."
+    ],
+    "explanation": "Eccentricity, obliquity, and precession alter the spatial and seasonal distribution of insolation. They are not simply changes in the Sun's total luminosity.",
+    "tags": [
+      "orbital variation",
+      "common confusions"
+    ],
+    "difficulty": "Hard"
+  }
+]

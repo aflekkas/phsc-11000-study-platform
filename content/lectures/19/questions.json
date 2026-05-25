@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l19-coal-formation",
+    "prompt": "A core from a tropical lowland contains rooted seat earth, a thick organic-rich bed with few sand laminae, and overlying gray marine shale. Which interpretation best explains the coal-forming interval?",
+    "choices": [
+      "A waterlogged, low-oxygen mire accumulated peat during low clastic input, then transgression buried the swamp under marine sediment.",
+      "A high-energy distributary channel rapidly buried plant debris in sand, and compaction alone concentrated the organic matter into coal.",
+      "An open-marine carbonate platform produced organic mud from plankton, and later exposure created the rooted layer below the shale.",
+      "A dry floodplain soil oxidized plant remains before burial, and groundwater later added the carbon needed for coalification."
+    ],
+    "explanation": "The rooted bed and organic-rich interval point to peat accumulation in a saturated mire where decay and clastic dilution were limited. Marine shale above the coal records later flooding that helped bury and preserve the peat.",
+    "tags": [
+      "coal",
+      "Carboniferous",
+      "peat"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l19-coal-atmosphere",
+    "prompt": "Which carbon-cycle reasoning best links Carboniferous coal burial to lower atmospheric CO2 and higher O2?",
+    "choices": [
+      "Photosynthesis produced organic carbon and O2; burial kept some organic carbon from being oxidized, so O2 could accumulate while CO2 fell.",
+      "Plant respiration produced most atmospheric O2, and coal burial locked that O2 into rock while removing CO2 from seawater.",
+      "Carbonate precipitation released O2 directly, so organic-carbon burial was secondary to limestone formation in coal swamps.",
+      "Glacial exposure oxidized peat to CO2, and the resulting greenhouse warming raised O2 by expanding tropical rainfall."
+    ],
+    "explanation": "The key link is the imbalance between photosynthesis and oxidation. If organic carbon is buried rather than decomposed, less O2 is consumed by decay and less CO2 returns to the active surface system.",
+    "tags": [
+      "carbon cycle",
+      "oxygen",
+      "coal"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l19-industrial-coal-link",
+    "prompt": "Why did Carboniferous coal become a powerful industrial resource rather than just another sedimentary rock?",
+    "choices": [
+      "It concentrated ancient plant carbon into an energy-dense fuel that could power steam engines and coke-fueled metallurgy.",
+      "It supplied enough iron impurities for smelting, so industrial furnaces could use coal seams as both ore and fuel.",
+      "It behaved like petroleum because burial converted peat directly into liquid hydrocarbons before mining.",
+      "It worked mainly as a limestone substitute, adding carbonate flux rather than combustible carbon to furnaces."
+    ],
+    "explanation": "Coal is carbon-rich rock made from ancient plant material. Its energy density made it central to steam power and iron manufacturing, while its use also returned stored fossil carbon to the active atmosphere.",
+    "tags": [
+      "coal",
+      "Industrial Revolution",
+      "fossil fuels"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-late-carboniferous-sea-level",
+    "prompt": "Which chain best explains repeated expansion of tropical coal swamps during the later Carboniferous?",
+    "choices": [
+      "Gondwanan glaciation drove sea-level oscillations; lowstands exposed wet equatorial lowlands where deltas and mires could accumulate peat.",
+      "Rapid ridge growth produced a steady highstand, so deeper epicontinental seas created more accommodation for peat far below wave base.",
+      "Continental breakup opened humid ocean gateways, and upwelling buried marine algal mats that later became coal seams.",
+      "Pangaean aridity expanded deserts, but intermittent dune stabilization preserved thin peat layers by excluding oxygen."
+    ],
+    "explanation": "Coal-swamp expansion depended on both eustasy and climate. Glacial sea-level shifts repeatedly exposed low-gradient tropical surfaces, and humid equatorial conditions allowed peat to accumulate before the next flooding event.",
+    "tags": [
+      "sea level",
+      "glaciation",
+      "coal swamps"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l19-cyclothem-sequence",
+    "prompt": "In an idealized cyclothem from an ancient delta plain, where should the coal seam occur?",
+    "choices": [
+      "Above nearshore and deltaic sandstones, where a delta-top swamp reached maximum development, and below marginal marine sediments from renewed flooding.",
+      "At the base of the sequence, below offshore limestones, where deep marine mud first accumulated.",
+      "Within the deepest marine limestone, where carbonate organisms trapped plant fragments on the sea floor.",
+      "Only at the top of the sequence, after open-marine conditions had remained stable for the longest interval."
+    ],
+    "explanation": "A cyclothem records glacio-eustatic shifts: offshore marine deposits pass upward into nearshore or deltaic sands, then a coal seam forms in a delta-top swamp, followed by marginal marine and marine sediments as sea level rises.",
+    "tags": [
+      "cyclothems",
+      "sea level",
+      "sedimentary record"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l19-coal-swamp-feedback",
+    "prompt": "Which feedback best links coal-swamp forests to unusually large terrestrial arthropods?",
+    "choices": [
+      "Extensive photosynthesis and organic carbon burial raised atmospheric O2, reducing respiratory limits on arthropod body size.",
+      "Marine flooding increased salt content in swamp waters, allowing arthropods to absorb oxygen directly through shells.",
+      "Acidic peat waters dissolved arthropod exoskeletons, forcing rapid growth before burial.",
+      "Mountain building increased wind speeds, selecting for larger insects with stronger flight muscles."
+    ],
+    "explanation": "Coal-swamp forests drew down CO2 and helped raise atmospheric O2. Higher oxygen reduced one constraint on arthropod respiration, allowing extreme body sizes such as giant dragonfly-like insects and millipede-like forms.",
+    "tags": [
+      "oxygen",
+      "arthropods",
+      "coal swamps"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-mazon-creek-preservation",
+    "prompt": "What made the Mazon Creek fossils especially informative about coal-swamp communities?",
+    "choices": [
+      "Rapid burial and early nodule formation sealed organisms before compaction and decay destroyed many soft tissues.",
+      "Long exposure on an oxygenated beach removed soft tissues but sorted shells into a cleaner fossil assemblage.",
+      "Repeated lava flows baked plant remains into coal while destroying most animal fossils.",
+      "Deep ocean burial preserved only planktonic organisms, giving a narrow view of offshore food webs."
+    ],
+    "explanation": "Mazon Creek fossils occur in nodules from marginal marine deposits above a coal seam. Early concretion formation around buried organisms limited decay and compaction, preserving a diverse assemblage of plants and animals.",
+    "tags": [
+      "Mazon Creek",
+      "fossil preservation",
+      "coal swamps"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-coal-swamp-plants",
+    "prompt": "Which plant community best fits a wet Carboniferous coal-swamp forest rather than a drier Permian upland?",
+    "choices": [
+      "Tree-sized lycophytes and horsetails, ferns, tree ferns, and early seed plants growing in wet lowlands.",
+      "Conifer-dominated seed-plant forests with drought-tolerant leaves occupying seasonally dry uplands.",
+      "Low-diversity spore plants restricted to stream margins, with no tree-sized wetland forms.",
+      "Grass-rich open habitats with silica-rich leaves supporting hypsodont grazing mammals."
+    ],
+    "explanation": "Carboniferous coal swamps supported diverse wetland vegetation, including tree-sized lycophytes and horsetails, ferns, tree ferns, and early seed plants. Later dry Permian settings favored different plant communities.",
+    "tags": [
+      "coal swamp plants",
+      "lycophytes",
+      "Carboniferous"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-tetrapod-transition",
+    "prompt": "Why were amphibians especially successful in many Carboniferous coal-swamp habitats?",
+    "choices": [
+      "Wet habitats kept reproduction close to water, and amphibians included diverse predators in swamp ecosystems.",
+      "Dry interiors let amphibians use shelled amniotic eggs, freeing them from aquatic reproduction.",
+      "Low oxygen favored amphibians over arthropods because arthropod respiration fails in waterlogged habitats.",
+      "Marine incursions converted amphibians into fully aquatic reptiles that no longer needed land habitats."
+    ],
+    "explanation": "Carboniferous amphibians were diverse and dominant near water, including large predators. Their reproductive dependence on water fit wet coal-swamp settings better than the drier environments that later favored reptiles.",
+    "tags": [
+      "amphibians",
+      "tetrapods",
+      "coal swamps"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-coal-forest-decline",
+    "prompt": "What environmental change best explains the decline of wet coal-swamp ecosystems toward the Permian?",
+    "choices": [
+      "Drying and aridification associated with Pangaea favored seed-bearing plants and reptiles over wetland forests and amphibians.",
+      "A return to globally high sea level drowned all lowlands and replaced terrestrial forests with open-ocean reefs.",
+      "Atmospheric oxygen fell immediately to modern levels, preventing all plant growth in equatorial lowlands.",
+      "Impact debris blocked sunlight permanently, ending photosynthesis before reptiles or seed plants diversified."
+    ],
+    "explanation": "As conditions became drier across much of Pangaea, wet coal-swamp forests declined. Seed-bearing plants and reptiles were better suited to drier habitats than seedless wetland plants and amphibians.",
+    "tags": [
+      "Permian transition",
+      "aridification",
+      "coal swamps"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-peat-definition",
+    "prompt": "What is peat in the coal-forming sequence?",
+    "choices": [
+      "Partly decayed plant material that accumulates in waterlogged, low-oxygen wetlands before deeper burial and coalification.",
+      "Organic-rich mud dominated by marine algae that becomes black shale without a wetland plant source.",
+      "Mineral-rich overbank silt that preserves root traces but contains too little plant carbon to coalify.",
+      "Compacted lignite or bituminous coal after heat and burial have already removed most original wetland structure."
+    ],
+    "explanation": "Peat is organic-rich wetland sediment. Coal formation begins when plant material builds up faster than it decays, then burial and coalification transform that peat into coal.",
+    "tags": [
+      "peat",
+      "coal formation",
+      "wetlands"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l19-carboniferous-name",
+    "prompt": "What does the name Carboniferous reflect about many rocks from that interval?",
+    "choices": [
+      "They include abundant coal-bearing strata produced by plant-rich swamp environments.",
+      "They are mostly marine carbonate platforms, so the name refers chiefly to limestone production.",
+      "They record unusually high dissolved carbon in seawater but little organic-carbon burial on land.",
+      "They mark the first appearance of carbon-based skeletons in marine animals."
+    ],
+    "explanation": "The Carboniferous is named for its coal-bearing rocks. Those coal seams record extensive plant productivity and organic carbon burial in wet lowland settings.",
+    "tags": [
+      "Carboniferous",
+      "coal",
+      "geologic periods"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l19-lowland-mire-definition",
+    "prompt": "Which description defines a lowland mire in the context of coal formation?",
+    "choices": [
+      "A wet, peat-forming lowland where plant remains can accumulate under saturated conditions.",
+      "A seasonally dry floodplain soil where plant remains are mostly oxidized before burial.",
+      "A nearshore sand body where rapid current flow mixes organic debris with abundant clastic sediment.",
+      "A shallow marine shelf where carbonate skeletons, not wetland plants, dominate sediment accumulation."
+    ],
+    "explanation": "Coal-forming mires are saturated lowlands where plant production and preservation outpace decay. They differ from dry uplands, deep marine basins, or volcanic ash deposits.",
+    "tags": [
+      "mires",
+      "peat",
+      "coal swamps"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l19-anoxic-decay-mechanism",
+    "prompt": "Why do low-oxygen swamp waters favor the preservation of plant material?",
+    "choices": [
+      "They slow microbial decomposition, allowing organic matter to persist long enough for burial.",
+      "They increase plant productivity by themselves, so oxygen-rich and oxygen-poor swamps preserve peat equally well.",
+      "They make decay faster but reduce clastic dilution enough that coal still forms.",
+      "They convert cellulose directly into graphite at the surface before burial begins."
+    ],
+    "explanation": "Decay is much less efficient when oxygen is scarce. In saturated swamp sediment, low oxygen lets organic material accumulate instead of being fully oxidized back to carbon dioxide.",
+    "tags": [
+      "anoxia",
+      "decomposition",
+      "peat preservation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-clastic-dilution",
+    "prompt": "How would rapid sand and silt delivery affect a peat-forming swamp?",
+    "choices": [
+      "It would dilute the organic material, making thick, relatively pure coal less likely to form.",
+      "It would improve preservation by burying plant material, but the resulting bed would be more mineral-rich and less coal-prone.",
+      "It would increase peat purity because quartz and clay are removed during compaction before coalification.",
+      "It would turn the deposit into a marine carbonate seam if flooding followed soon afterward."
+    ],
+    "explanation": "Coal requires concentrated organic matter. Heavy clastic input can bury plant debris, but it also mixes too much mineral sediment into the peat and reduces coal quality or continuity.",
+    "tags": [
+      "clastic dilution",
+      "peat",
+      "sedimentation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-coalification-burial",
+    "prompt": "What role does burial play after peat has accumulated?",
+    "choices": [
+      "Compaction, heating, and chemical change drive coalification, increasing carbon concentration through time.",
+      "Burial exposes peat to more oxygen, so coal forms by complete oxidation.",
+      "Burial converts peat directly into granite if groundwater is acidic enough.",
+      "Burial removes carbon from peat and replaces it with marine shell material."
+    ],
+    "explanation": "Peat does not become coal just by accumulating at the surface. Continued burial compacts the organic-rich sediment and drives chemical changes that progressively concentrate carbon.",
+    "tags": [
+      "coalification",
+      "burial",
+      "carbon"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-glacioeustatic-cyclothems",
+    "prompt": "Why are repeated coal seams often associated with Carboniferous cyclothems?",
+    "choices": [
+      "Glacial sea-level changes repeatedly shifted environments from marine shelves to delta plains and peat swamps, then back to flooding.",
+      "Constant sea level kept a single swamp in place without interruption, producing identical coal beds everywhere.",
+      "Volcanic eruptions repeatedly turned marine limestone into peat without changing shoreline position.",
+      "Continental interiors became permanently dry, so wind formed coal seams during each cycle."
+    ],
+    "explanation": "Cyclothems record repeated environmental shifts tied to glacial sea-level change. Coal seams fit intervals when exposed lowlands supported peat swamps before later marine flooding.",
+    "tags": [
+      "cyclothems",
+      "sea level",
+      "glaciation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-swamp-carbon-storage",
+    "prompt": "Why is coal a record of ancient carbon storage?",
+    "choices": [
+      "It preserves organic carbon fixed by plants and buried before it could return quickly to the atmosphere as CO2.",
+      "It stores carbon only as shell carbonate produced by marine animals in open oceans.",
+      "It forms when atmospheric oxygen is buried directly as a solid mineral fuel.",
+      "It records carbon released from mantle magma rather than carbon captured by photosynthesis."
+    ],
+    "explanation": "Coal is fossil plant carbon. It represents carbon that photosynthesis removed from the active surface system and that burial kept from rapid oxidation.",
+    "tags": [
+      "carbon burial",
+      "coal",
+      "photosynthesis"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l19-marine-flooding-inference",
+    "prompt": "A coal seam is overlain by marine shale and limestone, while rooted sediment lies below the coal. What environmental change does that sequence most likely record?",
+    "choices": [
+      "A peat-forming lowland developed on exposed coastal plain and was then flooded during a marine transgression.",
+      "A permanently deep offshore basin gradually shallowed into a swamp, with limestone marking maximum peat growth.",
+      "A river channel cut through a swamp, and the limestone records freshwater carbonate deposited before marine flooding.",
+      "A dry upland soil accumulated plant litter, and later groundwater cementation created the marine shale and limestone."
+    ],
+    "explanation": "Coal followed by marine deposits indicates that a peat-forming lowland was later flooded. In Carboniferous cyclothems, that pattern commonly reflects transgression after swamp development.",
+    "tags": [
+      "transgression",
+      "coal seams",
+      "cyclothems"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l19-oxygen-carbon-link",
+    "prompt": "Two Carboniferous intervals have similar plant productivity. In one, peat is mostly oxidized during dry exposure; in the other, peat is rapidly buried in waterlogged swamps. Which atmospheric effect is more likely in the buried-peat interval?",
+    "choices": [
+      "More organic carbon escapes oxidation, so less photosynthetic O2 is consumed by decay and atmospheric O2 can rise while CO2 is drawn down.",
+      "More buried peat directly releases O2 during compaction, so photosynthesis is unnecessary once coal seams begin forming.",
+      "More burial should lower O2 because organic carbon underground continues aerobic respiration faster than exposed peat.",
+      "Both intervals must have identical atmospheric effects because productivity alone controls O2 and CO2 regardless of preservation."
+    ],
+    "explanation": "The atmospheric effect depends on mass balance. Burial of reduced organic carbon prevents full oxidation back to CO2, allowing some photosynthetic O2 to remain in the surface system.",
+    "tags": [
+      "oxygen",
+      "carbon burial",
+      "Carboniferous"
+    ],
+    "difficulty": "Hard"
+  }
+]

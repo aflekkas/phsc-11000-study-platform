@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l21-end-permian-cause",
+    "prompt": "Which causal chain most fully accounts for the end-Permian extinction?",
+    "choices": [
+      "Siberian Traps eruptions released CO2 and SO2, driving warming, acidification, anoxia, and toxicity, with Pangaea circulation and methane feedbacks amplifying stress.",
+      "Siberian Traps SO2 aerosols caused brief cooling, but CO2 buildup, ocean acidification, and anoxia were minor enough for rapid recovery.",
+      "Pangaea circulation alone made deep waters stagnant, while volcanic gases and methane feedbacks played little role in the crisis.",
+      "Methane release amplified warming and anoxia, but volcanic CO2 and SO2 were secondary effects after ocean chemistry had already collapsed."
+    ],
+    "explanation": "The strongest chain starts with Siberian Traps volcanism and its gas release. CO2-driven warming, SO2-related acid stress, ocean acidification, deoxygenation, toxic conditions, Pangaea-influenced circulation, and possible methane feedbacks together explain a cascading extinction better than any single partial mechanism.",
+    "tags": [
+      "end-Permian",
+      "volcanism",
+      "large igneous province"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l21-durophagy",
+    "prompt": "In the Mesozoic Marine Revolution, what selective pressure did durophagous predators create?",
+    "choices": [
+      "Shell-crushing and drilling favored prey that burrowed deeper, moved faster, thickened or ornamented shells, or used spines.",
+      "Prey response was mainly shell thickening, while mobility, burrowing, and ornamentation changed little.",
+      "Prey response was mainly deeper burrowing, while shell armor and mobility were less important to escalation.",
+      "Prey response was mainly habitat shift into reefs, while shell form and life position stayed close to Paleozoic epifaunal patterns."
+    ],
+    "explanation": "Durophagy favored prey responses that made capture, crushing, or drilling harder: thicker and ornamented shells, spines, mobility, deeper burrowing, and other defensive or escape strategies. Staying exposed or easier to crush would not be the expected selective advantage.",
+    "tags": [
+      "durophagy",
+      "Mesozoic Marine Revolution",
+      "predation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-mmr",
+    "prompt": "Which pattern is most characteristic of the Mesozoic Marine Revolution?",
+    "choices": [
+      "Mobile durophagous predators increased, and prey shifted toward infaunal, mobile, and heavily defended forms as sessile epifaunal dominance declined.",
+      "Predators diversified, but prey stayed mostly exposed as epifaunal suspension feeders because shell strength and burrowing changed little.",
+      "Infaunalization and shell defenses increased mainly during recovery from extinction, before durophagous predators became ecologically important.",
+      "Modern-style groups appeared after recovery, but brachiopods and stalked crinoids regained Paleozoic-level dominance in shallow seas."
+    ],
+    "explanation": "The Mesozoic Marine Revolution describes escalating predator-prey interactions and a shift toward more active predators and more mobile, infaunal, or defended prey. It was not simply taxonomic recovery, a return to Paleozoic-style dominance, or prey change without predator escalation.",
+    "tags": [
+      "MMR",
+      "predation",
+      "Modern Evolutionary Fauna"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l21-lip-volcanism-effects",
+    "prompt": "Which set of effects is most consistent with large igneous province volcanism during a mass extinction?",
+    "choices": [
+      "CO2-driven warming, ocean acidification, toxic gases, acid rain, ozone stress, ash-darkening, and oxygen stress.",
+      "Only brief cooling from ash, with no greenhouse warming, acidification, or chemical stress after eruptions end.",
+      "A direct increase in ocean oxygen and carbonate saturation that protects shelled organisms from extinction.",
+      "A purely local lava-flow hazard with little effect on atmosphere, oceans, or global ecosystems."
+    ],
+    "explanation": "Large igneous province eruptions can affect climate and chemistry through CO2, sulfur and halogen gases, aerosols, ash, acid rain, ozone depletion, warming, cooling pulses, acidification, and hypoxia.",
+    "tags": [
+      "large igneous provinces",
+      "volcanism",
+      "environmental stress"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-permian-extinction-selectivity",
+    "prompt": "Which selectivity pattern best fits end-Permian stresses such as warming, acidification, anoxia, and euxinia?",
+    "choices": [
+      "Heavy losses among biomineralized and benthic groups such as brachiopods, crinoids, bryozoans, rugose and tabulate corals, and trilobites.",
+      "Preferential survival of sessile calcifiers, because carbonate skeletons buffered them from acidification and low oxygen.",
+      "Losses concentrated only in fast-swimming nekton, because seafloor chemistry would not affect attached or burrowing animals.",
+      "Extinction mainly among groups without skeletons, because acidification selectively damages soft-bodied animals."
+    ],
+    "explanation": "End-Permian selectivity makes sense if oxygen loss, sulfide toxicity, warming, and acidification acted together. Sessile or weakly mobile calcifiers on shelves were exposed to both metabolic and skeletal-building stress.",
+    "tags": [
+      "end-Permian",
+      "extinction selectivity",
+      "marine invertebrates"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l21-triassic-reef-gap",
+    "prompt": "What does an Early Triassic reef gap with brief microbial-mat expansion suggest about post-extinction recovery?",
+    "choices": [
+      "Metazoan reef builders and grazers were so depleted that microbial communities temporarily occupied ecological space.",
+      "Coral reefs immediately recovered, but microbial mats became common because grazing pressure was unusually high.",
+      "Ocean chemistry became permanently ideal for shell builders, preventing microbial communities from spreading.",
+      "The extinction affected only land animals, so reef gaps reflect a lack of sediment rather than biology."
+    ],
+    "explanation": "After the end-Permian extinction, recovery was slow. A reef gap and spread of microbial mats indicate that many animal reef builders and grazers were absent or greatly reduced.",
+    "tags": [
+      "recovery",
+      "reef gap",
+      "Early Triassic"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-paleozoic-fauna-life-mode",
+    "prompt": "Which life mode best describes many dominant Paleozoic marine community members before Mesozoic escalation changed shallow-seafloor ecology?",
+    "choices": [
+      "Sessile, shelly, epifaunal suspension feeding on or above the seafloor.",
+      "Mobile infaunal deposit feeding below the sediment-water interface as the dominant shallow-water habit.",
+      "Active shell-crushing predation by crabs, rays, and teleost fishes as the main benthic structure.",
+      "Planktonic suspension feeding in the open water column with little attachment to the seafloor."
+    ],
+    "explanation": "Paleozoic marine communities were rich in sessile, skeletonized epifaunal suspension feeders such as brachiopods, crinoids, bryozoans, and corals. Later communities included more mobile and infaunal forms.",
+    "tags": [
+      "Paleozoic Evolutionary Fauna",
+      "life modes",
+      "marine ecology"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-modern-fauna-radiation",
+    "prompt": "Which pattern best characterizes the post-Paleozoic rise of the Modern Evolutionary Fauna?",
+    "choices": [
+      "Gastropods, bivalves, malacostracan crustaceans, echinoids, bony fish, and sharks diversified as marine diversity recovered and surpassed Paleozoic levels.",
+      "Trilobites, rugose corals, and tabulate corals re-diversified and restored Paleozoic community structure.",
+      "Stalked crinoids and brachiopods became more dominant in shallow water as predation intensity declined.",
+      "Marine animal diversity stayed below Paleozoic levels because surviving groups did not enter new ecological roles."
+    ],
+    "explanation": "Post-Paleozoic recovery involved diversification of groups that were less dominant earlier, including gastropods, bivalves, crabs and relatives, echinoids, bony fish, and sharks. This helped create modern-style marine ecosystems.",
+    "tags": [
+      "Modern Evolutionary Fauna",
+      "Mesozoic-Cenozoic Radiation",
+      "marine diversity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-infaunalization",
+    "prompt": "A Mesozoic assemblage shows more burrowing bivalves and irregular echinoids while surface-dwelling sessile forms decline. Which interpretation best fits the escalation model?",
+    "choices": [
+      "Infaunal life reduced exposure to shell-crushing and drilling predators active at the sediment surface.",
+      "Burrowing increased exposure to durophagous predators but was favored because it lowered the cost of shell production.",
+      "The pattern mainly records oxygen loss, because low oxygen selectively favors deep burrowing over surface suspension feeding.",
+      "The shift shows predation intensity declined, allowing prey to abandon surface attachment without needing defenses."
+    ],
+    "explanation": "Infaunalization is a functional response to more intense predation. Burrowing does not make prey invulnerable, but it changes the encounter rate with predators that attack exposed shells at the seafloor surface.",
+    "tags": [
+      "infaunalization",
+      "durophagy",
+      "predator-prey escalation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l21-recovery-opportunity",
+    "prompt": "Before the end-Permian crisis, a shelf community is dominated by brachiopods, rugose corals, tabulate corals, and trilobites. After recovery, bivalves, gastropods, scleractinian corals, and mobile predators are more prominent. Which interpretation best fits the shift?",
+    "choices": [
+      "The extinction removed incumbents and opened ecological roles, but recovery also involved new interactions and not simply refilling identical niches.",
+      "The shift proves the pre-extinction groups survived unchanged and were only renamed in later rocks.",
+      "The shift shows predators disappeared permanently, allowing all sessile prey to recover equally.",
+      "The shift must reflect sampling bias only, because mass extinction cannot change ecological dominance."
+    ],
+    "explanation": "Recovery after mass extinction includes ecological opportunity and restructuring. Surviving and newly evolved groups can expand after incumbents are removed, but the resulting communities need not recreate the old system.",
+    "tags": [
+      "ecological opportunity",
+      "recovery",
+      "end-Permian"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l21-euxinia-definition",
+    "prompt": "What is euxinia?",
+    "choices": [
+      "Anoxic water that also contains dissolved sulfide, creating especially toxic conditions for many animals.",
+      "Low-oxygen water without sulfide, stressful mainly because aerobic metabolism becomes limited.",
+      "Acidified seawater with lower carbonate ion concentration but normal dissolved oxygen.",
+      "Warm, stratified surface water that remains oxygenated because photosynthesis offsets all decay."
+    ],
+    "explanation": "Euxinia combines oxygen depletion with sulfide-rich chemistry. It is more severe than simple low oxygen because sulfide is toxic to many marine organisms.",
+    "tags": [
+      "euxinia",
+      "anoxia",
+      "end-Permian"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l21-durophagy-definition",
+    "prompt": "What is durophagy?",
+    "choices": [
+      "Feeding on hard-shelled or armored prey by crushing, drilling, or breaking skeletal defenses.",
+      "Suspension feeding by filtering particles while attached above the sediment surface.",
+      "Living below the sediment-water interface to reduce exposure to predators.",
+      "Scraping algal films from hard substrates without breaking skeletal prey."
+    ],
+    "explanation": "Durophagy is hard-prey feeding. During the Mesozoic Marine Revolution, durophagous predators helped drive stronger shells, deeper burrowing, mobility, and other defenses.",
+    "tags": [
+      "durophagy",
+      "predation",
+      "Mesozoic Marine Revolution"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-epifaunal-definition",
+    "prompt": "What does epifaunal mean for a seafloor animal?",
+    "choices": [
+      "It lives on top of the sediment or attached above the seafloor surface.",
+      "It lives entirely within the sediment below the sediment-water interface.",
+      "It moves through the water column as nekton but returns to the seafloor to feed.",
+      "It lives on the seafloor only as a larva before becoming fully planktonic."
+    ],
+    "explanation": "Epifaunal animals live on or above the seafloor surface. Many Paleozoic marine communities were dominated by sessile epifaunal suspension feeders.",
+    "tags": [
+      "epifaunal",
+      "life modes",
+      "Paleozoic marine communities"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l21-infaunal-definition",
+    "prompt": "What does infaunal mean for a marine animal?",
+    "choices": [
+      "It lives within sediment, partly or fully below the seafloor surface.",
+      "It attaches to stalks above the sediment surface and filters seawater.",
+      "It crawls on top of the sediment while remaining fully exposed to benthic predators.",
+      "It swims above the bottom as nekton but produces shelly remains in sediment."
+    ],
+    "explanation": "Infaunal animals live in sediment. The spread of infaunal habits is important because burrowing can reduce exposure to surface-active predators.",
+    "tags": [
+      "infaunal",
+      "burrowing",
+      "marine ecology"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l21-siberian-traps-lip",
+    "prompt": "Why are the Siberian Traps considered a large igneous province?",
+    "choices": [
+      "They represent an enormous episode of flood-basalt volcanism capable of altering atmosphere and ocean chemistry.",
+      "They were a small chain of island volcanoes with only local lava hazards.",
+      "They were a shallow inland sea that expanded across Permian Pangaea.",
+      "They were a reef system built by the last trilobites."
+    ],
+    "explanation": "Large igneous provinces involve immense volcanic output. The Siberian Traps are linked to end-Permian environmental stress through greenhouse gases, sulfur gases, warming, acidification, and oxygen loss.",
+    "tags": [
+      "Siberian Traps",
+      "large igneous province",
+      "volcanism"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-acidification-calcifiers",
+    "prompt": "Why would ocean acidification during the end-Permian crisis be especially stressful for many marine invertebrates?",
+    "choices": [
+      "Lower pH and reduced carbonate availability make it harder to build or maintain calcium carbonate skeletons.",
+      "Lower pH increases oxygen levels so much that shell builders cannot respire.",
+      "Acidification turns all seafloor sediment into freshwater mud, removing marine habitat.",
+      "Acidification affects only animals without skeletons, leaving calcifiers buffered from chemical change."
+    ],
+    "explanation": "Many vulnerable marine groups built carbonate shells or skeletons. Acidification makes carbonate biomineralization more difficult and can add stress alongside warming and anoxia.",
+    "tags": [
+      "ocean acidification",
+      "calcification",
+      "end-Permian"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-predator-prey-escalation",
+    "prompt": "What does predator-prey escalation describe in Mesozoic marine ecosystems?",
+    "choices": [
+      "Predators and prey repeatedly evolve stronger attacks and defenses in response to one another.",
+      "Predators disappear from shallow seas, so prey lose defensive traits through time.",
+      "Prey become less mobile because no predators can crush or drill shells.",
+      "All marine animals shift to photosynthesis as nutrients decline."
+    ],
+    "explanation": "Escalation is reciprocal evolutionary pressure. Crushing and drilling predators favor defenses such as thicker shells, spines, burrowing, and mobility, while predators may evolve more effective feeding structures.",
+    "tags": [
+      "predator-prey escalation",
+      "Mesozoic Marine Revolution",
+      "adaptation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-opportunist-recovery",
+    "prompt": "Why can opportunistic survivor groups become common immediately after a mass extinction?",
+    "choices": [
+      "They can rapidly occupy disturbed or vacated habitats while many former competitors and predators remain rare.",
+      "They become common only because extinction preserves fossils of rare groups more completely.",
+      "They are always the same dominant groups that controlled ecosystems before the extinction.",
+      "They require fully recovered reef ecosystems before their populations can expand."
+    ],
+    "explanation": "Extinction can remove incumbents and simplify communities. Opportunistic survivors may spread quickly in disturbed settings before slower-growing or more specialized groups recover.",
+    "tags": [
+      "recovery",
+      "opportunists",
+      "ecological opportunity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l21-euxinia-selectivity",
+    "prompt": "During an extinction interval, heavily skeletonized benthic animals decline most in restricted shelves, nektonic groups decline less, and biomarkers indicate photic-zone euxinia. Which kill mechanism best fits this selectivity?",
+    "choices": [
+      "Low oxygen and sulfide-rich waters stressed seafloor communities most strongly, especially less mobile animals with high oxygen demand.",
+      "Short-lived asteroid darkness best explains the pattern because photosynthesis collapse should target benthic animals before plankton.",
+      "Sea-level rise alone best explains the pattern because expanded shelves always eliminate bottom-water chemical stress.",
+      "Predator escalation best explains the pattern because mobile predators selectively remove only low-oxygen tolerant animals."
+    ],
+    "explanation": "Anoxia and euxinia should be especially damaging to benthic communities in poorly ventilated settings. Selectivity by habitat, mobility, and oxygen demand helps distinguish this mechanism from other stresses.",
+    "tags": [
+      "anoxia",
+      "euxinia",
+      "extinction selectivity"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l21-mmr-ecological-restructuring",
+    "prompt": "A pre-Mesozoic shallow shelf has many exposed sessile suspension feeders, while a later shelf has more durophagous predators, infaunal bivalves, mobile grazers, and thicker shells. Which interpretation best describes the change?",
+    "choices": [
+      "It reflects ecological escalation: predation pressure and prey responses changed life position, mobility, and defensive traits.",
+      "It is only a taxonomic replacement because ecological roles stayed fixed while species names changed.",
+      "It shows predator decline, because thicker shells and infaunal habits evolve when predation weakens.",
+      "It reflects terrestrialization of marine faunas rather than restructuring within shallow seas."
+    ],
+    "explanation": "The Mesozoic Marine Revolution is about ecological structure as well as diversity. Durophagy, mobility, infaunalization, and shell defense indicate changing predator-prey dynamics.",
+    "tags": [
+      "Mesozoic Marine Revolution",
+      "ecological restructuring",
+      "marine communities"
+    ],
+    "difficulty": "Hard"
+  }
+]

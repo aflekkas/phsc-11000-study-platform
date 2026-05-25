@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l17-trace-fossils",
+    "prompt": "A boundary interval contains more horizontal and vertical burrows but relatively few body fossils. What can the trace fossils still reveal?",
+    "choices": [
+      "They record activity such as movement, feeding, burrowing, and sediment mixing even when the tracemaker's exact identity is uncertain.",
+      "They identify the exact taxonomic species responsible for each burrow more securely than body fossils do.",
+      "They turn sediment mixing into a direct oxygen measurement without sedimentary or geochemical context.",
+      "They let burrow diameter be read as a complete body-size distribution and activity budget for the animals."
+    ],
+    "explanation": "Trace fossils are strongest as behavior and sediment-disturbance evidence. They can constrain activity, burrowing style, and sediment mixing, but they usually do not identify exact taxa, directly measure oxygen, or fully reconstruct body size and time budgets by themselves.",
+    "tags": [
+      "trace fossils",
+      "Cambrian Radiation",
+      "behavior"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-substrate-revolution",
+    "prompt": "Which contrast best captures the substrate revolution during the rise of animal ecosystems?",
+    "choices": [
+      "Animal burrowing converted many matground surfaces into mixgrounds, deepening bioturbation and oxygen penetration while reworking sediment habitats.",
+      "Skeletonization alone caused the shift by adding hard parts to animals while sediment fabrics and microbial mats stayed mostly unchanged.",
+      "Burrowing became shallower as animals avoided oxygenated sediment, allowing matgrounds to expand across more seafloors.",
+      "The change was mostly passive seafloor occupation, not ecosystem engineering that altered sediment chemistry or structure."
+    ],
+    "explanation": "The substrate revolution was an ecosystem-engineering shift from widespread matgrounds toward animal-mixed sediments. Deeper and more common bioturbation disrupted microbial mats, changed oxygen penetration, and made the seafloor physically and chemically different.",
+    "tags": [
+      "substrate revolution",
+      "Cambrian Radiation",
+      "ecosystem engineering"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l17-animal-definition",
+    "prompt": "Which trait combination best describes animals as a major biological group?",
+    "choices": [
+      "Multicellular eukaryotic heterotrophs that are motile during at least part of the life cycle",
+      "Multicellular eukaryotic autotrophs that use chloroplasts as their main feeding strategy",
+      "Unicellular eukaryotes with shells but no tissues or motile life stage",
+      "Multicellular prokaryotic colonies that build microbial mats on the seafloor"
+    ],
+    "explanation": "Animals are multicellular eukaryotic heterotrophs and are motile at some point in their life cycle. Many also biomineralize hard parts, but that is not universal.",
+    "tags": [
+      "animals",
+      "metazoans",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l17-ediacaran-biota-affinity",
+    "prompt": "Why is the Ediacaran biota difficult to interpret as a straightforward animal fossil record?",
+    "choices": [
+      "It includes diverse multicellular eukaryotes with unusual body plans, uncertain affinities, few skeletons, and strong association with microbial mats",
+      "It consists mainly of clearly skeletonized bilaterians, but their trace fossils are too rare to interpret behavior",
+      "It preserves only microbial mats, so proposed animal affinities come entirely from carbon isotope curves",
+      "It has abundant animal-like forms, but most occur without enough context to separate matground ecology from later burrowing"
+    ],
+    "explanation": "Some Ediacaran fossils may be animals, but many have uncertain relationships or may represent non-animal multicellular eukaryotes. Their matground association and lack of skeletons complicate interpretation.",
+    "tags": [
+      "Ediacaran biota",
+      "animal origins",
+      "fossil interpretation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-sponge-biomarker-ambiguity",
+    "prompt": "A Cryogenian sediment contains a biomarker associated with demosponges, but also possible in other eukaryotes. Which conclusion is most defensible?",
+    "choices": [
+      "It is suggestive evidence for early animals, but not definitive without testing whether the molecule is unique and syngenetic",
+      "It proves crown-group animals were abundant because biomarkers are always taxonomically unique",
+      "It directly dates widespread skeletonization because sponge biomarkers require mineralized hard parts",
+      "It is stronger than any body fossil evidence because molecular sources cannot overlap among eukaryotes"
+    ],
+    "explanation": "Biomarkers can provide early-life evidence, but source specificity and preservation matter. Some proposed sponge markers may also come from other organisms, so the claim remains cautious.",
+    "tags": [
+      "biomarkers",
+      "sponges",
+      "Cryogenian"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l17-skeletonization-predation",
+    "prompt": "Why might predation and skeletonization reinforce each other during early animal diversification?",
+    "choices": [
+      "Predation creates selection for defenses such as hard parts, while skeletons increase fossil preservation and enable new body plans",
+      "Predation prevents biomineralization because hard parts make animals easier to digest",
+      "Skeletons evolved only as flotation devices, so predator-prey interactions are unrelated to their spread",
+      "Hard parts mainly indicate passive mineral coating by seawater rather than biologically controlled defense or support"
+    ],
+    "explanation": "Predatory ecology can favor larger size and defensive skeletons. Biomineralized hard parts also increase preservation potential and support new ecological and anatomical possibilities.",
+    "tags": [
+      "skeletonization",
+      "predation",
+      "Cambrian Radiation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-cambrian-timeline-preservation",
+    "prompt": "Why do trace fossils matter when evaluating whether animals had a long hidden Precambrian history?",
+    "choices": [
+      "Even soft-bodied animals can leave tracks and burrows, so a major late increase in trace complexity argues against a long, behaviorally similar hidden history",
+      "Trace fossils identify exact animal phyla more reliably than body fossils, so body fossils can be ignored",
+      "Trace fossils form only after skeletonization, so they cannot test soft-bodied animal activity",
+      "Trace fossils record seawater chemistry directly and therefore replace molecular clocks"
+    ],
+    "explanation": "If abundant active animals existed long before their body fossils, their behaviors might still disturb sediment. The increase in trace fossil range, abundance, and complexity near the boundary is therefore important timing evidence.",
+    "tags": [
+      "trace fossils",
+      "timing",
+      "animal origins"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l17-fecal-express-carbon",
+    "prompt": "How did early animals alter marine carbon cycling through the fecal-express mechanism?",
+    "choices": [
+      "They packaged organic matter into sinking particles, increasing transfer of carbon from the water column to seafloor sediment",
+      "They stopped organic matter from reaching sediment by digesting all suspended particles completely",
+      "They shifted carbon transfer toward dissolved inorganic carbon only, reducing the role of sedimented organic matter",
+      "They made carbon burial independent of food webs by replacing marine snow with carbonate shell debris"
+    ],
+    "explanation": "Animal feeding and fecal pellets helped move organic carbon from the water column to sediment. That changed seafloor geochemistry and created new food resources.",
+    "tags": [
+      "carbon cycle",
+      "fecal express",
+      "ecosystem engineering"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-oxygen-prerequisite",
+    "prompt": "Why is higher oxygen commonly considered a prerequisite for major animal radiation?",
+    "choices": [
+      "Large body size and energetically expensive carnivory require enough oxygen to support aerobic metabolism",
+      "Oxygen directly produces skeletons by replacing calcium carbonate in seawater",
+      "Animals require oxygen only for fossil preservation, not for living metabolism",
+      "High oxygen removes the energetic cost of predation, making ecological interactions less important"
+    ],
+    "explanation": "Animals with larger bodies and active feeding strategies need aerobic metabolism. Rising oxygen levels may not be the only trigger, but they likely set an important physiological threshold.",
+    "tags": [
+      "oxygen",
+      "animal radiation",
+      "metabolism"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-eukaryote-delay",
+    "prompt": "Eukaryotic fossils occur long before the rapid diversification of animal groups. What inference best follows?",
+    "choices": [
+      "The presence of eukaryotic cells alone was not sufficient; environmental, ecological, developmental, or preservation factors also mattered",
+      "Most early eukaryotes were probably animals, but their skeletons dissolved before they entered the fossil record",
+      "Animal diversification was delayed mainly because eukaryotic cells could not live in marine environments",
+      "Earlier large cells are best treated as prokaryotes unless they occur with skeletonized body fossils"
+    ],
+    "explanation": "Eukaryotes appeared well before the main animal radiation. That delay implies that additional conditions, such as oxygen availability, ecology, predation, developmental capacity, and preservation, influenced the timing.",
+    "tags": [
+      "eukaryotes",
+      "timing",
+      "Cambrian Radiation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l17-trace-fossil-definition",
+    "prompt": "Which preserved feature would be interpreted as a trace fossil rather than a body fossil?",
+    "choices": [
+      "A burrow, track, trail, or feeding mark recording organism activity in or on sediment",
+      "A mineralized shell preserving the anatomy of the organism that built it",
+      "A carbonaceous compression preserving the outline of a soft body",
+      "A sponge spicule preserving part of the organism's hard anatomy"
+    ],
+    "explanation": "Trace fossils preserve activity rather than body anatomy. They are important because behavior and sediment disturbance can be recorded even when body fossils are rare.",
+    "tags": [
+      "trace fossils",
+      "definitions",
+      "animal behavior"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l17-body-fossil-definition",
+    "prompt": "What is a body fossil?",
+    "choices": [
+      "Preserved anatomy of an organism, such as a shell, skeleton, impression, carbon film, or soft tissue",
+      "A burrow, trail, or resting mark recording what an organism did in sediment",
+      "A fecal pellet or feeding trace that records animal activity without preserving body anatomy",
+      "A disturbed sediment fabric made by burrowing after deposition"
+    ],
+    "explanation": "Body fossils preserve the organism or its anatomical imprint. They complement trace fossils, which preserve behavior or sediment disturbance.",
+    "tags": [
+      "body fossils",
+      "definitions",
+      "fossil record"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l17-skeletonization-definition",
+    "prompt": "What does skeletonization mean in early animal history?",
+    "choices": [
+      "The evolution and widespread use of hard parts such as shells, spines, or mineralized skeletons",
+      "The expansion of burrowing behavior without any change in animal hard parts",
+      "The replacement of body fossils by trace fossils as the only preserved animal evidence",
+      "The origin of microbial mat photosynthesis before animals diversified"
+    ],
+    "explanation": "Skeletonization refers to animal hard parts becoming common. It affected preservation, defense, predation, and sediment production.",
+    "tags": [
+      "skeletonization",
+      "Cambrian Radiation",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l17-bioturbation-definition",
+    "prompt": "What is bioturbation?",
+    "choices": [
+      "Mixing or disruption of sediment by organism activity",
+      "Stabilization of sediment by microbial mats without animal disturbance",
+      "Chemical cementation of sediment before any organism interacts with it",
+      "Wave reworking of sediment that produces ripples without biological mixing"
+    ],
+    "explanation": "Bioturbation is sediment mixing by organisms. Increased burrowing across the Precambrian-Cambrian transition changed the seafloor and the sedimentary record.",
+    "tags": [
+      "bioturbation",
+      "substrate revolution",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l17-burrowing-sediment-oxygenation",
+    "prompt": "Why did expanded burrowing matter for marine environments during early animal diversification?",
+    "choices": [
+      "Burrowing mixed sediment, changed chemical gradients, and altered how organic matter and oxygen interacted near the seafloor",
+      "Burrowing prevented any oxygen from entering sediment and made all seafloors permanently lifeless",
+      "Burrowing mattered only for body fossil preservation and had no environmental consequences",
+      "Burrowing converted all carbonate sediment into volcanic ash"
+    ],
+    "explanation": "Animals became ecosystem engineers by disturbing the seafloor. Bioturbation changed sediment stability, redox gradients, and carbon cycling.",
+    "tags": [
+      "burrowing",
+      "ecosystem engineering",
+      "sediment chemistry"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-predation-ecological-feedback",
+    "prompt": "How could predation contribute to the diversification of skeletonized animals?",
+    "choices": [
+      "Predators and prey can drive escalation, favoring defenses such as shells and new feeding strategies",
+      "Predation eliminates ecological interactions, making skeletons unnecessary",
+      "Predation affects only land animals and cannot influence marine communities",
+      "Predation directly raises atmospheric oxygen without involving ecology"
+    ],
+    "explanation": "Predation can create selection for defense, mobility, sensory systems, and skeletons. Those changes can feed back into food webs and diversification.",
+    "tags": [
+      "predation",
+      "skeletonization",
+      "ecological feedback"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-preservation-bias-soft-bodies",
+    "prompt": "Why can the fossil record make animal origins appear more sudden than they actually were?",
+    "choices": [
+      "Soft-bodied animals and small early forms preserve poorly compared with mineralized skeletons",
+      "All animals had identical hard skeletons long before the Cambrian",
+      "Trace fossils always preserve every animal species that ever lived",
+      "Molecular clocks are based only on sedimentary structures and never on biology"
+    ],
+    "explanation": "Preservation bias can hide early, soft-bodied, or rare animals. Skeletonization increases fossil visibility, so appearance in the record is not identical to biological origin.",
+    "tags": [
+      "preservation bias",
+      "soft-bodied animals",
+      "animal origins"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l17-molecular-clock-fossil-mismatch",
+    "prompt": "Molecular clocks suggest animal lineages split before their clear fossil record becomes abundant. What is the best interpretation?",
+    "choices": [
+      "The mismatch may reflect preservation bias, calibration uncertainty, or a real lag between origins and ecological expansion",
+      "The fossil record must be ignored because molecular clocks always give exact dates",
+      "Molecular clocks measure sediment grain size, so they cannot address animal timing",
+      "The mismatch proves animals originated only after skeletons appeared"
+    ],
+    "explanation": "Timing debates require comparing evidence types. Molecular clocks and fossils have different uncertainties, so a mismatch is a problem to evaluate rather than dismiss.",
+    "tags": [
+      "molecular clocks",
+      "fossil record",
+      "timing debates"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l17-ecosystem-engineering-carbon-sediment",
+    "prompt": "A Cambrian seafloor changes from microbial matgrounds to bioturbated sediment with fecal pellets and deeper oxygen penetration. Which Earth-system consequence follows most directly?",
+    "choices": [
+      "Animal activity changed sediment mixing, organic-matter burial, oxygen exposure, and pathways of carbon transfer through food webs.",
+      "Animal activity stopped carbon cycling because burrowing prevented organic matter from entering sediment.",
+      "The change affected only fossil shape, because sediment chemistry and oxygen penetration are independent of animal behavior.",
+      "The change proves animals replaced microbes as the only primary producers in marine environments."
+    ],
+    "explanation": "Burrowing, feeding, and pellet production changed sediment fabrics and organic-matter processing. Those physical and biological changes affected oxygen exposure, burial, and carbon cycling.",
+    "tags": [
+      "ecosystem engineering",
+      "carbon cycle",
+      "Cambrian Radiation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l17-ediacaran-cambrian-continuity-trap",
+    "prompt": "An Ediacaran fossil has quilted body construction and no clear mouth or skeleton, while a Cambrian fossil has traceable movement and mineralized parts. Which comparison is most defensible?",
+    "choices": [
+      "Continuity is possible for some lineages, but differences in affinity, ecology, preservation, and skeletonization make a simple ancestor-descendant story risky.",
+      "The Ediacaran fossil must be a direct ancestor of the Cambrian fossil because both are preserved in sedimentary rocks.",
+      "The Cambrian fossil must be unrelated to animals because skeletonization prevents comparison with soft-bodied fossils.",
+      "The Ediacaran fossil can be classified as a modern animal group solely from its age below Cambrian rocks."
+    ],
+    "explanation": "The Ediacaran-Cambrian transition involves possible continuity, replacement, and preservation bias. Morphology, traces, skeletons, and ecological roles need to be compared rather than forced into a simple ladder.",
+    "tags": [
+      "Ediacaran biota",
+      "animal origins",
+      "fossil interpretation"
+    ],
+    "difficulty": "Hard"
+  }
+]

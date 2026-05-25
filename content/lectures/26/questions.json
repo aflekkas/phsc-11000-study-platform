@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l26-overkill",
+    "prompt": "Which pattern would most favor overkill over a climate-only explanation for late Pleistocene megafaunal losses?",
+    "choices": [
+      "Large mammals disappeared soon after human arrival in different regions, especially where they lacked long prior exposure, while earlier climate shifts did not cause the same losses.",
+      "Extinctions track the last deglaciation more closely than human arrival and show similar losses across small and large mammals.",
+      "Africa lost the same fraction of large mammals as newly colonized continents, despite a much longer history of human-megafauna coexistence.",
+      "Earlier glacial-interglacial transitions caused equivalent megafaunal losses before humans expanded into those regions."
+    ],
+    "explanation": "The overkill hypothesis is strengthened by body-size selectivity, hunting evidence, regional timing that follows human arrival, and contrasts between continents with long versus recent human-megafauna contact. A climate-only explanation struggles if earlier climate transitions did not produce the same preferential losses.",
+    "tags": [
+      "overkill",
+      "human impacts",
+      "megafauna"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l26-invasive-species",
+    "prompt": "Why can introduced species have delayed but severe effects on native communities?",
+    "choices": [
+      "After a lag phase, introduced populations can become invasive and alter predation, competition, disease, habitat structure, and indirect food webs.",
+      "Rabbits, cats, rats, and zebra mussels mainly matter through direct predation, while competition and habitat change are secondary effects.",
+      "An introduced species becomes invasive at arrival if the climate matches, so lag phases usually reflect poor observation rather than ecology.",
+      "Adding a nonnative species mostly increases richness; later native declines must come from climate rather than food-web cascades."
+    ],
+    "explanation": "Introduced species may take time to establish or spread, and not every introduced species becomes invasive. When they do, native species may be naive to new predators, competitors, pathogens, habitat-changing organisms, or indirect food-web effects.",
+    "tags": [
+      "introduced species",
+      "invasive species",
+      "biodiversity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-recent-overkill-examples",
+    "prompt": "Which example best illustrates overharvesting after the Pleistocene, and why is it mechanistically comparable to overkill?",
+    "choices": [
+      "Steller's sea cow was hunted to extinction within a few decades because removals exceeded the replacement rate of a large, slow-reproducing animal.",
+      "Passenger pigeons declined because habitat fragmentation alone reduced reproduction, with hunting pressure secondary or absent.",
+      "Zebra mussels changed Great Lakes food webs by filtration, showing overharvesting through reduced plankton abundance.",
+      "European rabbits in Australia show overharvesting because native predators removed them faster than they could reproduce."
+    ],
+    "explanation": "Overkill is not limited to Pleistocene megafauna. Steller's sea cow is a recent example of intense human hunting driving a large animal to extinction soon after scientific description.",
+    "tags": [
+      "overharvesting",
+      "extinction",
+      "human impacts"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-land-use-fragmentation",
+    "prompt": "Why can land-use change drive extinction even when no individuals are directly hunted?",
+    "choices": [
+      "Agriculture, pasture, urbanization, and deforestation remove habitat, fragment populations, reduce gene flow, and expose edges to invasives, disease, or altered microclimates.",
+      "Fragmentation lowers population density but usually improves gene flow because surviving patches are easier for individuals to find.",
+      "Land conversion is mainly a sampling problem; species persist normally, but their fossils and observations become patchier.",
+      "Habitat loss affects only specialist species, while generalists and wide-ranging predators are insulated from population isolation."
+    ],
+    "explanation": "Humans modify land for crops, livestock, settlements, resources, and cities. Habitat destruction and fragmentation can reduce population sizes, block movement, and drive local or global extinctions.",
+    "tags": [
+      "land use",
+      "habitat fragmentation",
+      "extinction"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l26-deforestation-effects",
+    "prompt": "Which consequence set best fits tropical deforestation?",
+    "choices": [
+      "Habitat loss, extinction risk, increased soil erosion, desertification, and carbon-cycle effects.",
+      "Higher forest carbon storage, reduced erosion, and immediate recovery of endemic species.",
+      "Only a change in scenery, because most terrestrial species live outside tropical forests.",
+      "Permanent cooling with no biodiversity cost because grasslands always store more carbon than forests."
+    ],
+    "explanation": "Tropical forests hold a large share of plant and terrestrial animal species. Deforestation removes habitat, increases erosion and desertification, and affects climate and carbon cycling.",
+    "tags": [
+      "deforestation",
+      "habitat loss",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-rabbits-australia",
+    "prompt": "Why are European rabbits in Australia a strong example of an intentional introduction becoming damaging?",
+    "choices": [
+      "Rabbits released for food and hunting exploded in population, consumed native vegetation, increased erosion, and became a major factor in species loss.",
+      "Rabbits were introduced intentionally but remained limited to cities, so their ecological effects came mainly from disease transmission to livestock.",
+      "Rabbits spread because native predators and plants had long coevolved with them, making the interaction unusually stable.",
+      "Rabbits mainly affected native species by hybridizing with marsupials rather than by grazing, erosion, or competition."
+    ],
+    "explanation": "European rabbits were intentionally introduced to Australia and later released for hunting. Their population grew rapidly, causing vegetation loss, erosion, economic damage, and major biodiversity impacts.",
+    "tags": [
+      "rabbits",
+      "Australia",
+      "introduced species"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-island-rats",
+    "prompt": "Why are introduced rats especially damaging on many oceanic islands?",
+    "choices": [
+      "They prey on naive birds, lizards, frogs, and insects and also consume seeds of endemic trees in communities that evolved without such mammals.",
+      "They mainly compete with native birds for nesting sites but rarely affect eggs, chicks, seeds, or invertebrates.",
+      "They are usually absorbed into island food webs without major effects because island species have generalized predator defenses.",
+      "They matter only on large continents, where native communities lack prior exposure to mammalian predators."
+    ],
+    "explanation": "Rats have often arrived accidentally on ships. On islands, native species may lack defenses against mammalian predators, so rats can cause direct predation, seed loss, and cascading extinctions.",
+    "tags": [
+      "rats",
+      "island extinctions",
+      "introduced predators"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-zebra-mussel-cascade",
+    "prompt": "After zebra mussels invade a lake, water clarity increases, pelagic plankton decline, benthic algae expand, and toxin movement through food webs changes. Which mechanism best links these observations?",
+    "choices": [
+      "High filtration shifts energy and particles from the water column toward benthic pathways, changing clarity, primary producers, consumers, and contaminant exposure.",
+      "Direct predation on adult fish is the primary driver, while filtration and light penetration are secondary sampling artifacts.",
+      "Reduced filtration keeps plankton abundant, so benthic algae expand mainly because light decreases.",
+      "The invasion improves water quality without ecological tradeoffs because filtering removes pollutants but not living plankton."
+    ],
+    "explanation": "Filter-feeding invaders can redirect ecosystem structure. Increased clarity and particle removal alter plankton, benthic production, fish habitat, and contaminant or toxin pathways.",
+    "tags": [
+      "zebra mussels",
+      "food webs",
+      "ecosystem change"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l26-conservation-scale",
+    "prompt": "Why does conservation often require a landscape-scale approach rather than protecting one species in isolation?",
+    "choices": [
+      "Species ranges, migrations, habitats, invasive pressures, and resource conflicts cross property and political boundaries.",
+      "Individual species never interact with habitats, so conservation succeeds by ignoring ecosystems.",
+      "All endangered species live within single protected plots, making broader coordination unnecessary.",
+      "Landscape-scale planning matters only for fossils because living species do not migrate."
+    ],
+    "explanation": "Conservation problems often cross borders and involve habitat networks, migration, resource conflicts, and community interactions. Protecting a species without protecting its ecological context may fail.",
+    "tags": [
+      "conservation",
+      "landscape ecology",
+      "mitigation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-rewilding-deextinction-tradeoffs",
+    "prompt": "A proposal would introduce an elephant-like proxy into a former mammoth-steppe region now fragmented by towns, agriculture, and warming climate. Which evaluation is most defensible?",
+    "choices": [
+      "It must weigh ecological function against modern habitat mismatch, climate change, human conflict, disease risk, and effects on existing communities.",
+      "It should be accepted automatically because any extinct ecological role can be restored exactly by a roughly similar living species.",
+      "It should be judged only by genetic similarity, because habitat, land use, and community effects are irrelevant after reintroduction.",
+      "It avoids ethical questions because proxy species cannot become invasive or affect modern ecosystems."
+    ],
+    "explanation": "Rewilding and de-extinction are not only about replacing a missing species. Modern habitats, climates, communities, human land use, and risk of unintended effects have to be evaluated.",
+    "tags": [
+      "rewilding",
+      "de-extinction",
+      "conservation tradeoffs"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l26-overharvesting-definition",
+    "prompt": "What is overharvesting?",
+    "choices": [
+      "Removing individuals from a population faster than reproduction can replace them.",
+      "Removing individuals at a rate that is high but still below recruitment, so population size remains stable.",
+      "Reducing habitat area until birth rates fall, even if no individuals are taken from the population.",
+      "Introducing predators that reduce a population indirectly through food-web cascades."
+    ],
+    "explanation": "Overharvesting includes hunting, fishing, or collecting at unsustainable rates. It can drive population collapse or extinction when removal exceeds replacement.",
+    "tags": [
+      "overharvesting",
+      "human impacts",
+      "extinction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-fragmentation-definition",
+    "prompt": "What is habitat fragmentation?",
+    "choices": [
+      "The division of a formerly continuous habitat into smaller, more isolated patches.",
+      "The reduction of habitat quality within one intact patch without changing connectivity.",
+      "The movement of individuals among patches that restores gene flow after isolation.",
+      "The conversion of native habitat into a larger continuous habitat of a different type."
+    ],
+    "explanation": "Fragmentation breaks habitats into isolated pieces. Smaller patches and barriers can reduce population size, dispersal, gene flow, and access to resources.",
+    "tags": [
+      "habitat fragmentation",
+      "land use",
+      "biodiversity"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l26-invasive-species-definition",
+    "prompt": "What makes an introduced species invasive?",
+    "choices": [
+      "It establishes, spreads, and causes ecological, economic, or health damage in its new range.",
+      "It arrives from another region but remains rare and has no measurable effect.",
+      "It is deliberately introduced, regardless of whether it establishes or causes damage.",
+      "It spreads within its native range after a natural disturbance changes resources."
+    ],
+    "explanation": "Introduced species become invasive when they spread and cause harm. Damage can occur through predation, competition, disease, hybridization, or ecosystem engineering.",
+    "tags": [
+      "invasive species",
+      "introduced species",
+      "ecological impacts"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l26-restoration-definition",
+    "prompt": "What is ecological restoration?",
+    "choices": [
+      "Active repair of degraded ecosystems by rebuilding habitat, species interactions, or ecological processes.",
+      "Protecting a degraded site from further disturbance while avoiding any attempt to rebuild processes or interactions.",
+      "Replacing native communities with hardy non-native species that can survive current conditions.",
+      "Reducing population sizes of threatened species to lower competition in damaged habitats."
+    ],
+    "explanation": "Restoration aims to recover ecosystem structure or function. It can involve habitat repair, invasive control, native species recovery, hydrologic changes, or renewed disturbance regimes.",
+    "tags": [
+      "restoration",
+      "mitigation",
+      "conservation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l26-extinction-debt",
+    "prompt": "Why can habitat loss create an extinction debt?",
+    "choices": [
+      "Populations may persist briefly in small fragments even though reduced habitat and isolation make future extinction likely.",
+      "Habitat loss instantly removes every species, so delayed extinction cannot occur.",
+      "Extinction debt means a species becomes invasive after its habitat expands.",
+      "Fragmented populations always recover because isolation prevents disease."
+    ],
+    "explanation": "Extinction can lag behind habitat destruction. Small, isolated populations may remain for a time but lose resilience, genetic diversity, or enough reproduction to persist long term.",
+    "tags": [
+      "extinction debt",
+      "habitat loss",
+      "fragmentation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-trophic-cascade-impact",
+    "prompt": "How can removing a top predator restructure a biological community?",
+    "choices": [
+      "Prey or mesopredator populations can increase, changing vegetation, competition, and food-web interactions.",
+      "Only the predator population changes because food webs have no indirect interactions.",
+      "All prey species decline because predator removal directly increases predation pressure on them.",
+      "Vegetation always increases because prey populations fall when predators are removed."
+    ],
+    "explanation": "Food webs include indirect effects. Removing predators can release prey or smaller predators, producing trophic cascades that alter many parts of a community.",
+    "tags": [
+      "trophic cascades",
+      "food webs",
+      "human impacts"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-disease-introduction",
+    "prompt": "Why can introduced diseases be especially damaging to isolated native communities?",
+    "choices": [
+      "Native species may lack prior exposure or resistance, allowing disease to spread through vulnerable populations.",
+      "Small isolated populations may have limited genetic variation, but prior exposure usually makes new pathogens harmless.",
+      "Introduced pathogens mainly increase carrying capacity by removing competitors from native populations.",
+      "Disease effects are independent of habitat loss, population size, and invasive predators."
+    ],
+    "explanation": "Introductions can bring pathogens into communities with little evolutionary history of exposure. Disease can interact with predation, habitat loss, and small population size.",
+    "tags": [
+      "disease",
+      "introduced species",
+      "island biodiversity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-eutrophication-mechanism",
+    "prompt": "How can nutrient pollution reduce biodiversity in aquatic ecosystems?",
+    "choices": [
+      "Excess nutrients can fuel algal blooms, and decomposition of that biomass can deplete dissolved oxygen.",
+      "Excess nutrients directly poison most fish before algae or oxygen changes become important.",
+      "Extra nitrogen and phosphorus usually reduce primary production, starving decomposers and raising oxygen.",
+      "Nutrient pollution affects water clarity but cannot change dissolved oxygen or food-web structure."
+    ],
+    "explanation": "Pollution can alter communities through chemical and food-web pathways. Eutrophication links nutrient input to algal growth, decay, oxygen loss, and stress on aquatic organisms.",
+    "tags": [
+      "pollution",
+      "eutrophication",
+      "oxygen depletion"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l26-impact-synergy",
+    "prompt": "A fragmented forest species survives moderate warming in intact habitat, and survives moderate hunting in connected habitat, but collapses where warming, hunting, roads, and invasive predators occur together. Which interpretation best fits the pattern?",
+    "choices": [
+      "The stressors are synergistic or compounding because fragmentation reduces resilience and makes other pressures more damaging than they would be alone.",
+      "The stressors are independent and additive only if each kills exactly the same number of individuals in every patch.",
+      "The pattern proves warming has no effect because hunting and invasive predators are also present.",
+      "The pattern is best ignored because multiple stressors cannot be separated experimentally or compared mechanistically."
+    ],
+    "explanation": "Human impacts often interact. Fragmentation, climate stress, harvest, roads, disease, and invasive species can reduce resilience and produce losses greater than expected from any one stressor alone.",
+    "tags": [
+      "biodiversity loss",
+      "synergistic impacts",
+      "human impacts"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l26-modern-deep-time-comparison",
+    "prompt": "A comparison pairs the end-Cretaceous extinction with current biodiversity loss. Which distinction is most important for interpreting cause and selectivity?",
+    "choices": [
+      "Current losses are driven by interacting human mechanisms across habitats, whereas end-Cretaceous selectivity included abrupt impact effects such as darkness and food-web collapse.",
+      "The two events are identical because all extinctions are caused by a single global temperature change.",
+      "Current losses cannot be compared with deep-time events because ecology is irrelevant unless an asteroid is involved.",
+      "End-Cretaceous extinction affected only marine species, while current impacts affect only terrestrial mammals."
+    ],
+    "explanation": "Modern extinctions share themes with deep-time crises but differ in drivers. Human land use, exploitation, introductions, pollution, and climate forcing create selectivity patterns that are not the same as an impact-triggered crisis.",
+    "tags": [
+      "biodiversity crisis",
+      "mass extinctions",
+      "human impacts"
+    ],
+    "difficulty": "Hard"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l24-mammal-origin",
+    "prompt": "Which account avoids confusing the origin of mammals with their later Cenozoic ecological radiation?",
+    "choices": [
+      "Mammals evolved from cynodont synapsids before the Cenozoic; Mesozoic forms were diverse but constrained, and survivors later radiated after non-avian dinosaurs disappeared.",
+      "Mammals originated only after the boundary, but cynodont synapsids supplied the traits that let Paleocene placentals radiate immediately.",
+      "Mesozoic mammals were ecologically diverse enough to dominate large-herbivore and large-carnivore roles before dinosaurs disappeared.",
+      "The crown-group branches all first appear as large Paleocene fossils, so Mesozoic mammal diversity is mostly outside mammalian ancestry."
+    ],
+    "explanation": "Mammals originated from cynodont synapsids before the Cenozoic and included varied Mesozoic lineages, but many major ecological roles were still occupied by dinosaurs. The end-Cretaceous extinction did not create mammals, but it opened opportunities for surviving lineages to radiate.",
+    "tags": [
+      "mammal evolution",
+      "K-Pg",
+      "synapsids"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l24-adaptive-radiation",
+    "prompt": "Which interpretation best distinguishes chance from climate in Cenozoic mammal diversification?",
+    "choices": [
+      "Chance survival through extinction opened ecological space, and changing climates later favored different diets, body sizes, teeth, and habitats.",
+      "Extinction mattered little because most mammal lineages survived equally, so early Eocene warmth alone explains the radiation.",
+      "Chance survival explains the early radiation, while later cooling and grassland spread mainly changed preservation and sampling of mammal fossils.",
+      "Grassland spread began immediately after the boundary and selected grazing teeth before Paleocene and early Eocene forest radiations."
+    ],
+    "explanation": "Cenozoic mammal history reflects both contingency and environment. A few lineages survived the end-Cretaceous extinction, early Cenozoic warmth shaped some forested ecosystems, and later cooling, vegetation change, and open habitats favored adaptations such as grazing teeth and larger body size.",
+    "tags": [
+      "adaptive radiation",
+      "mammals",
+      "climate"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l24-mammal-trait-set",
+    "prompt": "Which trait set is most characteristic of mammals?",
+    "choices": [
+      "Endothermy, hair, mammary glands, three middle-ear bones, differentiated teeth, and a modified jaw joint.",
+      "A single temporal opening, sprawling posture, uniform teeth, and an unchanged reptile-style jaw joint.",
+      "Endothermy, differentiated teeth, two temporal openings, and feathers inherited from diapsid ancestors.",
+      "Hair and milk production combined with external fertilization and aquatic larvae in early synapsids."
+    ],
+    "explanation": "Mammals are characterized by traits such as endothermy, hair, milk production, relatively large brains, three middle-ear bones, differentiated teeth, occlusion, and a modified jaw joint.",
+    "tags": [
+      "mammal traits",
+      "mammal evolution",
+      "synapsids"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-cynodont-origin",
+    "prompt": "Which statement correctly describes the origin of mammals?",
+    "choices": [
+      "Mammalian features evolved sequentially within synapsids, and the earliest true mammals evolved from cynodonts during the Triassic.",
+      "Mammalian features evolved within therapsids, but true mammals first originated from surviving stem groups after the end-Cretaceous extinction.",
+      "Mammals are a diapsid offshoot whose skull openings indicate close ancestry with archosaurs rather than synapsids.",
+      "Mammalian jaw and ear characters evolved only after placental mammals had already diversified in the Cenozoic."
+    ],
+    "explanation": "Mammals belong to the synapsid branch of amniotes. Mammalian traits accumulated through the Permian and Triassic, with true mammals evolving from cynodont ancestors in the Triassic.",
+    "tags": [
+      "synapsids",
+      "cynodonts",
+      "mammal origins"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-mesozoic-diversity",
+    "prompt": "How did newer fossil discoveries change the older view of Mesozoic mammals?",
+    "choices": [
+      "They showed small-bodied mammals included climbing, gliding, digging, aquatic, and carnivorous forms, even if few lineages survived into the Cenozoic.",
+      "They showed small nocturnal insectivores were only one part of the fauna, but they did not change the view that locomotor ecology was uniform.",
+      "They showed ecological variety among Mesozoic mammals, but all of those specialized forms belong to the direct placental line.",
+      "They showed Mesozoic mammals were taxonomically diverse, so Cenozoic expansion was mostly a naming artifact rather than ecological radiation."
+    ],
+    "explanation": "Mesozoic mammals were once portrayed mostly as small nocturnal insectivores. Fossils such as gliding, digging, aquatic, climbing, and carnivorous forms show greater ecological variety, while still indicating constraints and limited survival into the Cenozoic.",
+    "tags": [
+      "Mesozoic mammals",
+      "ecological diversity",
+      "fossil evidence"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l24-mammal-groups",
+    "prompt": "Which pairing correctly matches a major living mammal group with its reproductive pattern?",
+    "choices": [
+      "Monotremes lay eggs, marsupials bear pouch-reared young, and placentals nourish embryos through a placenta.",
+      "Monotremes use placentas, marsupials lay eggs, and placentals rear all young in pouches.",
+      "Marsupials retain embryos longest inside the uterus, while placentals give birth to the least-developed young.",
+      "Monotremes and marsupials both lack milk production, while placentals are defined by milk and hair."
+    ],
+    "explanation": "Monotremes, marsupials, and placentals are all mammals, but their reproductive strategies differ. Egg laying, early birth with pouch or teat development, and extended placental development distinguish the living groups.",
+    "tags": [
+      "monotremes",
+      "marsupials",
+      "placentals"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-opportunistic-takeover",
+    "prompt": "Why is the Age of Mammals partly an example of opportunistic takeover?",
+    "choices": [
+      "Mammal survivors diversified into broad ecological roles after non-avian dinosaurs and pterosaurs were removed by mass extinction.",
+      "Mammal diversification was already complete before the boundary, so the extinction mostly changed preservation rather than ecological opportunity.",
+      "Mammals expanded only after later grassland spread, so the boundary extinction had little connection to early Cenozoic radiation.",
+      "Mammals filled mainly aquatic roles after the boundary while birds and crocodilians occupied nearly all terrestrial herbivore niches."
+    ],
+    "explanation": "Cenozoic mammal diversification reflects contingency. A few lineages survived the end-Cretaceous extinction, then expanded into many roles formerly occupied by non-avian dinosaurs and other extinct groups.",
+    "tags": [
+      "opportunistic takeover",
+      "Cenozoic mammals",
+      "mass extinction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-eocene-warm-forests",
+    "prompt": "Why were many early Eocene mammals relatively small in warm, forested habitats?",
+    "choices": [
+      "Small body size aided heat regulation and fit dense forest habitats during a warm interval with forests at high latitudes.",
+      "Small body size was required because grasslands had spread worldwide and selected against forest locomotion.",
+      "Mammals were small because cold polar deserts prevented tropical forests from expanding.",
+      "Mammals were small only because placentals had not yet evolved from cynodont ancestors."
+    ],
+    "explanation": "The early Eocene was very warm, with forests even at polar latitudes. Small mammal size can fit heat regulation and forest habitat before later cooling favored more open environments.",
+    "tags": [
+      "Eocene",
+      "body size",
+      "climate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-grassland-spread",
+    "prompt": "What best explains the spread of open habitats and grasslands after the early Eocene?",
+    "choices": [
+      "Cooling and falling CO2 favored open habitats over warm, wet forests, with grass-dominated habitats spreading especially by the Miocene.",
+      "Rising CO2 and warmer wet climates immediately favored grasses over woodland across all latitudes.",
+      "Grasslands spread before flowering plants evolved, so the process was unrelated to climate or CO2.",
+      "Open habitats spread only because mammals grazed forests into grasslands before any climate shift."
+    ],
+    "explanation": "Grasses evolved earlier but spread slowly. Post-early Eocene cooling and lower CO2 favored open habitats and grasslands, first as drier woodland and then more grass-dominated habitats by the mid- to late Miocene.",
+    "tags": [
+      "grasslands",
+      "CO2",
+      "Cenozoic cooling"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-grazing-adaptations",
+    "prompt": "Which mammal adaptation is most directly tied to the spread of silica-rich grasses?",
+    "choices": [
+      "Teeth specialized for abrasive grazing, along with diversification of grazing mammals in open habitats.",
+      "Loss of differentiated teeth, because grass diets require uniform cone-shaped teeth.",
+      "Return to aquatic feeding, because grasses grow mainly in deep marine settings.",
+      "Reduction of body size in all grazers, because open habitats prevent large herbivores from escaping predators."
+    ],
+    "explanation": "The spread of grasslands favored grazing mammals. Since grasses are abrasive, grazing lineages evolved teeth better suited to processing silica-rich vegetation, with horse evolution serving as a key example.",
+    "tags": [
+      "grazing",
+      "grasslands",
+      "mammal adaptations"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-synapsid-definition",
+    "prompt": "What is a synapsid?",
+    "choices": [
+      "An amniote lineage defined by a single temporal skull opening and including mammals and their extinct relatives.",
+      "A diapsid lineage defined by two temporal openings and including birds, crocodilians, and extinct marine reptiles.",
+      "A mammal crown group defined by live birth, excluding cynodonts and earlier mammal relatives.",
+      "An amniote grade defined by the amniotic egg but not by skull openings or mammal ancestry."
+    ],
+    "explanation": "Mammals belong to Synapsida, a lineage separate from diapsid reptiles. Cynodont synapsids are especially important for mammal origins.",
+    "tags": [
+      "synapsids",
+      "mammal origins",
+      "amniotes"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l24-monotreme-definition",
+    "prompt": "Which description defines monotremes?",
+    "choices": [
+      "Egg-laying mammals that still have mammalian traits such as hair and milk production.",
+      "Placental mammals whose young complete most development inside a uterus with a placenta.",
+      "Marsupial mammals whose young develop entirely in shelled eggs.",
+      "Stem synapsids outside Mammalia that show jaw changes but lack milk production."
+    ],
+    "explanation": "Monotremes are living egg-laying mammals. They show that mammalian reproduction is diverse and cannot be reduced to a single placental pattern.",
+    "tags": [
+      "monotremes",
+      "mammal groups",
+      "reproduction"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l24-adaptive-radiation-definition",
+    "prompt": "What is adaptive radiation?",
+    "choices": [
+      "Rapid diversification of a lineage into multiple ecological roles, often after new opportunities appear.",
+      "Diversification within one ecological role while body size, diet, and habitat use remain unchanged.",
+      "Replacement of one lineage by another without new ecological roles or functional differences.",
+      "The appearance of similar traits in unrelated lineages because they face similar selective pressures."
+    ],
+    "explanation": "Adaptive radiation occurs when lineages diversify into different niches. Mammals radiated after the end-Cretaceous extinction as ecological opportunities expanded.",
+    "tags": [
+      "adaptive radiation",
+      "mammal diversification",
+      "ecological opportunity"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l24-niche-release-mammals",
+    "prompt": "How did the end-Cretaceous extinction promote mammal diversification?",
+    "choices": [
+      "It removed many dominant large-bodied competitors and predators, leaving ecological space for surviving mammals to expand.",
+      "It created mammals from reptile ancestors only after non-avian dinosaurs disappeared.",
+      "It forced all mammals to remain small and nocturnal throughout the Cenozoic.",
+      "It eliminated plants, so mammal diversification no longer depended on habitats or food webs."
+    ],
+    "explanation": "The extinction did not create mammals, but it changed ecological opportunity. Surviving mammal lineages diversified as many dinosaur-dominated roles were vacated.",
+    "tags": [
+      "end-Cretaceous",
+      "niche release",
+      "mammal radiation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-jaw-ear-transition",
+    "prompt": "Why is the mammalian jaw and middle ear transition important for reconstructing synapsid-to-mammal evolution?",
+    "choices": [
+      "It shows postdentary jaw bones becoming separated as middle-ear bones while the dentary-squamosal jaw joint became dominant.",
+      "It shows the diapsid lower jaw gaining extra bones before mammals acquired three middle-ear bones from birds.",
+      "It shows differentiated teeth appeared only after placentals evolved, so jaw bones are secondary evidence.",
+      "It records a reproductive shift from shelled eggs to placentas, which is why ear bones diagnose mammals."
+    ],
+    "explanation": "The jaw-ear transition links feeding and hearing anatomy. Fossils near the cynodont-mammal transition show postdentary bones reduced and incorporated into the middle ear as the mammalian jaw joint took over.",
+    "tags": [
+      "mammal traits",
+      "jaw evolution",
+      "middle ear"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l24-placental-marsupial-contrast",
+    "prompt": "Which comparison correctly distinguishes placental and marsupial reproduction?",
+    "choices": [
+      "Placentals usually retain young longer before birth, while marsupials give birth to very underdeveloped young that continue development attached to a teat.",
+      "Placentals lay shelled eggs, while marsupials reproduce only by external fertilization.",
+      "Marsupials lack milk production, while placentals feed young only after they become independent.",
+      "Marsupials are non-mammalian synapsids, while placentals are diapsid reptiles."
+    ],
+    "explanation": "Both placentals and marsupials are mammals, but their developmental patterns differ. Marsupials give birth earlier in development, while placentals typically support longer internal development.",
+    "tags": [
+      "placentals",
+      "marsupials",
+      "mammal reproduction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-habitat-openness-limbs",
+    "prompt": "Why did more open Cenozoic habitats favor changes in some mammal limb proportions?",
+    "choices": [
+      "Open habitats can favor efficient running and longer-distance movement between food, water, and cover.",
+      "Open habitats eliminate predation, so locomotion becomes less important for survival.",
+      "Grasslands require tree-climbing limbs because most food is high in the canopy.",
+      "Open habitats prevent body-size change because all mammals must remain small."
+    ],
+    "explanation": "As grasslands and open habitats expanded, some mammal lineages evolved traits linked to running and grazing. Limb proportions, toes, and posture can reflect those ecological pressures.",
+    "tags": [
+      "grasslands",
+      "locomotion",
+      "mammal adaptation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l24-contingency-vs-adaptation",
+    "prompt": "Why is Cenozoic mammal evolution best explained by both contingency and adaptation?",
+    "choices": [
+      "Extinction opened opportunities by chance, and changing climates and habitats then favored particular traits in different lineages.",
+      "Climate alone determined every mammal trait, so extinction history and survival differences do not matter.",
+      "Chance alone controlled diversification, so tooth form, diet, and habitat had no selective role.",
+      "Mammals diversified before the end-Cretaceous event, so Cenozoic environments had no influence."
+    ],
+    "explanation": "Mammal evolution reflects both which lineages happened to survive major disruptions and how those lineages adapted to Cenozoic climates, vegetation, and geography.",
+    "tags": [
+      "contingency",
+      "adaptation",
+      "Cenozoic mammals"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l24-grazing-trait-package",
+    "prompt": "Two fossil mammals are compared: one has high-crowned teeth and long distal limb bones, while the other has low-crowned teeth and flexible grasping limbs. Which habitat contrast is best supported?",
+    "choices": [
+      "The first is better suited to abrasive grazing and open-country locomotion; the second fits browsing or arboreal/closed-habitat movement better.",
+      "Both are equally diagnostic of open grasslands because any mammal tooth crown height indicates grazing.",
+      "The low-crowned, grasping form is the stronger open-country runner because flexible limbs reduce turning ability in forests.",
+      "The high-crowned form must be aquatic because tooth wear is mainly caused by filtering plankton."
+    ],
+    "explanation": "Trait packages matter. High-crowned teeth and cursorial limbs fit abrasive diets and open habitats, whereas low-crowned teeth and grasping limbs are more consistent with browsing or climbing in closed habitats.",
+    "tags": [
+      "hypsodonty",
+      "grasslands",
+      "functional morphology"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l24-small-eocene-mammals-inference",
+    "prompt": "An early Eocene assemblage contains many small mammals with arboreal adaptations, abundant forest indicators, and few grazing specialists. Which inference best fits the assemblage?",
+    "choices": [
+      "Warm forested habitats likely supported arboreal, nocturnal, or small-bodied niches before later open-habitat grazing specialists became prominent.",
+      "The assemblage proves grasslands were already dominant, because small body size is the main adaptation for grazing.",
+      "The assemblage proves mammals had just originated, because small size cannot persist after a lineage diversifies.",
+      "The forest indicators should be ignored because mammal body size alone reconstructs atmospheric CO2."
+    ],
+    "explanation": "The early Eocene was warm and forested in many regions. Small, agile mammals fit arboreal or nocturnal niches, while the later spread of open habitats favored different trait packages.",
+    "tags": [
+      "Eocene",
+      "body size",
+      "mammal ecology"
+    ],
+    "difficulty": "Hard"
+  }
+]

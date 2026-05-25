@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l07-rock-cycle",
+    "prompt": "Weathered quartz grains are transported, deposited in beds, buried, compacted, and cemented into sandstone. Which rock-cycle pathway is most directly recorded?",
+    "choices": [
+      "Sedimentary rock formation from clastic grains through deposition and lithification.",
+      "Igneous crystallization because cement grows between grains after burial.",
+      "Metamorphic recrystallization because burial always fully resets grain texture.",
+      "Weathering without deposition because transport prevents grains from entering the rock record."
+    ],
+    "explanation": "Sandstone forms when sediment is deposited and lithified by compaction and cementation. That sequence is the sedimentary pathway of the rock cycle.",
+    "tags": [
+      "rock cycle",
+      "sedimentary rocks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-rock-clue",
+    "prompt": "A rock contains sand-sized quartz grains that are well rounded, moderately well sorted, and arranged in cross-beds. Which interpretation is best supported by those clues?",
+    "choices": [
+      "It is a clastic sedimentary rock deposited by moving wind or water with enough energy to form migrating ripples or dunes.",
+      "It is a clastic sedimentary rock deposited mostly by suspension settling below wave base.",
+      "It is a clastic sedimentary rock deposited by debris flows where grain size stays poorly sorted.",
+      "It is a clastic shoreline deposit where wave swash rounded grains but did not produce migrating bedforms."
+    ],
+    "explanation": "Quartz sand, rounding, sorting, and cross-bedding are texture and rock-type clues for a clastic sedimentary deposit shaped by transport. Quiet-water mud, debris-flow gravel, and wave swash without bedforms would leave different evidence.",
+    "tags": [
+      "rock evidence",
+      "grain size"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-igneous-crystal-size",
+    "prompt": "Why do intrusive igneous rocks commonly contain larger crystals than extrusive igneous rocks?",
+    "choices": [
+      "Intrusive magma cools slowly underground, giving crystals more time to grow.",
+      "Intrusive magma cools instantly at the surface, freezing large crystals in place.",
+      "Extrusive lava forms only from sedimentary rocks and therefore lacks minerals.",
+      "Crystal size is controlled only by rock age, not by cooling rate."
+    ],
+    "explanation": "Intrusive magma is insulated by surrounding rock and cools slowly, allowing large crystals to grow. Extrusive lava cools quickly at the surface and commonly forms tiny crystals.",
+    "tags": [
+      "igneous rocks",
+      "crystal size"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-magma-settings",
+    "prompt": "A region has decompression melting at a spreading center, water-assisted melting above a subducting slab, and localized melting above a mantle plume. Which interpretation best connects these examples?",
+    "choices": [
+      "They are different magma-generation settings: divergent boundaries, subduction zones, and hotspots.",
+      "They are all passive-margin processes because magma forms mainly where plates are far from active boundaries.",
+      "They are sedimentary-basin processes because burial compaction supplies the heat needed for melting.",
+      "They are transform-margin processes because horizontal fault slip is the main cause of mantle melting."
+    ],
+    "explanation": "Magma can form by different mechanisms in different tectonic settings. Decompression at divergent margins, flux melting above subduction zones, and hotspot melting are common examples.",
+    "tags": [
+      "magma",
+      "plate tectonics"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l07-clastic-weathering",
+    "prompt": "What process begins the formation of a clastic sedimentary rock?",
+    "choices": [
+      "Weathering breaks preexisting rock into clasts that can be transported and deposited.",
+      "Magma crystallizes deep in the crust and produces large mineral crystals.",
+      "Heat and pressure recrystallize a protolith without melting it.",
+      "Dissolved ions precipitate directly from a supersaturated solution without detrital grains."
+    ],
+    "explanation": "Clastic sedimentary rocks begin with weathering of preexisting rocks into particles. Those clasts can then be eroded, transported, deposited, buried, and lithified.",
+    "tags": [
+      "clastic rocks",
+      "weathering"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l07-grain-size-scale",
+    "prompt": "Which clastic grain-size order runs from smallest to largest?",
+    "choices": [
+      "Clay, silt, sand, gravel.",
+      "Sand, clay, gravel, silt.",
+      "Gravel, sand, silt, clay.",
+      "Silt, gravel, clay, sand."
+    ],
+    "explanation": "The Udden-Wentworth grain-size scale orders clastic particles from clay and mud at the smallest sizes, through silt and sand, to gravel at the largest sizes.",
+    "tags": [
+      "grain size",
+      "clastic rocks"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l07-lithification",
+    "prompt": "How does loose sediment become a sedimentary rock after deposition?",
+    "choices": [
+      "Burial compacts and dewaters the sediment, and cements precipitate in pore spaces.",
+      "Burial melts the sediment just enough for new igneous crystals to form between grains.",
+      "Weathering continues after deposition until grains fuse without compaction or cement.",
+      "Compaction expels porewater but prevents any mineral cement from forming."
+    ],
+    "explanation": "Post-depositional burial can compact grains, expel pore fluids, and precipitate mineral cements. These processes lithify loose sediment into sedimentary rock.",
+    "tags": [
+      "lithification",
+      "sedimentary rocks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-biochemical-chemical-contrast",
+    "prompt": "Which comparison between biochemical and chemical sedimentary rocks is correct?",
+    "choices": [
+      "Biochemical rocks accumulate organismal remains, while chemical rocks precipitate minerals from supersaturated solutions.",
+      "Biochemical rocks precipitate only by inorganic evaporation, while chemical rocks accumulate shells.",
+      "Both form from detrital grains, but biochemical rocks are always coarser than chemical rocks.",
+      "Both form from organismal remains, but chemical rocks lose fossils during compaction."
+    ],
+    "explanation": "Biochemical sedimentary rocks such as shelly limestones form from accumulated remains of organisms. Chemical sedimentary rocks such as evaporites form by inorganic precipitation from supersaturated water.",
+    "tags": [
+      "sedimentary rocks",
+      "biochemical rocks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-metamorphism-without-melting",
+    "prompt": "A rock contains aligned mica grains, relict sedimentary layering, and small granitic melt pods along some fractures. Which interpretation best handles the mixed evidence?",
+    "choices": [
+      "Most of the rock records metamorphism of a protolith, while the melt pods indicate localized partial melting rather than complete igneous crystallization of the whole rock.",
+      "The whole rock must be igneous because any melt pod erases evidence of earlier sedimentary or metamorphic textures.",
+      "The whole rock must be sedimentary because relict layering rules out recrystallization under heat and pressure.",
+      "The rock cannot be interpreted because metamorphic and igneous evidence can never occur together."
+    ],
+    "explanation": "Metamorphism can preserve evidence of a protolith while changing mineralogy and texture. Localized partial melting complicates the history, but it does not mean the entire rock formed as an igneous body.",
+    "tags": [
+      "metamorphic rocks",
+      "recrystallization"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l07-sedimentary-rock-value",
+    "prompt": "Why are sedimentary rocks especially useful for reconstructing environmental history?",
+    "choices": [
+      "They form at Earth's surface, can contain fossils, and preserve textures related to deposition.",
+      "They form mainly from magma, so cooling rate is the best clue to surface conditions.",
+      "They are useful only after metamorphism destroys original depositional textures.",
+      "They record chemical composition but cannot preserve fossils or depositional structures."
+    ],
+    "explanation": "Sedimentary rocks form by deposition and accumulation at Earth's surface. Their fossils, compositions, and textures can record ancient environments and help build relative timescales.",
+    "tags": [
+      "sedimentary rocks",
+      "environmental reconstruction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-protolith-definition",
+    "prompt": "In metamorphism, what is a protolith?",
+    "choices": [
+      "The original rock that is changed by heat, pressure, or fluids.",
+      "The first mineral to crystallize from seawater during evaporation.",
+      "The youngest sediment grain in a sandstone layer.",
+      "The molten material erupted from a volcano."
+    ],
+    "explanation": "A protolith is the preexisting rock before metamorphism. Heat, pressure, and fluids can change its texture and mineralogy without fully melting it.",
+    "tags": [
+      "metamorphic rocks",
+      "definition"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l07-rock-texture-definition",
+    "prompt": "A sample is described as well sorted, well rounded, and cross-bedded. Which kind of information is being used?",
+    "choices": [
+      "Texture, because grain size, shape, sorting, and arrangement record physical properties of the rock.",
+      "Absolute age, because rounding and sorting directly measure years since deposition.",
+      "Composition only, because cross-bedding identifies the chemical formula of each grain.",
+      "Paleolatitude, because grain arrangement records how far the rock formed from the equator."
+    ],
+    "explanation": "Texture describes observable physical features such as grain size, sorting, rounding, layering, or crystal size. Texture is one clue to formation process and environment.",
+    "tags": [
+      "rock texture",
+      "definition"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-weathering-erosion-transport-deposition",
+    "prompt": "Which sequence best describes how clastic sediment commonly becomes part of a sedimentary rock?",
+    "choices": [
+      "Weathering breaks rock, erosion removes particles, transport moves them, deposition accumulates them, and lithification hardens them.",
+      "Melting creates sediment, crystallization deposits it, and subduction sorts it into beds.",
+      "Metamorphism creates loose grains, volcanism compacts them, and erosion turns them into magma.",
+      "Radioactive decay breaks grains apart, and half-lives cement them into rock."
+    ],
+    "explanation": "Clastic sedimentary rocks begin with weathering of preexisting material. Erosion, transport, deposition, burial, compaction, and cementation turn loose sediment into rock.",
+    "tags": [
+      "clastic sediment",
+      "rock cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-sorting-rounding-transport",
+    "prompt": "What can well-rounded, well-sorted sand grains suggest about sediment history?",
+    "choices": [
+      "The grains were transported and reworked enough for abrasion and size sorting to occur.",
+      "The grains crystallized slowly inside a deep magma chamber.",
+      "The rock was metamorphosed so intensely that original sediment clues were erased.",
+      "The grains were deposited instantly with no movement after weathering."
+    ],
+    "explanation": "Transport can abrade grain edges and sort particles by size. Well-rounded, well-sorted sand often indicates substantial reworking by water or wind.",
+    "tags": [
+      "sedimentary texture",
+      "transport"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-chemical-sedimentary-process",
+    "prompt": "Which process can form a chemical sedimentary rock?",
+    "choices": [
+      "Minerals precipitate directly from water when chemical conditions favor crystal growth.",
+      "Magma cools slowly underground to form large interlocking crystals.",
+      "A preexisting rock recrystallizes under heat and pressure without melting.",
+      "Fault motion grinds continental crust into a volcanic arc."
+    ],
+    "explanation": "Chemical sedimentary rocks form by precipitation from solution. Evaporation, saturation, temperature, and water chemistry can all influence precipitation.",
+    "tags": [
+      "chemical sedimentary rocks",
+      "precipitation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-biogenic-sedimentary-process",
+    "prompt": "Which example best fits a biological sedimentary rock-forming process?",
+    "choices": [
+      "Shell material accumulates and is lithified into limestone.",
+      "Basaltic lava cools rapidly at the surface.",
+      "Granite recrystallizes into gneiss under high pressure.",
+      "A mantle plume changes Earth's orbital precession."
+    ],
+    "explanation": "Biological or biochemical sedimentary rocks can form from the remains or activities of organisms. Shell accumulation is a common example.",
+    "tags": [
+      "biological sedimentary rocks",
+      "limestone"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-intrusive-extrusive-evidence",
+    "prompt": "A rock has very fine crystals and formed from lava at Earth's surface. Which interpretation is best supported?",
+    "choices": [
+      "It is an extrusive igneous rock that cooled quickly.",
+      "It is an intrusive igneous rock that cooled slowly deep underground.",
+      "It is a clastic sedimentary rock made from rounded sand grains.",
+      "It is a metamorphic rock formed without any molten material."
+    ],
+    "explanation": "Extrusive igneous rocks cool at or near the surface. Rapid cooling limits crystal growth, producing fine-grained or glassy textures.",
+    "tags": [
+      "igneous rocks",
+      "crystal size"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l07-rock-cycle-not-linear",
+    "prompt": "Why is the rock cycle not a single fixed sequence that every rock must follow?",
+    "choices": [
+      "Rocks can enter different pathways depending on burial, uplift, weathering, melting, or metamorphic conditions.",
+      "Every rock must become sandstone before it can become any other rock type.",
+      "The rock cycle stops once sedimentary rocks preserve fossils.",
+      "Igneous rocks cannot be weathered or metamorphosed after they crystallize."
+    ],
+    "explanation": "The rock cycle is a network of possible transformations. A rock's pathway depends on changing physical and chemical conditions, not on one mandatory order.",
+    "tags": [
+      "rock cycle",
+      "processes"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l07-rock-type-environment-limits",
+    "prompt": "Why is rock type alone sometimes insufficient for reconstructing a specific ancient environment?",
+    "choices": [
+      "The same broad rock type can form in multiple settings, so texture, fossils, structures, and context are needed.",
+      "Rock type never provides any evidence about formation conditions.",
+      "Only igneous rocks can preserve environmental information.",
+      "A rock name automatically gives exact water depth, latitude, and climate."
+    ],
+    "explanation": "Rock type is useful but not complete. For example, sandstone can form in rivers, beaches, deserts, or shallow marine settings, so additional evidence is needed.",
+    "tags": [
+      "environmental reconstruction",
+      "evidence logic"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l07-metamorphic-overprint-trap",
+    "prompt": "Why can metamorphism make environmental reconstruction harder?",
+    "choices": [
+      "Heat, pressure, and fluids can alter original textures, minerals, and fossils from the protolith.",
+      "Metamorphism always improves fossil preservation and leaves sedimentary structures untouched.",
+      "Metamorphism gives a direct surface climate record for every rock it affects.",
+      "Metamorphism occurs only in modern environments and not in older rocks."
+    ],
+    "explanation": "Metamorphism can overprint or destroy original evidence from the rock's formation environment. Interpreters must separate original features from later alteration.",
+    "tags": [
+      "metamorphism",
+      "evidence logic"
+    ],
+    "difficulty": "Hard"
+  }
+]

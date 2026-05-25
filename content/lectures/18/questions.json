@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l18-land-plant-effect",
+    "prompt": "Why did the spread of land plants affect the carbon cycle rather than simply adding biomass on land?",
+    "choices": [
+      "Roots and soils enhanced weathering and soil stabilization, while nutrient runoff and organic burial affected productivity, burial, and CO2 drawdown.",
+      "Soil stabilization reduced erosion and runoff, making physical sediment storage more important than chemical weathering or organic burial.",
+      "Nutrient runoff through rivers was the dominant pathway, while roots and soils mattered mainly by changing where sediment accumulated.",
+      "Plant cover reduced some bare-rock exposure, so the carbon-cycle effect came mostly from organic burial rather than weathering changes."
+    ],
+    "explanation": "Land plants changed several linked carbon-cycle processes at once. Roots, soils, and organic acids could enhance weathering and CO2 drawdown; vegetation also stabilized sediment, altered nutrient runoff to oceans, and increased the chances that organic carbon would be buried instead of respired.",
+    "tags": [
+      "terrestrialization",
+      "land plants",
+      "weathering"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-terrestrialization",
+    "prompt": "Which statement best defines terrestrialization as more than a single move onto land?",
+    "choices": [
+      "A staged colonization of land by multiple groups as they solved linked problems of drying, support, reproduction, gas exchange, and food webs.",
+      "The single origin of tetrapod limbs after plants had already made modern terrestrial ecosystems.",
+      "A habitat shift requiring locomotion changes but little change in water balance or reproduction.",
+      "The spread of vascular plants only, with animals becoming relevant only after forests appeared."
+    ],
+    "explanation": "Terrestrialization was a staggered ecological and anatomical expansion by multiple groups. It required solutions to desiccation, support, reproduction, gas exchange, and the construction of terrestrial food webs.",
+    "tags": [
+      "terrestrialization",
+      "definition",
+      "land colonization"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-ordovician-spores-cuticle",
+    "prompt": "Fossil spores with resistant walls appear in rocks from the early history of land plants. What do they most directly indicate?",
+    "choices": [
+      "Moss-like plants had begun living on land, but still depended strongly on wet environments for reproduction and dispersal",
+      "Seed plants had already colonized deserts with fully independent reproduction",
+      "Vascular forests had already spread widely because resistant spores require woody stems",
+      "Plants had solved water loss completely, so cuticles and stomata were no longer important"
+    ],
+    "explanation": "Resistant spores indicate early non-vascular land plants. These plants reduced water loss with features such as cuticle and stomata, but their reproduction still kept them close to wet settings.",
+    "tags": [
+      "land plants",
+      "spores",
+      "Ordovician"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-vascular-lignin-support",
+    "prompt": "Why was lignified vascular tissue important in plant colonization of land?",
+    "choices": [
+      "It strengthened water-conducting cells, permitting taller plants and more reliable transport under gravity",
+      "It replaced the cuticle as the main barrier to water loss from leaf surfaces",
+      "It produced seeds and pollen, making fertilization independent of surface water",
+      "It converted roots into photosynthetic organs, reducing the need for shoots"
+    ],
+    "explanation": "Lignin strengthens cell walls, especially in vascular tissues, helping plants support themselves and move water upward. It did not by itself create seeds or remove the need for other land-plant adaptations.",
+    "tags": [
+      "vascular plants",
+      "lignin",
+      "support"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l18-seeds-drier-habitats",
+    "prompt": "Why did seed-bearing plants expand the range of terrestrial habitats plants could occupy?",
+    "choices": [
+      "Seeds protect embryos against dehydration and reduce dependence on free water for reproduction",
+      "Seeds increased plant height by strengthening xylem but did not change reproduction",
+      "Seeds required wetter habitats than spores because embryos could not resist drying",
+      "Seeds prevented organic burial, keeping plant expansion separate from carbon cycling"
+    ],
+    "explanation": "Seeds protect the embryo and reduce reproductive dependence on free water. That made it easier for plants to spread into drier environments than earlier spore-producing forms.",
+    "tags": [
+      "seed plants",
+      "reproduction",
+      "dry habitats"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l18-terrestrial-grades",
+    "prompt": "Why is terrestriality in animals better treated as a set of grades rather than a simple yes-or-no trait?",
+    "choices": [
+      "Animals range from living in water films or humid settings to regulating body water well enough for fully terrestrial life",
+      "All animals are fully terrestrial once they can crawl on a shoreline for a short time",
+      "Terrestriality depends mainly on diet, so herbivores become terrestrial before detritivores or predators",
+      "Animals are terrestrial only when every life stage is independent of humid microhabitats"
+    ],
+    "explanation": "Different animals have different dependence on external water. Semi-terrestrial forms may require humid environments, while fully terrestrial forms regulate body water more independently.",
+    "tags": [
+      "terrestriality",
+      "water balance",
+      "animal colonization"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-feeding-on-land",
+    "prompt": "Why were many suspension-feeding animal groups poorly suited to colonize land?",
+    "choices": [
+      "Air is not dense enough to carry food particles to sedentary filter feeders the way water currents can",
+      "Air currents could replace water currents once forests supplied enough suspended organic particles",
+      "Suspension feeders can walk on land but cannot use gills, making locomotion the only barrier",
+      "Suspension feeding requires plant tissues, so it could not evolve until forests were widespread"
+    ],
+    "explanation": "Water currents can deliver suspended food to stationary animals, but air does not provide the same support or particle transport. Motile herbivores, detritivores, scavengers, and carnivores had better pathways onto land.",
+    "tags": [
+      "feeding",
+      "terrestrialization",
+      "animal body plans"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-arthropod-preaptations",
+    "prompt": "An arthropod lineage has jointed legs, a chitinous exoskeleton, and gill-like respiratory surfaces. Which terrestrial challenge is least solved by that starting package without further modification?",
+    "choices": [
+      "Efficient gas exchange in air without desiccating respiratory tissues.",
+      "Mechanical support and leverage for moving on a solid substrate.",
+      "Some resistance to water loss and physical abrasion from a hardened outer covering.",
+      "Attachment points for muscles that can move limbs without buoyant support."
+    ],
+    "explanation": "Arthropods had useful preaptations for support and locomotion, but respiratory structures exposed to air needed modification to exchange gases while limiting water loss.",
+    "tags": [
+      "arthropods",
+      "preaptations",
+      "land colonization"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l18-lobe-finned-fish-preaptations",
+    "prompt": "Why were lobe-finned fish especially relevant to vertebrate terrestrialization?",
+    "choices": [
+      "Muscular lobe fins, lungs, and a bony internal skeleton provided starting points for support, locomotion, and air breathing on land",
+      "Ray fins provided the strongest substrate-based locomotion, so ray-finned fish are the expected direct source of tetrapod limbs",
+      "Lobe-finned fish lacked air-breathing structures, so lungs evolved only after fully terrestrial tetrapods appeared",
+      "Their fins were useful mainly for filter feeding, not support or substrate-based movement"
+    ],
+    "explanation": "Lobe-finned fish had features that could be repurposed for life in shallow or terrestrial settings. Muscular fins, lungs, and skeletal support helped set up the transition toward tetrapod limbs and air breathing.",
+    "tags": [
+      "lobe-finned fish",
+      "tetrapods",
+      "preaptations"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l18-animal-water-loss-coverings",
+    "prompt": "Which adaptation directly addresses water loss in terrestrial animals?",
+    "choices": [
+      "An impermeable external covering such as a waterproof exoskeleton or keratin-rich skin",
+      "A larger gill surface held open by surrounding water",
+      "A suspension-feeding apparatus that relies on dense currents",
+      "A carbonate shell that dissolves rapidly in acidic rainwater"
+    ],
+    "explanation": "Water loss is a central challenge on land. Arthropod exoskeletons and vertebrate skin coverings reduced desiccation risk, although other systems also had to evolve for locomotion and breathing.",
+    "tags": [
+      "water loss",
+      "terrestrial animals",
+      "adaptation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l18-cuticle-definition",
+    "prompt": "What is the main function of a plant cuticle on land?",
+    "choices": [
+      "It is a waxy surface layer that limits water loss while gas exchange must still be regulated",
+      "It is lignified vascular tissue that transports water inside stems",
+      "It is a root-fungus interface that increases nutrient uptake from soil",
+      "It is a protective wall around an embryo equivalent to a seed coat"
+    ],
+    "explanation": "A waxy cuticle helps plants limit desiccation in air. Because it restricts exchange across surfaces, other structures such as stomata help regulate gas movement.",
+    "tags": [
+      "cuticle",
+      "land plants",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l18-root-soil-definition",
+    "prompt": "Why were roots important in the greening of land?",
+    "choices": [
+      "They anchored plants, increased water and nutrient uptake, and intensified interactions between organisms, soil, and rock",
+      "They replaced stomata as the main site of CO2 intake for photosynthesis",
+      "They eliminated the need for vascular tissues by moving water only across external surfaces",
+      "They reduced weathering by separating organic acids and water from mineral surfaces"
+    ],
+    "explanation": "Roots helped plants live on land and changed the surface environment. They contributed to soil formation, water and nutrient acquisition, weathering, and nutrient cycling.",
+    "tags": [
+      "roots",
+      "soil formation",
+      "land plants"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l18-stomata-water-gas-tradeoff",
+    "prompt": "Why are stomata a tradeoff for land plants?",
+    "choices": [
+      "They allow gas exchange for photosynthesis but can also increase water loss",
+      "They absorb mineral nutrients while preventing any carbon dioxide from entering the plant",
+      "They are animal burrows that mix oxygen into sediment",
+      "They make seeds independent of all environmental conditions"
+    ],
+    "explanation": "Land plants need CO2 for photosynthesis, but opening pores can let water escape. Stomata help regulate that gas-water balance.",
+    "tags": [
+      "stomata",
+      "water balance",
+      "gas exchange"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-plant-weathering-co2",
+    "prompt": "How did land plants increase the connection between biology and the long-term carbon cycle?",
+    "choices": [
+      "Roots, organic acids, and soils enhanced weathering that could draw down atmospheric CO2 over long timescales",
+      "Plants stopped weathering by covering every rock surface with impermeable shells",
+      "Plants released CO2 only through volcanism and had no effect on rocks",
+      "Photosynthesis affected oxygen but could not affect carbon reservoirs"
+    ],
+    "explanation": "Land plants changed weathering, soil development, and organic carbon burial. Those processes connect terrestrial ecosystems to atmospheric CO2 and climate.",
+    "tags": [
+      "land plants",
+      "weathering",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-terrestrial-animal-respiration",
+    "prompt": "Why did animal colonization of land require new respiratory solutions?",
+    "choices": [
+      "Structures that work for gas exchange in water can collapse, dry out, or function poorly in air",
+      "Air contains no oxygen, so terrestrial animals had to stop aerobic respiration",
+      "All marine animals already had lungs before moving onto land",
+      "Respiration became unnecessary because land plants produced food"
+    ],
+    "explanation": "Life in air changes the physical problem of gas exchange. Terrestrial animals evolved or repurposed structures such as tracheae, book lungs, or lungs while managing water loss.",
+    "tags": [
+      "respiration",
+      "terrestrial animals",
+      "land colonization"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-soil-ecosystem-engineering",
+    "prompt": "Why is soil formation an Earth-system consequence of terrestrialization?",
+    "choices": [
+      "Plants, microbes, animals, weathering, and organic matter created new surface environments that affected runoff, nutrients, and habitats",
+      "Soils are purely volcanic and form without biology, water, or weathering",
+      "Soil formation matters only for fossil dating and not for ecosystems",
+      "Terrestrialization reduced all sediment production to zero"
+    ],
+    "explanation": "Terrestrial ecosystems changed the physical and chemical surface of continents. Soils altered water movement, nutrient cycles, weathering, and habitat structure.",
+    "tags": [
+      "soil formation",
+      "ecosystem engineering",
+      "terrestrialization"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l18-seed-free-reproduction-water-limit",
+    "prompt": "Why were early seed-free plants more tied to moist environments than later seed plants?",
+    "choices": [
+      "Their reproduction commonly depended on water for sperm movement and vulnerable spores or gametophytes",
+      "They lacked photosynthesis and had to absorb food directly from lakes",
+      "They could survive only in fully marine habitats because roots cannot enter soil",
+      "They produced pollen tubes and seeds that removed dependence on external water"
+    ],
+    "explanation": "Reproduction is a central land-colonization challenge. Seeds and pollen later reduced dependence on external water compared with many earlier plant life cycles.",
+    "tags": [
+      "seed-free plants",
+      "reproduction",
+      "water dependence"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l18-tetrapod-support-breathing-tradeoff",
+    "prompt": "Why did vertebrate movement onto land require changes beyond simply having stronger fins?",
+    "choices": [
+      "Support against gravity, air breathing, sensory changes, feeding mechanics, and water balance all had to be addressed",
+      "Only limb bones mattered because air and water impose identical respiratory and sensory demands",
+      "Land locomotion was easy once animals lost their skeletons",
+      "The main challenge was filtering suspended food from air currents"
+    ],
+    "explanation": "Terrestrialization is a suite of problems. Limbs are important, but land also changes support, respiration, feeding, senses, reproduction, and desiccation.",
+    "tags": [
+      "tetrapods",
+      "land colonization",
+      "functional tradeoffs"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l18-land-food-web-sequence",
+    "prompt": "Trackways from small animals appear after evidence for microbial soils and simple land plants but before large forests. Which sequence best fits the ecological requirements of early terrestrial food webs?",
+    "choices": [
+      "Microbes and early plants first stabilized substrates and supplied organic resources, allowing small detritivores or herbivores and then predators to expand on land.",
+      "Large forests had to evolve first because small animals require canopy habitats and cannot use microbial or low-plant resources.",
+      "Animals most likely colonized first because terrestrial food webs can begin without primary producers or detrital resources.",
+      "The trackways must predate plants because plant fossils cannot preserve in the same settings as animal traces."
+    ],
+    "explanation": "Terrestrialization required ecological scaffolding. Microbes and early plants could provide organic matter, soil development, and habitat before larger forests existed.",
+    "tags": [
+      "food webs",
+      "plants",
+      "animal terrestrialization"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l18-carboniferous-coal-link",
+    "prompt": "Two wet lowland basins have similar subsidence. One has high plant productivity but well-oxygenated, frequently drained soils; the other has high productivity plus persistent waterlogging and low clastic dilution. Which is more favorable for coal formation?",
+    "choices": [
+      "The waterlogged, low-dilution basin because productivity supplies organic matter while low oxygen slows decomposition and preserves peat.",
+      "The well-drained basin because oxygenated soils preserve plant carbon better by accelerating decay.",
+      "Both basins are equally favorable because coal formation depends only on subsidence, not productivity or decomposition.",
+      "Neither basin can form coal unless marine carbonate skeletons replace plant debris as the main carbon source."
+    ],
+    "explanation": "Coal formation requires both organic supply and preservation. High productivity matters most when waterlogging, low oxygen, accommodation, and low clastic dilution allow peat to accumulate.",
+    "tags": [
+      "coal swamps",
+      "land plants",
+      "organic carbon burial"
+    ],
+    "difficulty": "Hard"
+  }
+]

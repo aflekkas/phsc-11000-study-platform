@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l01-environment-definition",
+    "prompt": "What best defines an Earth surface environment?",
+    "choices": [
+      "The physical and biotic elements present at a site.",
+      "The age of the rocks exposed at a site.",
+      "The latitude and longitude of a site without its organisms.",
+      "The name assigned to a site on a geologic map."
+    ],
+    "explanation": "An environment is defined by the physical and biological elements present. Climate, topography, chemistry, and organisms all help determine what that environment is like.",
+    "tags": [
+      "surface environments",
+      "definition"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l01-surface-environment-categories",
+    "prompt": "A coastal delta receives river sediment, freshwater, tides, waves, and seawater. Which classification best fits the broad surface-environment categories?",
+    "choices": [
+      "It is a marginal marine setting, one of the broad categories alongside terrestrial, freshwater, and marine settings.",
+      "It is a terrestrial setting because river sediment begins on land even when seawater and tides affect deposition.",
+      "It is a freshwater setting because river discharge controls salinity more directly than waves or tides do.",
+      "It is a marine setting only if the water column is fully oceanic and unaffected by sediment from land."
+    ],
+    "explanation": "Marginal marine environments sit where land, freshwater, and seawater processes interact. The broad categories include terrestrial, freshwater, marginal marine, and marine settings, but the process mix matters when assigning a specific setting.",
+    "tags": [
+      "surface environments",
+      "classification"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-terrestrial-controls",
+    "prompt": "A lowland site shifts from a humid forest to an arid desert without becoming aquatic. Which change most directly explains the environmental shift?",
+    "choices": [
+      "A change in terrestrial climate, especially precipitation and temperature.",
+      "A change in bedrock age alone while climate and topography stay fixed.",
+      "A change in organism names without a change in physical or biological conditions.",
+      "A change in water-column light availability, which is the primary control on all land settings."
+    ],
+    "explanation": "For terrestrial settings, temperature and precipitation are major physical controls. Shifts in those climate variables can transform the environment even if the site remains on land.",
+    "tags": [
+      "terrestrial environments",
+      "climate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-aquatic-controls",
+    "prompt": "Two coastal water bodies have similar temperatures, but one is shallow and brackish while the other is deeper and fully marine. Which inference best uses aquatic environmental controls?",
+    "choices": [
+      "They may support different aquatic environments because salinity and depth change light, pressure, mixing, and habitat conditions.",
+      "They should be classified together because temperature is the only aquatic control that affects organisms directly.",
+      "They differ only if nearby land vegetation changes, because aquatic gradients do not persist within water bodies.",
+      "They can be separated only by latitude and season, because depth and salinity are too variable to define environments."
+    ],
+    "explanation": "Aquatic settings are shaped by interacting controls including salinity, depth, pressure, light availability, turbulence, water clarity, and temperature. Similar temperature does not erase the environmental consequences of different salinity and depth.",
+    "tags": [
+      "aquatic environments",
+      "environmental controls"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l01-climate-drivers",
+    "prompt": "Why does latitude strongly influence surface environments?",
+    "choices": [
+      "Latitude helps set the pattern of solar energy input and therefore temperature gradients.",
+      "Latitude matters mainly because it changes Earth's distance from the Sun at each site.",
+      "Latitude directly sets elevation, so temperature gradients are mostly topographic.",
+      "Latitude has little effect once atmosphere and oceans redistribute heat."
+    ],
+    "explanation": "Latitude matters because Earth's curved surface receives solar energy unevenly. That energy pattern helps create temperature gradients that influence climate and environments.",
+    "tags": [
+      "latitude",
+      "climate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-topography-plate-control",
+    "prompt": "Which process is the main control on the broad distribution of continents, ocean basins, mountain chains, and volcanoes?",
+    "choices": [
+      "Plate tectonics.",
+      "Daily weather changes.",
+      "Seasonal shifts in daylight length.",
+      "Short-term ecological succession."
+    ],
+    "explanation": "Plate tectonics controls much of Earth's large-scale topography, including the locations of continents, ocean basins, mountains, and volcanoes.",
+    "tags": [
+      "topography",
+      "plate tectonics"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l01-environment-timescales",
+    "prompt": "Which comparison best captures why environments are described as dynamic?",
+    "choices": [
+      "They can vary over hours, seasons, ecological timescales, orbital cycles, continental drift, and biological evolution.",
+      "They change only when continents move, so short-term weather and tides are irrelevant.",
+      "They change only during a single organism's lifetime, not over geologic time.",
+      "They remain fixed unless the Sun stops providing energy to Earth's surface."
+    ],
+    "explanation": "Environmental controls operate across many timescales, from day-night cycles and tides to seasons, ecological succession, orbital-scale climate shifts, continental drift, and evolution.",
+    "tags": [
+      "environmental change",
+      "timescales"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-scientific-method-loop",
+    "prompt": "Which sequence best represents the scientific method used to interpret Earth history?",
+    "choices": [
+      "Question, observations, hypothesis, predictions, tests, and revision if needed.",
+      "Prediction, conclusion, observation, and then rejection of any new data.",
+      "Question, preferred answer, search for confirming examples, and no further testing.",
+      "Observation, memorization, naming, and acceptance as a permanent theory."
+    ],
+    "explanation": "Scientific reasoning connects questions and observations to hypotheses, uses those hypotheses to make predictions, and tests predictions against new data. Failed predictions require rejection or revision.",
+    "tags": [
+      "scientific method",
+      "hypothesis testing"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l01-falsifiable-hypotheses",
+    "prompt": "Why is falsifiability important in scientific explanations of past environments?",
+    "choices": [
+      "A hypothesis must make predictions that observations could potentially show to be wrong.",
+      "A hypothesis is stronger when no possible observation could challenge it.",
+      "A hypothesis becomes scientific once it matches the first observation collected.",
+      "A hypothesis should avoid predictions because ancient environments cannot be revisited."
+    ],
+    "explanation": "Scientific knowledge advances by testing hypotheses against observations. A claim that cannot be tested or potentially rejected is not useful as a scientific explanation.",
+    "tags": [
+      "scientific method",
+      "falsifiability"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-ancient-environment-inference",
+    "prompt": "A sandstone contains wave ripples, marine shells, and a thin rooted horizon at its top. Which interpretation is the strongest scientific next step?",
+    "choices": [
+      "Propose a shallow-marine setting that became exposed, then test for lateral shoreline facies, sedimentary structures, and age relationships.",
+      "Classify the whole unit as terrestrial because the rooted horizon is the youngest observation in the outcrop.",
+      "Classify the whole unit as marine because shells are more diagnostic than sedimentary structures or exposure features.",
+      "Avoid a process interpretation until a numerical age is available, because relative evidence cannot test ancient environments."
+    ],
+    "explanation": "A scientific environmental interpretation links multiple observations to a process history and then tests that history against additional evidence. Here, marine deposition followed by exposure is plausible but still needs supporting facies and stratigraphic context.",
+    "tags": [
+      "ancient environments",
+      "scientific inference"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l01-marginal-marine-definition",
+    "prompt": "Which setting is best described as marginal marine?",
+    "choices": [
+      "A shoreline zone where land, freshwater input, waves, tides, and seawater interact.",
+      "A dry upland environment controlled only by wind and soil formation.",
+      "A deep-ocean plain below the reach of sunlight and coastal sediment.",
+      "An inland lake whose chemistry is unaffected by nearby topography."
+    ],
+    "explanation": "Marginal marine environments sit near the boundary between land and ocean. They commonly mix terrestrial sediment supply, freshwater, tides, waves, and marine chemistry.",
+    "tags": [
+      "surface environments",
+      "marginal marine"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l01-biotic-control-definition",
+    "prompt": "A fossil reef is found beside a shell bed made of transported broken shells. Which comparison best identifies true biotic environmental control?",
+    "choices": [
+      "The reef builders altered flow, sediment trapping, and living space, while the transported shells may mostly record reworking after death.",
+      "Both deposits equally show biotic control because any fossil proves organisms shaped the environment where it is preserved.",
+      "The shell bed is the stronger biotic control because broken shells are easier to preserve than living framework structure.",
+      "Neither deposit can show biotic control unless tectonic uplift later exposes the fossils above sea level."
+    ],
+    "explanation": "Organisms are environmental controls when their activity changes physical or biological conditions, not merely when their remains are preserved. A reef framework can engineer habitat; transported shell debris may mainly record postmortem sediment movement.",
+    "tags": [
+      "biotic controls",
+      "ecosystem engineering"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l01-space-versus-time-environments",
+    "prompt": "Why can the same region contain different environments at different points in Earth history?",
+    "choices": [
+      "Controls such as climate, topography, sea level, and organisms can change through time.",
+      "A surface environment is fixed once its first sedimentary rocks form.",
+      "Ancient environments can only be classified by their modern latitude.",
+      "Biological controls matter only in modern environments, not in older rocks."
+    ],
+    "explanation": "Environments are dynamic because the controls that shape them are dynamic. A place can shift from marine to terrestrial, humid to arid, or lowland to upland as physical and biological conditions change.",
+    "tags": [
+      "environmental change",
+      "deep time"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-present-controls-past-inference",
+    "prompt": "Why does understanding present-day environmental controls help geologists reconstruct ancient environments?",
+    "choices": [
+      "Modern process relationships provide testable links between evidence and likely past conditions.",
+      "Modern environments prove that ancient rates and intensities were always identical.",
+      "Present-day controls remove the need to compare multiple lines of geological evidence.",
+      "Modern examples make fossils unnecessary for reconstructing ancient surface settings."
+    ],
+    "explanation": "Present processes help geologists interpret ancient evidence, but they do not require assuming identical rates or conditions. They provide process-based expectations that can be tested against rocks, fossils, and geochemical data.",
+    "tags": [
+      "uniformitarian reasoning",
+      "scientific inference"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-observation-hypothesis-prediction",
+    "prompt": "A rock unit contains marine fossils and ripple-marked sandstone. A geologist proposes that it formed in shallow seawater and predicts additional shoreline deposits nearby. Which part of scientific reasoning is the predicted shoreline deposit?",
+    "choices": [
+      "A testable prediction derived from the hypothesis.",
+      "The original observation that started the interpretation.",
+      "A conclusion that cannot be revised by later evidence.",
+      "A classification based only on the rock unit's modern location."
+    ],
+    "explanation": "A hypothesis should generate predictions. If the shallow-marine interpretation is correct, nearby evidence should fit that process-based expectation; if it does not, the hypothesis may need revision.",
+    "tags": [
+      "scientific method",
+      "prediction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-physical-biological-feedback",
+    "prompt": "Which statement best captures feedback between biological and physical controls?",
+    "choices": [
+      "Organisms can modify sediment, chemistry, or habitat, and those physical changes can then reshape which organisms thrive.",
+      "Physical processes determine environments, while organisms only record conditions after the fact.",
+      "Biological effects matter only at organism scale and cannot influence environmental conditions.",
+      "Plate tectonics removes the possibility of biological influence on surface environments."
+    ],
+    "explanation": "The course frame treats environments as systems. Organisms can alter physical or chemical conditions, and the altered environment can feed back on habitats, resources, and evolutionary opportunities.",
+    "tags": [
+      "feedbacks",
+      "biotic controls"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-multiple-controls-trap",
+    "prompt": "A coastal wetland shifts toward open marine conditions as relative sea level rises. Which explanation best avoids a single-cause trap?",
+    "choices": [
+      "Sea level, sediment supply, climate, topography, and organisms may all influence the observed change.",
+      "Only latitude can explain environmental change because it controls sunlight.",
+      "Only fossils can explain the shift because physical controls are not preserved.",
+      "Only the modern shoreline position matters because ancient geography cannot be tested."
+    ],
+    "explanation": "Environmental interpretations often require multiple controls. A sea-level shift is important, but sediment supply, climate, local topography, and biological modification can all affect the resulting environment.",
+    "tags": [
+      "environmental controls",
+      "systems thinking"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l01-testable-ancient-climate-claim",
+    "prompt": "Which claim about an ancient desert is most scientifically useful?",
+    "choices": [
+      "The deposit formed under arid conditions, so it should contain sedimentary structures and minerals consistent with limited water.",
+      "The deposit was a desert because deserts are common on modern maps.",
+      "The deposit was dry because ancient environments cannot preserve evidence of water.",
+      "The deposit must be arid if it lacks one fossil species found in a marine setting."
+    ],
+    "explanation": "A useful claim links an interpretation to expected evidence. Aridity should have observable consequences in sediment texture, structures, minerals, soil features, or fossil patterns.",
+    "tags": [
+      "hypothesis testing",
+      "ancient climate"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l01-environmental-history-logic",
+    "prompt": "A basin shifts from shallow marine carbonate to evaporite, then to fluvial sandstone. Which answer best turns that sequence into environmental history rather than a label list?",
+    "choices": [
+      "Ask how sea level, restriction, climate, sediment supply, and basin connection changed to produce the transitions.",
+      "Name the three rock types in order and treat each as independent because process links are not preserved.",
+      "Use the youngest fluvial sandstone to infer that all older units were deposited by rivers as well.",
+      "Choose a single cause, such as temperature, because multiple controls cannot be tested in ancient basins."
+    ],
+    "explanation": "Environmental history is about explaining transitions. The rock sequence matters because it can record changing controls such as water depth, restriction, aridity, sediment input, and basin connectivity.",
+    "tags": [
+      "environmental history",
+      "processes"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l01-environmental-history-sequence",
+    "prompt": "A student has observations from a rock unit, a proposed depositional environment, and a possible climate driver. Which workflow best tests the interpretation?",
+    "choices": [
+      "Use present-day process controls to predict additional evidence, then check rocks, fossils, chemistry, and stratigraphic context against that prediction.",
+      "Accept the proposed environment first, then select only observations that fit it because ancient settings cannot be repeated.",
+      "Rank the observations by age alone, because chronology replaces the need for mechanism or process testing.",
+      "Compare only to modern climate zones, because tectonics and organisms are background details rather than environmental controls."
+    ],
+    "explanation": "The course logic moves from process controls to evidence-based reconstruction. A good workflow turns a proposed environment into predictions and checks multiple lines of evidence against them.",
+    "tags": [
+      "environmental framework",
+      "environmental history"
+    ],
+    "difficulty": "Hard"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "phsc-11000-study-platform",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "screenshots": "node scripts/capture-screenshots.mjs",
+    "validate:questions": "node scripts/validate-question-bank.mjs",
+    "build": "pnpm validate:questions && tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "vite": "^7.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "daisyui": "^5.5.20",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^5.9.3"
+  }
+}

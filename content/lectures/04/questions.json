@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l04-thermohaline-control",
+    "prompt": "A polar surface water mass cools while nearby sea-ice formation rejects brine, but some meltwater also freshens the area. What best predicts whether the water will sink?",
+    "choices": [
+      "Sinking is favored where the combined effects of cooling and salinity make the water denser than surrounding water.",
+      "Freshening usually offsets cooling enough that sea-ice regions remain stratified unless salinity changes are ignored.",
+      "Brine rejection is sufficient for sinking whenever sea ice forms, even if the resulting water is not denser than nearby water.",
+      "The freshest water sinks first once it cools, because low salinity lets it contract more than salty water."
+    ],
+    "explanation": "Thermohaline circulation depends on density contrasts from both temperature and salinity. Cooling and brine rejection tend to increase density, while freshening can reduce it, so the combined density effect controls sinking.",
+    "tags": [
+      "ocean circulation",
+      "thermohaline"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-ocean-role",
+    "prompt": "A new ocean gateway redirects surface currents and changes where deep water forms. Which interpretation best explains why this matters for both climate and marine ecosystems?",
+    "choices": [
+      "Surface currents can redistribute heat, while deep and upwelling circulation can change oxygen and nutrient delivery to habitats.",
+      "Upwelling mainly changes nutrient supply, so current reorganization would affect productivity but not oxygenation or temperature structure.",
+      "Shelf habitat area would respond to sea level, while water-mass changes would matter mostly for deep basins rather than shelf ecosystems.",
+      "Thermohaline circulation would change deep water properties, while surface heat transport would stay mostly controlled by winds rather than gateways."
+    ],
+    "explanation": "Ocean circulation links climate and habitat because it moves heat, oxygen, and nutrients. Surface currents, deep circulation, and upwelling can each matter, and shelf habitats can respond when those water-mass properties change.",
+    "tags": [
+      "ocean",
+      "climate"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l04-salinity-evaporation",
+    "prompt": "A subtropical basin has high evaporation but little river input. Which salinity change is expected, and what mechanism explains it?",
+    "choices": [
+      "Salinity should rise because evaporation removes water while most dissolved ions remain in the basin.",
+      "Salinity should fall because evaporation removes sodium and chloride more efficiently than water molecules.",
+      "Salinity should stay fixed because ion concentration depends only on the original seawater source.",
+      "Salinity should fall only if dense brine sinks, because sinking converts saltwater into freshwater."
+    ],
+    "explanation": "When seawater evaporates, water molecules leave the ocean surface but dissolved salts remain. This increases salt concentration where evaporation is high.",
+    "tags": [
+      "salinity",
+      "evaporation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-density-controls",
+    "prompt": "A marginal sea produces very salty water by evaporation, but the water is also warm. Nearby open-ocean water is cooler and only moderately salty. Which interpretation best predicts whether the marginal-sea water will sink?",
+    "choices": [
+      "It depends on the combined density effect of warming and salinity; high salinity favors sinking, but warmth can partly offset that density increase.",
+      "It must sink because salinity always controls seawater density more strongly than temperature.",
+      "It cannot sink because warm water is always less dense than any cooler water regardless of salinity.",
+      "It will sink only if sea ice forms, because brine rejection is the only process that can make surface water dense."
+    ],
+    "explanation": "Density reflects both temperature and salinity. Evaporation raises salinity and density, but warming lowers density, so the outcome depends on the combined water-mass properties rather than either variable alone.",
+    "tags": [
+      "density",
+      "temperature"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l04-stratification-consequence",
+    "prompt": "Why does strong ocean stratification matter for marine environments?",
+    "choices": [
+      "It can decouple layers with different circulation, nutrient concentrations, and oxygen levels.",
+      "It eliminates vertical gradients, making deep and surface waters chemically identical.",
+      "It mixes nutrients and oxygen so efficiently that depth no longer affects habitat conditions.",
+      "It stops salinity from influencing density."
+    ],
+    "explanation": "Stratification separates the ocean into layers based on temperature, salinity, and density. These layers can differ in circulation, oxygen, and nutrients.",
+    "tags": [
+      "stratification",
+      "oxygen"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-photic-zone",
+    "prompt": "What defines the base of the photic zone in the ocean?",
+    "choices": [
+      "The depth to which enough sunlight penetrates for photosynthesis.",
+      "The depth where salinity first reaches 35 parts per thousand.",
+      "The boundary between continental shelf and continental slope.",
+      "The depth to which fair-weather waves disturb the seafloor."
+    ],
+    "explanation": "The photic zone is the sunlit upper part of the ocean. Below its base, light is too limited for photosynthesis, producing the aphotic zone.",
+    "tags": [
+      "photic zone",
+      "light"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l04-shelf-abyssal-profile",
+    "prompt": "A transect begins on a flooded continental margin and continues seaward into deep ocean. Which sequence best follows the major depth and slope changes?",
+    "choices": [
+      "Continental shelf, continental slope, abyssal plain.",
+      "Continental slope, continental shelf, abyssal plain.",
+      "Abyssal plain, continental slope, continental shelf.",
+      "Continental shelf, halocline, thermocline."
+    ],
+    "explanation": "Moving offshore from a continent, the broad shallow shelf gives way to the steeper continental slope and then to the flatter abyssal plain. Water-column gradients such as haloclines are not seafloor provinces.",
+    "tags": [
+      "seafloor profile",
+      "marine environments"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-maritime-effect",
+    "prompt": "Why do coastal areas often have less extreme seasonal temperature swings than nearby continental interiors?",
+    "choices": [
+      "Water warms and cools slowly because of evaporation, high specific heat, light penetration, and internal mixing.",
+      "Land warms more slowly because soil stores latent heat during evaporation.",
+      "Water warms faster because sunlight penetrates below the surface and concentrates heat at depth.",
+      "The effect occurs mainly because coastal air has lower pressure than continental air."
+    ],
+    "explanation": "Water changes temperature more slowly than land because it stores energy as latent heat during evaporation, has high specific heat, is heated through a larger volume, and mixes internally. This produces the maritime effect.",
+    "tags": [
+      "maritime effect",
+      "heat capacity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-surface-gyres",
+    "prompt": "What drives large-scale surface gyres in the subtropical oceans?",
+    "choices": [
+      "Frictional drag from surface winds associated with trade winds and westerlies.",
+      "Density-driven sinking below subtropical high-pressure belts.",
+      "River discharge pushing surface water away from every continental margin.",
+      "Deep thermohaline currents dragging surface water in the same direction everywhere."
+    ],
+    "explanation": "Surface currents are driven by wind drag. Trade winds and westerlies help produce large subtropical gyres, which are also shaped by Earth's rotation and continental boundaries.",
+    "tags": [
+      "surface currents",
+      "gyres"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-upwelling-productivity",
+    "prompt": "Why are many upwelling regions ecologically rich?",
+    "choices": [
+      "Deep water rising to the surface brings nutrients into the sunlit zone.",
+      "Upwelling removes nutrients from surface water and stores them below the pycnocline.",
+      "Deep water is always warmer than surface water, increasing coral reef growth everywhere.",
+      "Upwelling mainly changes salinity, while nutrient supply remains controlled only by rivers."
+    ],
+    "explanation": "Upwelling occurs where deep water rises, often at surface-water divergence zones. That deep water is nutrient-rich, so it can support high productivity when it reaches the photic zone.",
+    "tags": [
+      "upwelling",
+      "nutrients"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-pelagic-benthic-definition",
+    "prompt": "Which comparison correctly distinguishes pelagic and benthic marine settings?",
+    "choices": [
+      "Pelagic settings are in the water column, while benthic settings are on or in the seafloor.",
+      "Pelagic settings occur only below the photic zone, while benthic settings occur only at the surface.",
+      "Pelagic settings are freshwater, while benthic settings are always hypersaline.",
+      "Pelagic settings are defined by coral growth, while benthic settings are defined by tides."
+    ],
+    "explanation": "Pelagic environments are open-water settings. Benthic environments are associated with the seafloor, including the sediment-water interface and organisms living there.",
+    "tags": [
+      "marine environments",
+      "pelagic and benthic"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l04-depth-pressure-definition",
+    "prompt": "Which environmental variable predictably increases with ocean depth?",
+    "choices": [
+      "Pressure.",
+      "Sunlight.",
+      "Wave mixing.",
+      "Photosynthetic production."
+    ],
+    "explanation": "Pressure rises as depth increases because more overlying water presses downward. Light and wave energy generally decrease with depth.",
+    "tags": [
+      "ocean gradients",
+      "pressure"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l04-heat-capacity-buffer",
+    "prompt": "Why can oceans moderate nearby coastal climate?",
+    "choices": [
+      "Water stores and releases large amounts of heat without changing temperature as quickly as land.",
+      "Seawater has no heat capacity, so it cannot exchange energy with the atmosphere.",
+      "Ocean surfaces reflect all incoming sunlight, preventing any seasonal warming.",
+      "Coastal climates are controlled only by latitude and not by nearby water."
+    ],
+    "explanation": "Oceans are large heat reservoirs. Their high heat capacity allows them to warm and cool more slowly than land, damping temperature extremes near coasts.",
+    "tags": [
+      "ocean climate",
+      "heat storage"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-thermocline-stratification-definition",
+    "prompt": "What does a thermocline represent in the ocean?",
+    "choices": [
+      "A zone where temperature changes rapidly with depth.",
+      "A seafloor boundary between continental and oceanic crust.",
+      "A current that moves only because of tides.",
+      "A surface layer where salinity is always zero."
+    ],
+    "explanation": "A thermocline is a vertical gradient marked by rapid temperature change. Strong gradients can contribute to density stratification and limit vertical mixing.",
+    "tags": [
+      "ocean stratification",
+      "temperature"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-nutrients-light-limitation",
+    "prompt": "Why can surface productivity be low even where deep water contains abundant nutrients?",
+    "choices": [
+      "Strong stratification can keep nutrient-rich deep water from mixing into the sunlit surface layer.",
+      "Nutrients can support photosynthesis only in the completely dark deep ocean.",
+      "The photic zone contains no organisms capable of using nutrients.",
+      "Pressure prevents nutrients from dissolving below the continental shelf."
+    ],
+    "explanation": "Photosynthesis requires light, so nutrients must reach the photic zone to support high productivity. Stratification can separate nutrient-rich deep water from sunlit surface waters.",
+    "tags": [
+      "nutrients",
+      "stratification"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-sea-level-shelf-habitat",
+    "prompt": "How can rising sea level expand shallow marine habitat on a low-gradient continental margin?",
+    "choices": [
+      "It can flood broad shelf areas, creating more shallow seafloor covered by seawater.",
+      "It always eliminates continental shelves by turning them into mid-ocean ridges.",
+      "It lowers the photic zone until deep-sea plains become coral reefs everywhere.",
+      "It prevents sediment from reaching coasts, so no marine habitat can form."
+    ],
+    "explanation": "When sea level rises across a broad, low-gradient margin, seawater can cover large shelf areas. This changes the amount and distribution of shallow marine habitat.",
+    "tags": [
+      "sea level",
+      "continental shelves"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-oxygen-anoxia-mechanism",
+    "prompt": "Which mechanism can promote low-oxygen or anoxic conditions in marine settings?",
+    "choices": [
+      "Restricted circulation and strong stratification can limit oxygen renewal at depth.",
+      "Constant vertical mixing always removes oxygen from surface water first.",
+      "High oxygen solubility at warm temperatures guarantees oxygen-rich deep water.",
+      "Bright surface sunlight directly oxygenates the deepest seafloor without mixing."
+    ],
+    "explanation": "Deep waters need oxygen renewal from circulation and mixing. If stratification or restricted exchange prevents renewal, oxygen can be consumed faster than it is replaced.",
+    "tags": [
+      "oxygen",
+      "anoxia"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l04-ocean-gateway-circulation-hard",
+    "prompt": "After a seaway opens between two ocean basins, nearby sediments show cooler surface-water faunas, stronger upwelling indicators, and better-oxygenated deep-water fossils. Which mechanism best fits all three observations?",
+    "choices": [
+      "The gateway redirected surface and deep currents, changing heat transport, nutrient delivery, and water-mass ventilation.",
+      "The gateway only raised sea level, so cooler faunas and oxygenation must be unrelated to circulation.",
+      "The gateway changed salinity enough to stop density-driven circulation, leaving wind as the only possible cause of all observations.",
+      "The gateway mainly altered coastline names, while fossil and geochemical changes are better treated as sampling artifacts."
+    ],
+    "explanation": "Ocean gateways can reorganize current pathways and water-mass exchange. That can affect surface temperature, nutrient supply through upwelling, and oxygen renewal at depth.",
+    "tags": [
+      "ocean gateways",
+      "circulation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l04-marine-environment-evidence-logic",
+    "prompt": "A fossil community changes from shallow-shelf organisms to deep-water organisms in an upward rock sequence. Which environmental interpretation is most directly supported?",
+    "choices": [
+      "Water depth at that location likely increased through time.",
+      "Atmospheric oxygen must have disappeared globally at the base of the sequence.",
+      "The rocks must have formed on land because fossils changed upward.",
+      "The site must have crossed the equator during every bed's deposition."
+    ],
+    "explanation": "Marine organisms are tied to environmental gradients such as water depth, light, oxygen, and substrate. A shift from shelf to deeper-water communities can record deepening at that location.",
+    "tags": [
+      "marine habitats",
+      "evidence logic"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l04-density-versus-wind-circulation",
+    "prompt": "Satellite data show a rotating surface current pattern aligned with prevailing winds, while deep-water tracer data show sinking in a cold, salty high-latitude region. Which interpretation best separates the two circulation components?",
+    "choices": [
+      "The surface pattern is mainly wind-driven gyre circulation, while the sinking tracer path reflects density-driven thermohaline circulation.",
+      "Both patterns are thermohaline because any rotating current must be caused by salinity differences.",
+      "Both patterns are wind-driven because deep sinking can occur only where surface winds push water downward.",
+      "The surface current is tidal, while the deep tracer pattern records fossil distribution rather than water movement."
+    ],
+    "explanation": "Surface gyres are largely driven by winds and rotation, whereas thermohaline circulation depends on density contrasts caused by temperature and salinity. The two systems interact but are diagnosed by different controls.",
+    "tags": [
+      "surface currents",
+      "thermohaline circulation"
+    ],
+    "difficulty": "Hard"
+  }
+]

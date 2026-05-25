@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l25-primate-traits",
+    "prompt": "Which trait set is most characteristic of primates in an arboreal evolutionary context, without mixing in traits limited to apes or hominins?",
+    "choices": [
+      "Grasping hands or feet with nails, strong vision, flexible climbing, and complex social behavior.",
+      "Forward-facing eyes, nails, grasping extremities, and habitual bipedal pelvis anatomy shared across all primates.",
+      "Enhanced smell, long snouts, claws, and reduced visual depth perception as the main arboreal package.",
+      "No tail, suspensory shoulders, enlarged brains, and knuckle-walking shared across all primate branches."
+    ],
+    "explanation": "Primate evolution is tied to life in trees. Grasping extremities, nails, strong visual abilities, flexible locomotion, and social behavior fit arboreal primate adaptation better than scent-dominated, cursorial, or ape- and hominin-specific trait mixes.",
+    "tags": [
+      "primate evolution",
+      "traits",
+      "arboreal adaptation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-bipedalism",
+    "prompt": "A fossil has a short, broad pelvis, an angled femur, reduced canines, curved climbing fingers, and a small braincase. Which interpretation best fits the trait combination?",
+    "choices": [
+      "It fits an early hominin mosaic: bipedal anatomy and reduced canines appeared while brain size remained small and climbing traits persisted.",
+      "It is outside the hominin lineage because any retained climbing trait outweighs pelvic and femoral evidence for habitual bipedalism.",
+      "It must belong to later Homo because reduced canines and bipedal anatomy only evolved after major brain expansion.",
+      "It is best treated as a living-ape ancestor because small brain size means pelvis and leg traits are convergent with humans."
+    ],
+    "explanation": "Early hominins did not acquire all human-like traits at once. Pelvic and femoral evidence can support bipedalism even when brain size remains small and some arboreal traits persist.",
+    "tags": [
+      "hominins",
+      "bipedalism",
+      "human lineage"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l25-ladder-mistake",
+    "prompt": "Which observation most directly falsifies a ladder model of human evolution?",
+    "choices": [
+      "Multiple hominin lineages overlapped in time, and living apes are sister branch tips rather than ancestral steps below humans.",
+      "Fossil species appear in chronological order, so a branching tree is only a different way to draw the same direct ancestor sequence.",
+      "Genetic data support branching among living apes, but fossil hominins still form a single anatomical line to Homo sapiens.",
+      "Every known hominin branch contributed equally to Homo sapiens, making the tree bushy but still ladder-like."
+    ],
+    "explanation": "Human evolution was bush-like rather than a straight progression. Different hominin species coexisted, and the last common ancestor of humans and chimpanzees was not a living chimpanzee, gorilla, or human.",
+    "tags": [
+      "human evolution",
+      "branching",
+      "common misconceptions"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l25-primate-origin-fossils",
+    "prompt": "Which statement best summarizes early primate origins in the fossil record?",
+    "choices": [
+      "Primates are closely related to plesiadapids, and early fossils include Eocene forms such as Archicebus and Notharctus.",
+      "Primates are first well documented by late Miocene ape fossils, with earlier Eocene forms treated as unrelated arboreal mammals.",
+      "Plesiadapids are best interpreted as hoofed mammals, so primate origins begin only after monkeys and apes had separated.",
+      "New World monkeys are the oldest well-supported primates and gave rise directly to lemurs, tarsiers, and apes."
+    ],
+    "explanation": "Primate origins belong in the early Cenozoic near plesiadapid mammals. Fossils such as Archicebus and Notharctus help show early primate and primate-like diversity before later monkey and ape radiations.",
+    "tags": [
+      "primate origins",
+      "fossil record",
+      "Cenozoic"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-human-chimp-lca",
+    "prompt": "What is the correct way to describe the evolutionary relationship between humans and chimpanzees?",
+    "choices": [
+      "They are sister lineages that diverged from a last common ancestor that was neither a modern chimpanzee nor a modern human.",
+      "Humans descended from a population identical to living chimpanzees, while chimpanzees remained close to the ancestral condition.",
+      "Chimpanzees branched from early Homo after habitual bipedalism and large brains had already evolved.",
+      "Humans and chimpanzees share deeper primate ancestry but are not sister lineages because their locomotion differs."
+    ],
+    "explanation": "Humans and chimpanzees are close relatives, but one living species did not evolve from the other. Fossils and molecular clocks place their split from a last common ancestor at roughly 6 to 7 million years ago.",
+    "tags": [
+      "human lineage",
+      "common ancestry",
+      "chimpanzees"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-ardipithecus-mosaic",
+    "prompt": "A fossil hominin has reduced canines, some pelvic evidence for bipedality, a grasping big toe, long arms, woodland context, and a small brain. Which comparison best places it among early hominins?",
+    "choices": [
+      "It fits a mosaic early hominin closer to Ardipithecus: some bipedal and dental traits combined with retained climbing-related anatomy.",
+      "It fits later Homo because reduced canines and any pelvic bipedality require large brains and fully modern feet.",
+      "It fits robust Paranthropus because woodland habitat and grasping toes diagnose heavy chewing specialization.",
+      "It must be a living-ape ancestor because small brain size overrides pelvic and dental evidence."
+    ],
+    "explanation": "Ardipithecus-like fossils matter because traits did not evolve as a single package. Reduced canines and partial bipedality can occur with small brains and retained arboreal features.",
+    "tags": [
+      "Ardipithecus",
+      "mosaic evolution",
+      "hominins"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l25-grassland-hominin-adaptation",
+    "prompt": "Which adaptive package best fits the proposed link between expanding grasslands and human-lineage divergence?",
+    "choices": [
+      "More omnivory, larger body size, bipedal locomotion, tool use, and greater reliance on high-energy foods.",
+      "A return to strict frugivory, smaller body size, quadrupedal knuckle-walking, and reduced tool use.",
+      "Loss of terrestrial movement, aquatic feeding, and evolution of gills for wetland hunting.",
+      "Specialization on tree leaves, enlarged canines, and permanent retreat into closed tropical forests."
+    ],
+    "explanation": "Late Miocene and Pliocene grassland expansion is one proposed driver of hominin divergence. More omnivory, hunting, body-size change, bipedality, tools, and high-energy foods are linked to later brain expansion.",
+    "tags": [
+      "grasslands",
+      "bipedalism",
+      "hominin adaptation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-paranthropus-branch",
+    "prompt": "Which interpretation best fits robust australopithecines such as Paranthropus?",
+    "choices": [
+      "They were side branches with strong chewing adaptations and broad grinding teeth, not direct ancestors of Homo.",
+      "They were direct ancestors of Homo because larger chewing muscles and broad molars necessarily led to larger brains.",
+      "They were gracile australopithecines with reduced molars, so their diet was probably similar to early Homo.",
+      "They were outside the hominin tree because specialized chewing anatomy cannot occur in a bipedal lineage."
+    ],
+    "explanation": "Robust australopithecines had chewing adaptations, broad grinding teeth, and mostly herbivorous diets. They coexisted with gracile forms but are not treated as the lineage leading directly to Homo.",
+    "tags": [
+      "Paranthropus",
+      "australopithecines",
+      "branching evolution"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-homo-erectus-dispersal",
+    "prompt": "What makes Homo erectus important for understanding early Homo evolution?",
+    "choices": [
+      "It had a body suited for walking and endurance running, increasing brain size through time, controlled fire, and dispersed widely out of Africa.",
+      "It had australopithecine-like limb proportions and remained restricted to Africa despite larger teeth and stronger chewing muscles.",
+      "It was the first hominin with habitual bipedalism, so earlier australopithecines lacked pelvis and leg evidence for upright walking.",
+      "It dispersed widely but retained a small australopithecine brain and no evidence for changing technology or fire use."
+    ],
+    "explanation": "Homo erectus originated in East Africa around 1.9 million years ago, persisted for a long interval, dispersed into Eurasia, used controlled fire, and had a body well adapted for long-distance walking and running.",
+    "tags": [
+      "Homo erectus",
+      "dispersal",
+      "Pleistocene"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-neanderthal-sapiens-interaction",
+    "prompt": "Which statement best captures the relationship between Homo sapiens and Neanderthals?",
+    "choices": [
+      "They overlapped in Eurasia, interbred to some extent, and Neanderthals disappeared after possible stresses including climate, competition, or disease.",
+      "Neanderthals were the direct ancestors of all living humans, so overlap and interbreeding evidence is unnecessary.",
+      "Homo sapiens and Neanderthals were sister populations that never exchanged genes after leaving Africa.",
+      "Neanderthals were outside Homo because their robust bodies and cold-adapted anatomy differ from recent humans."
+    ],
+    "explanation": "Homo sapiens spread into Eurasia around 40,000 to 50,000 years ago and interacted with Homo neanderthalensis. DNA evidence indicates some interbreeding, while Neanderthal extinction may have involved several stresses.",
+    "tags": [
+      "Neanderthals",
+      "Homo sapiens",
+      "interbreeding"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-hominin-definition",
+    "prompt": "What is a hominin?",
+    "choices": [
+      "A member of the human lineage after it split from the lineage leading to chimpanzees, including extinct close relatives of humans.",
+      "Any ape lineage after the split from Old World monkeys, including gibbons, orangutans, gorillas, chimpanzees, and humans.",
+      "Only species within Homo, excluding australopithecines and other earlier human-lineage relatives.",
+      "Any bipedal primate, regardless of whether it is closer to humans or to another ape lineage."
+    ],
+    "explanation": "Hominins are humans and extinct relatives closer to humans than to chimpanzees. The term does not include all primates or every bipedal mammal.",
+    "tags": [
+      "hominins",
+      "human evolution",
+      "definitions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-bipedalism-definition",
+    "prompt": "What does habitual bipedalism mean?",
+    "choices": [
+      "Regular locomotion on two legs as the main way of moving on the ground.",
+      "Occasional standing upright while still relying mainly on knuckle-walking.",
+      "Moving on two legs only during threat displays while normal travel remains quadrupedal.",
+      "Having limb bones that can support upright posture but no evidence of repeated two-legged walking."
+    ],
+    "explanation": "Habitual bipedalism means two-legged walking is the normal locomotor pattern. It is a key trait in the human lineage and appears before large brain size.",
+    "tags": [
+      "bipedalism",
+      "hominins",
+      "locomotion"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l25-mosaic-evolution-definition",
+    "prompt": "What does mosaic evolution mean in human origins?",
+    "choices": [
+      "Different traits evolve at different rates, so a fossil can combine human-like and ape-like features.",
+      "Every trait changes at the same time in a single straight sequence.",
+      "Only brain size changes before all other traits shift together in later Homo.",
+      "Traits that look primitive must be ignored when a fossil has any derived human-like feature."
+    ],
+    "explanation": "Mosaic evolution is important for early hominins because traits such as bipedal anatomy, brain size, teeth, and climbing ability did not all change together.",
+    "tags": [
+      "mosaic evolution",
+      "hominin fossils",
+      "trait evolution"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l25-arboreal-primate-traits",
+    "prompt": "Why are grasping hands and forward-facing eyes useful in an arboreal primate context?",
+    "choices": [
+      "They help with climbing, judging distance, and moving through complex three-dimensional branch habitats.",
+      "They are primarily open-habitat running adaptations that later became useful in trees.",
+      "They improve smell-based foraging, making visual depth perception less important in branches.",
+      "They are useful only after primates become tailless apes with suspensory shoulders."
+    ],
+    "explanation": "Many primate traits fit life in trees. Grasping extremities and strong depth perception are useful for climbing, reaching, and navigating branches.",
+    "tags": [
+      "primates",
+      "arboreal adaptation",
+      "vision"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-bipedalism-before-brains",
+    "prompt": "Why is a small-brained fossil with clear bipedal anatomy important for human evolution?",
+    "choices": [
+      "It shows that habitual bipedalism evolved before the large brain size seen in later Homo.",
+      "It proves that large brains evolved first and forced the pelvis to become human-like.",
+      "It shows that bipedalism appeared only after Homo sapiens left Africa.",
+      "It means the fossil must be a chimpanzee because brain size alone defines hominins."
+    ],
+    "explanation": "Early hominins show that locomotor change preceded later major brain expansion. Human evolution is not a single package of traits appearing all at once.",
+    "tags": [
+      "bipedalism",
+      "brain size",
+      "hominin evolution"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-environmental-variability",
+    "prompt": "How could late Cenozoic environmental variability favor flexibility in Homo rather than a single narrow specialization?",
+    "choices": [
+      "Unpredictable habitats could favor broad diets, tools, mobility, social learning, and the ability to shift foraging strategies across regions.",
+      "Variable habitats would favor one highly specialized diet, because generalist behavior is useful only in stable forests.",
+      "Environmental variability prevents dispersal, so broad geographic ranges are better explained by identical habitats everywhere.",
+      "Climate variability affects vegetation but not hominin foraging, because tool use separates Homo from ecological selection."
+    ],
+    "explanation": "Changing habitats can favor flexible strategies. In Homo, mobility, tools, diet breadth, and social behavior are often linked to survival across variable environments.",
+    "tags": [
+      "Homo",
+      "environmental variability",
+      "behavioral flexibility"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l25-tools-diet-feedback",
+    "prompt": "Why are tools and diet often discussed together in the evolution of Homo?",
+    "choices": [
+      "Tools can expand access to foods such as meat, marrow, and tough plant resources, changing energy intake and ecological options.",
+      "Tools matter only after brain expansion is complete, so they cannot affect earlier diet breadth or energy access.",
+      "Tool use replaces ecological selection, making habitat and food availability mostly irrelevant.",
+      "Tools make teeth useless for dietary inference because all chewing adaptations disappear in Homo."
+    ],
+    "explanation": "Tool use can alter feeding opportunities and ecological flexibility. It is part of a broader package involving diet, mobility, social learning, and changing environments.",
+    "tags": [
+      "tools",
+      "diet",
+      "Homo"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-dispersal-flexibility",
+    "prompt": "Why does wide geographic dispersal in early Homo imply ecological flexibility?",
+    "choices": [
+      "Populations had to cope with different climates, foods, predators, and seasonal conditions across regions.",
+      "Dispersal shows that early Homo specialized on one habitat type that was identical across Africa and Eurasia.",
+      "Dispersal can be explained by larger body size alone, without changes in diet, tools, or social behavior.",
+      "Geographic spread proves earlier hominins formed a single linear species sequence rather than branches."
+    ],
+    "explanation": "Moving across continents exposes populations to new ecological conditions. Flexibility in diet, tools, movement, and social behavior would help explain broad dispersal.",
+    "tags": [
+      "dispersal",
+      "Homo",
+      "ecological flexibility"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l25-laetoli-style-inference",
+    "prompt": "Footprints show habitual bipedal gait, but nearby skeletal fossils have small brains, curved fingers, and non-modern shoulder proportions. What can be inferred most carefully?",
+    "choices": [
+      "Bipedal locomotion can be inferred from the tracks, but brain size and upper-body anatomy show other traits remained non-modern.",
+      "The tracks prove large brain size because upright walking and encephalization always appear together.",
+      "The skeletons must be unrelated to the tracks because climbing-related traits cannot coexist with any bipedal locomotion.",
+      "The evidence proves the species was fully modern in behavior, diet, and tool use even without supporting artifacts."
+    ],
+    "explanation": "Different evidence types support different claims. Footprints are strong locomotor evidence, but they do not by themselves imply modern brains, tools, or loss of climbing-related anatomy.",
+    "tags": [
+      "footprints",
+      "mosaic evolution",
+      "bipedalism"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l25-overlapping-hominins",
+    "prompt": "Two dated hominin fossils overlap in age but differ in jaw robusticity, tooth size, and cranial traits. Which conclusion is strongest?",
+    "choices": [
+      "The overlap supports branching diversity and different adaptations, but it does not by itself identify which lineage, if any, was directly ancestral to Homo sapiens.",
+      "The younger fossil must be descended directly from the older one because any overlap proves ancestor-descendant continuity.",
+      "The fossils should be merged into one species because overlapping ages make branching evolution impossible.",
+      "The overlap proves environment was irrelevant, because species can diversify only in identical habitats."
+    ],
+    "explanation": "Temporal overlap is strong evidence against a simple ladder, but ancestry needs more than age. Anatomy, geography, dating, and phylogenetic relationships all matter.",
+    "tags": [
+      "branching evolution",
+      "hominin diversity",
+      "human origins"
+    ],
+    "difficulty": "Hard"
+  }
+]

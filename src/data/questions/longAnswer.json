@@ -1,0 +1,29 @@
+[
+  {
+    "id": "la-cause-evidence-consequence",
+    "prompt": "Choose one major event and explain it using the formula: order, mechanism, evidence, consequence, connection.",
+    "explanation": "Strong answers name the event, place it in sequence, state a mechanism, name evidence, give consequences, and connect to an earlier or later event.",
+    "tags": ["long answer", "event formula"],
+    "cluster": "Paleozoic-Mesozoic turnovers",
+    "sourcePath": "docs/final/planning/event-process-map.md",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "la-extinction-compare",
+    "prompt": "Compare the end-Permian and end-Cretaceous extinctions in cause, evidence, and consequence.",
+    "explanation": "Strong answers separate volcanism plus climate-ocean stress from impact winter and food-web collapse, then name consequences for ecosystem recovery.",
+    "tags": ["long answer", "comparison", "extinction"],
+    "cluster": "Paleozoic-Mesozoic turnovers",
+    "sourcePath": "docs/final/planning/event-process-map.md",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "la-carbon-cycle",
+    "prompt": "Explain how carbon moves through atmosphere, biosphere, geosphere, and hydrosphere in one ancient example and one modern example.",
+    "explanation": "Strong answers use Earth-system language and connect coal swamps or oxygenation to modern fossil carbon or climate change.",
+    "tags": ["long answer", "carbon cycle", "systems"],
+    "cluster": "Cenozoic-human impact",
+    "sourcePath": "content/lectures/13b/notes.md",
+    "difficulty": "Hard"
+  }
+]

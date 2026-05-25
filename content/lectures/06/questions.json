@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l06-engineering-definition",
+    "prompt": "Which statement best distinguishes ecosystem engineering from an organism merely tolerating its surroundings?",
+    "choices": [
+      "Engineers modify physical or chemical conditions in ways that affect other organisms.",
+      "Engineers are species whose traits match local conditions without altering habitat or chemistry.",
+      "Engineers are any species that replaces another species after disturbance, regardless of environmental change.",
+      "Engineers are consumers that transfer energy through a food web without changing resources or space."
+    ],
+    "explanation": "Ecosystem engineers alter the environment itself, such as habitat structure, sediment conditions, chemistry, or resource flows. Those changes can create new opportunities or constraints for other organisms.",
+    "tags": [
+      "ecosystem engineering",
+      "definition"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-engineer-example",
+    "prompt": "Burrowing animals become common in muddy seafloor sediment. What would make this a clear example of ecosystem engineering?",
+    "choices": [
+      "Their activity mixes sediment, changes oxygen penetration, and creates habitat structure used by other organisms.",
+      "They settle in patches that already have high oxygen, making them indicators of habitat quality without changing the sediment.",
+      "They reduce prey populations in the mud, changing the food web while leaving sediment structure and chemistry mostly unchanged.",
+      "They evolve body shapes that fit the sediment, adapting to the habitat without modifying conditions for nearby organisms."
+    ],
+    "explanation": "Ecosystem engineers modify environmental conditions experienced by other organisms. Burrowing becomes engineering when it changes sediment structure, oxygen penetration, chemistry, or habitat space rather than only tracking or adapting to those conditions.",
+    "tags": [
+      "ecosystem engineering",
+      "bioturbation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-autogenic-engineers",
+    "prompt": "Which organism is acting as an autogenic ecosystem engineer?",
+    "choices": [
+      "A tree creates shade, shelter, and nesting surfaces through its own tissues.",
+      "A beaver cuts wood and builds a dam that floods a stream valley.",
+      "A burrowing animal mechanically mixes sediment and changes porewater oxygen.",
+      "A filter-feeding bivalve removes particles from the water column."
+    ],
+    "explanation": "Autogenic engineers modify environments through their own physical structures, living or dead. Trees, kelp, whales, and corals can all create habitat structure directly through their bodies.",
+    "tags": [
+      "autogenic engineering",
+      "habitat structure"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-allogenic-engineers",
+    "prompt": "Three organisms are compared: a coral framework provides hard habitat, a burrower mixes sediment and changes porewater oxygen, and a predator reduces prey abundance without changing habitat conditions. Which classification is best?",
+    "choices": [
+      "The coral is mainly autogenic engineering, the burrower is allogenic engineering, and the predator interaction alone is not necessarily ecosystem engineering.",
+      "The coral and burrower are both allogenic because all engineering must involve moving external sediment.",
+      "The predator is the clearest engineer because changing population size always changes physical habitat more than burrowing does.",
+      "None count as ecosystem engineering unless the organism also changes global climate."
+    ],
+    "explanation": "Autogenic engineers provide structure with their own bodies, while allogenic engineers transform external materials. A trophic effect can matter ecologically, but it is not automatically ecosystem engineering without environmental modification.",
+    "tags": [
+      "allogenic engineering",
+      "definition"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l06-coral-reef-conditions",
+    "prompt": "Why are many coral reefs restricted to shallow, warm seas?",
+    "choices": [
+      "Many reef-building corals contain photosynthetic endosymbionts that require sunlight in the photic zone.",
+      "Reef-building corals require darkness, so reefs grow where shallow water blocks photosynthesis.",
+      "Reefs are restricted to shallow water because pressure, not light, is the only control on coral growth.",
+      "Coral reefs form best where muddy river water reduces light and prevents other organisms from living there."
+    ],
+    "explanation": "Many reef-building corals contain photosynthetic endosymbionts. Because those symbionts need light, these corals are commonly restricted to shallow photic-zone settings.",
+    "tags": [
+      "coral reefs",
+      "photic zone"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-coral-bank-contrast",
+    "prompt": "A carbonate buildup occurs in cold, deep water below the photic zone. It contains coral skeletons but is not wave resistant. How should it be interpreted relative to a tropical reef framework?",
+    "choices": [
+      "It fits a coral bank better than a true shallow reef because coral accumulation does not necessarily imply photic-zone symbiosis or wave-resistant framework.",
+      "It must be a tropical reef because any coral skeleton accumulation requires warm, shallow, light-rich water.",
+      "It must be a reef if it contains coral skeletons, because wave resistance is unrelated to reef classification.",
+      "It cannot involve corals because coral banks and reefs are distinguished only by fossil age, not environmental setting."
+    ],
+    "explanation": "Coral banks can include coral accumulations outside the classic warm, shallow, wave-resistant reef setting. The environmental context and framework structure matter, not just the presence of coral skeletons.",
+    "tags": [
+      "coral banks",
+      "coral reefs"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l06-beaver-dams",
+    "prompt": "How can beaver dam-building alter a riverine environment?",
+    "choices": [
+      "It can convert a stream or river into a pond or lake and create wetland or meadow habitat.",
+      "It mainly straightens the channel and lowers the water table, preventing wetland formation.",
+      "It changes tree age structure but leaves flow, flooding, and habitat conditions unchanged.",
+      "It increases gradient and turbulence by removing woody material from the channel."
+    ],
+    "explanation": "Beavers are allogenic engineers because dam-building transforms flowing-water environments into ponds, lakes, wetlands, meadows, or riverine forest settings used by other organisms.",
+    "tags": [
+      "beavers",
+      "allogenic engineering"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-prairie-dog-soil",
+    "prompt": "Which effect makes prairie dogs ecosystem engineers?",
+    "choices": [
+      "Their tunnel systems alter soil composition, compaction, and drainage while open vegetation creates habitat for other species.",
+      "They change environments only by migrating with seasonal rainfall.",
+      "Their burrows only indicate preexisting soil conditions and do not modify drainage or compaction.",
+      "They trim vegetation only after open habitat forms, so their activity cannot maintain that habitat."
+    ],
+    "explanation": "Prairie dog burrowing changes soil structure and drainage, and their vegetation trimming creates open habitat. Vacated burrows can also provide nesting sites for other organisms.",
+    "tags": [
+      "prairie dogs",
+      "soil engineering"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-filter-feeding-clarity",
+    "prompt": "How can dense populations of filter-feeding bivalves change aquatic environments?",
+    "choices": [
+      "They can remove particulate matter, increase water clarity, and alter conditions for photosynthesizing organisms.",
+      "They can increase suspended particulate matter, reducing water clarity and suppressing photosynthesis.",
+      "They can change predator-prey interactions but leave water clarity and particle concentration unchanged.",
+      "They can affect water chemistry only by building calcium carbonate reef frameworks."
+    ],
+    "explanation": "Filter-feeding organisms remove particles from the water column. In the example of invasive zebra and quagga mussels, increased water clarity affected algae and other organisms.",
+    "tags": [
+      "filter feeding",
+      "water clarity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-engineering-through-time",
+    "prompt": "Why can ecosystem engineering vary through geologic time?",
+    "choices": [
+      "The diversity, abundance, geographic ranges, origins, and extinctions of engineers change over time.",
+      "Once an engineering organism evolves, its environmental effect is identical everywhere forever.",
+      "Only physical processes can vary through time; biological effects remain constant.",
+      "Engineering can occur only after humans appear, so older ecosystems cannot show it."
+    ],
+    "explanation": "The environmental effect of ecosystem engineering depends on which engineers exist, how abundant they are, and where they live. Range shifts, evolutionary origins, and extinctions can all change those effects through time.",
+    "tags": [
+      "ecosystem engineering",
+      "spatiotemporal variation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l06-habitat-structure-definition",
+    "prompt": "What does habitat structure mean in ecosystem engineering?",
+    "choices": [
+      "The physical arrangement of space and materials that organisms use as habitat.",
+      "The numerical age of a rock layer containing fossils.",
+      "The latitude of an environment without its organisms.",
+      "The orbital pattern that changes seasonal sunlight."
+    ],
+    "explanation": "Habitat structure refers to the physical layout of an environment, such as reefs, burrows, vegetation, dams, or sediment surfaces. Engineers can create or modify that structure.",
+    "tags": [
+      "habitat structure",
+      "definition"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l06-resource-flow-definition",
+    "prompt": "Which example best represents an organism altering resource flow?",
+    "choices": [
+      "Filter feeders remove suspended particles from water and change food availability.",
+      "A fossil is assigned to a time interval based on its stratigraphic position.",
+      "A tectonic plate changes direction at a transform boundary.",
+      "A mineral crystal grows slowly in an intrusive igneous body."
+    ],
+    "explanation": "Resource flow involves movement and availability of materials such as nutrients, food particles, oxygen, or sediment. Filter feeding can redirect particles through an ecosystem.",
+    "tags": [
+      "resource flows",
+      "filter feeding"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l06-niche-creation-definition",
+    "prompt": "How can ecosystem engineers create new niches?",
+    "choices": [
+      "By modifying physical or chemical conditions so new ways of living become possible.",
+      "By preventing any environmental change after they evolve.",
+      "By eliminating the connection between habitat and organism behavior.",
+      "By changing only fossil names, not actual environmental conditions."
+    ],
+    "explanation": "When organisms alter habitat structure, chemistry, sediment, or resources, they can create opportunities for other organisms. Those opportunities are new or expanded niches.",
+    "tags": [
+      "niches",
+      "ecosystem engineering"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l06-photosynthesis-engineering-definition",
+    "prompt": "Why can oxygenic photosynthesis be treated as ecosystem engineering when evaluating Earth history rather than only organism-level metabolism?",
+    "choices": [
+      "If widespread, it changes environmental chemistry by producing oxygen and altering redox conditions.",
+      "It matters only inside cells because metabolic products cannot alter atmosphere or ocean chemistry.",
+      "It is engineering only when photosynthetic organisms build rigid carbonate skeletons.",
+      "It changes environments mainly by moving lithospheric plates and creating continental shelves."
+    ],
+    "explanation": "Photosynthetic organisms can scale from metabolism to environmental forcing when oxygen production changes atmosphere and ocean chemistry. Abundance and distribution determine how large that effect becomes.",
+    "tags": [
+      "photosynthesis",
+      "chemical environment"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l06-burrowing-sediment-mechanism",
+    "prompt": "How can burrowing organisms modify seafloor sediment?",
+    "choices": [
+      "They mix grains, move oxygenated water into sediment, and change sediment stability.",
+      "They convert all sediment into igneous rock by melting it.",
+      "They prevent any chemical exchange between sediment and water.",
+      "They alter only atmospheric circulation and not the seafloor."
+    ],
+    "explanation": "Burrowing can physically mix sediment and create pathways for water and chemical exchange. That modifies both habitat structure and sediment chemistry.",
+    "tags": [
+      "burrowing",
+      "sediment dynamics"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-land-plants-weathering-feedback",
+    "prompt": "Why are land plants important ecosystem engineers in Earth history?",
+    "choices": [
+      "They can stabilize soils, enhance weathering, affect water flow, and create terrestrial habitats.",
+      "They act only as passive markers of climate and never change soil or water movement.",
+      "They form only in deep marine settings below the photic zone.",
+      "They eliminate all feedbacks between biology and physical environments."
+    ],
+    "explanation": "Land plants modify the land surface through roots, soils, organic matter, and water cycling. These effects link biological innovation to physical and chemical environmental change.",
+    "tags": [
+      "land plants",
+      "weathering"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-reef-builder-feedback",
+    "prompt": "Which feedback can reef-building organisms produce?",
+    "choices": [
+      "They build hard structures that alter wave energy and create habitat for additional organisms.",
+      "They make shallow seas unsuitable for life by blocking every nutrient source.",
+      "They change Earth's orbital eccentricity by depositing carbonate skeletons.",
+      "They remove all physical controls from marine environments."
+    ],
+    "explanation": "Reef builders are autogenic engineers because their own bodies or skeletons form structure. That structure affects water flow, sediment trapping, and habitat availability.",
+    "tags": [
+      "reef builders",
+      "feedbacks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-human-engineering-planetary",
+    "prompt": "What makes humans an unusually broad example of ecosystem engineering?",
+    "choices": [
+      "Human activities modify land cover, sediment movement, chemistry, species distributions, and climate at large scales.",
+      "Humans are the only organisms that ever change an environment.",
+      "Human engineering matters only in cities and cannot affect oceans or atmosphere.",
+      "Humans change environments only by building reefs in shallow warm seas."
+    ],
+    "explanation": "Human ecosystem engineering is broad because it affects many Earth-system components, including habitats, biogeochemical cycles, land surfaces, and climate.",
+    "tags": [
+      "humans",
+      "ecosystem engineering"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l06-engineer-versus-response-trap",
+    "prompt": "A warming interval is followed by poleward expansion of a shellfish. In some sites the shellfish forms dense reefs that alter flow and sediment; in others it appears only as scattered individuals. Which interpretation best separates response from engineering?",
+    "choices": [
+      "Range expansion is a response to conditions, while dense reef formation is engineering only where it measurably changes habitat or sediment dynamics.",
+      "All occurrences are ecosystem engineering because any fossil occurrence means the organism changed its physical environment.",
+      "Scattered individuals are stronger engineers than reefs because sparse fossils prove the environment was difficult to occupy.",
+      "Neither occurrence can count as engineering because climate, not biology, initiated the range shift."
+    ],
+    "explanation": "An organism can both respond to environmental change and engineer environments, but those are different claims. Engineering requires evidence that the organism altered physical, chemical, or resource conditions.",
+    "tags": [
+      "common confusions",
+      "ecosystem engineering"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l06-biological-innovation-forcing",
+    "prompt": "Why can a biological innovation become an Earth-system forcing factor?",
+    "choices": [
+      "If it becomes widespread enough, it can alter environmental conditions that then affect climate, chemistry, habitats, or evolution.",
+      "Biological innovations can affect only individual organisms and cannot scale beyond a population.",
+      "A new biological trait matters only if it changes radioactive half-lives.",
+      "Once a trait evolves, its environmental effects are independent of abundance and geographic range."
+    ],
+    "explanation": "A biological innovation can matter beyond its original lineage if it changes material flows, chemistry, habitats, or feedbacks at large scales. Abundance and distribution determine how strong the forcing can be.",
+    "tags": [
+      "biological innovation",
+      "Earth systems"
+    ],
+    "difficulty": "Hard"
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l03-greenhouse-target",
+    "prompt": "If atmospheric carbon dioxide increases while incoming sunlight stays the same, what part of the energy budget is affected most directly?",
+    "choices": [
+      "More outgoing longwave radiation is absorbed and re-emitted by greenhouse gases.",
+      "More incoming shortwave radiation is reflected by brighter clouds, raising planetary albedo.",
+      "More surface radiation escapes through a wider atmospheric window as carbon dioxide increases.",
+      "Carbon dioxide absorbs mostly incoming shortwave sunlight, so less energy reaches the surface in the first place."
+    ],
+    "explanation": "Greenhouse gases act most directly on outgoing longwave radiation. Shortwave reflection, cloud albedo, the atmospheric window, and lapse-rate feedbacks matter to climate, but they are not the direct target of added carbon dioxide.",
+    "tags": [
+      "greenhouse effect",
+      "atmosphere"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-albedo-definition",
+    "prompt": "A fresh snowfield and a dark ocean receive the same shortwave radiation. Which measurement best separates reflection from absorption in this comparison?",
+    "choices": [
+      "Albedo: the fraction of incoming radiation reflected by a surface.",
+      "Absorptivity: the fraction of incoming radiation converted to heat within a surface.",
+      "Emissivity: how efficiently a surface gives off longwave infrared radiation.",
+      "Heat capacity: how much energy a material stores for a given temperature change."
+    ],
+    "explanation": "Albedo is reflectivity. High-albedo surfaces send a larger fraction of incoming sunlight back to space, while lower-albedo surfaces absorb more of that energy.",
+    "tags": [
+      "albedo",
+      "feedback"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-troposphere-weather",
+    "prompt": "Which atmospheric layer contains most water vapor, clouds, pollution, and weather activity?",
+    "choices": [
+      "Troposphere.",
+      "Stratosphere.",
+      "Mesosphere.",
+      "Thermosphere."
+    ],
+    "explanation": "The troposphere contains most atmospheric mass and the bulk of water vapor, clouds, and pollution. It is the main region where weather occurs.",
+    "tags": [
+      "atmospheric structure",
+      "troposphere"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l03-stratosphere-ozone",
+    "prompt": "Why does temperature increase with altitude in the stratosphere?",
+    "choices": [
+      "Ozone absorbs ultraviolet radiation and re-radiates energy as infrared radiation.",
+      "Water vapor condenses there and releases all of Earth's latent heat.",
+      "Air pressure rises with altitude and compresses the gas.",
+      "Cosmic rays directly heat dense air near the stratopause."
+    ],
+    "explanation": "The stratosphere includes the ozone-rich layer where ultraviolet light is absorbed. That absorbed energy is re-radiated as infrared energy, producing warming with altitude.",
+    "tags": [
+      "stratosphere",
+      "ozone"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-cloud-height-effects",
+    "prompt": "Two cloud decks cover the same area: one is low, thick, and bright; the other is high, thin, and cold-topped. Which comparison best explains why their climate effects can differ?",
+    "choices": [
+      "Low bright clouds often emphasize shortwave reflection, while high thin clouds can emphasize longwave trapping because their cold tops emit less infrared to space.",
+      "Low clouds warm more because they are closer to the surface, while high clouds cool more because they reflect all outgoing infrared radiation.",
+      "Both cloud decks must cool equally because cloud albedo controls climate and longwave effects are negligible.",
+      "Both cloud decks must warm equally because clouds interact only with outgoing longwave radiation, not incoming sunlight."
+    ],
+    "explanation": "Cloud forcing depends on both shortwave reflection and longwave trapping. Low, thick clouds often have strong albedo effects, while high, cold-topped clouds can reduce outgoing infrared loss.",
+    "tags": [
+      "clouds",
+      "energy budget"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l03-energy-surplus-deficit",
+    "prompt": "Which pattern best describes Earth's broad energy imbalance by latitude?",
+    "choices": [
+      "The tropics tend toward net energy surplus, while polar regions tend toward net energy deficit.",
+      "Polar regions tend toward net energy surplus because ice stores more sunlight than dark water.",
+      "All latitudes have the same energy balance because outgoing radiation exactly matches incoming sunlight locally.",
+      "The subtropics have the only net energy surplus because descending air is dry and cloudless."
+    ],
+    "explanation": "Low latitudes receive high-angle sunlight and relatively consistent daylight, producing net energy surplus. Polar regions receive low-angle sunlight, have high albedo, and can lack sunlight for months, producing net energy deficit.",
+    "tags": [
+      "energy balance",
+      "latitude"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-pressure-wind",
+    "prompt": "A continent heats faster than the nearby ocean during the day, producing lower surface pressure over land. Which causal chain best explains the resulting local wind?",
+    "choices": [
+      "Differential heating creates a pressure gradient, and air accelerates from higher pressure toward lower pressure.",
+      "Differential heating directly changes Earth's rotation rate, and the Coriolis effect alone pulls air toward land.",
+      "The greenhouse effect attracts air toward warmer carbon dioxide-rich areas without requiring a pressure gradient.",
+      "Ozone absorption in the stratosphere pushes dense air downward and drives all near-surface wind."
+    ],
+    "explanation": "Wind starts with pressure gradients commonly produced by uneven heating. Air moves from relatively high pressure toward relatively low pressure, with rotation and friction modifying the path.",
+    "tags": [
+      "winds",
+      "pressure"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l03-coriolis-cells",
+    "prompt": "How does Earth's rotation alter the simple pole-to-equator atmospheric circulation expected on a non-rotating planet?",
+    "choices": [
+      "It deflects moving air and helps break each hemisphere into Hadley, Ferrel, and polar cells.",
+      "It removes all pressure gradients, so winds form only near the equator.",
+      "It makes air rise at the poles and sink at the equator in one global cell.",
+      "It strengthens a single hemisphere-wide convection cell by preventing wind deflection."
+    ],
+    "explanation": "The Coriolis effect makes moving air appear deflected relative to Earth's rotating surface. This disruption helps organize the atmosphere into three circulation cells in each hemisphere.",
+    "tags": [
+      "Coriolis effect",
+      "atmospheric circulation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-itcz-rainfall",
+    "prompt": "Why are equatorial regions associated with warm, wet conditions in the Intertropical Convergence Zone?",
+    "choices": [
+      "Warm surface air converges, rises, cools, and condenses water vapor into clouds and rain.",
+      "Cold polar air descends at the equator, warms, and prevents condensation.",
+      "The Coriolis effect is strongest at the equator, causing permanent low clouds.",
+      "Subtropical high pressure forces dry air upward at the equator."
+    ],
+    "explanation": "In the Intertropical Convergence Zone, warm air rises from low pressure near the equator. Rising air cools and holds less water vapor, so condensation and rainfall are common.",
+    "tags": [
+      "ITCZ",
+      "precipitation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-subtropical-deserts",
+    "prompt": "Why are many deserts located between about 20 and 35 degrees latitude?",
+    "choices": [
+      "Descending air warms, holds more water vapor, and produces dry, cloudless high-pressure conditions.",
+      "Rising air cools there and produces constant rainfall before reaching the surface.",
+      "Sea ice at those latitudes raises albedo enough to block rainfall.",
+      "Surface winds converge there as strongly as at the equator, producing year-round thunderstorms."
+    ],
+    "explanation": "Air descending from the Hadley cell in the subtropics warms and can hold more water. Much moisture has already rained out near the equator, so the subtropical high-pressure belt tends to be hot and dry.",
+    "tags": [
+      "Hadley cell",
+      "deserts"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-shortwave-longwave-atmosphere",
+    "prompt": "Which statement best describes how the atmosphere interacts with shortwave and longwave radiation?",
+    "choices": [
+      "It can transmit much incoming shortwave sunlight while absorbing and re-emitting some outgoing longwave infrared radiation.",
+      "It blocks all incoming shortwave sunlight but lets all outgoing infrared radiation escape.",
+      "It affects only visible light and has no role in Earth's thermal energy budget.",
+      "It changes Earth's rotation rate, which is the main cause of longwave radiation."
+    ],
+    "explanation": "The greenhouse effect depends on the atmosphere interacting differently with incoming solar radiation and outgoing infrared radiation from Earth's surface.",
+    "tags": [
+      "radiation",
+      "greenhouse effect"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l03-atmospheric-composition-definition",
+    "prompt": "Why does atmospheric composition matter for climate?",
+    "choices": [
+      "Different gases absorb, scatter, or transmit different wavelengths of radiation.",
+      "Atmospheric gases affect climate only by changing Earth's distance from the Sun.",
+      "All gases interact identically with radiation, so composition is irrelevant.",
+      "Composition matters only above the stratosphere, not near the surface."
+    ],
+    "explanation": "Greenhouse gases, ozone, aerosols, and other components interact with radiation in different ways. Composition therefore helps set how much energy is retained or reflected.",
+    "tags": [
+      "atmospheric composition",
+      "climate"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l03-feedback-definition",
+    "prompt": "Initial cooling allows sea ice to expand, and the brighter surface then reflects more sunlight. Why is this a feedback rather than a separate unrelated forcing?",
+    "choices": [
+      "The response to the initial cooling changes the energy budget in a way that reinforces the original cooling.",
+      "The sea ice change is independent of the initial cooling because albedo affects only outgoing infrared radiation.",
+      "The reflected sunlight is a new solar forcing because it changes the solar constant before sunlight reaches Earth.",
+      "The process is only a layer boundary effect because ice expansion shifts the tropopause upward."
+    ],
+    "explanation": "Feedbacks connect an initial change to a response that modifies the size or direction of that change. Ice expansion raises albedo and can amplify cooling by reducing absorbed shortwave energy.",
+    "tags": [
+      "feedbacks",
+      "climate mechanisms"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l03-greenhouse-ozone-confusion",
+    "prompt": "Which statement best separates the greenhouse effect from ozone-layer protection?",
+    "choices": [
+      "The greenhouse effect involves infrared absorption by gases, while ozone protection involves absorption of much incoming ultraviolet radiation.",
+      "The greenhouse effect is caused only by ultraviolet absorption in the ozone layer.",
+      "Ozone protection warms the surface by trapping all outgoing infrared radiation.",
+      "Both processes are identical because all atmospheric absorption occurs in the same layer."
+    ],
+    "explanation": "Greenhouse warming is mainly about outgoing longwave infrared radiation. Stratospheric ozone is important because it absorbs much ultraviolet radiation before it reaches the surface.",
+    "tags": [
+      "greenhouse effect",
+      "ozone"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-albedo-feedback-mechanism",
+    "prompt": "How can lower surface albedo warm climate without changing the amount of sunlight arriving at the top of the atmosphere?",
+    "choices": [
+      "A darker surface reflects less incoming radiation and absorbs more energy.",
+      "A darker surface emits no longwave radiation after absorbing sunlight.",
+      "A lower-albedo surface increases the solar constant above Earth.",
+      "A lower-albedo surface prevents atmospheric circulation from moving heat."
+    ],
+    "explanation": "Albedo controls the reflected fraction of incoming radiation. Lower albedo means more absorption at the surface, which can warm the climate system.",
+    "tags": [
+      "albedo",
+      "energy budget"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-latitude-energy-transfer",
+    "prompt": "Why must the atmosphere and ocean move energy from low latitudes toward high latitudes?",
+    "choices": [
+      "Low latitudes receive an energy surplus while high latitudes tend to lose more energy than they receive.",
+      "High latitudes receive the highest annual insolation, creating a permanent energy surplus there.",
+      "The equator emits no longwave radiation, so all surplus energy must stay in place.",
+      "Poleward energy transport is needed only during nighttime and stops during the day."
+    ],
+    "explanation": "Uneven heating creates a broad surplus in the tropics and a deficit toward the poles. Circulation helps reduce that imbalance by transporting heat.",
+    "tags": [
+      "energy balance",
+      "circulation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-circulation-regional-environments",
+    "prompt": "Why does atmospheric circulation matter for regional environments rather than only global average temperature?",
+    "choices": [
+      "Circulation patterns influence where air rises, sinks, dries, transports heat, and produces precipitation.",
+      "Circulation removes all differences in precipitation between latitude bands.",
+      "Circulation changes rock type directly without affecting moisture or heat.",
+      "Circulation matters only above the stratosphere and not at Earth's surface."
+    ],
+    "explanation": "Regional environments depend on moisture and heat distribution. Atmospheric circulation helps create wet equatorial belts, dry subtropical zones, and other geographic patterns.",
+    "tags": [
+      "atmospheric circulation",
+      "regional climate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l03-cloud-feedback-trap",
+    "prompt": "A warmer ocean produces more low, bright clouds in one region but more high, thin clouds in another. Which interpretation best explains why the feedback sign is uncertain?",
+    "choices": [
+      "Low clouds can strengthen shortwave reflection, while high thin clouds can strengthen longwave trapping, so the net effect depends on cloud type and height.",
+      "Both cloud responses must cool climate because any increase in cloud cover raises albedo more than it changes outgoing infrared radiation.",
+      "Both cloud responses must warm climate because clouds trap longwave radiation but do not affect incoming shortwave radiation.",
+      "The feedback sign depends only on ocean salinity, because clouds alter humidity but not the radiative budget."
+    ],
+    "explanation": "Cloud feedbacks are difficult because clouds affect both sides of the radiation budget. Low, bright clouds often cool by reflection, while high thin clouds can warm by reducing outgoing infrared loss.",
+    "tags": [
+      "clouds",
+      "feedbacks"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l03-greenhouse-evidence-logic",
+    "prompt": "If greenhouse gases increase but incoming solar radiation is unchanged, which evidence would most directly support greenhouse-driven warming?",
+    "choices": [
+      "Reduced escape of outgoing infrared radiation at wavelengths absorbed by those gases.",
+      "A decrease in Earth's axial tilt with no change in atmospheric composition.",
+      "A rise in surface albedo caused by expanding ice sheets.",
+      "A change from sedimentary rocks to metamorphic rocks at the surface."
+    ],
+    "explanation": "Greenhouse gases affect the outgoing longwave part of the energy budget. Evidence should therefore relate to infrared absorption and re-emission, not simply to incoming solar energy.",
+    "tags": [
+      "greenhouse effect",
+      "evidence logic"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l03-coriolis-cell-diagram",
+    "prompt": "A diagram shows rising air near the equator, sinking near 30 degrees, surface easterlies in the tropics, and westerlies at midlatitudes. Which interpretation best explains the pattern?",
+    "choices": [
+      "Uneven heating drives overturning, while rotation deflects moving air and helps split circulation into cells with distinct wind belts.",
+      "Uneven heating alone produces straight north-south winds, and rotation affects only ocean currents rather than atmospheric motion.",
+      "The pattern is caused mainly by ozone absorption, with wind belts forming where ultraviolet radiation is strongest.",
+      "The pattern requires uniform surface heating because pressure gradients form only when latitudes receive equal energy."
+    ],
+    "explanation": "The circulation pattern reflects both differential heating and rotation. Rising and sinking air create pressure gradients, and the Coriolis effect deflects flow into prevailing wind belts.",
+    "tags": [
+      "Coriolis effect",
+      "circulation diagrams"
+    ],
+    "difficulty": "Hard"
+  }
+]

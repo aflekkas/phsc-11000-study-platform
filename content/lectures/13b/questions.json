@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l13-feedback",
+    "prompt": "A volcanic CO2 pulse warms climate, and enhanced silicate weathering later removes some CO2. Which wording correctly separates forcing from feedback?",
+    "choices": [
+      "Volcanic CO2 is the forcing in this setup, while increased weathering is a feedback because it responds to and modifies the initial warming",
+      "Increased weathering is the forcing because it happens after warming, while volcanic CO2 is a feedback because it affects climate",
+      "Both processes are feedbacks because any carbon-cycle process that changes temperature cannot be an external driver",
+      "Neither process can be a feedback unless it is measured directly by a proxy record in sedimentary rocks"
+    ],
+    "explanation": "A forcing is the specified initial driver in a model or explanation. A feedback is a system response that changes the outcome, either damping or amplifying the initial perturbation.",
+    "tags": [
+      "feedbacks",
+      "Earth system",
+      "forcing"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13-carbon-reservoir",
+    "prompt": "Which statement correctly treats the ocean as a carbon reservoir in an Earth-system model?",
+    "choices": [
+      "It stores dissolved carbon, exchanges CO2 with the atmosphere on shorter timescales, and transfers carbon through the biological pump and carbonate burial on longer timescales.",
+      "It is a flux rather than a reservoir, because air-sea gas exchange moves carbon across the ocean surface.",
+      "It mainly behaves as an atmospheric carbon sink on short timescales, while biological pump and carbonate burial are too slow to matter.",
+      "It equilibrates with the atmosphere fast enough that deep-ocean storage has little timescale dependence in climate models."
+    ],
+    "explanation": "A reservoir stores material, while fluxes move material between reservoirs. The ocean stores dissolved carbon and exchanges it through air-sea gas transfer, biological uptake and export, and carbonate burial, each operating on different timescales.",
+    "tags": [
+      "carbon cycle",
+      "reservoirs",
+      "ocean"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-model-input-output-scale",
+    "prompt": "A model treats atmospheric CO2 as a known control on temperature, while another model tries to calculate atmospheric CO2 from weathering, burial, and degassing. What systems-thinking point does this illustrate?",
+    "choices": [
+      "The same variable can be an input in one model and an output in another depending on the question and scale",
+      "Atmospheric CO2 should be held constant in any model that uses it to explain temperature",
+      "Calculated CO2 cannot be compared with proxy data because outputs are not testable against observations",
+      "A model becomes more reliable when the interactions among carbon-cycle variables are left unspecified"
+    ],
+    "explanation": "Model design depends on the response being analyzed. Atmospheric CO2 can be a forcing for temperature, but it can also be a response produced by carbon-cycle processes.",
+    "tags": [
+      "Earth system models",
+      "inputs",
+      "scale"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l13b-proxy-data-role",
+    "prompt": "How can proxy data be used in an Earth-system model?",
+    "choices": [
+      "They can estimate values for inputs or test whether a modeled response matches the rock record",
+      "They replace the need to specify interactions because the measured value already contains the full mechanism",
+      "They are useful only for modern systems because ancient variables cannot be checked against model output",
+      "They provide exact values with no uncertainty if enough samples come from the same rock unit"
+    ],
+    "explanation": "Proxy data are indirect estimates of variables that cannot be measured directly. They can supply model inputs or provide independent checks on model outcomes, but they include uncertainty.",
+    "tags": [
+      "proxy data",
+      "models",
+      "uncertainty"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-co2-source-sink",
+    "prompt": "Which pair correctly matches a long-term carbon-cycle source and sink for atmospheric CO2?",
+    "choices": [
+      "Volcanic degassing is a source; silicate rock weathering followed by carbonate formation is a sink",
+      "Photosynthesis is a source; oxidation of organic-rich rocks is a sink",
+      "Limestone formation is a source; respiration is a long-term sink",
+      "Subduction and heating of limestones is a sink; combustion of organic carbon is a sink"
+    ],
+    "explanation": "Volcanism and metamorphic release add CO2, while silicate weathering ultimately transfers carbon into carbonate minerals. Photosynthesis and respiration can dominate short timescales but do not alone define the long-term balance.",
+    "tags": [
+      "carbon cycle",
+      "CO2",
+      "sources and sinks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-stomata-co2-proxy",
+    "prompt": "Fossil leaves from one interval have higher relative stomatal density than comparable leaves from another interval. What CO2 interpretation follows the proxy relationship used for fossil leaves?",
+    "choices": [
+      "The higher-density leaves likely grew under lower atmospheric CO2, assuming plant group and preservation effects are considered",
+      "The higher-density leaves likely grew under higher atmospheric CO2 because more pores were needed to absorb abundant gas",
+      "The higher-density leaves record lower oxygen because stomata mainly regulate aerobic respiration",
+      "Stomatal density gives the rate of CO2 degassing if the leaves grew near volcanic rocks"
+    ],
+    "explanation": "Modern plant calibrations show higher relative stomatal density at lower CO2 levels. Fossil leaves can therefore estimate ancient atmospheric CO2 when taxonomic and preservation uncertainties are handled.",
+    "tags": [
+      "stomata",
+      "CO2 proxies",
+      "atmosphere"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-short-long-carbon-timescale",
+    "prompt": "Why might photosynthesis and respiration be treated as roughly steady-state in a model of atmospheric CO2 over millions of years?",
+    "choices": [
+      "They operate on short timescales compared with the model interval, while burial, weathering, and tectonic fluxes shape the longer-term balance",
+      "They can be ignored at all timescales because biomass and soil carbon do not exchange with the atmosphere",
+      "They control oxygen only, while atmospheric CO2 is controlled solely by ocean-basin volume",
+      "They are slower than silicate weathering, so they affect climate only during continental collisions"
+    ],
+    "explanation": "Photosynthesis, respiration, and decay can strongly affect CO2 on short timescales. Over much longer intervals, slower fluxes such as organic burial, rock weathering, and degassing become central to the modeled trend.",
+    "tags": [
+      "carbon cycle",
+      "timescale",
+      "steady state"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l13b-silicate-weathering-thermostat",
+    "prompt": "CO2 rises and warms climate; rainfall and reaction rates then increase on exposed silicate rocks. Which sequence makes this a negative feedback?",
+    "choices": [
+      "Weathering consumes CO2 and promotes carbonate burial, so the response tends to reduce the original warming",
+      "Weathering releases CO2 from silicate minerals, so the response strengthens the original greenhouse forcing",
+      "Weathering raises albedo by expanding ice, so cooling occurs without any carbon-cycle change",
+      "Weathering increases stomatal density, so plants directly remove volcanic CO2 faster"
+    ],
+    "explanation": "Silicate weathering can consume atmospheric CO2 and deliver ions that end up in carbonate minerals. Because the response tends to counter the warming that accelerated it, the feedback is negative.",
+    "tags": [
+      "negative feedback",
+      "silicate weathering",
+      "climate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-tectonics-sea-level",
+    "prompt": "How can faster seafloor spreading affect global sea level in an Earth-system model?",
+    "choices": [
+      "Hotter, more buoyant mid-ocean ridges occupy more basin volume and displace seawater onto continents",
+      "Faster spreading makes oceanic lithosphere cooler and denser, creating more room for seawater in ocean basins",
+      "Faster spreading directly converts marine shelves into mountain belts without changing ocean-basin volume",
+      "Mid-ocean ridge activity affects CO2 but has no connection to sea level or accommodation space"
+    ],
+    "explanation": "Young, hot oceanic lithosphere and active ridges are more buoyant and voluminous. That reduces ocean-basin capacity and can raise sea level relative to continents.",
+    "tags": [
+      "plate tectonics",
+      "sea level",
+      "mid-ocean ridges"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-sea-level-proxy",
+    "prompt": "Which evidence most directly supports sea-level rise rather than only a local shoreline shift?",
+    "choices": [
+      "Widespread landward shifts of coastal facies and marine flooding surfaces across multiple basins with age control",
+      "A single inland limestone bed with no correlation, age control, or vertical facies trend",
+      "Higher stomatal density in upland fossil leaves from one locality",
+      "A shared terrestrial fossil species on two continents now separated by an ocean"
+    ],
+    "explanation": "Sea-level interpretations are strongest when flooding patterns are regional to global and tied to time control. A single facies shift can also reflect local subsidence, sediment supply, or shoreline migration.",
+    "tags": [
+      "sea level",
+      "sequence stratigraphy",
+      "proxy data"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-reservoir-definition",
+    "prompt": "In a carbon-cycle model, which example is a reservoir rather than a flux?",
+    "choices": [
+      "Dissolved inorganic carbon stored in ocean water",
+      "Air-sea CO2 transfer measured as carbon moved per year",
+      "Organic carbon burial rate into marine sediment",
+      "Volcanic degassing rate from the solid Earth to the atmosphere"
+    ],
+    "explanation": "A reservoir is the amount of material stored in a place or form. Fluxes are rates of movement between reservoirs, such as burial, degassing, or air-sea exchange.",
+    "tags": [
+      "carbon cycle",
+      "reservoirs",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l13b-flux-definition",
+    "prompt": "What is a flux in an Earth-system carbon model?",
+    "choices": [
+      "A transfer rate, such as volcanic CO2 input or organic-carbon burial per unit time",
+      "The amount of carbon stored in seawater at a particular moment",
+      "A proxy curve used to infer a reservoir size without a process link",
+      "A feedback sign describing whether climate warms or cools"
+    ],
+    "explanation": "Fluxes are rates of movement into, out of, or between reservoirs. They are distinct from reservoir sizes and from proxy measurements used to estimate system behavior.",
+    "tags": [
+      "Earth system models",
+      "fluxes",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l13b-positive-feedback-ice-albedo",
+    "prompt": "Which sequence shows a positive feedback in the climate system?",
+    "choices": [
+      "Cooling expands reflective ice, higher albedo reflects more sunlight, and additional cooling follows",
+      "Warming increases silicate weathering, weathering removes CO2, and climate cools back toward its starting state",
+      "A volcanic eruption adds CO2 once, and no other system responds",
+      "A proxy measurement changes because a sample was altered after burial"
+    ],
+    "explanation": "A positive feedback amplifies an initial change. Ice-albedo feedback can intensify cooling because more ice increases reflectivity and promotes further cooling.",
+    "tags": [
+      "positive feedback",
+      "albedo",
+      "climate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-weathering-carbonate-sink",
+    "prompt": "How does silicate weathering connect the atmosphere to long-term carbonate burial?",
+    "choices": [
+      "Weathering consumes atmospheric CO2 and delivers dissolved ions that can later be buried as carbonate minerals",
+      "Weathering releases CO2 from carbonate minerals and prevents any carbon from entering the ocean",
+      "Weathering affects only oxygen and has no relation to carbon dioxide",
+      "Weathering is a biological flux that occurs only inside plants and never in rocks"
+    ],
+    "explanation": "Silicate weathering is a long-term CO2 sink. Weathering products can be transported to the ocean and incorporated into carbonate sediments.",
+    "tags": [
+      "silicate weathering",
+      "carbonate burial",
+      "CO2 sinks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-volcanic-degassing-source",
+    "prompt": "Why is volcanic degassing treated as a long-term carbon-cycle source of atmospheric CO2?",
+    "choices": [
+      "It transfers carbon from Earth's interior and subducted materials back to the surface system",
+      "It permanently removes CO2 by turning it into buried organic matter",
+      "It represents photosynthesis by volcanic microbes in deep rocks",
+      "It changes sea level but cannot affect atmospheric composition"
+    ],
+    "explanation": "Volcanism and metamorphic degassing return carbon to the ocean-atmosphere system. In long-term models, that flux helps balance sinks such as weathering and burial.",
+    "tags": [
+      "volcanic degassing",
+      "CO2 sources",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-feedback-sign-system-state",
+    "prompt": "Why can the sign of a feedback matter more than the direction of the initial change?",
+    "choices": [
+      "A negative feedback damps a change, while a positive feedback amplifies it, regardless of whether the first push was warming or cooling",
+      "Positive feedbacks always warm climate, and negative feedbacks always cool climate",
+      "Feedback sign is another name for whether a proxy value is positive or negative",
+      "Feedbacks matter only when reservoirs are ignored"
+    ],
+    "explanation": "Feedback sign describes response behavior. Positive feedback reinforces the initial perturbation, while negative feedback opposes it.",
+    "tags": [
+      "feedbacks",
+      "systems thinking",
+      "definitions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-scale-choice-carbon-cycle",
+    "prompt": "Why might an Earth-system model exclude seasonal photosynthesis and respiration when modeling CO2 over millions of years?",
+    "choices": [
+      "At that scale, short-term exchanges may nearly balance, while burial, weathering, degassing, and subduction control longer-term trends",
+      "Photosynthesis and respiration do not involve carbon and therefore cannot matter at any scale",
+      "Short-term biological fluxes always dominate over rock-cycle fluxes for hundreds of millions of years",
+      "Models must include every possible process at full detail or they cannot be scientific"
+    ],
+    "explanation": "Model design depends on scale. Processes that are crucial at seasonal scales may be approximated differently when their net effect is small over geologic time.",
+    "tags": [
+      "model scale",
+      "carbon cycle",
+      "systems thinking"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l13b-silicate-weathering-feedback",
+    "prompt": "Atmospheric CO2 rises after a pulse of volcanism. In one model, runoff and silicate weathering increase after warming; in another, organic carbon burial increases after productivity rises. Which distinction is most accurate?",
+    "choices": [
+      "Silicate weathering is a negative feedback that consumes CO2 over long timescales, while organic burial links carbon removal to redox and oxygen balance.",
+      "Silicate weathering and organic burial are identical CO2 sources, so both amplify volcanic warming in the same way.",
+      "Silicate weathering consumes oxygen but cannot affect CO2, while organic burial affects only sea level.",
+      "Both fluxes operate only during glaciation, so they should be excluded from a volcanic CO2 recovery model."
+    ],
+    "explanation": "Silicate weathering can oppose CO2-driven warming by consuming atmospheric CO2 over long timescales. Organic burial also removes reduced carbon and affects oxygen/redox balance, but it is a different carbon-cycle pathway.",
+    "tags": [
+      "silicate weathering",
+      "negative feedback",
+      "climate thermostat"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l13b-organic-burial-oxygen-carbon",
+    "prompt": "Two intervals have the same photosynthetic productivity. In one, most organic matter is respired or oxidized; in the other, more is buried in sediment. Which atmospheric outcome is most likely?",
+    "choices": [
+      "The higher-burial interval more strongly removes reduced carbon from short-term oxidation, favoring lower CO2 and greater O2 accumulation.",
+      "The higher-burial interval should lower O2 because buried organic matter consumes oxygen by photosynthesizing underground.",
+      "Both intervals must have identical CO2 and O2 because productivity alone determines atmospheric composition.",
+      "The oxidized interval should accumulate more O2 because respiration stores oxygen in organic carbon."
+    ],
+    "explanation": "Photosynthesis produces organic carbon and oxygen, but respiration and oxidation reverse that effect. Burial of reduced organic carbon lets some oxygen remain in the surface system and removes carbon from rapid recycling.",
+    "tags": [
+      "organic carbon burial",
+      "oxygen",
+      "carbon cycle"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l13b-proxy-forcing-response-trap",
+    "prompt": "A model uses carbon isotope values to infer organic burial, then uses organic burial to explain CO2 and climate change. What systems issue must be handled carefully?",
+    "choices": [
+      "The isotope record is proxy evidence for a process, not the forcing itself, so assumptions linking proxy, reservoir, and feedback must be explicit",
+      "A proxy automatically becomes a physical forcing once it is plotted against time",
+      "Carbon isotopes directly measure global temperature and do not need a carbon-cycle interpretation",
+      "A model should ignore uncertainty once it includes more than one reservoir"
+    ],
+    "explanation": "Systems thinking separates measurements, inferred processes, forcings, responses, and feedbacks. Proxy values are evidence used to infer system behavior, not the process itself.",
+    "tags": [
+      "proxy data",
+      "forcings",
+      "model uncertainty"
+    ],
+    "difficulty": "Hard"
+  }
+]

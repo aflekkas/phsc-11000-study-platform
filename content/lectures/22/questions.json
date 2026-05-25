@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l22-chicxulub",
+    "prompt": "Which evidence combination most strongly separates a bolide impact from Deccan-style volcanic stress at the end of the Cretaceous?",
+    "choices": [
+      "Global iridium enrichment, shocked quartz, microtektites, Gulf-region tsunami deposits, soot, and the Chicxulub crater.",
+      "Mercury anomalies, flood-basalt lava flows, greenhouse pulses, and gradual pre-boundary stress without shocked minerals or a crater.",
+      "Regional tsunami deposits and storm beds near the Gulf, but no global ejecta layer, shocked minerals, or buried impact structure.",
+      "A global iridium spike paired with flood basalts, because explosive volcanism routinely produces shocked quartz and microtektites."
+    ],
+    "explanation": "The impact case rests on multiple evidence types that fit together: global iridium enrichment, shocked minerals, impact spherules or microtektites, boundary soot, tsunami deposits near the impact region, and the Chicxulub crater. Deccan volcanism is a real competing stressor, but it does not by itself explain the full impact evidence package.",
+    "tags": [
+      "Chicxulub",
+      "end-Cretaceous",
+      "impact evidence"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l22-convergence",
+    "prompt": "What makes Mesozoic marine reptiles a useful example of convergent evolution?",
+    "choices": [
+      "Ichthyosaurs, plesiosaurs, mosasaurs, and sea turtles came from different reptile lineages yet independently evolved marine swimming or feeding adaptations.",
+      "Ichthyosaurs, plesiosaurs, and mosasaurs descended from one specialized marine reptile ancestor, so their similarities mostly show common ancestry.",
+      "Mosasaurs diversified into many marine species, so similarities with ichthyosaurs and plesiosaurs are just adaptive radiation within one lineage.",
+      "Plesiosaurs and ichthyosaurs shared broad amniote ancestry, so flippers and streamlined bodies must have been inherited unchanged from land ancestors."
+    ],
+    "explanation": "Convergence means separate lineages evolve similar features under similar selection. Marine reptiles such as ichthyosaurs, plesiosaurs, mosasaurs, and sea turtles were not all one adaptive radiation from a single marine ancestor; their comparable swimming and feeding adaptations evolved independently.",
+    "tags": [
+      "convergent evolution",
+      "marine reptiles",
+      "Mesozoic"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-amniote-aridity",
+    "prompt": "Why did reptiles become increasingly successful away from moist habitats as Pangaea became drier?",
+    "choices": [
+      "Waterproof skin and the amniotic egg reduced dependence on aquatic reproduction.",
+      "External fertilization let reptile embryos develop in dry sand without protective membranes.",
+      "Reptiles retained amphibian-style jelly-covered eggs, which were better suited to deserts.",
+      "Reptiles avoided dry habitats until flowering plants created humid forests in the Cenozoic."
+    ],
+    "explanation": "As drier Permian and later Mesozoic habitats expanded, reptiles had advantages over amphibians because they were less tied to water for reproduction. Waterproof skin and amniotic eggs made dry-land occupation easier.",
+    "tags": [
+      "reptiles",
+      "amniotic egg",
+      "aridification"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-diapsid-opportunism",
+    "prompt": "What best explains the Triassic diversification of diapsid reptiles after the end-Permian crisis?",
+    "choices": [
+      "Many synapsid groups were eliminated or reduced, leaving ecological roles that diapsids such as lepidosaurs and archosaurs could enter.",
+      "Synapsids became more dominant after the extinction, preventing diapsids from occupying terrestrial niches.",
+      "Diapsids originated only after the extinction, so their radiation was unrelated to earlier community turnover.",
+      "The extinction affected only marine organisms, leaving terrestrial reptile communities unchanged."
+    ],
+    "explanation": "The end-Permian extinction heavily reduced synapsids. In the Triassic, surviving and newly diversified diapsids, including lepidosaurs and archosaurs, expanded into roles that had been occupied by synapsid groups.",
+    "tags": [
+      "diapsids",
+      "Triassic",
+      "ecological opportunity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-late-triassic-turnover",
+    "prompt": "Which interpretation best connects the Late Triassic extinction to later dinosaur success?",
+    "choices": [
+      "CAMP volcanism drove a major extinction that nearly eliminated many crocodile-line archosaurs, opening roles into which dinosaurs diversified.",
+      "The extinction mostly reduced small synapsids while leaving crocodile-line archosaurs dominant, so later dinosaur success would require a separate explanation.",
+      "A gradual drying trend alone selected for larger dinosaur body size without substantial extinction-driven ecological release.",
+      "The turnover mainly affected marine reptiles, so terrestrial dinosaur diversification is best explained by sampling of continental rocks."
+    ],
+    "explanation": "The Late Triassic extinction is strongly linked to Central Atlantic Magmatic Province volcanism. It heavily affected terrestrial communities, including many crocodile-line archosaurs, and dinosaurs later radiated into vacated and novel roles.",
+    "tags": [
+      "Late Triassic extinction",
+      "CAMP",
+      "dinosaurs"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l22-archaeopteryx-mosaic",
+    "prompt": "Why is Archaeopteryx useful for reconstructing bird origins as a branching transition rather than an abrupt origin?",
+    "choices": [
+      "It combines bird traits such as feathers and a furcula with dinosaur traits such as teeth, clawed fingers, and a long bony tail.",
+      "It preserves a fully modern bird skeleton, so it marks the point where dinosaur traits disappeared from the bird lineage.",
+      "It lacks theropod traits, so it separates birds from small predatory dinosaurs despite having feathers.",
+      "It shows flight evolved before feathers, because the feathered skeleton already had a modern bird tail and beak."
+    ],
+    "explanation": "Birds evolved from maniraptor theropod dinosaurs. Archaeopteryx preserves a mosaic of bird-like and dinosaur-like traits, making it useful evidence for that evolutionary transition.",
+    "tags": [
+      "bird origins",
+      "Archaeopteryx",
+      "theropods"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-feather-preaptation",
+    "prompt": "What does the presence of feathers on many non-avian dinosaurs suggest about the origin of flight?",
+    "choices": [
+      "Feathers likely served functions such as insulation or display before being co-opted for flight.",
+      "Feathers likely originated only with powered flight, with feathered non-avian dinosaurs representing close relatives that secondarily lost flight.",
+      "Feathers show that every feathered theropod was equally close to the lineage leading to living birds.",
+      "Feathers mainly diagnose elevated metabolism and do not help evaluate how flight-related structures were assembled."
+    ],
+    "explanation": "Cretaceous fossil discoveries show many dinosaurs with feathers. Feathers likely evolved first for functions such as insulation or display, then were later co-opted for flight in bird ancestors.",
+    "tags": [
+      "feathers",
+      "preaptation",
+      "dinosaurs"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-cretaceous-selectivity",
+    "prompt": "Which extinction pattern best fits a short-lived collapse in photosynthesis layered on top of pre-boundary stress?",
+    "choices": [
+      "Ammonites, many plankton-linked marine food webs, pterosaurs, non-avian dinosaurs, and nearly all marine reptiles collapsed, while some birds, mammals, crocodilians, and turtles survived.",
+      "Large terrestrial herbivores were hit, but plankton, ammonites, and marine reptiles mostly survived because ocean food webs were buffered from sunlight loss.",
+      "Extinction primarily removed small detritus-feeders and seed-eaters, while large-bodied predators survived because they could fast through the dark interval.",
+      "All amniote lineages were eliminated except one mammal branch, making later bird and reptile diversity a single direct recovery line."
+    ],
+    "explanation": "Impact darkness would propagate from primary producers through food webs, but survival was selective rather than universal. Lineages with buffered diets, small body size, aquatic refuges, dormancy, seeds, or detrital resources could fare differently from large animals and plankton-dependent marine groups.",
+    "tags": [
+      "end-Cretaceous",
+      "extinction selectivity",
+      "Mesozoic"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l22-impact-food-web-collapse",
+    "prompt": "How could the Chicxulub impact rapidly disrupt global food webs?",
+    "choices": [
+      "Dust and re-entering particles could darken skies, cool the surface, trigger wildfires, and suppress photosynthesis at the base of food webs.",
+      "The impact would fertilize oceans enough to increase photosynthesis, so food-web collapse would require an unrelated cause.",
+      "The main effect would be slow mountain building, with ecological disruption delayed for tens of millions of years.",
+      "Only organisms inside the crater would be affected because impact debris cannot alter atmosphere or climate."
+    ],
+    "explanation": "Impact effects included wildfire-producing heat, dust clouds that blocked sunlight, cooling, acid rain, tsunamis, and other shocks. Suppressed photosynthesis would propagate through marine and terrestrial food webs.",
+    "tags": [
+      "Chicxulub",
+      "food webs",
+      "impact effects"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-deccan-impact-comparison",
+    "prompt": "Which statement best handles Deccan volcanism and the Chicxulub impact as explanations for the end-Cretaceous extinction?",
+    "choices": [
+      "Deccan volcanism could have added pre-boundary stress, but the impact is supported by a distinct global evidence package including iridium, shocked minerals, spherules, tsunami deposits, and a crater.",
+      "Deccan volcanism explains the shocked quartz and crater, while the impact explains only gradual diversity decline before the boundary.",
+      "The impact and Deccan volcanism are the same process, because flood basalts always leave a circular crater and global microtektite layer.",
+      "Deccan volcanism is the only viable cause because impact markers can be produced by ordinary basalt eruptions without any extraterrestrial material."
+    ],
+    "explanation": "Deccan volcanism is a real stressor that may explain some pre-boundary decline, but impact evidence is unusually direct and varied. A strong interpretation can include interaction without ignoring the crater and global impact markers.",
+    "tags": [
+      "Deccan Traps",
+      "Chicxulub",
+      "causal evidence"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l22-bolide-definition",
+    "prompt": "What is a bolide in the context of the end-Cretaceous event?",
+    "choices": [
+      "A large extraterrestrial object whose impact can release enough energy to alter global environments.",
+      "A flood-basalt province whose gases can drive long-term climate and ocean-chemistry stress.",
+      "A plume of volcanic aerosols that cools climate without producing a crater or ejecta layer.",
+      "A shock-metamorphosed mineral grain produced when target rocks experience impact pressures."
+    ],
+    "explanation": "A bolide is a large impactor such as an asteroid or comet. The Chicxulub structure and boundary evidence point to a major bolide impact at the end of the Cretaceous.",
+    "tags": [
+      "bolide",
+      "Chicxulub",
+      "end-Cretaceous"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l22-convergent-evolution-definition",
+    "prompt": "What is convergent evolution?",
+    "choices": [
+      "Independent lineages evolve similar traits because they face similar ecological pressures.",
+      "Closely related lineages retain similar traits because they inherited them from the same recent ancestor.",
+      "One lineage diversifies into many species while retaining the same ancestral body plan.",
+      "Separate lineages become similar because they exchange genes after hybridizing."
+    ],
+    "explanation": "Convergence occurs when separate lineages arrive at similar forms or functions independently. Mesozoic marine reptiles are useful examples because different reptile groups evolved aquatic body shapes.",
+    "tags": [
+      "convergent evolution",
+      "marine reptiles",
+      "adaptation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l22-diapsid-definition",
+    "prompt": "What does diapsid refer to in reptile evolution?",
+    "choices": [
+      "An amniote skull pattern with two temporal openings behind the eye, found in the lineage including many reptiles and birds.",
+      "A synapsid skull pattern with one temporal opening, found in mammals and their extinct relatives.",
+      "An amniote reproductive mode defined by a shelled egg rather than skull anatomy.",
+      "A theropod limb pattern defined by feathers, a furcula, and flight-capable wings."
+    ],
+    "explanation": "Diapsid is a skull-based term for a major amniote lineage. Many Mesozoic reptile groups, including dinosaurs, pterosaurs, and several marine reptile lineages, belong within diapsid evolution.",
+    "tags": [
+      "diapsids",
+      "reptile evolution",
+      "amniotes"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l22-marine-reptile-convergence",
+    "prompt": "Why do ichthyosaurs, plesiosaurs, and mosasaurs illustrate convergence rather than a single aquatic origin?",
+    "choices": [
+      "They came from different reptile lineages but independently evolved bodies and limbs suited to marine life.",
+      "They all descended from one marine diapsid ancestor, so their flippers and streamlining mostly reflect shared inheritance.",
+      "They were one adaptive radiation within mosasaurs, so similarities with ichthyosaurs and plesiosaurs are taxonomic rather than ecological.",
+      "They retained unchanged terrestrial limb proportions, so their similarities are mainly preservation artifacts rather than aquatic adaptations."
+    ],
+    "explanation": "Several reptile lineages entered marine ecosystems independently. Similar streamlining, paddles, and predatory roles reflect adaptation to comparable marine niches rather than one shared aquatic ancestor for all of them.",
+    "tags": [
+      "marine reptiles",
+      "convergence",
+      "Mesozoic"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-impact-winter-mechanism",
+    "prompt": "How could the Chicxulub impact cause rapid global cooling and darkness?",
+    "choices": [
+      "Dust, sulfate aerosols, and soot injected into the atmosphere could reduce sunlight reaching Earth's surface.",
+      "The impact increased solar output but reduced ocean tides, cooling the planet indirectly.",
+      "The crater absorbed all atmospheric CO2 within days, immediately ending the greenhouse effect.",
+      "Tsunamis carried cold polar water into every ocean basin and kept it there for millions of years."
+    ],
+    "explanation": "Impact ejecta, aerosols, and soot can block incoming sunlight. Reduced photosynthesis and short-term cooling help explain abrupt food-web disruption after the impact.",
+    "tags": [
+      "impact winter",
+      "Chicxulub",
+      "food webs"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-boundary-spherules",
+    "prompt": "Why are microtektites and impact spherules important at the end-Cretaceous boundary?",
+    "choices": [
+      "They are droplets of melted impact material that cooled and spread through boundary sediments.",
+      "They are volcanic glass droplets from flood-basalt fountains that should be concentrated only near lava flows.",
+      "They are carbonate pellets from ordinary marine sedimentation that become global when sea level rises.",
+      "They are ash particles produced by wildfires, useful mainly as evidence for soot rather than impact melting."
+    ],
+    "explanation": "Microtektites and spherules form from melted material launched during an impact and then deposited widely. They complement iridium, shocked quartz, and the crater as impact evidence.",
+    "tags": [
+      "impact evidence",
+      "microtektites",
+      "end-Cretaceous"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-feather-function-before-flight",
+    "prompt": "Why can feathers in non-avian dinosaurs be interpreted as traits that existed before powered flight?",
+    "choices": [
+      "They show that feathers could have served functions such as insulation, display, or brooding before being used in flight.",
+      "They show that all feathered theropods were directly ancestral to living birds, even when their skeletons were not flight-capable.",
+      "They imply feathers first evolved for powered flight and were retained unchanged in non-flying relatives.",
+      "They make flight origin harder to interpret because insulation and display cannot be tested with fossil anatomy."
+    ],
+    "explanation": "A trait can originate in one context and later be used in another. Feathers in non-avian dinosaurs indicate that flight was not necessarily the first function of feathers.",
+    "tags": [
+      "feathers",
+      "preaptation",
+      "bird origins"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-deccan-climate-stress",
+    "prompt": "How could Deccan volcanism have stressed late Cretaceous ecosystems even if it was not the only extinction trigger?",
+    "choices": [
+      "CO2, sulfur gases, aerosols, and mercury could alter climate and ocean chemistry before or around the boundary.",
+      "Lava flows from India directly buried every dinosaur habitat on all continents.",
+      "Volcanism created shocked quartz and the Chicxulub crater without any impact.",
+      "Flood basalts removed sunlight permanently but produced no atmospheric gases."
+    ],
+    "explanation": "Large volcanic provinces can affect climate and chemistry through gas and aerosol release. Deccan volcanism may have added stress even though the impact evidence points to an abrupt boundary event.",
+    "tags": [
+      "Deccan Traps",
+      "volcanism",
+      "climate stress"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l22-photosynthesis-collapse-selectivity",
+    "prompt": "After impact darkness, calcareous plankton decline sharply, many large herbivores disappear, seed-eating birds fare better, and some detritus-based freshwater systems persist. Which interpretation best fits the selectivity?",
+    "choices": [
+      "Food webs dependent on immediate photosynthesis were hit hardest, while stored seeds and detrital pathways could buffer some survivors temporarily.",
+      "The pattern is best explained by oxygenation of deep water, because impact darkness should increase marine photosynthesis.",
+      "The pattern proves body size alone determined survival, because food source and trophic pathway are irrelevant after impacts.",
+      "The pattern rules out impact darkness because any reduction in sunlight should affect every ecosystem identically."
+    ],
+    "explanation": "Impact darkness predicts strong stress on food webs tied to active primary production, but selectivity can differ where stored seeds, detritus, or freshwater buffering provide alternative resources.",
+    "tags": [
+      "food webs",
+      "impact winter",
+      "extinction selectivity"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l22-contingency-after-extinction",
+    "prompt": "Mammals and birds diversified after non-avian dinosaurs disappeared, but many mammal lineages already existed before the boundary. Which interpretation best avoids overclaiming?",
+    "choices": [
+      "Extinction removed incumbents and opened roles for survivors, but later success depended on which lineages survived and how they diversified afterward.",
+      "Mammals must have been competitively superior before the boundary because post-boundary radiation proves they had already displaced dinosaurs.",
+      "Post-boundary diversification is only sampling bias because mass extinctions cannot alter ecological opportunity.",
+      "The extinction created mammals and birds from scratch, so pre-boundary diversity is irrelevant."
+    ],
+    "explanation": "Contingency means survival and opportunity both mattered. The extinction did not originate mammals or birds, but it changed the ecological landscape into which surviving lineages radiated.",
+    "tags": [
+      "contingency",
+      "end-Cretaceous",
+      "adaptive radiation"
+    ],
+    "difficulty": "Hard"
+  }
+]

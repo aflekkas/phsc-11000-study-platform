@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l09-half-life",
+    "prompt": "A zircon grain is dated using a parent isotope and its daughter product. Which condition makes the calculated radiometric age most defensible?",
+    "choices": [
+      "The mineral remained a closed system, the starting daughter amount is accounted for, and the parent-daughter ratio is interpreted with the known decay rate.",
+      "The parent isotope leaked from the crystal after crystallization, because an open system preserves the original parent-daughter ratio.",
+      "Inherited daughter product can be treated as negligible whenever the crystal is old enough for several half-lives to pass.",
+      "A reheating or contamination event mainly changes the apparent parent-daughter ratio, so it is safe if the decay constant is known."
+    ],
+    "explanation": "Radiometric dating depends on a known decay rate, but the measured parent-daughter ratio is useful only if the system history is understood. Open-system loss, inherited daughter product, contamination, or reheating can make an apparent age misleading.",
+    "tags": [
+      "half-life",
+      "radiometric dating"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-timescale-units",
+    "prompt": "A fossil assemblage belongs to the late Devonian Period, a volcanic ash above it dates to the early Carboniferous Period, and a fault cuts both layers. Which placement is most consistent with geologic time and cross-cutting logic?",
+    "choices": [
+      "The fossil bed is older than the ash, and both events occurred within the Paleozoic Era before the fault cut them.",
+      "The ash is older than the fossil bed because Carboniferous comes before Devonian within the Paleozoic Era.",
+      "The fault is oldest because structural events must be assigned to an era before fossil-bearing periods can be ordered.",
+      "The fossil bed and ash must be the same age because Devonian and Carboniferous are both periods within one era."
+    ],
+    "explanation": "Periods are nested within eras, and the Devonian comes before the Carboniferous within the Paleozoic. A fault that cuts both units must be younger than both, even though the exact numerical age would require additional dating.",
+    "tags": [
+      "geologic timescale",
+      "chronology"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-absolute-relative-contrast",
+    "prompt": "A sequence is ordered using superposition, and an interbedded ash is later dated to 96 Ma. Which statement best distinguishes the two kinds of age information?",
+    "choices": [
+      "Absolute dating estimates age in years, while relative dating orders events without necessarily assigning numerical ages.",
+      "Absolute dating gives only older-than or younger-than relationships, while relative dating supplies the number of years.",
+      "Relative dating becomes absolute whenever fossils are present, even without datable material.",
+      "Absolute dating applies only to sedimentary layers, while relative dating applies only to volcanic ash."
+    ],
+    "explanation": "Absolute dating provides numerical age estimates, commonly through radiometric methods. Relative dating places events in order, such as older than or younger than, without requiring a number of years.",
+    "tags": [
+      "absolute dating",
+      "relative dating"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-half-life-ratio",
+    "prompt": "For a radioactive parent isotope with no starting daughter product, what daughter-to-parent ratio is expected after two half-lives?",
+    "choices": [
+      "3:1.",
+      "1:1.",
+      "1:3.",
+      "2:1."
+    ],
+    "explanation": "After one half-life, half of the parent remains and half has become daughter, giving 1:1. After two half-lives, one quarter parent remains and three quarters daughter has formed, giving 3:1.",
+    "tags": [
+      "half-life",
+      "radioactive decay"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-zircon-crystallization-age",
+    "prompt": "A zircon crystal in a volcanic ash bed gives a uranium-lead age, while fossils in the sediment above and below are undated. What age does the zircon most directly record?",
+    "choices": [
+      "The time when the zircon crystallized from cooling magma.",
+      "The exact depositional age of every sedimentary layer above and below the ash.",
+      "The time when the fossil-bearing sediment was first eroded from its source area.",
+      "The age of the magma source in the mantle, regardless of when the ash erupted."
+    ],
+    "explanation": "Zircon can incorporate uranium as it crystallizes from magma. In volcanic ash, that age can closely date ash crystallization and eruption, but surrounding sedimentary beds are bracketed rather than automatically assigned the same age.",
+    "tags": [
+      "zircon",
+      "radiometric dating"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l09-seafloor-age-pattern",
+    "prompt": "Which seafloor age pattern supports seafloor spreading?",
+    "choices": [
+      "Oceanic crust is youngest at mid-ocean ridges and gets older with distance from the ridge.",
+      "Oceanic crust is oldest at mid-ocean ridges and gets younger toward trenches.",
+      "All oceanic crust has the same age because it formed during one global event.",
+      "Oceanic crust is always older than continental crust because it is denser."
+    ],
+    "explanation": "Radiometric dating shows that oceanic crust forms at spreading centers and becomes older away from mid-ocean ridges. This pattern supports plate tectonics and gives a timescale for seafloor spreading.",
+    "tags": [
+      "seafloor spreading",
+      "plate tectonics"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-magnetostratigraphy-record",
+    "prompt": "How can lava preserve a record of Earth's magnetic-field reversals?",
+    "choices": [
+      "Iron-rich minerals align with the magnetic field as lava cools, freezing a remnant magnetization into the rock.",
+      "Lava absorbs daughter isotopes from the atmosphere whenever the magnetic field reverses.",
+      "The magnetic field changes the lava's cooling rate, creating alternating coarse and fine crystals.",
+      "Cooling lava records only the present field direction because remnant magnetization is erased immediately."
+    ],
+    "explanation": "As iron-rich minerals crystallize from cooling lava, they can align with Earth's magnetic field. Once solidified, that orientation is preserved as remnant magnetization.",
+    "tags": [
+      "magnetostratigraphy",
+      "magnetic reversals"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-calibrating-ash-beds",
+    "prompt": "A dated volcanic ash bed lies between two sedimentary layers. How can it calibrate the relative sequence?",
+    "choices": [
+      "It gives a minimum age for the underlying layer and a maximum age for the overlying layer.",
+      "It proves both sedimentary layers are exactly the same age as the ash.",
+      "It gives a maximum age for the underlying layer and a minimum age for the overlying layer.",
+      "It prevents any relative dating because ash beds cannot be compared with sedimentary rocks."
+    ],
+    "explanation": "An interbedded ash or lava layer can be dated radiometrically. A layer below it must be older than the dated ash, while a layer above it must be younger than the dated ash.",
+    "tags": [
+      "calibration",
+      "radiometric dating"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l09-detrital-zircon-constraint",
+    "prompt": "A sandstone contains detrital zircon grains eroded from older igneous rocks. What constraint can the youngest reliable zircon date provide?",
+    "choices": [
+      "A maximum depositional age for the sandstone.",
+      "The exact year when the sandstone was lithified.",
+      "A minimum age for the igneous source rock.",
+      "Proof that the sandstone is older than every zircon grain it contains."
+    ],
+    "explanation": "Detrital zircon grains are older than the sedimentary rock that contains them. The youngest reliable zircon date sets a maximum depositional age because the sandstone cannot be older than its youngest included grain.",
+    "tags": [
+      "detrital zircon",
+      "inclusions"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l09-nested-time-intervals",
+    "prompt": "Which order lists geologic time intervals from shorter to longer?",
+    "choices": [
+      "Ages or stages, epochs or series, periods or systems, eras or erathems.",
+      "Eras or erathems, periods or systems, epochs or series, ages or stages.",
+      "Periods or systems, ages or stages, eras or erathems, epochs or series.",
+      "Epochs or series, ages or stages, eras or erathems, periods or systems."
+    ],
+    "explanation": "The geologic timescale is nested. Ages or stages are shorter units, followed by epochs or series, then periods or systems, and then eras or erathems.",
+    "tags": [
+      "geologic timescale",
+      "time intervals"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l09-parent-daughter-definition",
+    "prompt": "In radioactive decay dating, what are parent and daughter isotopes?",
+    "choices": [
+      "The parent isotope decays, and the daughter isotope is the product formed by that decay.",
+      "The parent isotope is always younger than the daughter isotope in the same mineral.",
+      "The parent isotope is the fossil being dated, and the daughter isotope is the enclosing rock.",
+      "The parent and daughter isotopes are unrelated elements deposited in separate layers."
+    ],
+    "explanation": "Radiometric dating uses decay from a parent isotope to a daughter product at a known rate. Measuring their proportions can help estimate an absolute age if system assumptions are met.",
+    "tags": [
+      "radioactive decay",
+      "definition"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l09-eon-era-period-hierarchy",
+    "prompt": "A boundary is described as lying within an epoch, which lies within a period, which lies within an era. Which larger-to-smaller hierarchy is consistent with that nesting?",
+    "choices": [
+      "Eon, era, period, epoch.",
+      "Era, eon, period, epoch.",
+      "Eon, period, era, epoch.",
+      "Period, era, epoch, eon."
+    ],
+    "explanation": "The timescale is hierarchical. Eons contain eras, eras contain periods, and periods contain epochs, with still smaller subdivisions below that.",
+    "tags": [
+      "geologic timescale",
+      "time hierarchy"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-precambrian-definition",
+    "prompt": "What does Precambrian refer to in Earth history?",
+    "choices": [
+      "The long span of time before the Cambrian Period.",
+      "Only the first epoch of the Cenozoic Era.",
+      "The interval between the Permian and Triassic Periods.",
+      "The youngest period containing modern humans."
+    ],
+    "explanation": "Precambrian is an informal but useful term for Earth history before the Cambrian Period. It includes most of Earth's history.",
+    "tags": [
+      "Precambrian",
+      "geologic timescale"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l09-boundaries-biological-turnover",
+    "prompt": "Why do many boundaries in the geologic timescale correspond to biological turnover?",
+    "choices": [
+      "Large changes in fossil assemblages provide recognizable markers for dividing rock records and time.",
+      "Radioactive decay stops whenever species evolve, creating automatic boundaries.",
+      "Biological turnover proves that no environmental change occurred at the same time.",
+      "Boundaries are placed only where humans have written records of extinctions."
+    ],
+    "explanation": "Fossils help correlate rocks and identify major changes in life. Many boundaries are tied to extinction, radiation, or other turnover patterns visible in the fossil record.",
+    "tags": [
+      "fossil record",
+      "geologic boundaries"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-uneven-time-units",
+    "prompt": "Why are geologic time units not all equal in duration?",
+    "choices": [
+      "They are based on historical divisions in rock and fossil records rather than equal clock intervals.",
+      "Half-lives force every period to last exactly the same number of years.",
+      "Eras and periods are equal because all boundaries are chosen by Earth's orbit.",
+      "Time units become shorter only because younger rocks are always more radioactive."
+    ],
+    "explanation": "The timescale was built from rock relationships, fossil changes, and later numerical calibration. Its units reflect recognizable Earth-history divisions, not equal-length bins.",
+    "tags": [
+      "geologic timescale",
+      "time units"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-era-order-timeline",
+    "prompt": "Which order correctly places these intervals from older to younger?",
+    "choices": [
+      "Precambrian, Paleozoic, Mesozoic, Cenozoic.",
+      "Cenozoic, Mesozoic, Paleozoic, Precambrian.",
+      "Paleozoic, Precambrian, Cenozoic, Mesozoic.",
+      "Mesozoic, Cenozoic, Precambrian, Paleozoic."
+    ],
+    "explanation": "The broad order used for much of Earth history is Precambrian before the Phanerozoic eras: Paleozoic, then Mesozoic, then Cenozoic.",
+    "tags": [
+      "timeline",
+      "geologic eras"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-event-order-big-transitions",
+    "prompt": "Which sequence places these Earth-history events in the correct broad order?",
+    "choices": [
+      "Oxygenation, Snowball Earth, Cambrian radiation, terrestrialization, end-Permian extinction, end-Cretaceous extinction.",
+      "End-Cretaceous extinction, oxygenation, Cambrian radiation, Snowball Earth, terrestrialization, end-Permian extinction.",
+      "Terrestrialization, Snowball Earth, oxygenation, end-Cretaceous extinction, Cambrian radiation, end-Permian extinction.",
+      "Cambrian radiation, oxygenation, end-Permian extinction, Snowball Earth, end-Cretaceous extinction, terrestrialization."
+    ],
+    "explanation": "The broad sequence runs from early oxygenation and Neoproterozoic glaciations into the Cambrian radiation, later land colonization, and then major Phanerozoic extinction events.",
+    "tags": [
+      "timeline",
+      "Earth history events"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l09-closed-system-assumption",
+    "prompt": "A mineral originally crystallized with parent isotope but no daughter product. Later heating allowed some daughter product to escape. How would that disturbance affect the apparent radiometric age?",
+    "choices": [
+      "It would tend to make the mineral appear too young because the measured daughter-parent ratio is lower than it should be.",
+      "It would tend to make the mineral appear too old because losing daughter product leaves excess parent isotope behind.",
+      "It would not matter because half-life depends only on time and cannot be affected by isotope loss.",
+      "It would make the date exact because removing daughter product restores the original closed system."
+    ],
+    "explanation": "Radiometric dating assumes the isotope system stayed closed after the clock started. Daughter loss lowers the daughter-parent ratio and can make the calculated age younger than the true crystallization age.",
+    "tags": [
+      "radiometric dating",
+      "closed system"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l09-bracketing-fossil-age-hard",
+    "prompt": "A fossil bed lies above a 210 Ma ash layer and below a 205 Ma ash layer. What age constraint is best supported?",
+    "choices": [
+      "The fossil bed was deposited sometime between 210 Ma and 205 Ma.",
+      "The fossil bed must be exactly 210 Ma because the lower ash is older.",
+      "The fossil bed must be older than 210 Ma because it lies above the lower ash.",
+      "The fossil bed cannot be constrained because ash layers never provide absolute ages."
+    ],
+    "explanation": "By superposition, the fossil bed is younger than the lower ash and older than the upper ash. Dated ash layers can bracket the fossil bed's depositional age.",
+    "tags": [
+      "age bracketing",
+      "volcanic ash"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l09-half-life-curve-logic",
+    "prompt": "A mineral begins with 100 units of parent isotope and no daughter product. After two half-lives in a closed system, which parent-daughter pattern is expected?",
+    "choices": [
+      "25 units parent and 75 units daughter, because each half-life removes half of the parent remaining at that time.",
+      "0 units parent and 100 units daughter, because two half-lives remove equal halves of the original parent reservoir.",
+      "50 units parent and 50 units daughter, because only the first half-life changes the isotope ratio.",
+      "75 units parent and 25 units daughter, because daughter production slows as parent isotope accumulates."
+    ],
+    "explanation": "After one half-life, 50 parent units remain. After a second, half of those remaining parent atoms decay, leaving 25 parent and 75 daughter units in a closed system.",
+    "tags": [
+      "half-life",
+      "decay curves"
+    ],
+    "difficulty": "Hard"
+  }
+]

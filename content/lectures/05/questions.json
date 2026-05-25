@@ -1,0 +1,322 @@
+[
+  {
+    "id": "l05-boundary-types",
+    "prompt": "A geologist is comparing evidence from several plate margins. Which evidence set best identifies a convergent margin with subduction?",
+    "choices": [
+      "A narrow trench, arc volcanism, earthquakes that deepen inland, and scraped-up sediment near the margin.",
+      "A linear ridge, shallow earthquakes, basaltic volcanism, and magnetic stripes mirrored on both sides.",
+      "A straight fault zone, offset seafloor features, shallow earthquakes, and little volcanism along the plate contact.",
+      "A broad shelf-slope-rise profile, a thick sediment wedge, low seismicity, and no active volcanic arc."
+    ],
+    "explanation": "Subduction margins commonly combine trenches, volcanic arcs, accreted or scraped sediments, and earthquakes that extend to depth. The other evidence sets fit spreading ridges, transform margins, or passive margins.",
+    "tags": [
+      "plate tectonics",
+      "subduction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-tectonics-effect",
+    "prompt": "A long-term cooling trend occurs while solar input remains stable, mountain ranges are rising, and continental positions are shifting. Which explanation best links tectonics to climate?",
+    "choices": [
+      "Uplift can expose fresh rock that accelerates carbon dioxide drawdown by weathering, and shifted gateways can redirect heat transport.",
+      "Active-margin volcanism adds reflective aerosols that cool climate for millions of years, so uplift and gateways are secondary.",
+      "Mountain building reduces weathering by burying fresh rock, so its main climate effect is to stop ocean circulation.",
+      "Moving continents can change latitude and gateways, but climate stays fixed as long as the solar constant does not change."
+    ],
+    "explanation": "Tectonics can affect climate through linked pathways. Uplift can increase silicate weathering and carbon dioxide removal, while changing continental positions and ocean gateways can reorganize circulation and heat transport.",
+    "tags": [
+      "plate tectonics",
+      "paleogeography"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l05-mountain-climate",
+    "prompt": "Why can high mountains be much colder than nearby lowlands at the same latitude?",
+    "choices": [
+      "Temperature decreases with altitude in the troposphere, and lower pressure reduces heat absorption and radiation.",
+      "Mountains receive less sunlight because latitude changes with elevation.",
+      "Mountain rocks conduct mantle heat away faster than lowland rocks.",
+      "High elevations are colder mainly because snow cover creates the altitude difference."
+    ],
+    "explanation": "Air temperature normally decreases upward through the troposphere. Lower pressure at high elevation also reduces the atmosphere's ability to absorb and radiate heat, so mountain environments can be cold even at low latitude.",
+    "tags": [
+      "mountain climate",
+      "topography"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-interior-evidence",
+    "prompt": "Which evidence set helps geologists infer Earth's internal structure despite limited direct drilling?",
+    "choices": [
+      "Surface rocks, gravity and magnetic fields, seismic-wave paths, and high-pressure mineral experiments.",
+      "Only fossils from sedimentary rocks, because deeper layers cannot affect the surface.",
+      "Only the shape of coastlines, because seismic waves do not travel through the interior.",
+      "Only volcanic rocks at the surface, because physical fields and experiments cannot test interior structure."
+    ],
+    "explanation": "Earth's interior is inferred from multiple lines of evidence, including rocks brought up from depth, gravity, magnetism, seismic waves, and experiments on minerals and rocks under high pressure and temperature.",
+    "tags": [
+      "Earth interior",
+      "evidence"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l05-oceanic-continental-crust",
+    "prompt": "A tectonic cross section shows dense mafic crust forming a low ocean basin beside thicker felsic crust standing higher. Which contrast best explains the elevation difference?",
+    "choices": [
+      "Oceanic crust is thinner and denser, while continental crust is generally thicker and less dense.",
+      "Oceanic crust is thicker and more felsic, while continental crust is thinner and more mafic.",
+      "Oceanic and continental crust have similar density, so basin depth mainly reflects the age of overlying sediment.",
+      "Continental crust forms low basins because it is denser than oceanic crust but remains attached to continents."
+    ],
+    "explanation": "Oceanic crust is commonly thin and mafic, making it denser. Continental crust is generally thicker and more felsic, making it less dense.",
+    "tags": [
+      "crust",
+      "plate tectonics"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-lithosphere-asthenosphere",
+    "prompt": "Which statement best describes the relationship between lithospheric plates and the asthenosphere?",
+    "choices": [
+      "Rigid lithospheric plates move over a slowly flowing, partially molten asthenosphere.",
+      "The asthenosphere is the rigid outer shell that is broken into plates.",
+      "Lithospheric plates are only crust, while the mantle is not involved in plate motion.",
+      "The asthenosphere is cooler and stronger than the lithosphere, so it locks plates in place."
+    ],
+    "explanation": "The lithosphere includes the crust and uppermost mantle and is broken into plates. Those plates move over the weaker, slowly flowing asthenosphere.",
+    "tags": [
+      "lithosphere",
+      "asthenosphere"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l05-divergent-margin",
+    "prompt": "Which evidence best indicates a divergent plate margin?",
+    "choices": [
+      "A spreading center with new oceanic lithosphere, shallow earthquakes, volcanism, and a mid-ocean ridge or rift valley.",
+      "A trench with deep earthquakes and explosive volcanic arcs above a subducting slab.",
+      "A fault where plates slide past one another with little volcanism.",
+      "A quiet continental margin with no active plate boundary."
+    ],
+    "explanation": "At divergent margins, upwelling magma creates new oceanic lithosphere as plates move apart. These settings commonly have shallow earthquakes, volcanism, ridges, or continental rifts.",
+    "tags": [
+      "divergent margins",
+      "plate tectonics"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-continental-collision",
+    "prompt": "Why does continental collision commonly build mountain ranges instead of simply subducting both continents?",
+    "choices": [
+      "Continental crust is too buoyant to subduct easily, so collision thickens and uplifts the crust.",
+      "Continental crust is denser than oceanic crust, so it sinks rapidly into the mantle.",
+      "Continental collision stops mantle convection everywhere on Earth.",
+      "Mountain ranges form only because transform faults pull the continents apart."
+    ],
+    "explanation": "Continental crust is relatively buoyant. When continental crust reaches a trench on both sides of a convergent margin, subduction can stall and crustal thickening produces uplift and mountain building.",
+    "tags": [
+      "continental collision",
+      "mountain building"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-transform-margin",
+    "prompt": "A plate boundary offsets older seafloor features, produces shallow earthquakes, and lacks a trench or volcanic arc. Which margin type best fits that evidence?",
+    "choices": [
+      "A transform margin where plates slide past each other with little or no volcanism along the contact.",
+      "A divergent margin where plates separate and create new oceanic lithosphere at a ridge axis.",
+      "A convergent margin where older oceanic lithosphere sinks and feeds an arc-trench system.",
+      "A passive margin where a continent-ocean transition lies within a plate rather than at a plate boundary."
+    ],
+    "explanation": "Transform margins are conservative boundaries where adjacent plates slide past one another. They are associated with shallow earthquakes but not with subduction-related volcanic arcs.",
+    "tags": [
+      "transform margins",
+      "earthquakes"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-passive-margin",
+    "prompt": "What distinguishes a passive continental margin from an active plate boundary?",
+    "choices": [
+      "It is a quiet transition from continental to oceanic crust rather than a place where plates meet.",
+      "It is a subduction zone with a trench, volcanic arc, and deep earthquakes.",
+      "It is a spreading center where basaltic magma constantly forms new lithosphere.",
+      "It is a transform fault with frequent large shallow earthquakes."
+    ],
+    "explanation": "A passive margin marks the transition from continental crust to oceanic crust within the same plate. It is not a plate boundary, so it lacks the active volcanism, trenching, and earthquake patterns of plate margins.",
+    "tags": [
+      "passive margins",
+      "plate boundaries"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-asthenosphere-definition",
+    "prompt": "What is the asthenosphere in plate tectonics?",
+    "choices": [
+      "A weak, ductile upper-mantle zone beneath the lithosphere that allows plates to move.",
+      "The rigid outer shell made only of continental crust.",
+      "The liquid iron layer that generates Earth's magnetic field.",
+      "The shallow sediment layer deposited on passive continental margins."
+    ],
+    "explanation": "Lithospheric plates move over the asthenosphere, a mechanically weak part of the upper mantle. It is solid but can deform over geologic time.",
+    "tags": [
+      "Earth structure",
+      "asthenosphere"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l05-ocean-basin-definition",
+    "prompt": "A basin has the youngest basalt at its central ridge and progressively older crust away from the ridge on both sides. Which process most directly explains that pattern?",
+    "choices": [
+      "Seafloor spreading at a divergent boundary creates new oceanic lithosphere at the ridge axis.",
+      "Subduction creates new oceanic lithosphere at trenches as old crust sinks and melts completely.",
+      "Transform slip creates new lithosphere along the offset fault because plates slide past each other.",
+      "Passive-margin sedimentation creates basaltic lithosphere by compacting continental-shelf deposits."
+    ],
+    "explanation": "New oceanic lithosphere forms at spreading centers where plates diverge and magma adds basaltic crust. The symmetric age pattern away from a ridge is evidence for that process.",
+    "tags": [
+      "divergent boundaries",
+      "ocean basins"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l05-subduction-evidence-pattern",
+    "prompt": "Which pattern is strongest evidence for an oceanic plate subducting beneath another plate?",
+    "choices": [
+      "A trench, volcanic arc, and earthquakes that deepen away from the trench.",
+      "A broad passive shelf with little earthquake or volcanic activity.",
+      "A mid-ocean ridge with the youngest crust along the ridge axis.",
+      "A straight fault where plates slide horizontally without volcanism."
+    ],
+    "explanation": "Subduction zones commonly include trenches, volcanic arcs, and inclined earthquake zones. Those features reflect one plate descending into the mantle.",
+    "tags": [
+      "subduction",
+      "plate boundary evidence"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-transform-boundaries-definition",
+    "prompt": "What makes transform boundaries different from divergent and convergent boundaries?",
+    "choices": [
+      "Plates slide horizontally past one another without creating or consuming major amounts of lithosphere.",
+      "Two plates move apart and mantle melting creates new seafloor.",
+      "One plate sinks beneath another and produces a trench and volcanic arc.",
+      "Two continents collide and both ocean basins widen."
+    ],
+    "explanation": "Transform boundaries are conservative plate margins. They accommodate sideways motion and earthquakes, but they are not the main sites of lithosphere creation or destruction.",
+    "tags": [
+      "transform boundaries",
+      "plate motions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-continental-position-climate",
+    "prompt": "Why can continental position affect regional climate?",
+    "choices": [
+      "It changes latitude, distance from oceans, ocean gateways, and the pathways of winds and currents.",
+      "It changes the solar constant by moving continents closer to the Sun.",
+      "It prevents the atmosphere from transporting heat across the equator.",
+      "It makes all continents receive the same rainfall regardless of topography."
+    ],
+    "explanation": "Plate motion changes where continents sit relative to latitude, oceans, mountain belts, and circulation pathways. Those geographic changes influence climate patterns.",
+    "tags": [
+      "paleogeography",
+      "climate controls"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-mountain-building-weathering",
+    "prompt": "How can mountain building influence atmospheric carbon dioxide over long timescales?",
+    "choices": [
+      "Uplift can expose fresh rock to chemical weathering, which can remove carbon dioxide through weathering reactions and burial.",
+      "Uplift immediately stops all chemical weathering because high elevations are cold.",
+      "Mountain building changes climate only by blocking sunlight with rock peaks.",
+      "Mountain building raises carbon dioxide only by making fossils more visible at the surface."
+    ],
+    "explanation": "Tectonic uplift can increase erosion and expose fresh minerals. Chemical weathering of those minerals is one pathway that can draw down atmospheric carbon dioxide over geologic time.",
+    "tags": [
+      "mountain building",
+      "weathering"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-oceanic-crust-age-density",
+    "prompt": "Why does old oceanic lithosphere commonly become more likely to subduct?",
+    "choices": [
+      "It cools, thickens, and becomes denser than younger oceanic lithosphere.",
+      "It becomes less dense because it absorbs sunlight at the seafloor.",
+      "It changes into continental crust once it passes a passive margin.",
+      "It stops moving because transform faults erase all plate motion."
+    ],
+    "explanation": "Oceanic lithosphere cools as it moves away from spreading centers. Cooling makes it thicker and denser, which favors subduction at convergent margins.",
+    "tags": [
+      "oceanic lithosphere",
+      "subduction"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l05-volcanism-climate-forcing",
+    "prompt": "A large igneous province releases sulfur aerosols early and large amounts of carbon dioxide over a longer interval. Which climate interpretation best separates the likely timescales?",
+    "choices": [
+      "Aerosols can drive short-lived cooling, while sustained CO2 release can drive longer greenhouse warming and ocean-chemistry stress.",
+      "Sulfur and carbon dioxide both cause only short-lived cooling, so persistent warming would require orbital forcing instead.",
+      "Carbon dioxide matters only near the eruption site, while aerosols are the only volcanic products that can affect global climate.",
+      "Volcanic forcing should be ignored unless lava directly covers marine shelves, because gases do not alter environmental conditions."
+    ],
+    "explanation": "Volcanic products can act on different timescales. Sulfur aerosols tend to be short-lived and reflective, while sustained CO2 emissions can affect greenhouse forcing and ocean chemistry for longer.",
+    "tags": [
+      "volcanism",
+      "environmental forcing"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l05-supercontinent-breakup-environments",
+    "prompt": "A supercontinent begins to rift, producing new passive margins, shallow seas, and narrow ocean gateways. Which environmental consequence is most directly expected?",
+    "choices": [
+      "More continental-margin habitat and altered ocean exchange can change sedimentation, circulation, climate gradients, and biogeographic connections.",
+      "Rifting should immediately eliminate shallow marine habitat because new ocean basins form only after shelves are subducted.",
+      "Passive margins should reduce sedimentation because they lack coastlines, leaving climate and habitats mostly unchanged.",
+      "Narrow gateways matter only for plate speed, not for ocean circulation, heat transport, or biological exchange."
+    ],
+    "explanation": "Rifting changes geography before and during ocean-basin formation. New margins, shelves, and gateways can alter habitat area, sediment routing, ocean circulation, and organism dispersal.",
+    "tags": [
+      "supercontinents",
+      "environmental change"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l05-cross-boundary-climate-logic",
+    "prompt": "A mountain belt rises as an ocean gateway narrows and volcanic activity increases. Why is a multi-control tectonic interpretation stronger than assigning the climate shift to one feature alone?",
+    "choices": [
+      "Tectonics can change weathering, circulation, greenhouse gases, and geography at the same time.",
+      "Tectonic features cannot interact, so only the oldest feature can influence climate.",
+      "Climate shifts require a single cause because multiple processes cancel exactly.",
+      "Mountain belts affect only fossils, while ocean gateways affect only rock color."
+    ],
+    "explanation": "Plate tectonics can influence several climate controls simultaneously. A robust interpretation considers how uplift, gateways, volcanism, and paleogeography may interact.",
+    "tags": [
+      "tectonics",
+      "evidence logic"
+    ],
+    "difficulty": "Hard"
+  }
+]

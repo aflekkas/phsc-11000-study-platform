@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l14-stromatolites",
+    "prompt": "A very ancient shallow-marine carbonate contains domal, finely layered structures. Why might that be useful evidence for early life, but not automatic proof?",
+    "choices": [
+      "The lamination pattern could reflect microbial mats, but microtextures, isotopic context, alteration, and possible abiotic precipitation must be evaluated.",
+      "The domal shape alone is enough to identify microbial mats, because physical precipitation rarely makes layered carbonate forms.",
+      "The structures should be rejected as biological if later alteration affected the rock, even when some primary textures remain.",
+      "Abiotic precipitation is favored unless organic textures are preserved; isotopic and environmental context add little to the interpretation."
+    ],
+    "explanation": "Stromatolites are useful candidate biosignatures because microbial mats can build laminated structures. Ancient examples remain ambiguous unless lamination, microtextures, isotopic patterns, preservation, and abiotic precipitation alternatives are evaluated together.",
+    "tags": [
+      "stromatolites",
+      "early life",
+      "biosignatures"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-biosignature",
+    "prompt": "What is the best definition of a biosignature in ancient rocks?",
+    "choices": [
+      "Evidence that may indicate past life but must be tested against abiotic explanations",
+      "Any organic molecule, even if its geologic context is unknown",
+      "A signal that counts only when chemical, textural, and body-fossil evidence all occur together",
+      "A rock from a habitable environment, even when it preserves no specific biological signal"
+    ],
+    "explanation": "A biosignature is a possible sign of life, such as a fossil, texture, structure, or chemical pattern. Its value depends on whether a biological origin is better supported than abiotic explanations in the same context.",
+    "tags": [
+      "biosignatures",
+      "origin of life",
+      "evidence quality"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l14-faint-young-sun",
+    "prompt": "Why is the faint young Sun a problem for interpreting early Earth environments?",
+    "choices": [
+      "Solar output was lower than today, so another warming influence such as stronger greenhouse gases is needed to explain liquid oceans",
+      "Solar output was higher than today, so liquid water could exist only if the early atmosphere lacked greenhouse gases",
+      "Solar output was lower than today, so liquid water evidence requires especially weak greenhouse warming",
+      "Solar output was similar to today, so the paradox comes mainly from uncertainty in ocean salinity"
+    ],
+    "explanation": "The young Sun was dimmer than the modern Sun. Liquid water evidence therefore requires an explanation for keeping early Earth warm enough, commonly involving higher greenhouse gas concentrations.",
+    "tags": [
+      "early Earth",
+      "faint young Sun",
+      "greenhouse effect"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-early-atmosphere-redox",
+    "prompt": "Why is a low-O2 early atmosphere important for origin-of-life and biosignature interpretations?",
+    "choices": [
+      "It makes anaerobic chemistry and reduced gases plausible while preventing oxygen-demanding metabolism from being assumed",
+      "It proves methane was always abundant enough to solve the faint young Sun problem by itself",
+      "It means any preserved organic molecule must be biological because oxidation could not destroy it",
+      "It requires eukaryotic photosynthesis before prokaryotic metabolisms could evolve"
+    ],
+    "explanation": "Early Earth had little free oxygen, so origin scenarios should not assume oxygen-requiring metabolisms or modern atmospheric chemistry. Low oxygen also affects how organic molecules are produced, altered, or preserved.",
+    "tags": [
+      "early atmosphere",
+      "oxygen",
+      "volcanic degassing"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-jack-hills-zircons-oceans",
+    "prompt": "Detrital zircons from ancient conglomerates indicate that their source magma formed by melting sedimentary rock in the presence of water. Why is that important for early Earth history?",
+    "choices": [
+      "It suggests continental crust and liquid water were present by about 4.4 billion years ago",
+      "It proves oxygen-rich oceans existed before the oldest surviving crust",
+      "It shows the conglomerate itself formed at 4.4 billion years ago rather than recycling older grains",
+      "It dates the origin of life because zircon crystals preserve organic cells without alteration"
+    ],
+    "explanation": "Very old zircons can preserve evidence about conditions before most crustal rocks survived. Their chemistry suggests early crustal recycling in the presence of water.",
+    "tags": [
+      "zircons",
+      "early crust",
+      "oceans"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-heavy-bombardment-habitability",
+    "prompt": "How would repeated large impacts before about 3.8 billion years ago affect early habitability?",
+    "choices": [
+      "They could periodically destroy or severely disrupt surface oceans and any early surface life",
+      "They would make surface habitability more stable by continuously delivering warm shallow-water habitats",
+      "They would improve fossil preservation enough that absence of older fossils must mean absence of older life",
+      "They would remove the climate problem by adding enough carbon dioxide to keep oceans permanently stable"
+    ],
+    "explanation": "Large asteroid impacts during the heavy bombardment would have been destructive to surface environments and could have repeatedly reset or stressed early habitats.",
+    "tags": [
+      "heavy bombardment",
+      "habitability",
+      "early Earth"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-miller-urey-organics",
+    "prompt": "A researcher argues that the Miller-Urey experiment proves life began in a lightning-charged atmosphere. Which evaluation is most defensible?",
+    "choices": [
+      "It shows abiotic organic synthesis is plausible under some energy-rich chemistries, but it does not identify the actual setting or produce self-sustaining life",
+      "It proves the early atmosphere had exactly the gas mixture used in the experiment",
+      "It demonstrates that living cells form automatically when amino acids appear",
+      "It rules out hydrothermal or mineral-surface scenarios because atmospheric synthesis is sufficient"
+    ],
+    "explanation": "The experiment is important because it demonstrates plausible abiotic synthesis of organic building blocks under particular conditions. It does not prove the exact early atmosphere, the actual origin setting, or the transition to living systems.",
+    "tags": [
+      "Miller-Urey experiment",
+      "prebiotic chemistry",
+      "origin of life"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l14-prokaryote-eukaryote-contrast",
+    "prompt": "Why are the earliest organisms expected to have been prokaryotes rather than eukaryotes?",
+    "choices": [
+      "Prokaryotic cells lack nuclei and complex organelles, making them simpler than eukaryotic cells that evolved later",
+      "Prokaryotes require oxygen for aerobic respiration, while eukaryotes can live only in oxygen-free settings",
+      "Eukaryotes are defined by smaller cells and free DNA, so they are less complex than prokaryotes",
+      "Eukaryotes cannot preserve as fossils, so their absence from old rocks has no biological meaning"
+    ],
+    "explanation": "Prokaryotes have simpler cellular organization, while eukaryotes have nuclei, chromosomes, and organelles. The earliest life is therefore expected to have been prokaryotic.",
+    "tags": [
+      "prokaryotes",
+      "eukaryotes",
+      "early life"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l14-apex-chert-ambiguity",
+    "prompt": "Filament-like graphite features in very ancient chert are proposed as microbial fossils. Which issue most directly makes the interpretation difficult?",
+    "choices": [
+      "Similar shapes and carbon signals can sometimes be produced or altered by abiotic mineral reactions in hydrothermal settings",
+      "Filament shape alone identifies cyanobacteria even if the surrounding chert formed in a hydrothermal crack",
+      "Raman spectra and carbon composition are unnecessary if the structures occur in Archean sedimentary rocks",
+      "A biological interpretation requires the fossils to be eukaryotic rather than prokaryotic"
+    ],
+    "explanation": "Some candidate early fossils are debated because morphology and chemistry can be altered or mimicked by non-biological processes, especially in ancient, hydrothermal, or metamorphosed rocks.",
+    "tags": [
+      "early fossils",
+      "Apex Chert",
+      "biogenicity"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l14-light-carbon-biosignature",
+    "prompt": "Graphite inclusions in ancient metamorphic rocks have strongly negative carbon isotope values. Why might that be interpreted as a biosignature?",
+    "choices": [
+      "Biological carbon fixation preferentially uses 12C, so organic carbon is commonly isotopically light",
+      "Living organisms preferentially use 13C, so biological graphite should be isotopically heavy",
+      "Graphite inclusions are biological whenever they occur in metamorphic rocks, regardless of geologic context",
+      "Negative carbon values directly show that oxygenic photosynthesis had already made the atmosphere oxygen-rich"
+    ],
+    "explanation": "Organic matter is typically enriched in 12C and has negative carbon isotope values. In very old rocks, that pattern can support a biological interpretation, but abiotic alternatives and preservation history still matter.",
+    "tags": [
+      "carbon isotopes",
+      "biosignatures",
+      "early life"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-abiogenesis-definition",
+    "prompt": "What does abiogenesis mean in early Earth discussions?",
+    "choices": [
+      "The transition from nonliving chemical systems to self-maintaining living systems",
+      "The diversification of the first cells after heredity and metabolism already exist",
+      "The evolution of eukaryotic organelles inside an established biosphere",
+      "The atmospheric oxygenation caused by cyanobacterial photosynthesis"
+    ],
+    "explanation": "Abiogenesis refers to the origin of living systems from nonliving chemistry. It is distinct from later biological diversification, eukaryotic evolution, or oxygenation after life already existed.",
+    "tags": [
+      "abiogenesis",
+      "origin of life",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l14-prebiotic-chemistry-definition",
+    "prompt": "What is prebiotic chemistry?",
+    "choices": [
+      "Abiotic reactions that can form, concentrate, or modify molecules relevant to life before living systems exist",
+      "Metabolic reactions performed by the first cells after genetic inheritance is already established",
+      "Chemical weathering driven by land plants before animals colonize land",
+      "Oxygenic photosynthesis by cyanobacteria before atmospheric oxygen accumulates"
+    ],
+    "explanation": "Prebiotic chemistry concerns nonbiological reactions that may have generated, concentrated, or modified building blocks and reaction networks before life existed.",
+    "tags": [
+      "prebiotic chemistry",
+      "origin of life",
+      "definitions"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l14-habitable-setting-requirements",
+    "prompt": "Which set of conditions would most directly matter for an origin-of-life setting?",
+    "choices": [
+      "Liquid water, usable energy sources, chemical building blocks, and environments where reactions can persist",
+      "High atmospheric oxygen, abundant animals, and widespread soils with roots",
+      "A fully frozen ocean with no chemical exchange and no liquid water",
+      "Modern continents in their present positions and modern ocean circulation"
+    ],
+    "explanation": "Life-origin scenarios must explain where useful chemistry could occur, what energy drove it, and how molecules or reaction networks could persist long enough to become more complex.",
+    "tags": [
+      "habitability",
+      "energy sources",
+      "origin of life"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-hydrothermal-energy-source",
+    "prompt": "Why are hydrothermal systems often considered plausible early-life settings?",
+    "choices": [
+      "They provide chemical gradients, heat, mineral surfaces, and fluid flow that could drive reactions",
+      "They contain abundant atmospheric oxygen, which all early metabolism required",
+      "They prevent any interaction between water and rock, preserving molecules unchanged forever",
+      "They form only after land plants create deep soils"
+    ],
+    "explanation": "Hydrothermal environments can supply energy and reactive surfaces. That makes them plausible settings for prebiotic chemistry or early metabolism, though not automatic proof of life's origin.",
+    "tags": [
+      "hydrothermal systems",
+      "early Earth",
+      "energy sources"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-microfossil-biogenicity-criteria",
+    "prompt": "Which evidence would most strengthen a claim that tiny structures in ancient rock are true microfossils?",
+    "choices": [
+      "Cell-like shapes, carbon-rich composition, appropriate geologic context, and patterns difficult to explain abiotically",
+      "A vaguely rounded shape in any old rock, regardless of chemistry or setting",
+      "Modern contamination on a broken sample surface",
+      "Association with evaporite minerals alone, because salts prove biological origin"
+    ],
+    "explanation": "Microfossil claims are strongest when morphology, composition, context, and alternative abiotic explanations are evaluated together.",
+    "tags": [
+      "microfossils",
+      "biogenicity",
+      "evidence quality"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-stromatolite-microbial-mat",
+    "prompt": "Why can stromatolites be interpreted as evidence of microbial activity?",
+    "choices": [
+      "Layered microbial mats can trap, bind, or promote precipitation of sediment into domal or laminated structures",
+      "Stromatolites are always animal skeletons with shells and limbs",
+      "Any layered rock is a stromatolite regardless of sedimentary process",
+      "Stromatolites require oxygen-rich air and therefore cannot occur in early Earth rocks"
+    ],
+    "explanation": "Many stromatolites form through interactions between microbial mats and sediment. Ancient examples still require caution because abiotic layering can mimic some shapes.",
+    "tags": [
+      "stromatolites",
+      "microbial mats",
+      "biosignatures"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-anaerobic-early-metabolism",
+    "prompt": "Why does the lack of free oxygen matter when thinking about the earliest metabolisms?",
+    "choices": [
+      "Early organisms would have relied on anaerobic pathways or local chemical energy before oxygen became widely available",
+      "No metabolism can function without atmospheric oxygen",
+      "The absence of oxygen means liquid water could not exist",
+      "Oxygen-free settings preserve only eukaryotic cells, not prokaryotes"
+    ],
+    "explanation": "Early Earth was not oxygen-rich. That makes anaerobic metabolisms and chemical energy sources central to reconstructing early life.",
+    "tags": [
+      "anaerobic metabolism",
+      "early atmosphere",
+      "early life"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l14-sparse-altered-record-bias",
+    "prompt": "A very old rock contains carbon-rich filaments, but the host rock was heated and cut by hydrothermal fluids. Which reason most directly makes the biological interpretation difficult?",
+    "choices": [
+      "The morphology and carbon signal may be original biosignatures, altered biological material, or abiotic products modified during later heating and fluid flow.",
+      "The filaments must be biological because carbon cannot occur in abiotic hydrothermal minerals.",
+      "The filaments must be abiotic because heated rocks cannot preserve any trace of earlier organic material.",
+      "The age alone settles the interpretation because older rocks are less likely to have experienced later alteration."
+    ],
+    "explanation": "Early-life claims are hard because potential biosignatures can be sparse, altered, or mimicked. Morphology, chemistry, host-rock context, and alteration history all have to be evaluated together.",
+    "tags": [
+      "early fossil record",
+      "preservation bias",
+      "evidence quality"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l14-origin-scenario-requirements",
+    "prompt": "Scenario A makes amino acids in the atmosphere but disperses them into dilute water. Scenario B concentrates organics on mineral surfaces with energy gradients but produces fewer molecule types. Which comparison is strongest?",
+    "choices": [
+      "Scenario A is stronger for synthesis, while Scenario B better addresses concentration and sustained reaction conditions; neither alone proves life originated there.",
+      "Scenario A is complete because amino acids alone are equivalent to self-sustaining cells.",
+      "Scenario B is impossible because mineral surfaces cannot affect organic reactions before oxygen exists.",
+      "Both scenarios should be rejected unless they produce fossils with cell walls and DNA."
+    ],
+    "explanation": "Origin-of-life hypotheses need more than one ingredient. Building blocks, concentration, energy flow, persistence, and pathways toward self-maintaining chemistry all matter, and different settings solve different parts of the problem.",
+    "tags": [
+      "origin scenarios",
+      "prebiotic chemistry",
+      "habitability"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l14-biosignature-context-test",
+    "prompt": "An ancient graphite inclusion has light carbon isotopes, occurs inside a zircon-bearing metamorphic rock, and lacks clear cell shapes. Which interpretation is most defensible?",
+    "choices": [
+      "It is a possible biosignature, but the case depends on whether the graphite is original, whether alteration modified it, and whether abiotic fractionation can be excluded.",
+      "It proves oxygenic photosynthesis because light carbon isotopes always require cyanobacteria.",
+      "It must be abiotic because metamorphic rocks cannot preserve any inherited chemical signal.",
+      "It is stronger than a body fossil would be because isotope values do not require geologic context."
+    ],
+    "explanation": "Light carbon can be consistent with biology, but ancient altered rocks require caution. The strongest interpretation tests whether the material is syngenetic, altered, contaminated, or produced by abiotic reactions.",
+    "tags": [
+      "biosignatures",
+      "alteration",
+      "early life evidence"
+    ],
+    "difficulty": "Hard"
+  }
+]

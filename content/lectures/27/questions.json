@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l27-fossil-carbon",
+    "prompt": "Burning coal, oil, and gas most directly moves carbon between which reservoirs, and why does that matter for forcing?",
+    "choices": [
+      "From geologically stored fossil organic carbon into the active atmosphere-ocean carbon cycle, increasing greenhouse gas concentration.",
+      "From atmospheric CO2 into carbonate rocks through silicate weathering, lowering radiative forcing on human timescales.",
+      "From surface-ocean plankton into deep-sea sediments through the biological pump, reducing atmospheric CO2 directly.",
+      "From forests and soils into durable biomass storage, offsetting combustion by moving carbon out of the active cycle."
+    ],
+    "explanation": "Fossil fuels store ancient organic carbon outside the fast carbon cycle. Combustion rapidly transfers that carbon back into the atmosphere and ocean, increasing greenhouse forcing.",
+    "tags": [
+      "fossil carbon",
+      "climate change",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-ocean-acidification",
+    "prompt": "What mechanism connects higher atmospheric CO2 to ocean acidification and reduced calcification potential?",
+    "choices": [
+      "Surface seawater absorbs CO2, which lowers pH, shifts carbonate toward bicarbonate, and leaves less carbonate ion for calcification.",
+      "CO2 uptake lowers pH but increases carbonate ion availability, so calcifiers benefit unless warming becomes severe.",
+      "Warming and deoxygenation dissolve shells directly, while dissolved CO2 chemistry has little effect on carbonate availability.",
+      "More dissolved carbon supplies extra raw material, so calcification improves even as pH falls."
+    ],
+    "explanation": "The ocean absorbs part of anthropogenic CO2 emissions. Dissolved CO2 changes carbonate chemistry, lowering pH and reducing carbonate ion availability for many shell- and skeleton-building organisms. Temperature and oxygen stress can compound the problem but are not the core acidification mechanism.",
+    "tags": [
+      "ocean acidification",
+      "CO2",
+      "carbon chemistry"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l27-mitigation",
+    "prompt": "Which response best fits climate mitigation rather than adaptation?",
+    "choices": [
+      "Replacing fossil-fuel energy, cutting methane, restoring forests, and using carbon capture to lower net greenhouse gas emissions.",
+      "Building coastal defenses and planning managed retreat while greenhouse gas emissions continue along the same pathway.",
+      "Moving crop production toward cooler regions and expanding irrigation while keeping fossil-fuel and land-use emissions similar.",
+      "Expanding disaster response and cooling centers to reduce vulnerability while delaying changes to greenhouse gas sources."
+    ],
+    "explanation": "Mitigation reduces the causes of future warming by lowering greenhouse gas forcing through energy, methane, land-use, and carbon-management changes. Adaptation measures such as coastal defenses, managed retreat, irrigation, or disaster response reduce harm but do not by themselves reduce emissions.",
+    "tags": [
+      "mitigation",
+      "greenhouse forcing",
+      "emissions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-deforestation-carbon-cycle",
+    "prompt": "How does deforestation contribute to industrial-era climate change?",
+    "choices": [
+      "It lowers long-term carbon storage, can release CO2 through burning, and often pairs with land uses that emit greenhouse gases such as methane.",
+      "It increases forest carbon storage because grasslands always hold more biomass than forests.",
+      "It affects only albedo, with no connection to carbon storage, wood burning, or livestock emissions.",
+      "It removes CO2 from the atmosphere permanently by exposing bare soil to sunlight."
+    ],
+    "explanation": "Converting forest to pasture, crops, or settlements changes both energy balance and carbon cycling. Grasslands may have higher albedo but generally store less carbon, and burning wood or raising livestock can add greenhouse gases.",
+    "tags": [
+      "deforestation",
+      "land use",
+      "greenhouse gases"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-attribution-forcing",
+    "prompt": "Which attribution argument best separates anthropogenic forcing from natural variability in recent global warming?",
+    "choices": [
+      "Observed surface warming, ocean heat uptake, ice loss, sea-level rise, and rising greenhouse gases match anthropogenic forcing and exceed natural-only explanations.",
+      "Natural variability explains the long-term trend, while greenhouse gases mainly explain short regional departures from that trend.",
+      "Urban heat effects explain the global signal because ocean heat uptake and ice loss are secondary measurements of city warming.",
+      "Solar and volcanic forcing reproduce the observed warming once industrial greenhouse gas increases are excluded from the comparison."
+    ],
+    "explanation": "Attribution combines mechanism and pattern. The observed ocean, atmosphere, cryosphere, and sea-level changes match rising anthropogenic greenhouse forcing and are not reproduced by natural drivers alone.",
+    "tags": [
+      "climate attribution",
+      "greenhouse forcing",
+      "observations"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l27-ice-albedo-feedback",
+    "prompt": "How does declining Arctic sea ice amplify an initial greenhouse-driven warming?",
+    "choices": [
+      "Loss of reflective ice lowers albedo, so darker ocean absorbs more sunlight and reinforces warming.",
+      "Loss of reflective ice is the original radiative forcing, while greenhouse gases are only the feedback that follows.",
+      "Open water reflects more sunlight than ice, so sea-ice loss dampens warming as a negative feedback.",
+      "Sea-ice decline changes regional ecosystems but cannot affect Earth's energy budget."
+    ],
+    "explanation": "Sea ice is reflective. When it declines, darker ocean water absorbs more solar energy, creating a positive feedback that adds to greenhouse-driven warming.",
+    "tags": [
+      "sea ice",
+      "albedo",
+      "feedbacks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-carbon-budget-trap",
+    "prompt": "Which reasoning best avoids a common trap about future climate projections?",
+    "choices": [
+      "Future warming depends strongly on cumulative emissions pathways and feedbacks, so different policy and energy choices produce different temperature outcomes.",
+      "Future warming is fixed at the current value because the climate system responds instantly to emissions.",
+      "Future warming is unknowable because all emissions scenarios assume identical fossil-fuel use.",
+      "Future warming depends only on volcanic eruptions, so human CO2 choices do not affect projections."
+    ],
+    "explanation": "Future climate is not a single inevitable number. It depends on total greenhouse gas emissions, feedbacks, climate sensitivity, and mitigation choices represented by different socioeconomic and emissions pathways.",
+    "tags": [
+      "future climate",
+      "carbon budget",
+      "emissions pathways"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l27-petm-analogy-limit",
+    "prompt": "Why is the PETM useful but imperfect as an analogy for modern fossil-fuel emissions?",
+    "choices": [
+      "The total carbon release was comparable, but modern anthropogenic release is expected to be much faster, which can make impacts more severe.",
+      "The PETM involved no carbon release, so it is useful only as an example of orbital cooling.",
+      "Modern emissions are slower than the PETM by the same factor, making adaptation easier than in the past.",
+      "The PETM affected only polar ice sheets, while modern warming affects only deep-sea sediments."
+    ],
+    "explanation": "The PETM involved a large carbon release, warming, acidification, range shifts, and extinctions, making it relevant. The key limit is rate: modern fossil-fuel carbon release is much faster than the PETM release.",
+    "tags": [
+      "PETM",
+      "modern warming",
+      "rate of change"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l27-biotic-risk-rate",
+    "prompt": "Why does rapid warming raise extinction risk even for species that could tolerate warmer climates in principle?",
+    "choices": [
+      "Species may not shift geographic ranges, adapt, or track suitable habitats fast enough as temperature, oxygen, and ocean chemistry change.",
+      "Species can tolerate any rate of change if the eventual temperature remains within their physiological limits.",
+      "Range shifts usually keep pace automatically, so barriers, dispersal limits, and habitat fragmentation are secondary.",
+      "Warming affects temperature but not oxygen, acidification, timing of life cycles, or species interactions."
+    ],
+    "explanation": "Climate impacts depend on rate as well as magnitude. If warming is rapid, organisms may fail to move or adapt quickly enough, and marine species can face combined warming, oxygen depletion, and acidification.",
+    "tags": [
+      "extinction risk",
+      "warming rate",
+      "biodiversity"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-sea-level-commitment",
+    "prompt": "Why can sea-level rise continue long after emissions begin to decline?",
+    "choices": [
+      "Ocean heat uptake, thermal expansion, and slow ice-sheet responses create changes that can persist for centuries to millennia.",
+      "Sea level responds only to annual air temperature, so it stabilizes as soon as emissions fall below the previous year's value.",
+      "Thermal expansion ends immediately when surface warming slows, even if the deep ocean continues taking up heat.",
+      "Ice sheets adjust within a few decades, so delayed sea-level commitment mainly reflects short tidal cycles."
+    ],
+    "explanation": "The climate system has long response times, especially in the ocean and ice sheets. Thermal expansion and land-ice loss can commit coastlines to continued sea-level rise even after emissions pathways improve.",
+    "tags": [
+      "sea level",
+      "thermal expansion",
+      "climate inertia"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-radiative-forcing-definition",
+    "prompt": "What is radiative forcing?",
+    "choices": [
+      "A change in Earth's energy balance that tends to warm or cool the climate system.",
+      "A feedback response that occurs only after temperature has already changed.",
+      "The equilibrium temperature reached after all feedbacks have operated.",
+      "A regional weather anomaly that lasts long enough to affect one season."
+    ],
+    "explanation": "Radiative forcing describes an imposed change to the energy budget. Greenhouse gas increases create positive forcing by reducing outgoing infrared energy to space.",
+    "tags": [
+      "radiative forcing",
+      "energy balance",
+      "climate change"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l27-feedback-definition",
+    "prompt": "What is a climate feedback?",
+    "choices": [
+      "A response within the climate system that amplifies or dampens an initial change.",
+      "An imposed energy-budget change that starts warming or cooling before the climate responds.",
+      "The temperature change after greenhouse gases stop affecting radiation.",
+      "A mitigation policy that lowers emissions and therefore reduces future forcing."
+    ],
+    "explanation": "Feedbacks respond to an initial forcing. Ice-albedo change, water vapor, clouds, and carbon-cycle responses can amplify or dampen warming.",
+    "tags": [
+      "feedbacks",
+      "climate system",
+      "forcing"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l27-adaptation-definition",
+    "prompt": "What is climate adaptation?",
+    "choices": [
+      "Adjusting human or ecological systems to reduce harm from climate impacts that occur or are expected.",
+      "Reducing greenhouse gas emissions to lower future radiative forcing.",
+      "Removing CO2 from the active carbon cycle through durable storage.",
+      "Attributing observed warming to greenhouse gases rather than natural variability."
+    ],
+    "explanation": "Adaptation addresses impacts, such as heat, flooding, drought, or ecosystem stress. It differs from mitigation, which reduces the forcing that drives future climate change.",
+    "tags": [
+      "adaptation",
+      "climate impacts",
+      "risk reduction"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l27-greenhouse-infrared",
+    "prompt": "How do greenhouse gases warm the lower atmosphere and surface?",
+    "choices": [
+      "They absorb and re-emit outgoing infrared radiation, reducing the rate at which Earth loses energy to space.",
+      "They mainly reflect incoming visible sunlight downward, increasing surface heating without changing outgoing infrared radiation.",
+      "They warm by releasing stored chemical energy from fossil fuels after combustion has ended.",
+      "They increase heat loss to space but warm the surface through stronger ocean circulation."
+    ],
+    "explanation": "Greenhouse gases interact strongly with outgoing infrared radiation. Increasing their concentration strengthens heat retention in the lower atmosphere and surface system.",
+    "tags": [
+      "greenhouse effect",
+      "infrared radiation",
+      "energy balance"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-climate-sensitivity-definition",
+    "prompt": "What does climate sensitivity describe?",
+    "choices": [
+      "How much global temperature changes in response to a given radiative forcing, often framed around doubled CO2.",
+      "How much radiative forcing changes after temperature has already reached equilibrium.",
+      "How fast regional weather returns to average after a short cold or warm spell.",
+      "How much CO2 can be emitted before annual emissions begin to decline."
+    ],
+    "explanation": "Climate sensitivity links forcing to temperature response. It depends on physical feedbacks such as water vapor, ice albedo, clouds, and ocean heat uptake.",
+    "tags": [
+      "climate sensitivity",
+      "radiative forcing",
+      "feedbacks"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-ocean-heat-lag",
+    "prompt": "Why does ocean heat uptake delay the full surface warming response to greenhouse forcing?",
+    "choices": [
+      "The ocean absorbs and mixes large amounts of heat, slowing surface warming while committing the system to continued change.",
+      "The ocean stores heat near the surface only briefly, so delayed warming mainly reflects short-term weather noise.",
+      "The ocean prevents climate sensitivity from operating, so feedbacks begin only after heat uptake stops.",
+      "Ocean heat uptake affects sea level but not the timing of surface temperature response."
+    ],
+    "explanation": "Oceans have large heat capacity and mix heat downward. This delays full surface warming but also creates long-lasting climate inertia.",
+    "tags": [
+      "ocean heat uptake",
+      "climate inertia",
+      "warming"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-cumulative-emissions",
+    "prompt": "Why do cumulative CO2 emissions matter for future warming?",
+    "choices": [
+      "A substantial fraction of emitted CO2 persists long enough that total added carbon strongly controls long-term warming.",
+      "Only the current year's emissions matter because the carbon cycle removes older emissions before they affect temperature.",
+      "Cumulative emissions matter mainly for methane, while CO2 forcing depends only on short atmospheric residence time.",
+      "CO2 forcing stops once some emitted carbon enters the ocean, so total added carbon is not a useful metric."
+    ],
+    "explanation": "CO2 is removed through multiple processes with different timescales. Because some added carbon remains active for a long time, total emissions are central to warming outcomes.",
+    "tags": [
+      "cumulative emissions",
+      "CO2",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-carbon-management",
+    "prompt": "Which action is an example of carbon management aimed at lowering net greenhouse forcing?",
+    "choices": [
+      "Capturing CO2 or increasing durable carbon storage while also reducing emissions sources.",
+      "Capturing CO2 while expanding fossil fuel combustion enough that net emissions continue rising.",
+      "Relying on ocean uptake alone while avoiding changes to energy, methane, land use, or storage durability.",
+      "Increasing methane leakage because methane is shorter-lived than CO2 and therefore cannot affect forcing."
+    ],
+    "explanation": "Carbon management includes reducing emissions and increasing durable carbon storage. It is not a substitute for energy changes when emissions continue to add fossil carbon rapidly.",
+    "tags": [
+      "carbon management",
+      "mitigation",
+      "greenhouse forcing"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l27-radiative-forcing-feedback",
+    "prompt": "A scenario includes fossil-fuel CO2 rise, sulfate aerosol emissions, water-vapor increase after warming, ice-albedo loss, and land-cover change. Which classification is most accurate?",
+    "choices": [
+      "CO2, aerosols, and land-cover change are forcings; water-vapor increase and ice-albedo loss are feedbacks responding to warming.",
+      "Water vapor and ice-albedo loss are forcings because they are natural, while CO2 is only a feedback because humans emit it.",
+      "Aerosols and CO2 are both feedbacks because both involve atmospheric chemistry rather than surface changes.",
+      "Only land-cover change affects energy balance; gases and albedo matter only after temperature has already stabilized."
+    ],
+    "explanation": "Forcings initiate energy-balance changes, while feedbacks respond to temperature change and amplify or damp it. Industrial-era climate includes both anthropogenic forcings and climate-system feedbacks.",
+    "tags": [
+      "radiative forcing",
+      "feedbacks",
+      "ice albedo"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l27-carbon-budget-definition",
+    "prompt": "Pathway A cuts annual CO2 emissions quickly but keeps positive emissions for decades. Pathway B reaches net zero sooner after a slower initial decline. Which comparison best applies carbon-budget logic?",
+    "choices": [
+      "The pathway with lower cumulative emissions uses less of the budget, even if its first-year reduction is not the largest.",
+      "The pathway with the lowest first-year emissions always causes the least warming regardless of later cumulative emissions.",
+      "Both pathways have the same budget effect once annual emissions begin declining, because declining emissions stop adding CO2.",
+      "The budget resets after net zero is reached, so earlier cumulative emissions no longer affect warming."
+    ],
+    "explanation": "Carbon-budget logic is cumulative. Annual cuts matter because they reduce the total added CO2, but warming is strongly tied to cumulative net emissions over time.",
+    "tags": [
+      "carbon budget",
+      "net zero",
+      "CO2 emissions"
+    ],
+    "difficulty": "Hard"
+  }
+]

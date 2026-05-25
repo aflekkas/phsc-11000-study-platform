@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l23-zachos",
+    "prompt": "A Cenozoic benthic foraminiferal oxygen-isotope curve shifts toward heavier values through time. Which interpretation is most defensible?",
+    "choices": [
+      "The signal records some combination of deep-ocean cooling and increasing continental ice volume, so other evidence is needed to separate the two effects.",
+      "The signal directly records atmospheric CO2 decline, so temperature and ice volume can be ignored once the isotope curve is known.",
+      "The signal records only surface-ocean temperature because benthic foraminifera lived near sunlight and mixed-layer water.",
+      "The signal must represent carbon-cycle change, because oxygen isotopes mainly track isotopically light carbon release."
+    ],
+    "explanation": "Benthic foraminifera record oxygen isotope ratios in deep-ocean carbonate. Heavier values can reflect cooler deep water, larger ice sheets, or both, which is why the curve is powerful but not self-interpreting.",
+    "tags": [
+      "Zachos curve",
+      "Cenozoic",
+      "oxygen isotopes"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l23-pleistocene-driver",
+    "prompt": "Why did Pleistocene climate alternate between glacial and interglacial states rather than follow a single cooling trend?",
+    "choices": [
+      "Long-term cooling and geography set up an icehouse world, orbital changes paced the cycles, and ice, albedo, CO2, and ocean feedbacks amplified them.",
+      "Orbital cycles created the long-term cooling and ice sheets by themselves, so carbon-cycle and albedo feedbacks were unnecessary.",
+      "Gateway changes such as the Isthmus of Panama closure supplied the repeated timing, while orbital forcing mainly affected ice sheets after cycles began.",
+      "CO2, ocean, and ice-albedo feedbacks initiated the repeated glacial rhythm without needing regular orbital pacing."
+    ],
+    "explanation": "Pleistocene climate was already in an icehouse state, but Milankovitch-scale orbital forcing paced repeated glacial and interglacial changes. Feedbacks involving ice, albedo, CO2, and ocean circulation controlled the size and persistence of those changes.",
+    "tags": [
+      "Pleistocene",
+      "orbital forcing",
+      "feedbacks"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l23-cenozoic-cooling-driver",
+    "prompt": "Which mechanism best explains the broad Cenozoic shift from greenhouse toward icehouse climate?",
+    "choices": [
+      "Declining atmospheric CO2, influenced by reduced volcanic outgassing and tectonic changes, drove long-term cooling and sea-level fall.",
+      "A steady increase in CO2 after the mid-Cretaceous cooled the planet by strengthening weathering everywhere at once.",
+      "Orbital forcing alone caused a one-way cooling trend without help from CO2 or plate tectonics.",
+      "The opening of all ocean gateways warmed Antarctica and prevented ice sheets from forming."
+    ],
+    "explanation": "Cenozoic cooling is tied to falling CO2 and plate-tectonic changes, including changing seafloor spreading and ocean circulation. Orbital forcing added cycles but does not by itself explain the long-term greenhouse-to-icehouse trend.",
+    "tags": [
+      "Cenozoic climate",
+      "CO2",
+      "greenhouse to icehouse"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-petm-carbon-release",
+    "prompt": "A sudden negative carbon-isotope excursion occurs with rapid deep-sea warming and ocean acidification. Which interpretation best fits the PETM?",
+    "choices": [
+      "A large pulse of isotopically light carbon entered the atmosphere-ocean system, warming climate and acidifying deep ocean waters.",
+      "A large pulse of isotopically heavy oxygen entered the ocean, cooling the deep sea while raising carbonate saturation.",
+      "The signal records only ice-sheet growth, because carbon isotopes directly measure continental ice volume.",
+      "The event reflects a slow cooling trend with no added carbon source or biotic response."
+    ],
+    "explanation": "The PETM involved a negative carbon-isotope shift, more than 2,000 gigatons of isotopically light carbon added to the atmosphere and ocean, rapid warming, and deep ocean acidification.",
+    "tags": [
+      "PETM",
+      "carbon isotopes",
+      "climate perturbation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l23-petm-biotic-effects",
+    "prompt": "Which biotic response best fits the Paleocene-Eocene Thermal Maximum?",
+    "choices": [
+      "Range shifts, local extinctions, dwarfing in some lineages, and major losses among benthic foraminifera.",
+      "Expansion of polar ice sheets, global cooling, and replacement of tropical forms by cold-adapted forms at low latitudes.",
+      "No marine response, because carbon release affected only land plants and mammals.",
+      "Immediate recovery to pre-event conditions within a few centuries, with little ecological disruption."
+    ],
+    "explanation": "The PETM produced warming, precipitation changes, acidification, poleward range shifts, dwarfing in some terrestrial and marine groups, and extinction among a large fraction of benthic foraminifera.",
+    "tags": [
+      "PETM",
+      "biotic response",
+      "warming"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-petm-recovery",
+    "prompt": "The PETM begins with rapid light-carbon release and warming, but recovery takes much longer. Which process combination best explains the slower recovery?",
+    "choices": [
+      "Enhanced weathering, carbonate compensation, and organic carbon burial gradually removed excess carbon from the ocean-atmosphere system.",
+      "Continued methane release removed greenhouse carbon because methane is consumed without affecting CO2.",
+      "A shutdown of photosynthesis sped recovery by preventing carbon storage in biomass.",
+      "Permanent loss of carbonate burial drove recovery because carbon drawdown requires keeping all dissolved carbon in seawater."
+    ],
+    "explanation": "Rapid carbon release can warm climate quickly, while recovery depends on slower sinks. Weathering, carbonate burial or compensation, and organic carbon storage can remove carbon over longer timescales.",
+    "tags": [
+      "PETM recovery",
+      "weathering",
+      "carbon cycle"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l23-antarctic-isolation",
+    "prompt": "Why did the opening of the Tasmanian Gateway and Drake Passage matter for Oligocene glaciation?",
+    "choices": [
+      "They helped establish the Antarctic Circumpolar Current, thermally isolating Antarctica as declining CO2 favored ice-sheet growth.",
+      "They connected Antarctica to warm low-latitude currents, preventing sea ice and delaying glaciation until the Pleistocene.",
+      "They caused Pangaea to assemble, creating continental deserts that replaced Antarctic ice sheets.",
+      "They mainly changed land mammal migration routes and had little effect on ocean circulation."
+    ],
+    "explanation": "At the Eocene-Oligocene boundary, declining CO2 combined with paleogeographic changes. Opening southern ocean gateways helped create the Antarctic Circumpolar Current, isolating Antarctica and supporting ice-sheet expansion.",
+    "tags": [
+      "Oligocene glaciation",
+      "ocean gateways",
+      "Antarctica"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l23-panama-closure",
+    "prompt": "What was one major consequence of the Isthmus of Panama closing by the late Pliocene?",
+    "choices": [
+      "It cut off Atlantic-Pacific exchange, altered circulation, strengthened Atlantic salinity contrasts, and helped establish modern thermohaline circulation.",
+      "It opened a new tropical seaway between the Atlantic and Pacific, weakening the Gulf Stream and cooling northwestern Europe.",
+      "It isolated Antarctica and directly created the Antarctic Circumpolar Current.",
+      "It ended all faunal exchange between North and South America by removing the land bridge."
+    ],
+    "explanation": "Closure of the Isthmus of Panama created a land bridge and reorganized ocean circulation by blocking low-latitude Atlantic-Pacific flow. This affected the Gulf Stream, Atlantic salinity, and thermohaline circulation.",
+    "tags": [
+      "Isthmus of Panama",
+      "ocean circulation",
+      "Cenozoic"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-glacial-cycle-terms",
+    "prompt": "Which description correctly matches Pleistocene climate-cycle terms?",
+    "choices": [
+      "Glacials are long cold periods, stadials are shorter colder spells, interstadials are shorter warmer spells, and interglacials are longer warm periods.",
+      "Glacials and stadials are both warm intervals, but glacials are shorter and interstadials are longer.",
+      "Stadials and interstadials are the long end-member climate states, while glacials and interglacials are brief reversals.",
+      "Interglacials are permanent exits from icehouse climate, while stadials mark the first growth of continental ice."
+    ],
+    "explanation": "Pleistocene climate was dynamic. Glacials and interglacials are broader cold and warm intervals, while stadials and interstadials are shorter cold and warm shifts within that climate variability.",
+    "tags": [
+      "Pleistocene",
+      "glacial cycles",
+      "climate terminology"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l23-glacial-evidence-illinois",
+    "prompt": "Which observation is direct evidence that glaciers recently shaped the Chicago region?",
+    "choices": [
+      "Meltwater lakes and non-local glacial erratics left by retreating ice sheets.",
+      "River terraces formed only by normal seasonal flooding, with no transported non-local rocks or ice-margin deposits.",
+      "Bedrock reef carbonates that grew in place during a warm interglacial highstand.",
+      "Coal seams formed from tropical peat mires during the late Paleozoic."
+    ],
+    "explanation": "The Chicago area was under ice about 20,000 years ago. Retreating glaciers left features such as the Great Lakes in scraped depressions and glacial erratics transported from elsewhere.",
+    "tags": [
+      "glaciation",
+      "Illinois",
+      "Pleistocene"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l23-proxy-definition",
+    "prompt": "What is a climate proxy?",
+    "choices": [
+      "A preserved physical, chemical, or biological signal used to infer past environmental conditions.",
+      "A climate-model output that replaces sediment, fossil, isotope, and ice evidence.",
+      "A direct thermometer or rain gauge measurement preserved from each geologic interval.",
+      "A sedimentary signal that is useful only if it cannot be compared with independent records."
+    ],
+    "explanation": "A proxy is indirect evidence for past conditions. Oxygen isotopes, fossils, sediment types, and ice records can all provide climate information when interpreted carefully.",
+    "tags": [
+      "climate proxies",
+      "paleoclimate",
+      "evidence"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-greenhouse-icehouse-definition",
+    "prompt": "How do greenhouse and icehouse climate states differ?",
+    "choices": [
+      "Greenhouse states have little permanent continental ice, while icehouse states include large long-lived ice sheets.",
+      "Greenhouse states have polar ice but warm oceans, while icehouse states are defined only by lower sea level.",
+      "Greenhouse and icehouse states differ mainly in orbital geometry, not long-lived ice sheets or CO2.",
+      "Icehouse states require zero atmospheric CO2, while greenhouse states require no ocean circulation."
+    ],
+    "explanation": "The Cenozoic trend moved from a warmer greenhouse world toward an icehouse world with major polar ice. The distinction centers on long-lived continental ice and associated climate state.",
+    "tags": [
+      "greenhouse climate",
+      "icehouse climate",
+      "Cenozoic"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l23-benthic-foram-proxy",
+    "prompt": "Why are benthic foraminifera especially useful for reconstructing Cenozoic climate, but not sufficient by themselves?",
+    "choices": [
+      "Their shells record deep-ocean oxygen isotope ratios influenced by temperature and ice volume, but additional constraints are needed to separate those effects.",
+      "Their shells directly measure atmospheric CO2, so no independent records are needed to infer ice volume or temperature.",
+      "They live in surface waters, making their shells a direct record of tropical sea-surface temperature only.",
+      "They primarily record carbon-isotope excursions, so they identify warming events without evidence from oxygen isotopes."
+    ],
+    "explanation": "Benthic foraminifera live on or near the seafloor, so their shells track deep-ocean conditions. Their oxygen isotopes are central to Cenozoic climate reconstruction, but the signal mixes temperature and ice-volume effects.",
+    "tags": [
+      "benthic foraminifera",
+      "oxygen isotopes",
+      "Zachos curve"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l23-carbon-isotope-excursion",
+    "prompt": "What does a negative carbon-isotope excursion usually indicate in a rapid warming event such as the PETM?",
+    "choices": [
+      "A large input of carbon relatively depleted in carbon-13 entered the active carbon cycle.",
+      "Deep-ocean temperature fell, making carbonate shells incorporate more oxygen-18.",
+      "Carbonate burial increased so much that the active carbon cycle became enriched in carbon-13.",
+      "Continental ice volume grew rapidly, because carbon isotopes primarily measure ice-sheet mass."
+    ],
+    "explanation": "A negative carbon-isotope excursion means carbon reservoirs shifted toward lighter carbon. During the PETM, that signal is interpreted as a major release of carbon into the ocean-atmosphere system.",
+    "tags": [
+      "carbon isotopes",
+      "PETM",
+      "carbon cycle"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-silicate-weathering-drawdown",
+    "prompt": "How can silicate weathering contribute to long-term cooling?",
+    "choices": [
+      "Weathering consumes atmospheric CO2 and can ultimately store carbon in dissolved ions and carbonate sediments.",
+      "Weathering releases volcanic CO2 from fresh rock, strengthening greenhouse climate until erosion slows.",
+      "Weathering mainly changes albedo by brightening mountains, with little connection to dissolved ions or carbon burial.",
+      "Weathering removes oxygen from seawater, causing cooling through marine anoxia rather than carbon drawdown."
+    ],
+    "explanation": "Silicate weathering is a long-term CO2 sink. Tectonics, mountain building, and exposed fresh rock can influence this drawdown and help shape Cenozoic cooling.",
+    "tags": [
+      "silicate weathering",
+      "CO2 drawdown",
+      "Cenozoic cooling"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-orbital-forcing-feedbacks",
+    "prompt": "Why do orbital cycles require climate feedbacks to produce large Pleistocene glacial-interglacial changes?",
+    "choices": [
+      "Orbital changes redistribute sunlight seasonally and geographically, while ice albedo, CO2, and ocean feedbacks amplify the response.",
+      "Orbital changes directly create and destroy all atmospheric CO2 without feedbacks or ocean involvement.",
+      "Orbital cycles reverse plate motion, opening and closing ocean gateways every few thousand years.",
+      "Orbital forcing affects only deep-sea fossils, not climate or ice sheets."
+    ],
+    "explanation": "Milankovitch forcing changes the distribution of incoming sunlight. Large glacial cycles emerge because feedbacks involving ice, greenhouse gases, oceans, and vegetation amplify those initial changes.",
+    "tags": [
+      "orbital forcing",
+      "feedbacks",
+      "Pleistocene"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-glacial-sea-level",
+    "prompt": "Why did sea level fall during major Pleistocene glacial intervals?",
+    "choices": [
+      "Water was stored on land in large ice sheets, reducing the volume of water in the oceans.",
+      "Ocean basins became deeper because all mid-ocean ridges disappeared.",
+      "Continental shelves rose above sea level because tides stopped operating.",
+      "Evaporation permanently removed seawater from the hydrologic cycle."
+    ],
+    "explanation": "When ice sheets grow on land, they store water that would otherwise be in the ocean. This lowers global sea level and can expose shelves and migration routes.",
+    "tags": [
+      "sea level",
+      "glaciation",
+      "Pleistocene"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-ocean-gateway-circulation",
+    "prompt": "Why can opening or closing an ocean gateway alter global climate?",
+    "choices": [
+      "Gateways redirect ocean circulation, changing heat transport, deep-water formation, and regional moisture patterns.",
+      "Gateways control radioactive decay rates in seafloor basalt, changing the age of ocean crust.",
+      "Gateways prevent all evaporation, so climate becomes independent of oceans.",
+      "Gateways affect only coastlines beside the channel and cannot influence heat transport."
+    ],
+    "explanation": "Ocean gateways connect or separate water masses. Changes such as Southern Ocean gateway opening or Panama closure can reorganize circulation and climate.",
+    "tags": [
+      "ocean gateways",
+      "circulation",
+      "Cenozoic climate"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l23-oxygen-isotope-ambiguity",
+    "prompt": "A benthic oxygen-isotope curve shifts heavier while Mg/Ca paleothermometry also indicates cooling and sea level falls. Which interpretation best separates the signals?",
+    "choices": [
+      "The isotope shift likely combines cooler deep water and increased ice volume, with Mg/Ca and sea level helping separate the two effects.",
+      "The isotope shift must record only atmospheric CO2 because Mg/Ca and sea level cannot constrain temperature or ice volume.",
+      "The Mg/Ca cooling signal proves ice volume did not change, so sea-level fall must be unrelated to climate.",
+      "The isotope shift cannot be interpreted because benthic foraminifera lose all chemical signals after burial."
+    ],
+    "explanation": "Marine oxygen isotopes can reflect both temperature and global ice volume. Independent temperature and sea-level evidence helps separate those components during icehouse intervals.",
+    "tags": [
+      "oxygen isotopes",
+      "ice volume",
+      "paleoclimate proxies"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l23-forcing-feedback-distinction",
+    "prompt": "Which interpretation best separates forcing from feedback in Pleistocene climate cycles?",
+    "choices": [
+      "Orbital variations initiate seasonal sunlight changes, while ice albedo and greenhouse-gas changes amplify or dampen the climate response.",
+      "Ice albedo initiates orbital cycles, while Earth's orbit responds by changing CO2 solubility.",
+      "Greenhouse gases are only evidence of warming and cannot participate in feedbacks.",
+      "Forcing and feedback are identical because both must occur before any climate change."
+    ],
+    "explanation": "Forcing starts a change, while feedback modifies the response. Pleistocene cycles are best understood as orbital pacing amplified by Earth-system feedbacks.",
+    "tags": [
+      "forcing",
+      "feedback",
+      "glacial cycles"
+    ],
+    "difficulty": "Hard"
+  }
+]

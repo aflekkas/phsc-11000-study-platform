@@ -1,0 +1,342 @@
+[
+  {
+    "id": "l15-oxygen-sinks",
+    "prompt": "Why could oxygenic photosynthesis begin before the atmosphere became oxygen-rich?",
+    "choices": [
+      "Oxygen sources were initially balanced or exceeded by reduced sinks such as dissolved iron, reduced crustal minerals, and volcanic gases, so little O2 accumulated.",
+      "Local oxygen oases in surface waters would have mixed rapidly through the atmosphere, so reduced ocean and crustal sinks mattered mainly to seafloor minerals.",
+      "Organic carbon burial was the main sink on early Earth, so reduced iron and volcanic gases affected proxy records but not atmospheric accumulation.",
+      "Oxygen sources probably exceeded sinks soon after photosynthesis evolved, but atmospheric oxygen stayed low because early redox proxies are poorly preserved."
+    ],
+    "explanation": "Oxygen accumulation depends on the balance between sources and sinks. Early photosynthesis could produce O2, but reduced materials in oceans, crust, and volcanic gases consumed it until net sources exceeded sink capacity.",
+    "tags": [
+      "oxygenation",
+      "source-sink",
+      "oxygenic photosynthesis"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-bif",
+    "prompt": "What mechanism links banded iron formations to changing redox conditions in the oceans?",
+    "choices": [
+      "Anoxic deep water could hold soluble Fe2+ supplied partly by hydrothermal sources, and mixing with oxygenated water oxidized it to Fe3+ minerals that precipitated.",
+      "Iron bands formed where oxygenated seawater kept Fe2+ soluble until hydrothermal supply became high enough for precipitation.",
+      "BIFs formed when Fe3+ was reduced to soluble Fe2+ at the redox boundary and then settled as alternating iron-rich layers.",
+      "Hydrothermal iron supply controlled band formation, so BIFs mainly indicate iron input rather than changing oxygen availability."
+    ],
+    "explanation": "Banded iron formations reflect redox chemistry: Fe2+ is soluble in anoxic seawater, but oxidation to Fe3+ promotes precipitation of iron minerals. Their formation depends on iron supply, anoxic reservoirs, and contact with oxidizing conditions.",
+    "tags": [
+      "BIFs",
+      "oxygen evidence",
+      "redox"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l15-oxygenic-photosynthesis-definition",
+    "prompt": "What distinguishes oxygenic photosynthesis from non-oxygenic photosynthesis?",
+    "choices": [
+      "It uses water and carbon dioxide with light energy to produce organic matter and releases free oxygen",
+      "It uses light to fix carbon but releases sulfur compounds rather than free oxygen",
+      "It consumes oxygen during respiration and releases carbon dioxide as its main waste product",
+      "It is restricted to eukaryotic algae and plants, so bacterial fossils cannot record its origin"
+    ],
+    "explanation": "Oxygenic photosynthesis releases O2 and is carried out by cyanobacteria, algae, and plants. Non-oxygenic photosynthesis does not release free oxygen.",
+    "tags": [
+      "oxygenic photosynthesis",
+      "cyanobacteria",
+      "oxygen"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l15-cyanobacteria-origin-evidence",
+    "prompt": "Why is the origin of cyanobacteria central to reconstructing the rise of oxygen?",
+    "choices": [
+      "Cyanobacteria were the earliest oxygenic photosynthesizers, so their origin marks the likely start of biological O2 production",
+      "Cyanobacteria mark the first atmospheric accumulation of O2, so their origin must be the same age as the Great Oxidation Event",
+      "Cyanobacteria are useful mainly because their fossils preserve better than redox minerals or biomarkers",
+      "Cyanobacteria originated only after oxygen reached near-modern levels, so they record an oxygen sink rather than a source"
+    ],
+    "explanation": "Before algae and plants, cyanobacteria were the relevant oxygenic photosynthetic organisms. Their fossils, biomarkers, and molecular-clock history help constrain when O2 production began.",
+    "tags": [
+      "cyanobacteria",
+      "oxygen rise",
+      "molecular clock"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-stromatolite-cyanobacteria-caution",
+    "prompt": "Why are very old stromatolites not automatically proof of oxygen-producing cyanobacteria?",
+    "choices": [
+      "Microbial mats can build stromatolites, but the microbes need not have been cyanobacteria and some carbonate structures can be abiotic",
+      "Any laminated carbonate dome in shallow water can be assigned to cyanobacteria if it predates animal grazing",
+      "Stromatolites prove oxygen accumulation even when the mat builders and redox setting are not identified",
+      "Only body fossils with diagnostic cyanobacterial morphology matter; stromatolites add no evidence about microbial ecosystems"
+    ],
+    "explanation": "Stromatolites can record microbial activity, but ancient examples may be produced by non-cyanobacterial microbes or by chemical precipitation. Their value depends on context and preservation.",
+    "tags": [
+      "stromatolites",
+      "cyanobacteria",
+      "biosignatures"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-biomarker-contamination",
+    "prompt": "A shale contains molecules once thought characteristic of cyanobacteria, but later work suggests contamination. What is the best lesson for interpreting that evidence?",
+    "choices": [
+      "Biomarkers can support biological interpretations, but source specificity and contamination must be tested before using them as age constraints",
+      "Biomarkers are always more reliable than body fossils because molecules cannot move between rocks",
+      "A biomarker remains a secure cyanobacterial signal as long as it occurs in an organic-rich shale",
+      "A biomarker claim should be accepted if it fits the expected timing of atmospheric oxygenation"
+    ],
+    "explanation": "Chemical fossils can be powerful but require careful checks. Some proposed cyanobacterial biomarkers have been questioned because they may not be unique or may be younger contaminants.",
+    "tags": [
+      "biomarkers",
+      "cyanobacteria",
+      "evidence quality"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l15-detrital-mineral-oxygen",
+    "prompt": "Uraninite, siderite, and pyrite grains are common as reduced detrital minerals in old river sediments but rare afterward. What does their disappearance indicate?",
+    "choices": [
+      "Free oxygen became abundant enough in surface environments to oxidize those minerals before or during transport",
+      "Rivers stopped eroding rocks that contained iron and uranium minerals",
+      "The atmosphere became more reducing, allowing those minerals to dissolve before deposition",
+      "A change in river energy sorted those dense minerals out before burial, independent of redox conditions"
+    ],
+    "explanation": "Reduced minerals such as uraninite, siderite, and pyrite oxidize readily in the presence of free oxygen. Their loss from well-aerated sediments is evidence for atmospheric oxygenation.",
+    "tags": [
+      "redox proxies",
+      "detrital minerals",
+      "Great Oxidation Event"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-goe-source-sink-threshold",
+    "prompt": "What source-sink change best explains the Great Oxidation-type transition?",
+    "choices": [
+      "O2 production by oxygenic photosynthesis exceeded or exhausted reduced sinks enough for oxygen to accumulate in the atmosphere and surface ocean",
+      "Volcanic gases became the dominant O2 source once cyanobacterial production stopped",
+      "Aerobic respiration began producing more O2 than photosynthesis consumed",
+      "Banded iron formations dissolved and released stored oxygen directly into the atmosphere"
+    ],
+    "explanation": "Oxygen accumulation requires net sources to exceed sinks. The transition occurred when photosynthetic O2 production overwhelmed reduced materials such as Fe2+, volcanic gases, and weatherable minerals.",
+    "tags": [
+      "Great Oxidation Event",
+      "source-sink balance",
+      "oxygenation"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l15-oxygen-roller-coaster",
+    "prompt": "Why is the rise of oxygen better described as stepwise and irregular rather than a smooth increase to modern levels?",
+    "choices": [
+      "Different sources, sinks, ocean reservoirs, productivity changes, and weathering reactions changed through time",
+      "The record looks irregular mainly because body fossils preserve better than redox-sensitive minerals",
+      "After the first cyanobacteria evolved, oxygen immediately reached modern levels and then stayed constant",
+      "Only the deep ocean changed oxygen level, while the atmosphere remained oxygen-free until land plants evolved"
+    ],
+    "explanation": "The oxygen record includes local whiffs, major accumulation, possible later decline, and later increases. This reflects changing biological production and multiple sinks in oceans, crust, and atmosphere.",
+    "tags": [
+      "oxygen history",
+      "redox",
+      "Earth systems"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-aerobic-respiration-importance",
+    "prompt": "Why did free oxygen create major new ecological possibilities?",
+    "choices": [
+      "It enabled aerobic respiration, allowing organisms to obtain more energy from organic molecules",
+      "It made anaerobic metabolism more energy-rich than aerobic respiration in surface environments",
+      "It removed the need for organic carbon burial as a long-term carbon-cycle process",
+      "It allowed large animals to avoid carbon dioxide production during metabolism"
+    ],
+    "explanation": "Aerobic respiration uses O2 to extract energy from organic molecules. Higher oxygen availability made large, active, non-photosynthesizing organisms more feasible, even though oxygen also stressed anaerobic life.",
+    "tags": [
+      "aerobic respiration",
+      "oxygen",
+      "evolution"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l15-redox-definition",
+    "prompt": "What does redox describe in Earth-surface environments?",
+    "choices": [
+      "Electron-transfer reactions that change the oxidation state of elements",
+      "The presence or absence of oxygen atoms in a mineral formula, without electron transfer",
+      "Carbon isotope fractionation caused by photosynthesis but not by chemical reactions",
+      "A phase change between dissolved and solid material with no change in oxidation state"
+    ],
+    "explanation": "Redox reactions involve transfer of electrons. Oxygenation history is fundamentally a redox story because oxygen reacts with reduced materials.",
+    "tags": [
+      "redox",
+      "definitions",
+      "oxygenation"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l15-anoxic-oxic-definition",
+    "prompt": "A shale formed below a water column with sulfate reduction but no measurable dissolved O2; a nearby sand bed formed in oxygenated shallow water. Which statement best distinguishes the redox terms?",
+    "choices": [
+      "The shale is anoxic because free O2 was absent even though other oxidants existed; the sand bed is oxic because free O2 was present",
+      "Both settings are oxic because sulfate contains oxygen atoms even when dissolved O2 is absent",
+      "The shale is oxic if iron minerals oxidized after burial; depositional water chemistry is irrelevant",
+      "The sand bed is anoxic if organic matter was later buried in it"
+    ],
+    "explanation": "Anoxic refers to the absence of free oxygen, not the absence of every oxygen-bearing compound. Oxic settings contain free O2 that can participate directly in surface redox reactions.",
+    "tags": [
+      "anoxia",
+      "oxic conditions",
+      "definitions"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-redox-sensitive-mineral-definition",
+    "prompt": "Why are some minerals called redox-sensitive?",
+    "choices": [
+      "Their stability or preservation depends on electron availability and whether conditions are reducing or oxidizing",
+      "Their stability depends only on grain-size sorting during transport, not chemical conditions",
+      "They form after burial regardless of oxygen level, so depositional redox state cannot affect them",
+      "They preserve isotope ratios while mineralogy itself stays unchanged across redox boundaries"
+    ],
+    "explanation": "Redox-sensitive minerals can form, dissolve, oxidize, or disappear depending on oxygen availability and electron-transfer conditions.",
+    "tags": [
+      "redox-sensitive minerals",
+      "definitions",
+      "proxies"
+    ],
+    "difficulty": "Easy"
+  },
+  {
+    "id": "l15-red-beds-oxidizing-surface",
+    "prompt": "Why are widespread red beds useful evidence for oxygenation of surface environments?",
+    "choices": [
+      "They commonly reflect oxidation of iron minerals during weathering or deposition under more oxygenated conditions",
+      "They prove the deep ocean was fully oxygenated at the same time",
+      "They form only when oxygen is completely absent from the atmosphere",
+      "They are volcanic rocks and therefore unrelated to surface redox conditions"
+    ],
+    "explanation": "Red beds can indicate oxidizing conditions near Earth's surface because iron is converted into oxidized minerals. They are one line of evidence, not a complete global oxygen curve by themselves.",
+    "tags": [
+      "red beds",
+      "oxidation",
+      "oxygen evidence"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-ocean-atmosphere-redox-decoupling",
+    "prompt": "Why might the atmosphere contain some oxygen while parts of the ocean remain anoxic?",
+    "choices": [
+      "Oxygen supply, mixing, biological production, and reduced sinks can vary between surface air, shallow water, and deep water",
+      "Atmospheric oxygen instantly mixes every ocean basin to the same concentration",
+      "Oxygen can exist only in air and cannot dissolve in seawater",
+      "Deep oceans are always oxic before the atmosphere becomes oxic"
+    ],
+    "explanation": "Oxygenation can be spatially uneven. Atmosphere, shallow shelves, and deep oceans may respond differently because sources, sinks, and circulation are not identical everywhere.",
+    "tags": [
+      "ocean oxygenation",
+      "redox gradients",
+      "Earth systems"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-reduced-sink-capacity",
+    "prompt": "How can reduced volcanic gases, dissolved iron, and reduced minerals delay oxygen accumulation?",
+    "choices": [
+      "They consume newly produced O2 through oxidation reactions before it can build up in the atmosphere",
+      "They produce oxygen faster than photosynthesis and immediately oxygenate the air",
+      "They prevent cyanobacteria from releasing O2 from water",
+      "They remove nitrogen but have no chemical relation to oxygen"
+    ],
+    "explanation": "Oxygen can be produced biologically but still fail to accumulate if reduced sinks consume it. Oxygen rise depends on source-sink balance, not production alone.",
+    "tags": [
+      "oxygen sinks",
+      "source-sink balance",
+      "reduced materials"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-local-oxygen-oases",
+    "prompt": "What would a local oxygen oasis represent before widespread atmospheric oxygenation?",
+    "choices": [
+      "A setting where photosynthetic production created oxygen locally even though the global atmosphere remained low in O2",
+      "A desert basin where evaporites prove that no microbes were present",
+      "A deep mantle reservoir that released oxygen directly into volcanoes",
+      "A fossil assemblage containing only large animals with skeletons"
+    ],
+    "explanation": "Localized oxygenated environments could occur near microbial mats or productive shallow-water settings before oxygen became abundant globally.",
+    "tags": [
+      "oxygen oases",
+      "cyanobacteria",
+      "oxygenation"
+    ],
+    "difficulty": "Medium"
+  },
+  {
+    "id": "l15-source-sink-threshold-model",
+    "prompt": "Oxygenic photosynthesis is producing O2, but volcanic gases, dissolved iron, and reduced sediments are still consuming it. Which change would most directly allow persistent atmospheric accumulation?",
+    "choices": [
+      "O2 sources must exceed reduced sinks long enough that local oxygenation is no longer fully buffered by iron, gases, and reduced minerals.",
+      "Reduced sinks must increase faster than photosynthetic sources, because sink growth stores oxygen in the atmosphere.",
+      "Volcanic gases must become the main O2 source, because biological production cannot affect atmospheric chemistry.",
+      "Dissolved iron must remain abundant and soluble, because BIF precipitation releases free atmospheric oxygen."
+    ],
+    "explanation": "Persistent oxygenation requires a source-sink threshold crossing. Before that, oxygen can be produced but rapidly consumed by reduced gases, iron, sulfur, and minerals.",
+    "tags": [
+      "source-sink model",
+      "oxygen accumulation",
+      "Great Oxidation Event"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l15-bif-redox-shuttle",
+    "prompt": "Why can banded iron formations record oxygen production even if the atmosphere was not yet oxygen-rich?",
+    "choices": [
+      "Oxygen produced in surface waters could oxidize dissolved iron locally, causing iron minerals to precipitate",
+      "Banded iron forms only from windblown dust in deserts with modern oxygen levels",
+      "Iron bands prove that all seawater was fully oxygenated from top to bottom",
+      "Banded iron forms because oxygen prevents iron from reacting with anything"
+    ],
+    "explanation": "Dissolved ferrous iron is stable under reducing conditions. Oxygen can oxidize it to insoluble ferric iron minerals, so BIFs can record redox changes without requiring a fully modern atmosphere.",
+    "tags": [
+      "banded iron formations",
+      "redox",
+      "oxygen evidence"
+    ],
+    "difficulty": "Hard"
+  },
+  {
+    "id": "l15-oxygen-stress-anaerobes",
+    "prompt": "After oxygen rises in shallow environments, aerobic metabolisms expand while some microbial mats retreat into low-oxygen refugia. Which interpretation best explains the ecological split?",
+    "choices": [
+      "O2 increased energy yield for aerobic respiration but created oxidative stress for organisms whose enzymes and habitats were adapted to anoxic conditions.",
+      "O2 benefited all organisms equally because oxidation is always harmless once photosynthesis evolves.",
+      "O2 harmed only animals because microbes do not interact with atmospheric or dissolved gases.",
+      "O2 changed fossil preservation but not metabolism, so the split must reflect sampling rather than ecology."
+    ],
+    "explanation": "Oxygen was both a resource and a stressor. Aerobic respiration can yield much more energy, but oxygen and reactive oxygen species can damage anaerobic organisms and alter their habitats.",
+    "tags": [
+      "oxygen toxicity",
+      "aerobic respiration",
+      "anaerobic life"
+    ],
+    "difficulty": "Hard"
+  }
+]
