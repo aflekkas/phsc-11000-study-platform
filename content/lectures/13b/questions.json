@@ -1,6 +1,6 @@
 [
   {
-    "id": "l13-feedback",
+    "id": "l13b-feedback",
     "prompt": "A volcanic CO2 pulse warms climate, and enhanced silicate weathering later removes some CO2. Which wording correctly separates forcing from feedback?",
     "choices": [
       "Volcanic CO2 is the forcing in this setup, while increased weathering is a feedback because it responds to and modifies the initial warming",
@@ -17,7 +17,7 @@
     "difficulty": "Medium"
   },
   {
-    "id": "l13-carbon-reservoir",
+    "id": "l13b-carbon-reservoir",
     "prompt": "Which statement correctly treats the ocean as a carbon reservoir in an Earth-system model?",
     "choices": [
       "It stores dissolved carbon, exchanges CO2 with the atmosphere on shorter timescales, and transfers carbon through the biological pump and carbonate burial on longer timescales.",

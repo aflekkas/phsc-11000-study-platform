@@ -74,10 +74,10 @@ export function PhraseBankPanel({
               <li key={phrase.id}>
                 <div className="phrase-row">
                   <IconButton
-                    className={cx(phrase.starred && "is-starred")}
+                    className={cx(phrase.starred && "text-warning")}
                     label={phrase.starred ? `Unstar ${phrase.text}` : `Star ${phrase.text}`}
                     onClick={() => onTogglePhraseStar(phrase.id)}
-                    tone={phrase.starred ? "secondary" : "ghost"}
+                    tone="ghost"
                   >
                     <Star size={16} weight={phrase.starred ? "fill" : "regular"} />
                   </IconButton>
@@ -89,9 +89,10 @@ export function PhraseBankPanel({
                     </span>
                   </div>
                   <IconButton
+                    className="phrase-delete"
                     label={`Delete ${phrase.text}`}
                     onClick={() => onDeletePhrase(phrase.id)}
-                    tone="danger"
+                    tone="ghost"
                   >
                     <Trash size={16} weight="duotone" />
                   </IconButton>

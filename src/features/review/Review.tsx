@@ -88,16 +88,6 @@ export function Review({
               as="article"
               key={question.id}
               className="review-item"
-              data-phrase-capture="true"
-              data-capture-type="review"
-              data-capture-label={question.lectureTitle ?? "Synthesis review"}
-              data-capture-view="review"
-              data-question-id={question.id}
-              data-question-prompt={question.prompt}
-              data-lecture={question.lecture}
-              data-lecture-title={question.lectureTitle}
-              data-cluster={question.cluster}
-              data-source-path={question.sourcePath}
             >
               <div className="review-heading">
                 {correct === true && <CheckCircle className="ok" weight="duotone" />}

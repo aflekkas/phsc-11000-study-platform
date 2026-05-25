@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   buildFreestyleReward,
   buildSessionRewardSummary,
@@ -12,7 +12,7 @@ import {
   reinforcementLine,
   selectNextFreestyleQuestion
 } from "./lib/freestyleEngine";
-import { multipleChoiceQuestions, questionBank, validateQuestionBank, type MultipleChoiceQuestion } from "./lib/questionBank";
+import type { MultipleChoiceQuestion } from "./lib/questionBank";
 import { playRewardSound, playUiSound } from "./lib/sound";
 import {
   getStudyMusicState,
@@ -24,16 +24,20 @@ import {
 } from "./lib/studyMusic";
 import {
   loadProgress,
+  buildProgressBackup,
+  parseProgressBackupJson,
+  progressCore,
+  progressBackupFileName,
   saveProgress,
   weakTags,
   type AnswerRecord,
   type PhraseSource,
   type ProgressState,
+  type SavedFreestyleRun,
   type SessionResult
 } from "./lib/storage";
 import {
   canSavePhrase,
-  captureSourceFromElement,
   cleanPhraseText,
   formatSignedXp,
   learningProgressFor,
@@ -41,49 +45,168 @@ import {
   presetConfig,
   shuffle,
   shuffledMultipleChoice,
+  sourceSignature,
   withShuffledChoices
 } from "./lib/studySession";
 import { Dashboard } from "./features/dashboard/Dashboard";
 import { StudyMusicPlayer } from "./features/music/StudyMusicPlayer";
 import { Exam } from "./features/practice/Exam";
-import { PhraseCapturePopover } from "./features/phrases/PhraseCapturePopover";
 import { Review } from "./features/review/Review";
 import { RewardLayer } from "./features/rewards/RewardLayer";
-import type { CaptureSource, PhraseSelection, Preset, SessionState, View } from "./types/study";
+import type { ProgressTransferStatus } from "./features/settings/ProgressSettings";
+import type { Preset, SessionState, View } from "./types/study";
+
+type PhraseInputSource = Omit<PhraseSource, "id" | "capturedAt">;
+type QuestionBankModule = typeof import("./lib/questionBank");
+
+function withSavedChoiceOrder(
+  savedQuestion: SavedFreestyleRun["questions"][number],
+  multipleChoiceById: Map<string, MultipleChoiceQuestion>
+) {
+  const question = multipleChoiceById.get(savedQuestion.id);
+  if (!question) return null;
+  const choicesById = new Map(question.choices.map((choice) => [choice.id, choice]));
+  const orderedChoices = savedQuestion.choiceOrder
+    .map((choiceId) => choicesById.get(choiceId))
+    .filter((choice): choice is MultipleChoiceQuestion["choices"][number] => Boolean(choice));
+  const missingChoices = question.choices.filter((choice) => !savedQuestion.choiceOrder.includes(choice.id));
+  return { ...question, choices: [...orderedChoices, ...missingChoices] };
+}
+
+function restoreFreestyleSession(
+  savedRun: SavedFreestyleRun | undefined,
+  multipleChoiceById: Map<string, MultipleChoiceQuestion>
+): SessionState | null {
+  if (!savedRun) return null;
+  const questions = savedRun.questions
+    .map((question) => withSavedChoiceOrder(question, multipleChoiceById))
+    .filter((question): question is MultipleChoiceQuestion => Boolean(question));
+  if (questions.length === 0) return null;
+  return {
+    id: savedRun.id,
+    preset: "Freestyle",
+    startedAt: savedRun.startedAt,
+    questions,
+    answers: savedRun.answers,
+    index: Math.min(savedRun.index, questions.length - 1),
+    timeLeft: 0,
+    feedback: savedRun.feedback,
+    freestyleLog: savedRun.freestyleLog,
+    freestyleBaseProgress: savedRun.freestyleBaseProgress
+  };
+}
+
+function saveFreestyleSession(session: SessionState): SavedFreestyleRun | undefined {
+  if (session.preset !== "Freestyle") return undefined;
+  return {
+    id: session.id,
+    startedAt: session.startedAt,
+    questions: session.questions
+      .filter((question): question is MultipleChoiceQuestion => question.kind === "multiple-choice")
+      .map((question) => ({
+        id: question.id,
+        choiceOrder: question.choices.map((choice) => choice.id)
+      })),
+    answers: session.answers,
+    index: session.index,
+    timeLeft: 0,
+    feedback: session.feedback,
+    freestyleLog: session.freestyleLog ?? [],
+    freestyleBaseProgress: progressCore(session.freestyleBaseProgress ?? {
+      sessions: [],
+      freestyle: [],
+      flagged: {},
+      phraseBank: []
+    })
+  };
+}
 
 function App() {
+  const [questionModule, setQuestionModule] = useState<QuestionBankModule | null>(null);
   const [progress, setProgress] = useState<ProgressState>(() => loadProgress());
   const [view, setView] = useState<View>("dashboard");
   const [session, setSession] = useState<SessionState | null>(null);
   const [rewardEvent, setRewardEvent] = useState<RewardEvent | null>(null);
   const [reviewReward, setReviewReward] = useState<SessionRewardSummary | null>(null);
   const [musicState, setMusicState] = useState<StudyMusicState>(() => getStudyMusicState());
-  const [musicMinimized, setMusicMinimized] = useState(false);
-  const [phraseSelection, setPhraseSelection] = useState<PhraseSelection | null>(null);
+  const [musicMinimized, setMusicMinimized] = useState(true);
+  const [progressTransferStatus, setProgressTransferStatus] = useState<ProgressTransferStatus>(null);
+  const progressRef = useRef<ProgressState>(progress);
   const lastQuestionSoundId = useRef<string | null>(null);
-  const lastSelectionPointer = useRef<{ x: number; y: number } | null>(null);
-  const bankErrors = useMemo(() => validateQuestionBank(), []);
-  const weak = useMemo(() => weakTags(progress, questionBank), [progress]);
-  const game = useMemo(() => buildStudyGameStats(progress, questionBank, multipleChoiceQuestions.length), [progress]);
+  const questionBank = questionModule?.questionBank ?? [];
+  const multipleChoiceQuestions = questionModule?.multipleChoiceQuestions ?? [];
+  const questionBankReady = Boolean(questionModule);
+  const multipleChoiceById = useMemo(
+    () => new Map(multipleChoiceQuestions.map((question) => [question.id, question])),
+    [multipleChoiceQuestions]
+  );
+  const bankErrors = useMemo(() => questionModule?.validateQuestionBank() ?? [], [questionModule]);
+  const weak = useMemo(() => weakTags(progress, questionBank), [progress, questionBank]);
+  const game = useMemo(
+    () => buildStudyGameStats(progress, questionBank, multipleChoiceQuestions.length),
+    [progress, questionBank, multipleChoiceQuestions.length]
+  );
   const activeQuestionId = view === "exam" && session ? session.questions[session.index]?.id : undefined;
+  const dismissReward = useCallback(() => setRewardEvent(null), []);
 
-  const addPhraseToBank = (rawText: string, source: CaptureSource) => {
+  const commitProgress = useCallback((buildNextProgress: (current: ProgressState) => ProgressState) => {
+    const nextProgress = buildNextProgress(progressRef.current);
+    progressRef.current = nextProgress;
+    setProgress(nextProgress);
+    return nextProgress;
+  }, []);
+
+  const persistFreestyleSession = useCallback((nextSession: SessionState) => {
+    const activeFreestyle = saveFreestyleSession(nextSession);
+    commitProgress((current) => ({ ...current, activeFreestyle }));
+  }, [commitProgress]);
+
+  useEffect(() => {
+    let mounted = true;
+    void import("./lib/questionBank").then((module) => {
+      if (mounted) setQuestionModule(module);
+    });
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  const addPhraseToBank = (rawText: string, source: PhraseInputSource) => {
     const text = cleanPhraseText(rawText);
     if (!canSavePhrase(text)) return;
 
     const normalizedText = normalizedPhraseKey(text);
     const now = new Date().toISOString();
+    const phraseId = crypto.randomUUID();
     const phraseSource: PhraseSource = {
       ...source,
       id: crypto.randomUUID(),
       capturedAt: now
     };
-    setProgress((current) => {
+    commitProgress((current) => {
       const existing = current.phraseBank.find((item) => item.normalizedText === normalizedText);
-      if (existing) return current;
+      if (existing) {
+        const sourceKeys = new Set(existing.sources.map(sourceSignature));
+        const sources = sourceKeys.has(sourceSignature(phraseSource))
+          ? existing.sources
+          : [...existing.sources, phraseSource];
+        return {
+          ...current,
+          phraseBank: current.phraseBank.map((item) =>
+            item.id === existing.id
+              ? {
+                  ...item,
+                  updatedAt: now,
+                  sources,
+                  captureCount: item.captureCount + 1
+                }
+              : item
+          )
+        };
+      }
       const phraseBank = [
         {
-          id: crypto.randomUUID(),
+          id: phraseId,
           text,
           normalizedText,
           createdAt: now,
@@ -95,14 +218,11 @@ function App() {
         },
         ...current.phraseBank
       ];
-      const nextProgress = { ...current, phraseBank };
-      saveProgress(nextProgress);
-      return nextProgress;
+      return { ...current, phraseBank };
     });
 
     playUiSound("flag");
-    setPhraseSelection(null);
-    window.getSelection()?.removeAllRanges();
+    setProgressTransferStatus(null);
   };
 
   const addManualPhrase = (text: string, label = "Manual add", sourceView = view) => {
@@ -110,47 +230,72 @@ function App() {
   };
 
   const deletePhrase = (phraseId: string) => {
-    setProgress((current) => {
-      const nextProgress = {
+    commitProgress((current) => {
+      return {
         ...current,
         phraseBank: current.phraseBank.filter((item) => item.id !== phraseId)
       };
-      saveProgress(nextProgress);
-      return nextProgress;
     });
     playUiSound("back");
+    setProgressTransferStatus(null);
   };
 
   const togglePhraseStar = (phraseId: string) => {
-    setProgress((current) => {
+    commitProgress((current) => {
       const now = new Date().toISOString();
-      const nextProgress = {
+      return {
         ...current,
         phraseBank: current.phraseBank.map((item) =>
           item.id === phraseId ? { ...item, starred: !item.starred, updatedAt: now } : item
         )
       };
-      saveProgress(nextProgress);
-      return nextProgress;
     });
     playUiSound("select");
   };
 
   const updatePhraseNote = (phraseId: string, note: string) => {
-    setProgress((current) => {
-      const nextProgress = {
+    commitProgress((current) => {
+      return {
         ...current,
         phraseBank: current.phraseBank.map((item) =>
           item.id === phraseId ? { ...item, note, updatedAt: new Date().toISOString() } : item
         )
       };
-      saveProgress(nextProgress);
-      return nextProgress;
     });
   };
 
+  const exportProgress = () => {
+    const backup = buildProgressBackup(progressRef.current);
+    const blob = new Blob([`${JSON.stringify(backup, null, 2)}\n`], { type: "application/json" });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = progressBackupFileName();
+    link.click();
+    window.URL.revokeObjectURL(url);
+    setProgressTransferStatus({ tone: "success", message: "Exported progress JSON." });
+  };
+
+  const importProgress = async (file: File) => {
+    try {
+      const nextProgress = parseProgressBackupJson(await file.text());
+      progressRef.current = nextProgress;
+      setProgress(nextProgress);
+      saveProgress(nextProgress);
+      setSession(null);
+      setReviewReward(null);
+      setView("dashboard");
+      setProgressTransferStatus({ tone: "success", message: "Imported progress JSON." });
+      playUiSound("select");
+    } catch (error) {
+      setProgressTransferStatus({
+        tone: "error",
+        message: error instanceof Error ? error.message : "Could not import that progress file."
+      });
+    }
+  };
+
   const toggleStudyMusicPlayback = () => {
-    setMusicMinimized(false);
     setMusicState(toggleStudyMusic());
   };
 
@@ -164,26 +309,37 @@ function App() {
   };
 
   const startSession = (preset: Preset) => {
+    if (!questionBankReady) return;
     playUiSound("start");
     setReviewReward(null);
     if (preset === "Freestyle") {
+      const restoredSession = restoreFreestyleSession(progressRef.current.activeFreestyle, multipleChoiceById);
+      if (restoredSession) {
+        setSession(restoredSession);
+        setView("exam");
+        return;
+      }
+
+      const baseProgress = progressCore(progressRef.current);
       const firstQuestion = selectNextFreestyleQuestion({
-        progress,
+        progress: baseProgress,
         questions: multipleChoiceQuestions,
         runLog: [],
         recentQuestionIds: []
       });
-      setSession({
+      const nextSession: SessionState = {
         id: crypto.randomUUID(),
         preset,
         startedAt: new Date().toISOString(),
         questions: [withShuffledChoices(firstQuestion)],
         answers: {},
         freestyleLog: [],
-        freestyleBaseProgress: progress,
+        freestyleBaseProgress: baseProgress,
         index: 0,
         timeLeft: 0
-      });
+      };
+      setSession(nextSession);
+      persistFreestyleSession(nextSession);
       setView("exam");
       return;
     }
@@ -215,7 +371,7 @@ function App() {
     const answers = session.questions.map((question) => {
       const existing = session.answers[question.id] ?? {
         questionId: question.id,
-        flagged: Boolean(progress.flagged[question.id])
+        flagged: Boolean(progressRef.current.flagged[question.id])
       };
       const correct =
         question.kind === "multiple-choice" ? existing.selectedChoiceId === question.correctChoiceId : undefined;
@@ -233,11 +389,16 @@ function App() {
       score,
       totalMc
     };
-    const nextProgress = { ...progress, sessions: [result, ...progress.sessions].slice(0, 80) };
-    const rewardSummary = buildSessionRewardSummary(result, questionBank, progress, nextProgress);
-    setProgress(nextProgress);
-    saveProgress(nextProgress);
-    setSession({ ...session, submitted: result });
+    const baseProgress = progressRef.current;
+    const nextProgress = commitProgress((current) =>
+      current.sessions.some((savedSession) => savedSession.id === result.id)
+        ? current
+        : { ...current, sessions: [result, ...current.sessions].slice(0, 80) }
+    );
+    const rewardSummary = buildSessionRewardSummary(result, questionBank, baseProgress, nextProgress);
+    setSession((current) =>
+      current?.id === session.id && !current.submitted ? { ...current, submitted: result } : current
+    );
     setReviewReward(rewardSummary);
     const reward: RewardEvent = {
       id: `${result.id}-review`,
@@ -271,84 +432,18 @@ function App() {
     () =>
       subscribeStudyMusic((state) => {
         setMusicState(state);
-        if (state.playing) setMusicMinimized(false);
       }),
     []
   );
 
   useEffect(() => {
-    let frame = 0;
+    progressRef.current = progress;
+    saveProgress(progress);
+  }, [progress]);
 
-    const readSelection = () => {
-      window.cancelAnimationFrame(frame);
-      frame = window.requestAnimationFrame(() => {
-        const selection = window.getSelection();
-        if (!selection || selection.rangeCount === 0 || selection.isCollapsed) {
-          setPhraseSelection(null);
-          return;
-        }
-
-        const text = cleanPhraseText(selection.toString());
-        if (!canSavePhrase(text)) {
-          setPhraseSelection(null);
-          return;
-        }
-
-        const range = selection.getRangeAt(0);
-        const common = range.commonAncestorContainer;
-        const element = common.nodeType === Node.ELEMENT_NODE ? common as Element : common.parentElement;
-        if (!element || element.closest("input, select, textarea, [contenteditable='true']")) {
-          setPhraseSelection(null);
-          return;
-        }
-
-        const captureRoot = element.closest("[data-phrase-capture='true']");
-        if (!(captureRoot instanceof HTMLElement)) {
-          setPhraseSelection(null);
-          return;
-        }
-
-        const rect = range.getBoundingClientRect();
-        if (rect.width === 0 && rect.height === 0) {
-          setPhraseSelection(null);
-          return;
-        }
-
-        const pointer = lastSelectionPointer.current;
-        setPhraseSelection({
-          text,
-          x: Math.min(Math.max(pointer?.x ?? rect.left + rect.width / 2, 92), window.innerWidth - 92),
-          y: Math.max((pointer?.y ?? rect.top) - 12, 18),
-          source: captureSourceFromElement(captureRoot)
-        });
-      });
-    };
-
-    const hideSelection = () => setPhraseSelection(null);
-    const handlePointerUp = (event: PointerEvent) => {
-      lastSelectionPointer.current = { x: event.clientX, y: event.clientY };
-      readSelection();
-    };
-    const handlePointerDown = (event: PointerEvent) => {
-      const target = event.target instanceof Element ? event.target : null;
-      if (target?.closest(".phrase-capture-popover")) return;
-      if (!target?.closest("[data-phrase-capture='true']")) hideSelection();
-    };
-
-    document.addEventListener("selectionchange", readSelection);
-    window.addEventListener("keyup", readSelection);
-    window.addEventListener("pointerup", handlePointerUp);
-    window.addEventListener("scroll", hideSelection, true);
-    document.addEventListener("pointerdown", handlePointerDown);
-    return () => {
-      window.cancelAnimationFrame(frame);
-      document.removeEventListener("selectionchange", readSelection);
-      window.removeEventListener("keyup", readSelection);
-      window.removeEventListener("pointerup", handlePointerUp);
-      window.removeEventListener("scroll", hideSelection, true);
-      document.removeEventListener("pointerdown", handlePointerDown);
-    };
-  }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [view, activeQuestionId]);
 
   useEffect(() => {
     if (view !== "exam" || !activeQuestionId) {
@@ -366,48 +461,48 @@ function App() {
   }, [session?.timeLeft, view]);
 
   const updateAnswer = (questionId: string, patch: Partial<AnswerRecord>) => {
+    if (!session) return;
     if ("selectedChoiceId" in patch) playUiSound("select");
     if ("flagged" in patch) playUiSound("flag");
-    setSession((current) => {
-      if (!current) return current;
-      const existing = current.answers[questionId] ?? {
-        questionId,
-        flagged: Boolean(progress.flagged[questionId])
-      };
-      return {
-        ...current,
-        answers: { ...current.answers, [questionId]: { ...existing, ...patch } }
-      };
-    });
+    const existing = session.answers[questionId] ?? {
+      questionId,
+      flagged: Boolean(progressRef.current.flagged[questionId])
+    };
+    const nextSession = {
+      ...session,
+      answers: { ...session.answers, [questionId]: { ...existing, ...patch } }
+    };
+    setSession(nextSession);
+    if (nextSession.preset === "Freestyle") persistFreestyleSession(nextSession);
     if ("flagged" in patch) {
-      const nextProgress = {
-        ...progress,
-        flagged: { ...progress.flagged, [questionId]: Boolean(patch.flagged) }
-      };
-      setProgress(nextProgress);
-      saveProgress(nextProgress);
+      commitProgress((current) => ({
+        ...current,
+        flagged: { ...current.flagged, [questionId]: Boolean(patch.flagged) }
+      }));
+      setProgressTransferStatus(null);
     }
   };
 
   const nextFreestyleQuestion = () => {
     if (!session?.feedback) playUiSound("skip");
-    setSession((current) => {
-      if (!current || current.preset !== "Freestyle") return current;
-      const runLog = current.freestyleLog ?? [];
-      const nextQuestion = selectNextFreestyleQuestion({
-        progress: learningProgressFor(current, progress),
-        questions: multipleChoiceQuestions,
-        runLog,
-        recentQuestionIds: current.questions.slice(-6).map((question) => question.id)
-      });
-      return {
-        ...current,
-        questions: [...current.questions, withShuffledChoices(nextQuestion)],
-        answers: {},
-        index: current.questions.length,
-        feedback: undefined
-      };
+    if (!session || session.preset !== "Freestyle") return;
+    const runLog = session.freestyleLog ?? [];
+    const currentProgress = progressRef.current;
+    const nextQuestion = selectNextFreestyleQuestion({
+      progress: learningProgressFor(session, currentProgress),
+      questions: multipleChoiceQuestions,
+      runLog,
+      recentQuestionIds: session.questions.slice(-6).map((question) => question.id)
     });
+    const nextSession = {
+      ...session,
+      questions: [...session.questions, withShuffledChoices(nextQuestion)],
+      answers: {},
+      index: session.questions.length,
+      feedback: undefined
+    };
+    setSession(nextSession);
+    persistFreestyleSession(nextSession);
   };
 
   const answerFreestyle = (question: MultipleChoiceQuestion, choiceId: string) => {
@@ -416,18 +511,19 @@ function App() {
     const correctChoice = question.choices.find((choice) => choice.id === question.correctChoiceId);
     if (!selectedChoice || !correctChoice) return;
 
+    const baseProgress = progressRef.current;
     const correct = choiceId === question.correctChoiceId;
     const answer: AnswerRecord = {
       questionId: question.id,
       selectedChoiceId: choiceId,
-      flagged: session.answers[question.id]?.flagged ?? Boolean(progress.flagged[question.id]),
+      flagged: session.answers[question.id]?.flagged ?? Boolean(baseProgress.flagged[question.id]),
       correct
     };
     const nextLog = [...(session.freestyleLog ?? []), answer];
     const streak = currentStreak(nextLog);
     const reward = buildFreestyleReward(question, answer, streak);
     const mastery = masteryForQuestion(
-      learningProgressFor(session, progress),
+      learningProgressFor(session, baseProgress),
       multipleChoiceQuestions,
       nextLog,
       question.id
@@ -443,46 +539,61 @@ function App() {
       score: correct ? 1 : 0,
       totalMc: 1
     };
+    const feedback = {
+      questionId: question.id,
+      correct,
+      correctText: correctChoice.text,
+      xp: reward.xp,
+      streak,
+      masteryLabel: mastery?.label ?? "New",
+      reinforcementLine: reinforcementLine(correct, mastery)
+    };
+    const nextSession = {
+      ...session,
+      answers: { ...session.answers, [question.id]: answer },
+      freestyleLog: nextLog,
+      feedback
+    };
 
-    setProgress((current) => {
-      const nextProgress = {
-        ...current,
-        freestyle: [result, ...current.freestyle].slice(0, 500)
-      };
-      saveProgress(nextProgress);
-      return nextProgress;
-    });
-    setSession((current) => {
-      if (!current || current.id !== session.id) return current;
+    commitProgress((current) => {
       return {
         ...current,
-        answers: { ...current.answers, [question.id]: answer },
-        freestyleLog: [...(current.freestyleLog ?? []), answer],
-        feedback: {
-          questionId: question.id,
-          correct,
-          correctText: correctChoice.text,
-          xp: reward.xp,
-          streak,
-          masteryLabel: mastery?.label ?? "New",
-          reinforcementLine: reinforcementLine(correct, mastery)
-        }
+        freestyle: [result, ...current.freestyle].slice(0, 500),
+        activeFreestyle: saveFreestyleSession(nextSession)
       };
     });
+    setProgressTransferStatus(null);
+    setSession(nextSession);
     setRewardEvent(reward);
   };
 
+  if (!questionBankReady) {
+    return (
+      <main className="app-shell">
+        <section className="loading-panel">
+          <p className="eyebrow">PHSC 11000</p>
+          <h1>Loading Practice Bank</h1>
+        </section>
+      </main>
+    );
+  }
+
   return (
-    <main className="app-shell">
+    <main className={`app-shell ${view === "exam" ? "is-exam-view" : ""}`}>
       {view === "dashboard" && (
         <Dashboard
           progress={progress}
+          progressTransferStatus={progressTransferStatus}
           game={game}
           weak={weak}
           bankErrors={bankErrors}
           phrases={progress.phraseBank}
+          hasActiveFreestyle={Boolean(progress.activeFreestyle)}
+          totalMultipleChoice={multipleChoiceQuestions.length}
           onAddPhrase={addManualPhrase}
           onDeletePhrase={deletePhrase}
+          onExportProgress={exportProgress}
+          onImportProgress={(file) => void importProgress(file)}
           onStart={startSession}
           onTogglePhraseStar={togglePhraseStar}
           onUpdatePhraseNote={updatePhraseNote}
@@ -493,11 +604,13 @@ function App() {
           session={session}
           progress={progress}
           phrases={progress.phraseBank}
+          questionBank={questionBank}
+          multipleChoiceQuestions={multipleChoiceQuestions}
           onAnswer={updateAnswer}
           onAddPhrase={(text) => addManualPhrase(text, `Manual during ${session.preset}`, "exam")}
           onFreestyleAnswer={answerFreestyle}
           onMove={(index) => {
-            setSession({ ...session, index });
+            setSession((current) => current ? { ...current, index } : current);
           }}
           onSkip={nextFreestyleQuestion}
           onBack={() => {
@@ -521,15 +634,9 @@ function App() {
           onRetryWeak={() => startSession("Weak Retake")}
         />
       )}
-      <RewardLayer event={rewardEvent} onDone={() => setRewardEvent(null)} />
-      <PhraseCapturePopover
-        selection={phraseSelection}
-        onAdd={() => {
-          if (phraseSelection) addPhraseToBank(phraseSelection.text, phraseSelection.source);
-        }}
-      />
+      <RewardLayer event={rewardEvent} onDone={dismissReward} />
       <StudyMusicPlayer
-        minimized={musicMinimized && !musicState.playing}
+        minimized={musicMinimized}
         state={musicState}
         onNext={() => changeStudyTrack(1)}
         onMinimize={() => setMusicMinimized(true)}

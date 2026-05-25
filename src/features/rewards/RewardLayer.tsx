@@ -1,13 +1,19 @@
 import { Sparkle, Target } from "@phosphor-icons/react";
-import { useEffect, type CSSProperties } from "react";
+import { useEffect, useRef, type CSSProperties } from "react";
 import type { RewardEvent } from "../../lib/gamification";
 
 export function RewardLayer({ event, onDone }: { event: RewardEvent | null; onDone: () => void }) {
+  const onDoneRef = useRef(onDone);
+
+  useEffect(() => {
+    onDoneRef.current = onDone;
+  }, [onDone]);
+
   useEffect(() => {
     if (!event) return;
-    const timeout = window.setTimeout(onDone, 1700);
+    const timeout = window.setTimeout(() => onDoneRef.current(), 1700);
     return () => window.clearTimeout(timeout);
-  }, [event, onDone]);
+  }, [event?.id]);
 
   if (!event) return null;
 

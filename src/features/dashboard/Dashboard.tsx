@@ -1,4 +1,4 @@
-import { ArrowCounterClockwise, ChartBar, CheckCircle, Fire, Lightning, Shuffle, Sparkle, Target, Timer } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, ChartBar, CheckCircle, Fire, Lightning, Shuffle, Sparkle, Tag, Target, Timer } from "@phosphor-icons/react";
 import { Badge } from "../../components/ui/Badge";
 import { Button } from "../../components/ui/Button";
 import { CountUp } from "../../components/ui/CountUp";
@@ -6,13 +6,13 @@ import { PageHeader } from "../../components/ui/PageHeader";
 import { ProgressBar } from "../../components/ui/ProgressBar";
 import { StatTile } from "../../components/ui/StatTile";
 import { StudyCard } from "../../components/ui/StudyCard";
-import { multipleChoiceQuestions } from "../../lib/questionBank";
 import type { RewardTone, StudyGameStats } from "../../lib/gamification";
 import type { PhraseBankItem, ProgressState } from "../../lib/storage";
 import type { Preset } from "../../types/study";
 import type { weakTags } from "../../lib/storage";
 import { PhraseBankPanel } from "../phrases/PhraseBankPanel";
 import { PhraseQuickAdd } from "../phrases/PhraseQuickAdd";
+import { ProgressSettings, type ProgressTransferStatus } from "../settings/ProgressSettings";
 
 const milestoneTone: Record<RewardTone, "success" | "warning" | "info" | "accent" | "error"> = {
   green: "success",
@@ -31,23 +31,33 @@ const mascotByMood: Record<StudyGameStats["mood"], string> = {
 
 export function Dashboard({
   progress,
+  progressTransferStatus,
   game,
   weak,
   bankErrors,
   phrases,
+  hasActiveFreestyle,
+  totalMultipleChoice,
   onAddPhrase,
   onDeletePhrase,
+  onExportProgress,
+  onImportProgress,
   onTogglePhraseStar,
   onUpdatePhraseNote,
   onStart
 }: {
   progress: ProgressState;
+  progressTransferStatus: ProgressTransferStatus;
   game: StudyGameStats;
   weak: ReturnType<typeof weakTags>;
   bankErrors: string[];
   phrases: PhraseBankItem[];
+  hasActiveFreestyle: boolean;
+  totalMultipleChoice: number;
   onAddPhrase: (text: string) => void;
   onDeletePhrase: (phraseId: string) => void;
+  onExportProgress: () => void;
+  onImportProgress: (file: File) => void;
   onTogglePhraseStar: (phraseId: string) => void;
   onUpdatePhraseNote: (phraseId: string, note: string) => void;
   onStart: (preset: Preset) => void;
@@ -60,7 +70,7 @@ export function Dashboard({
 
       {bankErrors.length > 0 && <div className="alert alert-error">{bankErrors[0]}</div>}
 
-      <StudySnapshot game={game} />
+      <StudySnapshot game={game} totalMultipleChoice={totalMultipleChoice} />
 
       <PhraseQuickAdd onAddPhrase={onAddPhrase} phrases={phrases} variant="dock" />
 
@@ -69,12 +79,12 @@ export function Dashboard({
           Mock Exam
         </Button>
         <Button tone="accent" onClick={() => onStart("Freestyle")} icon={<Shuffle size={19} weight="duotone" />}>
-          Freestyle
+          {hasActiveFreestyle ? "Resume Freestyle" : "Freestyle"}
         </Button>
         <Button onClick={() => onStart("Quick Drill")} icon={<CheckCircle size={19} weight="duotone" />}>
           Quick Drill
         </Button>
-        <Button onClick={() => onStart("Weak Retake")} icon={<ArrowCounterClockwise size={19} weight="duotone" />}>
+        <Button disabled={weak.length === 0} onClick={() => onStart("Weak Retake")} icon={<ArrowCounterClockwise size={19} weight="duotone" />}>
           Weak Retake
         </Button>
       </section>
@@ -87,7 +97,9 @@ export function Dashboard({
           ) : (
             <div className="tag-list">
               {weak.map((item) => (
-                <Badge key={item.tag} tone="warning">{item.tag}</Badge>
+                <Badge key={item.tag} tone="neutral">
+                  <Tag size={13} weight="duotone" /> {item.tag}
+                </Badge>
               ))}
             </div>
           )}
@@ -114,6 +126,12 @@ export function Dashboard({
           onDeletePhrase={onDeletePhrase}
           onTogglePhraseStar={onTogglePhraseStar}
           onUpdatePhraseNote={onUpdatePhraseNote}
+        />
+        <ProgressSettings
+          progress={progress}
+          status={progressTransferStatus}
+          onExport={onExportProgress}
+          onImport={onImportProgress}
         />
       </section>
     </>
@@ -151,7 +169,7 @@ function DashboardHero({ game }: { game: StudyGameStats }) {
   );
 }
 
-function StudySnapshot({ game }: { game: StudyGameStats }) {
+function StudySnapshot({ game, totalMultipleChoice }: { game: StudyGameStats; totalMultipleChoice: number }) {
   return (
     <section className="snapshot-grid" aria-label="Progress snapshot">
       <StatTile icon={<Target weight="duotone" />} label="Prepared" value={<><CountUp value={game.prepScore} />%</>} tone="teal" />
@@ -159,7 +177,9 @@ function StudySnapshot({ game }: { game: StudyGameStats }) {
       <StatTile icon={<Sparkle weight="duotone" />} label="Coverage" value={<><CountUp value={game.coverage} />%</>} tone="purple" />
       <StatTile icon={<Fire weight="duotone" />} label="Missed" value={<CountUp value={game.missed} />} tone="red" />
       <div className="achievement-row">
-        <Badge tone="primary">{game.correct} correct across {multipleChoiceQuestions.length}</Badge>
+        <Badge tone="primary">
+          <CheckCircle size={14} weight="duotone" /> {game.correct} correct across {totalMultipleChoice}
+        </Badge>
         {game.milestones.map((milestone) => (
           <Badge tone={milestoneTone[milestone.tone]} key={milestone.id}>
             <Sparkle size={14} weight="duotone" /> {milestone.label} <strong>{milestone.value}</strong>

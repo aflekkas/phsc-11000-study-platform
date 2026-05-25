@@ -222,6 +222,13 @@ export function validateQuestionBank() {
         `Lecture ${group.lecture} has ${hardCount} Hard questions; minimum is ${MIN_HARD_MULTIPLE_CHOICE_PER_LECTURE}`
       );
     }
+
+    const expectedIdPrefix = `l${group.lecture}-`;
+    for (const question of group.questions) {
+      if (!question.id.startsWith(expectedIdPrefix)) {
+        errors.push(`${question.id} should start with ${expectedIdPrefix}`);
+      }
+    }
   }
 
   for (const question of questionBank) {

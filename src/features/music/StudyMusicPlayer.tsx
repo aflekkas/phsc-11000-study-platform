@@ -44,12 +44,12 @@ export function StudyMusicPlayer({
         </Button>
         <IconButton
           className="music-control music-play"
-          label="Play lofi focus music"
+          label={state.playing ? "Pause lofi focus music" : "Play lofi focus music"}
           onClick={onToggle}
-          aria-pressed={false}
+          aria-pressed={state.playing}
           tone="primary"
         >
-          <Play size={17} weight="fill" />
+          {state.playing ? <Pause size={17} weight="fill" /> : <Play size={17} weight="fill" />}
         </IconButton>
       </aside>
     );

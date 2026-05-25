@@ -1,7 +1,7 @@
 import type { HTMLAttributes, ReactNode } from "react";
 import { cx } from "../../lib/classes";
 
-type BadgeTone = "neutral" | "primary" | "secondary" | "accent" | "success" | "warning" | "error" | "info";
+export type BadgeTone = "neutral" | "primary" | "secondary" | "accent" | "success" | "warning" | "error" | "info" | "outline";
 
 interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   children: ReactNode;
@@ -16,7 +16,8 @@ const toneClass: Record<BadgeTone, string> = {
   success: "badge-success",
   warning: "badge-warning",
   error: "badge-error",
-  info: "badge-info"
+  info: "badge-info",
+  outline: "badge-outline"
 };
 
 export function Badge({ children, className, tone = "neutral", ...props }: BadgeProps) {

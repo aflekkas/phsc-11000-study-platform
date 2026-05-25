@@ -1,5 +1,6 @@
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, rmSync } from "node:fs";
+import { readdir } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -37,6 +38,22 @@ try {
 
   const questionBank = await import(pathToFileURL(outfile).href);
   const errors = questionBank.validateQuestionBank();
+  const lectureEntries = await readdir("content/lectures", { withFileTypes: true });
+  const discoveredLectureIds = new Set(
+    lectureEntries
+      .filter((entry) => entry.isDirectory() && existsSync(join("content/lectures", entry.name, "questions.json")))
+      .map((entry) => entry.name)
+  );
+  const bundledLectureIds = new Set(questionBank.multipleChoiceQuestions.map((question) => question.lecture));
+
+  for (const lectureId of discoveredLectureIds) {
+    if (!bundledLectureIds.has(lectureId)) errors.push(`Lecture ${lectureId} has questions.json but is missing from the app registry`);
+  }
+
+  for (const lectureId of bundledLectureIds) {
+    if (!discoveredLectureIds.has(lectureId)) errors.push(`Lecture ${lectureId} is bundled but has no content/lectures/${lectureId}/questions.json`);
+  }
+
   if (errors.length > 0) {
     console.error(`Question bank validation failed with ${errors.length} issue(s):`);
     for (const error of errors) console.error(`- ${error}`);

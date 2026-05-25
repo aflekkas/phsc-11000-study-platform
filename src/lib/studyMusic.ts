@@ -41,6 +41,7 @@ let duration = 0;
 let error: string | undefined;
 let recentTrackIndexes = [trackIndex];
 let previousTrackIndexes: number[] = [];
+const failedTrackIndexes = new Set<number>();
 
 function resolveAssetPath(src: string) {
   if (/^https?:\/\//i.test(src)) return src;
@@ -91,8 +92,13 @@ function nextSmartTrackIndex() {
   if (studyTracks.length <= 1) return trackIndex;
 
   const recent = new Set(recentTrackIndexes.slice(-recentWindow));
-  const freshIndexes = studyTracks.map((_, index) => index).filter((index) => index !== trackIndex && !recent.has(index));
-  const fallbackIndexes = studyTracks.map((_, index) => index).filter((index) => index !== trackIndex);
+  const availableIndexes = studyTracks
+    .map((_, index) => index)
+    .filter((index) => index !== trackIndex && !failedTrackIndexes.has(index));
+  const freshIndexes = availableIndexes.filter((index) => !recent.has(index));
+  const fallbackIndexes = availableIndexes.length > 0
+    ? availableIndexes
+    : studyTracks.map((_, index) => index).filter((index) => index !== trackIndex);
   const pool = freshIndexes.length > 0 ? freshIndexes : fallbackIndexes;
   return pool[Math.floor(Math.random() * pool.length)] ?? trackIndex;
 }
@@ -119,10 +125,12 @@ function getAudioElement() {
     emit();
   });
   audio.addEventListener("canplay", () => {
+    failedTrackIndexes.delete(trackIndex);
     loading = false;
     emit();
   });
   audio.addEventListener("loadedmetadata", () => {
+    failedTrackIndexes.delete(trackIndex);
     duration = Number.isFinite(audio.duration) ? audio.duration : 0;
     loading = false;
     emit();
@@ -136,10 +144,16 @@ function getAudioElement() {
     selectTrack(nextSmartTrackIndex(), true);
   });
   audio.addEventListener("error", () => {
+    failedTrackIndexes.add(trackIndex);
     error = "Skipped a track";
     loading = false;
     playing = false;
     emit();
+    if (failedTrackIndexes.size >= studyTracks.length) {
+      error = "No tracks available";
+      emit();
+      return;
+    }
     window.setTimeout(() => selectTrack(nextSmartTrackIndex(), true), 250);
   });
 

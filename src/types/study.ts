@@ -1,5 +1,5 @@
 import type { MultipleChoiceQuestion, Question } from "../lib/questionBank";
-import type { AnswerRecord, PhraseSource, ProgressState, SessionResult } from "../lib/storage";
+import type { AnswerRecord, ProgressState, SessionResult } from "../lib/storage";
 
 export type View = "dashboard" | "exam" | "review";
 export type Preset = "Quick Drill" | "Mock Exam" | "Weak Retake" | "Freestyle";
@@ -40,15 +40,6 @@ export interface SessionState {
   freestyleLog?: AnswerRecord[];
   freestyleBaseProgress?: ProgressState;
   submitted?: SessionResult;
-}
-
-export type CaptureSource = Omit<PhraseSource, "id" | "capturedAt">;
-
-export interface PhraseSelection {
-  text: string;
-  x: number;
-  y: number;
-  source: CaptureSource;
 }
 
 export type FreestyleAnswerHandler = (question: MultipleChoiceQuestion, choiceId: string) => void;

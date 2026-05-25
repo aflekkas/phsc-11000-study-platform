@@ -113,7 +113,7 @@ function latestAnsweredQuestion(progress: ProgressState, runLog: AnswerRecord[])
   const latestStored = [...progress.sessions, ...progress.freestyle]
     .sort((a: SessionResult, b: SessionResult) => new Date(b.finishedAt).getTime() - new Date(a.finishedAt).getTime())
     .find((result) => result.answers.some((answer) => answer.correct !== undefined));
-  return latestStored?.answers.find((answer) => answer.correct !== undefined)?.questionId;
+  return [...(latestStored?.answers ?? [])].reverse().find((answer) => answer.correct !== undefined)?.questionId;
 }
 
 function scoreQuestion(

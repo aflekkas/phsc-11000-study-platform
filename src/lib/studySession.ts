@@ -5,13 +5,9 @@ import {
 import {
   buildAdaptiveFreestyleStats
 } from "./freestyleEngine";
-import {
-  multipleChoiceQuestions,
-  questionBank,
-  type MultipleChoiceQuestion
-} from "./questionBank";
+import type { MultipleChoiceQuestion, Question } from "./questionBank";
 import type { AnswerRecord, PhraseSource, ProgressState } from "./storage";
-import type { CaptureSource, Preset, SessionRunStats, SessionState, TimedPreset } from "../types/study";
+import type { Preset, SessionRunStats, SessionState, TimedPreset } from "../types/study";
 
 export const presetConfig: Record<TimedPreset, { count: number; minutes: number; longAnswers: number }> = {
   "Quick Drill": { count: 15, minutes: 15, longAnswers: 0 },
@@ -25,7 +21,7 @@ export function shuffle<T>(items: T[]) {
   return [...items].sort(() => Math.random() - 0.5);
 }
 
-export function shuffledMultipleChoice(pool: MultipleChoiceQuestion[] = multipleChoiceQuestions) {
+export function shuffledMultipleChoice(pool: MultipleChoiceQuestion[]) {
   return shuffle(pool).map((question) => ({
     ...question,
     choices: shuffle(question.choices)
@@ -61,32 +57,22 @@ export function sourceSignature(source: Pick<PhraseSource, "type" | "label" | "q
   return [source.type, source.questionId, source.sourcePath, source.label].filter(Boolean).join("|");
 }
 
-export function captureSourceFromElement(element: HTMLElement): CaptureSource {
-  const type = element.dataset.captureType === "review" ? "review" : "question";
-  return {
-    type,
-    label: element.dataset.captureLabel || (type === "review" ? "Review" : "Practice"),
-    view: element.dataset.captureView,
-    questionId: element.dataset.questionId,
-    questionPrompt: element.dataset.questionPrompt,
-    lecture: element.dataset.lecture,
-    lectureTitle: element.dataset.lectureTitle,
-    cluster: element.dataset.cluster,
-    sourcePath: element.dataset.sourcePath
-  };
-}
-
 export function learningProgressFor(session: SessionState, progress: ProgressState): ProgressState {
   if (!session.freestyleBaseProgress) return progress;
   return { ...session.freestyleBaseProgress, flagged: progress.flagged };
 }
 
-export function buildSessionRunStats(session: SessionState, progress: ProgressState): SessionRunStats {
+export function buildSessionRunStats(
+  session: SessionState,
+  progress: ProgressState,
+  questions: Question[],
+  multipleChoiceQuestions: MultipleChoiceQuestion[]
+): SessionRunStats {
   const answers = (session.freestyleLog ?? Object.values(session.answers)).filter((answer) => answer.correct !== undefined);
   const answered = answers.length;
   const correct = answers.filter((answer) => answer.correct === true).length;
   const missed = answers.filter((answer) => answer.correct === false).length;
-  const byId = new Map(questionBank.map((question) => [question.id, question]));
+  const byId = new Map(questions.map((question) => [question.id, question]));
   const adaptive = buildAdaptiveFreestyleStats(learningProgressFor(session, progress), multipleChoiceQuestions, answers as AnswerRecord[]);
   return {
     answered,

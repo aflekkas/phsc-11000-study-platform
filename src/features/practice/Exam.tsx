@@ -1,11 +1,11 @@
-import { ArrowCounterClockwise, ArrowLeft, ArrowRight, ChartBar, CheckCircle, Clock, Fire, Flag, House, Lightning, PaperPlaneTilt, SkipForward, Target, XCircle } from "@phosphor-icons/react";
-import { Badge } from "../../components/ui/Badge";
+import { ArrowCounterClockwise, ArrowLeft, ArrowRight, Books, ChartBar, CheckCircle, Clock, Fire, Flag, Gauge, House, Lightning, PaperPlaneTilt, SkipForward, Tag, Target, XCircle } from "@phosphor-icons/react";
+import { Badge, type BadgeTone } from "../../components/ui/Badge";
 import { Button } from "../../components/ui/Button";
 import { CountUp, SignedXp } from "../../components/ui/CountUp";
 import { StatTile } from "../../components/ui/StatTile";
 import { StudyCard } from "../../components/ui/StudyCard";
 import { cx } from "../../lib/classes";
-import { type MultipleChoiceQuestion } from "../../lib/questionBank";
+import type { MultipleChoiceQuestion, Question } from "../../lib/questionBank";
 import { buildSessionRunStats } from "../../lib/studySession";
 import type { AnswerRecord, PhraseBankItem, ProgressState } from "../../lib/storage";
 import type { FreestyleAnswerHandler, SessionRunStats, SessionState } from "../../types/study";
@@ -15,6 +15,8 @@ export function Exam({
   session,
   progress,
   phrases,
+  questionBank,
+  multipleChoiceQuestions,
   onAnswer,
   onAddPhrase,
   onFreestyleAnswer,
@@ -26,6 +28,8 @@ export function Exam({
   session: SessionState;
   progress: ProgressState;
   phrases: PhraseBankItem[];
+  questionBank: Question[];
+  multipleChoiceQuestions: MultipleChoiceQuestion[];
   onAnswer: (questionId: string, patch: Partial<AnswerRecord>) => void;
   onAddPhrase: (text: string) => void;
   onFreestyleAnswer: FreestyleAnswerHandler;
@@ -38,7 +42,7 @@ export function Exam({
   const answer = session.answers[question.id] ?? { questionId: question.id, flagged: Boolean(progress.flagged[question.id]) };
   const isFreestyle = session.preset === "Freestyle";
   const feedback = session.feedback?.questionId === question.id ? session.feedback : undefined;
-  const sessionStats = isFreestyle ? buildSessionRunStats(session, progress) : undefined;
+  const sessionStats = isFreestyle ? buildSessionRunStats(session, progress, questionBank, multipleChoiceQuestions) : undefined;
   const minutes = Math.floor(session.timeLeft / 60);
   const seconds = String(session.timeLeft % 60).padStart(2, "0");
 
@@ -62,26 +66,20 @@ export function Exam({
         </Badge>
       </section>
 
-      <main className="practice-stack">
+      <section className="practice-stack">
         <StudyCard
           key={question.id}
           className={cx("question-panel", feedback && (feedback.correct ? "panel-correct" : "panel-wrong"))}
-          data-phrase-capture="true"
-          data-capture-type="question"
-          data-capture-label={question.lectureTitle ?? "Synthesis"}
-          data-capture-view={session.preset}
-          data-question-id={question.id}
-          data-question-prompt={question.prompt}
-          data-lecture={question.lecture}
-          data-lecture-title={question.lectureTitle}
-          data-cluster={question.cluster}
-          data-source-path={question.sourcePath}
         >
           <div className="question-meta">
-            <Badge tone="primary">{question.lectureTitle ?? "Synthesis"}</Badge>
-            <Badge tone="accent">{question.cluster}</Badge>
-            <Badge tone={question.difficulty === "Hard" ? "error" : question.difficulty === "Medium" ? "warning" : "success"}>
-              {question.difficulty}
+            <Badge tone={questionBadgeTone("lecture")}>
+              <Books size={14} weight="duotone" /> {question.lectureTitle ?? "Synthesis"}
+            </Badge>
+            <Badge tone={questionBadgeTone("cluster")}>
+              <Tag size={14} weight="duotone" /> {question.cluster}
+            </Badge>
+            <Badge tone={questionBadgeTone("difficulty", question.difficulty)}>
+              <Gauge size={14} weight="duotone" /> {question.difficulty}
             </Badge>
           </div>
           <h2>{question.prompt}</h2>
@@ -95,9 +93,10 @@ export function Exam({
                   className={choiceClass(choice.id, question.correctChoiceId, answer.selectedChoiceId, Boolean(feedback))}
                   aria-disabled={Boolean(feedback)}
                   aria-pressed={answer.selectedChoiceId === choice.id}
+                  disabled={Boolean(feedback)}
                   onClick={() =>
                     !feedback &&
-                    (isFreestyle ? onFreestyleAnswer(question as MultipleChoiceQuestion, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id }))
+                    (isFreestyle ? onFreestyleAnswer(question, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id }))
                   }
                 >
                   <span className="radio radio-primary radio-sm" aria-hidden="true" />
@@ -115,7 +114,7 @@ export function Exam({
           )}
 
           {isFreestyle && feedback && (
-            <div className={feedback.correct ? "feedback alert alert-success alert-soft" : "feedback alert alert-error alert-soft"}>
+            <div className={feedback.correct ? "feedback feedback-success" : "feedback feedback-error"}>
               <div className="feedback-head">
                 <strong>{feedback.correct ? "Correct" : "Wrong"}</strong>
                 <span className="feedback-badges">
@@ -151,7 +150,7 @@ export function Exam({
         </StudyCard>
 
         <PhraseQuickAdd onAddPhrase={onAddPhrase} phrases={phrases} variant="dock" />
-      </main>
+      </section>
 
       {sessionStats && <SessionStatsPanel stats={sessionStats} />}
 
@@ -182,6 +181,14 @@ function SessionStatsPanel({ stats }: { stats: SessionRunStats }) {
       <StatTile icon={<XCircle weight="duotone" />} label="Missed" value={<CountUp value={stats.missed} />} tone="red" />
     </section>
   );
+}
+
+function questionBadgeTone(kind: "lecture" | "cluster" | "difficulty", difficulty?: string): BadgeTone {
+  if (kind === "lecture") return "primary";
+  if (kind === "cluster") return "neutral";
+  if (difficulty === "Hard") return "error";
+  if (difficulty === "Medium") return "warning";
+  return "success";
 }
 
 function choiceClass(choiceId: string, correctChoiceId: string, selectedChoiceId: string | undefined, showFeedback: boolean) {
