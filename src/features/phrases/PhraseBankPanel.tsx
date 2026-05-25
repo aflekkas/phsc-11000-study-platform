@@ -52,7 +52,7 @@ export function PhraseBankPanel({
         <Badge tone="primary" className="badge-lg">{phrases.length}</Badge>
       </div>
 
-      <label className="input input-bordered flex items-center gap-2 bg-base-100/80">
+      <label className="input input-bordered flex items-center gap-2">
         <MagnifyingGlass size={16} className="text-base-content/55" />
         <input
           className="grow"

@@ -62,8 +62,6 @@ export function Exam({
         </Badge>
       </section>
 
-      <PhraseQuickAdd onAddPhrase={onAddPhrase} phrases={phrases} variant="dock" />
-
       <StudyCard
         key={question.id}
         className={cx("question-panel", feedback && (feedback.correct ? "panel-correct" : "panel-wrong"))}
@@ -93,18 +91,20 @@ export function Exam({
               <button
                 key={choice.id}
                 className={choiceClass(choice.id, question.correctChoiceId, answer.selectedChoiceId, Boolean(feedback))}
-                disabled={Boolean(feedback)}
+                aria-disabled={Boolean(feedback)}
                 onClick={() =>
-                  isFreestyle ? onFreestyleAnswer(question as MultipleChoiceQuestion, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id })
+                  !feedback &&
+                  (isFreestyle ? onFreestyleAnswer(question as MultipleChoiceQuestion, choice.id) : onAnswer(question.id, { selectedChoiceId: choice.id }))
                 }
               >
+                <span className="radio radio-primary radio-sm" aria-hidden="true" />
                 {choice.text}
               </button>
             ))}
           </div>
         ) : (
           <textarea
-            className="textarea textarea-bordered min-h-56 w-full bg-base-100/80"
+            className="textarea textarea-bordered min-h-56 w-full"
             value={answer.textAnswer ?? ""}
             onChange={(event) => onAnswer(question.id, { textAnswer: event.target.value })}
             placeholder="Draft your answer. You will self-check it against the rubric after submitting."
@@ -112,7 +112,7 @@ export function Exam({
         )}
 
         {isFreestyle && feedback && (
-          <div className={feedback.correct ? "feedback correct-feedback" : "feedback wrong-feedback"}>
+          <div className={feedback.correct ? "feedback alert alert-success alert-soft" : "feedback alert alert-error alert-soft"}>
             <div className="feedback-head">
               <strong>{feedback.correct ? "Correct" : "Wrong"}</strong>
               <span className="feedback-badges">
@@ -147,6 +147,8 @@ export function Exam({
         </div>
       </StudyCard>
 
+      <PhraseQuickAdd onAddPhrase={onAddPhrase} phrases={phrases} variant="dock" />
+
       {sessionStats && <SessionStatsPanel stats={sessionStats} />}
 
       {!isFreestyle && (
@@ -179,7 +181,7 @@ function SessionStatsPanel({ stats }: { stats: SessionRunStats }) {
 }
 
 function choiceClass(choiceId: string, correctChoiceId: string, selectedChoiceId: string | undefined, showFeedback: boolean) {
-  const classes = ["choice", "btn", "justify-start", "h-auto", "min-h-14", "border-base-300", "bg-base-100/85", "text-left"];
+  const classes = ["choice", "btn", "btn-outline", "justify-start", "h-auto", "min-h-14", "text-left"];
   if (selectedChoiceId === choiceId) classes.push("selected");
   if (showFeedback && choiceId === correctChoiceId) classes.push("correct-answer");
   if (showFeedback && selectedChoiceId === choiceId && choiceId !== correctChoiceId) classes.push("wrong-answer");

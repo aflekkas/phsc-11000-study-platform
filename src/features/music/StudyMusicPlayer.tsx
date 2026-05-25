@@ -25,9 +25,8 @@ export function StudyMusicPlayer({
 }) {
   const playerClassName = cx("music-player", state.playing && "is-playing", minimized && "is-minimized");
   const progress = state.duration > 0 ? Math.min(100, (state.currentTime / state.duration) * 100) : 0;
-  const handleSeek = (event: MouseEvent<HTMLButtonElement>) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    onSeek((event.clientX - rect.left) / rect.width);
+  const handleSeek = (event: MouseEvent<HTMLInputElement>) => {
+    onSeek(Number(event.currentTarget.value) / 100);
   };
 
   if (minimized) {
@@ -86,20 +85,24 @@ export function StudyMusicPlayer({
         <IconButton className="music-control" label="Next lofi track" onClick={onNext} tone="ghost">
           <SkipForward size={16} weight="duotone" />
         </IconButton>
-        {!state.playing && (
-          <IconButton
-            className="music-control music-minimize"
-            label="Minimize lofi focus music player"
-            onClick={onMinimize}
-            tone="ghost"
-          >
-            <CornersIn size={15} weight="duotone" />
-          </IconButton>
-        )}
+        <IconButton
+          className="music-control music-minimize"
+          label="Minimize lofi focus music player"
+          onClick={onMinimize}
+          tone="ghost"
+        >
+          <CornersIn size={15} weight="duotone" />
+        </IconButton>
       </div>
-      <button className="music-progress" onClick={handleSeek} aria-label="Seek lofi track" title="Seek lofi track">
-        <span style={{ width: `${progress}%` }} />
-      </button>
+      <input
+        className="range range-primary range-xs music-progress"
+        type="range"
+        value={Math.round(progress)}
+        max={100}
+        onChange={handleSeek}
+        aria-label="Seek lofi track"
+        title="Seek lofi track"
+      />
       <a className="music-source" href={state.sourceUrl} target="_blank" rel="noreferrer" title={`${state.license} source`}>
         {state.loading ? "loading" : state.error ?? "credits"}
       </a>

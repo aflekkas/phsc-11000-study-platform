@@ -41,7 +41,6 @@ import {
   presetConfig,
   shuffle,
   shuffledMultipleChoice,
-  sourceSignature,
   withShuffledChoices
 } from "./lib/studySession";
 import { Dashboard } from "./features/dashboard/Dashboard";
@@ -79,35 +78,23 @@ function App() {
       id: crypto.randomUUID(),
       capturedAt: now
     };
-    const nextSourceSignature = sourceSignature(phraseSource);
-
     setProgress((current) => {
       const existing = current.phraseBank.find((item) => item.normalizedText === normalizedText);
-      const phraseBank = existing
-        ? current.phraseBank.map((item) => {
-            if (item.id !== existing.id) return item;
-            const hasSource = item.sources.some((itemSource) => sourceSignature(itemSource) === nextSourceSignature);
-            return {
-              ...item,
-              updatedAt: now,
-              captureCount: hasSource ? item.captureCount : item.captureCount + 1,
-              sources: hasSource ? item.sources : [...item.sources, phraseSource]
-            };
-          })
-        : [
-            {
-              id: crypto.randomUUID(),
-              text,
-              normalizedText,
-              createdAt: now,
-              updatedAt: now,
-              starred: false,
-              note: "",
-              sources: [phraseSource],
-              captureCount: 1
-            },
-            ...current.phraseBank
-          ];
+      if (existing) return current;
+      const phraseBank = [
+        {
+          id: crypto.randomUUID(),
+          text,
+          normalizedText,
+          createdAt: now,
+          updatedAt: now,
+          starred: false,
+          note: "",
+          sources: [phraseSource],
+          captureCount: 1
+        },
+        ...current.phraseBank
+      ];
       const nextProgress = { ...current, phraseBank };
       saveProgress(nextProgress);
       return nextProgress;

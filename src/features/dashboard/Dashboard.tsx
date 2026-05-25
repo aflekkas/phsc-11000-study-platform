@@ -22,7 +22,12 @@ const milestoneTone: Record<RewardTone, "success" | "warning" | "info" | "accent
   red: "error"
 };
 
-const mascotSrc = `${import.meta.env.BASE_URL}images/core-buddy.png`;
+const mascotByMood: Record<StudyGameStats["mood"], string> = {
+  steady: `${import.meta.env.BASE_URL}images/core-buddy-steady.png`,
+  warming: `${import.meta.env.BASE_URL}images/core-buddy-warming.png`,
+  stressed: `${import.meta.env.BASE_URL}images/core-buddy-stressed.png`,
+  locked: `${import.meta.env.BASE_URL}images/core-buddy-locked.png`
+};
 
 export function Dashboard({
   progress,
@@ -60,16 +65,16 @@ export function Dashboard({
       <PhraseQuickAdd onAddPhrase={onAddPhrase} phrases={phrases} variant="dock" />
 
       <section className="command-grid" aria-label="Study modes">
-        <Button tone="primary" size="lg" onClick={() => onStart("Mock Exam")} icon={<Timer size={19} weight="duotone" />}>
+        <Button tone="primary" onClick={() => onStart("Mock Exam")} icon={<Timer size={19} weight="duotone" />}>
           Mock Exam
         </Button>
-        <Button tone="accent" size="lg" onClick={() => onStart("Freestyle")} icon={<Shuffle size={19} weight="duotone" />}>
+        <Button tone="accent" onClick={() => onStart("Freestyle")} icon={<Shuffle size={19} weight="duotone" />}>
           Freestyle
         </Button>
-        <Button tone="secondary" size="lg" onClick={() => onStart("Quick Drill")} icon={<CheckCircle size={19} weight="duotone" />}>
+        <Button tone="secondary" onClick={() => onStart("Quick Drill")} icon={<CheckCircle size={19} weight="duotone" />}>
           Quick Drill
         </Button>
-        <Button size="lg" onClick={() => onStart("Weak Retake")} icon={<ArrowCounterClockwise size={19} weight="duotone" />}>
+        <Button onClick={() => onStart("Weak Retake")} icon={<ArrowCounterClockwise size={19} weight="duotone" />}>
           Weak Retake
         </Button>
       </section>
@@ -134,7 +139,7 @@ function DashboardHero({ game }: { game: StudyGameStats }) {
       </div>
       <div className="hero-buddy">
         <div className="mascot-frame">
-          <img src={mascotSrc} alt={`Core Buddy mood: ${game.moodLabel}`} />
+          <img src={mascotByMood[game.mood]} alt={`Core Buddy mood: ${game.moodLabel}`} />
         </div>
         <div>
           <p className="eyebrow">Core Buddy</p>
@@ -152,7 +157,7 @@ function StudySnapshot({ game }: { game: StudyGameStats }) {
       <StatTile icon={<Target weight="duotone" />} label="Prepared" value={<><CountUp value={game.prepScore} />%</>} tone="teal" />
       <StatTile icon={<ChartBar weight="duotone" />} label="Accuracy" value={<><CountUp value={game.accuracy} />%</>} tone="blue" />
       <StatTile icon={<Sparkle weight="duotone" />} label="Coverage" value={<><CountUp value={game.coverage} />%</>} tone="purple" />
-      <StatTile icon={<Fire weight="duotone" />} label="Missed" value={<CountUp value={game.missed} />} tone="amber" />
+      <StatTile icon={<Fire weight="duotone" />} label="Missed" value={<CountUp value={game.missed} />} tone="red" />
       <div className="achievement-row">
         <Badge tone="primary">{game.correct} correct across {multipleChoiceQuestions.length}</Badge>
         {game.milestones.map((milestone) => (

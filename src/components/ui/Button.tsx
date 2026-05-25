@@ -15,8 +15,8 @@ const toneClass: Record<ButtonTone, string> = {
   secondary: "btn-secondary",
   accent: "btn-accent",
   ghost: "btn-ghost",
-  soft: "btn-outline",
-  danger: "btn-error btn-outline"
+  soft: "btn-soft",
+  danger: "btn-error"
 };
 
 const sizeClass: Record<ButtonSize, string> = {
@@ -29,7 +29,7 @@ const sizeClass: Record<ButtonSize, string> = {
 
 export function Button({ children, className, icon, size = "md", tone = "soft", type = "button", ...props }: ButtonProps) {
   return (
-    <button className={cx("btn study-btn", toneClass[tone], sizeClass[size], className)} type={type} {...props}>
+    <button className={cx("btn", toneClass[tone], sizeClass[size], className)} type={type} {...props}>
       {icon}
       {children}
     </button>

@@ -12,7 +12,7 @@ export function StudyCard({ as: Component = "section", children, className, comp
   return (
     <Component
       className={cx(
-        "card study-card border border-base-300 bg-base-100 text-base-content",
+        "card card-border bg-base-100 text-base-content",
         interactive && "transition hover:border-primary",
         className
       )}

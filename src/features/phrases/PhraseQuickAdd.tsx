@@ -21,13 +21,13 @@ export function PhraseQuickAdd({
   const isDuplicate = normalized.length > 0 && phrases.some((phrase) => phrase.normalizedText === normalized);
   const isValid = canSavePhrase(value) && !isDuplicate;
   const helper =
-    cleaned.length === 0
+    savedText && !value
+      ? "Saved to your phrase bank."
+      : cleaned.length === 0
       ? "Save terms you want to see again."
       : isDuplicate
         ? "Already in your phrase bank."
-        : savedText === cleaned
-          ? "Saved to your phrase bank."
-          : "Ready to save.";
+        : "Ready to save.";
 
   const submitPhrase = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -42,12 +42,12 @@ export function PhraseQuickAdd({
       className={cx("phrase-quick-add", variant === "dock" && "is-dock", isDuplicate && "is-duplicate", savedText && !value && "is-saved")}
       onSubmit={submitPhrase}
     >
-      <div className="phrase-entry-row">
-        <span className="phrase-quick-icon">
+      <div className="phrase-entry-row join">
+        <span className="phrase-quick-icon join-item">
           <BookmarkSimple size={18} weight="duotone" />
         </span>
         <input
-          className={cx("input input-bordered min-w-0 flex-1 bg-base-100/85", isDuplicate && "input-warning")}
+          className={cx("input input-bordered join-item min-w-0 flex-1", isDuplicate && "input-warning")}
           value={value}
           onChange={(event) => {
             setValue(event.target.value);
@@ -59,7 +59,7 @@ export function PhraseQuickAdd({
           aria-invalid={isDuplicate}
           aria-label="Add phrase to bank"
         />
-        <Button tone="primary" disabled={!isValid} aria-label="Save phrase" icon={<Plus size={17} weight="bold" />} type="submit">
+        <Button className="join-item" tone="primary" disabled={!isValid} aria-label="Save phrase" icon={<Plus size={17} weight="bold" />} type="submit">
           Save
         </Button>
       </div>
