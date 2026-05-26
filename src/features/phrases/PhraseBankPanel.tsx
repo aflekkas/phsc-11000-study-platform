@@ -1,30 +1,27 @@
 import { useMemo, useState } from "react";
-import { BookmarkSimple, MagnifyingGlass, NotePencil, Star, Trash } from "@phosphor-icons/react";
+import { BookmarkSimple, DownloadSimple, MagnifyingGlass, NotePencil, Star, Trash } from "@phosphor-icons/react";
 import { Badge } from "../../components/ui/Badge";
 import { IconButton } from "../../components/ui/Button";
 import { StudyCard } from "../../components/ui/StudyCard";
 import { cx } from "../../lib/classes";
+import { sortedPhraseBank } from "../../lib/phraseBankExport";
 import type { PhraseBankItem } from "../../lib/storage";
 
 export function PhraseBankPanel({
   phrases,
   onDeletePhrase,
+  onExport,
   onTogglePhraseStar,
   onUpdatePhraseNote
 }: {
   phrases: PhraseBankItem[];
   onDeletePhrase: (phraseId: string) => void;
+  onExport: () => void;
   onTogglePhraseStar: (phraseId: string) => void;
   onUpdatePhraseNote: (phraseId: string, note: string) => void;
 }) {
   const [query, setQuery] = useState("");
-  const sortedPhrases = useMemo(
-    () =>
-      [...phrases].sort(
-        (a, b) => Number(b.starred) - Number(a.starred) || b.updatedAt.localeCompare(a.updatedAt)
-      ),
-    [phrases]
-  );
+  const sortedPhrases = useMemo(() => sortedPhraseBank(phrases), [phrases]);
   const visiblePhrases = useMemo(() => {
     const normalizedQuery = query.toLowerCase().trim();
     if (!normalizedQuery) return sortedPhrases;
@@ -49,7 +46,17 @@ export function PhraseBankPanel({
             <BookmarkSimple size={18} weight="duotone" /> Terms to remember
           </h2>
         </div>
-        <Badge tone="primary" className="badge-lg">{phrases.length}</Badge>
+        <div className="phrase-bank-actions">
+          <IconButton
+            disabled={phrases.length === 0}
+            label="Export phrase bank"
+            onClick={onExport}
+            tone="ghost"
+          >
+            <DownloadSimple size={17} weight="duotone" />
+          </IconButton>
+          <Badge tone="primary" className="badge-lg">{phrases.length}</Badge>
+        </div>
       </div>
 
       <label className="input input-bordered flex items-center gap-2">

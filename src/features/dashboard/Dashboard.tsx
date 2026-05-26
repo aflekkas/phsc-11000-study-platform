@@ -40,6 +40,7 @@ export function Dashboard({
   totalMultipleChoice,
   onAddPhrase,
   onDeletePhrase,
+  onExportPhraseBank,
   onExportProgress,
   onImportProgress,
   onTogglePhraseStar,
@@ -56,6 +57,7 @@ export function Dashboard({
   totalMultipleChoice: number;
   onAddPhrase: (text: string) => void;
   onDeletePhrase: (phraseId: string) => void;
+  onExportPhraseBank: () => void;
   onExportProgress: () => void;
   onImportProgress: (file: File) => void;
   onTogglePhraseStar: (phraseId: string) => void;
@@ -124,6 +126,7 @@ export function Dashboard({
         <PhraseBankPanel
           phrases={phrases}
           onDeletePhrase={onDeletePhrase}
+          onExport={onExportPhraseBank}
           onTogglePhraseStar={onTogglePhraseStar}
           onUpdatePhraseNote={onUpdatePhraseNote}
         />

@@ -12,6 +12,7 @@ import {
   reinforcementLine,
   selectNextFreestyleQuestion
 } from "./lib/freestyleEngine";
+import { buildPhraseBankMarkdown, phraseBankMarkdownFileName } from "./lib/phraseBankExport";
 import type { MultipleChoiceQuestion } from "./lib/questionBank";
 import { playRewardSound, playUiSound } from "./lib/sound";
 import {
@@ -277,6 +278,21 @@ function App() {
     link.remove();
     window.setTimeout(() => window.URL.revokeObjectURL(url), 1000);
     setProgressTransferStatus({ tone: "success", message: "Exported progress JSON." });
+  };
+
+  const exportPhraseBank = () => {
+    const markdown = buildPhraseBankMarkdown(progressRef.current.phraseBank);
+    const blob = new Blob([markdown], { type: "text/markdown;charset=utf-8" });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = phraseBankMarkdownFileName();
+    link.style.display = "none";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => window.URL.revokeObjectURL(url), 1000);
+    setProgressTransferStatus({ tone: "success", message: "Exported phrase bank Markdown." });
   };
 
   const importProgress = async (file: File) => {
@@ -595,6 +611,7 @@ function App() {
           totalMultipleChoice={multipleChoiceQuestions.length}
           onAddPhrase={addManualPhrase}
           onDeletePhrase={deletePhrase}
+          onExportPhraseBank={exportPhraseBank}
           onExportProgress={exportProgress}
           onImportProgress={(file) => void importProgress(file)}
           onStart={startSession}

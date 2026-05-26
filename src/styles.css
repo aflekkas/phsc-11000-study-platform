@@ -387,6 +387,13 @@ button, input, textarea { font: inherit; }
   padding: 0;
 }
 
+.phrase-bank-actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
 .phrase-list li {
   background: var(--paper-elevated);
   border: 1px solid var(--paper-border);
