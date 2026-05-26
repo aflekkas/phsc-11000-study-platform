@@ -266,13 +266,16 @@ function App() {
 
   const exportProgress = () => {
     const backup = buildProgressBackup(progressRef.current);
-    const blob = new Blob([`${JSON.stringify(backup, null, 2)}\n`], { type: "application/json" });
+    const blob = new Blob([`${JSON.stringify(backup, null, 2)}\n`], { type: "application/json;charset=utf-8" });
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
     link.download = progressBackupFileName();
+    link.style.display = "none";
+    document.body.append(link);
     link.click();
-    window.URL.revokeObjectURL(url);
+    link.remove();
+    window.setTimeout(() => window.URL.revokeObjectURL(url), 1000);
     setProgressTransferStatus({ tone: "success", message: "Exported progress JSON." });
   };
 
